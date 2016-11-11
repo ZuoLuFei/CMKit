@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		470A9D921DC8AB8700206B64 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9D911DC8AB8700206B64 /* MBProgressHUD.m */; };
 		470A9D951DC8ABD400206B64 /* MBProgressHUD+CMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9D941DC8ABD400206B64 /* MBProgressHUD+CMKit.m */; };
-		470A9D981DC8AC3C00206B64 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 470A9D961DC8AC3C00206B64 /* success.png */; };
-		470A9D991DC8AC3C00206B64 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470A9D971DC8AC3C00206B64 /* success@2x.png */; };
-		470A9D9C1DC8AC4300206B64 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 470A9D9A1DC8AC4300206B64 /* error.png */; };
-		470A9D9D1DC8AC4300206B64 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 470A9D9B1DC8AC4300206B64 /* error@2x.png */; };
 		470A9DA81DC8BA1E00206B64 /* CMImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DA71DC8BA1E00206B64 /* CMImagePickerManager.m */; };
 		470A9DAE1DC8CE1700206B64 /* CMImagePickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DAD1DC8CE1700206B64 /* CMImagePickerSampleController.m */; };
 		470A9DC31DC8EE9F00206B64 /* CMDetailedFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */; };
@@ -193,6 +189,7 @@
 		4774D17F1DCA566F0067A67F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D17E1DCA566F0067A67F /* Foundation.framework */; };
 		4774D1811DCA571B0067A67F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1801DCA571B0067A67F /* CoreGraphics.framework */; };
 		4774D1831DCA57390067A67F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1821DCA57390067A67F /* UIKit.framework */; };
+		47B527AF1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47B527AE1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle */; };
 		47E6F5741DCB6D1C00E0D9FF /* CMAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6F5731DCB6D1C00E0D9FF /* CMAnimationCell.m */; };
 		47E6F57B1DCB983700E0D9FF /* CMQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6F57A1DCB983700E0D9FF /* CMQRCodeManager.m */; };
 /* End PBXBuildFile section */
@@ -219,10 +216,6 @@
 		470A9D911DC8AB8700206B64 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		470A9D931DC8ABD400206B64 /* MBProgressHUD+CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CMKit.h"; sourceTree = "<group>"; };
 		470A9D941DC8ABD400206B64 /* MBProgressHUD+CMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CMKit.m"; sourceTree = "<group>"; };
-		470A9D961DC8AC3C00206B64 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
-		470A9D971DC8AC3C00206B64 /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
-		470A9D9A1DC8AC4300206B64 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
-		470A9D9B1DC8AC4300206B64 /* error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error@2x.png"; sourceTree = "<group>"; };
 		470A9D9E1DC8B95D00206B64 /* CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMKit.h; sourceTree = "<group>"; };
 		470A9DA61DC8BA1E00206B64 /* CMImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerManager.h; sourceTree = "<group>"; };
 		470A9DA71DC8BA1E00206B64 /* CMImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerManager.m; sourceTree = "<group>"; };
@@ -559,6 +552,7 @@
 		4774D17E1DCA566F0067A67F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4774D1801DCA571B0067A67F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4774D1821DCA57390067A67F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		47B527AE1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+CMKit.bundle"; sourceTree = "<group>"; };
 		47E6F5721DCB6D1B00E0D9FF /* CMAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAnimationCell.h; sourceTree = "<group>"; };
 		47E6F5731DCB6D1C00E0D9FF /* CMAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAnimationCell.m; sourceTree = "<group>"; };
 		47E6F5791DCB983700E0D9FF /* CMQRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMQRCodeManager.h; sourceTree = "<group>"; };
@@ -596,14 +590,11 @@
 		470A9D8F1DC8AB7800206B64 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				47B527AE1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle */,
 				470A9D901DC8AB8700206B64 /* MBProgressHUD.h */,
 				470A9D911DC8AB8700206B64 /* MBProgressHUD.m */,
 				470A9D931DC8ABD400206B64 /* MBProgressHUD+CMKit.h */,
 				470A9D941DC8ABD400206B64 /* MBProgressHUD+CMKit.m */,
-				470A9D961DC8AC3C00206B64 /* success.png */,
-				470A9D971DC8AC3C00206B64 /* success@2x.png */,
-				470A9D9A1DC8AC4300206B64 /* error.png */,
-				470A9D9B1DC8AC4300206B64 /* error@2x.png */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1656,8 +1647,7 @@
 			files = (
 				475A3D691DC753BD00CA45BA /* Info.plist in Resources */,
 				471378F71DC9E9C300B69431 /* MJWebViewViewController.xib in Resources */,
-				470A9D991DC8AC3C00206B64 /* success@2x.png in Resources */,
-				470A9D9C1DC8AC4300206B64 /* error.png in Resources */,
+				47B527AF1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle in Resources */,
 				470C34571DCB415300664D54 /* profile-image-placeholder@2x.png in Resources */,
 				471378F51DC9E9C300B69431 /* MJTestViewController.xib in Resources */,
 				475A3D681DC753BD00CA45BA /* Main.storyboard in Resources */,
@@ -1682,12 +1672,10 @@
 				470A9DD21DC8FC8100206B64 /* 00.jpg in Resources */,
 				471D732D1DD0E9610046C955 /* welcome_guide_1_new@2x.png in Resources */,
 				471D73161DD0C37B0046C955 /* back@2x.png in Resources */,
-				470A9D981DC8AC3C00206B64 /* success.png in Resources */,
 				475A3E221DC7A11700CA45BA /* 扫描线@2x.png in Resources */,
 				4774CF791DCA55700067A67F /* MasterViewController.xib in Resources */,
 				475A3E3B1DC7AF8500CA45BA /* CMAnimationSampleController.xib in Resources */,
 				471D73291DD0E7430046C955 /* btn01_normal@2x.png in Resources */,
-				470A9D9D1DC8AC4300206B64 /* error@2x.png in Resources */,
 				470A9DD51DC8FC8100206B64 /* 03.jpg in Resources */,
 				471D732F1DD0E96A0046C955 /* welcome_guide_2_new@2x.png in Resources */,
 			);

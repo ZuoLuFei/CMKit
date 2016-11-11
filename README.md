@@ -3,25 +3,27 @@ A project about iOS development Contains lots of tools and Category.
 
 
 Getting Started【开始使用】
+
 Features【能做什么】
-.....
 
 
 Installation【安装】
 
 From CocoaPods【使用CocoaPods导入】
 
-整个工具类：pod 'CMKit' ->'0.0.3'
+整个工具类：pod 'CMKit' ->'0.0.4'
 
-    分类：pod 'CMKit/Category' ->'0.0.3'
+    分类：pod 'CMKit/Category' ->'0.0.4'
 
-    警告框：pod 'CMKit/AlertView’, '~> 0.0.3’
+    警告框：pod 'CMKit/AlertView’, '~> 0.0.4’
 
-    动画效果：pod 'CMKit/AnimationEffect’, '~> 0.0.3’
+    动画效果：pod 'CMKit/AnimationEffect’, '~> 0.0.4’
 
     上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
 
     图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
+
+    HUD提示框：pod 'CMKit/ProgressHUD’, '~> 0.0.4’
 
     新特性：待更新
 
@@ -38,8 +40,6 @@ From CocoaPods【使用CocoaPods导入】
     加密、解密：待更新
 
     二维码：待更新
-
-    HUD提示框：待更新
 
 
 Manually【手动导入】
