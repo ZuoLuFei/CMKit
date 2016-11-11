@@ -8,8 +8,39 @@ Features【能做什么】
 
 
 Installation【安装】
-From CocoaPods【使用CocoaPods】
-pod 'CMKit' ->'0.1.0'
+
+From CocoaPods【使用CocoaPods导入】
+
+整个工具类：pod 'CMKit' ->'0.0.3'
+
+    分类：pod 'CMKit/Category' ->'0.0.3'
+
+    警告框：pod 'CMKit/AlertView’, '~> 0.0.3’
+
+    动画效果：pod 'CMKit/AnimationEffect’, '~> 0.0.3’
+
+    上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
+
+    图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
+
+    新特性：待更新
+
+    共用父类：待更新
+
+    3DTouch：待更新
+
+    网络请求：待更新
+
+    无限轮播：待更新
+
+    相机、相册：待更新
+
+    加密、解密：待更新
+
+    二维码：待更新
+
+    HUD提示框：待更新
+
 
 Manually【手动导入】
 .....
