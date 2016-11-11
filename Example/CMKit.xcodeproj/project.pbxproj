@@ -154,9 +154,6 @@
 		475A3E0F1DC7963C00CA45BA /* CMQRCodeSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475A3E0D1DC7963C00CA45BA /* CMQRCodeSampleController.xib */; };
 		475A3E151DC7996200CA45BA /* CMAlterViewSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3E141DC7996200CA45BA /* CMAlterViewSampleController.m */; };
 		475A3E181DC7996800CA45BA /* CMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3E171DC7996800CA45BA /* CMAlertView.m */; };
-		475A3E211DC7A11700CA45BA /* 扫描框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 475A3E1F1DC7A11700CA45BA /* 扫描框@2x.png */; };
-		475A3E221DC7A11700CA45BA /* 扫描线@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 475A3E201DC7A11700CA45BA /* 扫描线@2x.png */; };
-		475A3E241DC7A12300CA45BA /* utouu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 475A3E231DC7A12300CA45BA /* utouu@2x.png */; };
 		475A3E361DC7AF2100CA45BA /* CMAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3E351DC7AF2100CA45BA /* CMAnimationEffect.m */; };
 		475A3E3A1DC7AF8500CA45BA /* CMAnimationSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3E381DC7AF8500CA45BA /* CMAnimationSampleController.m */; };
 		475A3E3B1DC7AF8500CA45BA /* CMAnimationSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475A3E391DC7AF8500CA45BA /* CMAnimationSampleController.xib */; };
@@ -190,6 +187,7 @@
 		4774D1811DCA571B0067A67F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1801DCA571B0067A67F /* CoreGraphics.framework */; };
 		4774D1831DCA57390067A67F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1821DCA57390067A67F /* UIKit.framework */; };
 		47B527AF1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47B527AE1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle */; };
+		47B527B11DD63138005B4500 /* CMQRCodeManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47B527B01DD63138005B4500 /* CMQRCodeManager.bundle */; };
 		47E6F5741DCB6D1C00E0D9FF /* CMAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6F5731DCB6D1C00E0D9FF /* CMAnimationCell.m */; };
 		47E6F57B1DCB983700E0D9FF /* CMQRCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E6F57A1DCB983700E0D9FF /* CMQRCodeManager.m */; };
 /* End PBXBuildFile section */
@@ -490,9 +488,6 @@
 		475A3E141DC7996200CA45BA /* CMAlterViewSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAlterViewSampleController.m; sourceTree = "<group>"; };
 		475A3E161DC7996800CA45BA /* CMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAlertView.h; sourceTree = "<group>"; };
 		475A3E171DC7996800CA45BA /* CMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAlertView.m; sourceTree = "<group>"; };
-		475A3E1F1DC7A11700CA45BA /* 扫描框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描框@2x.png"; sourceTree = "<group>"; };
-		475A3E201DC7A11700CA45BA /* 扫描线@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描线@2x.png"; sourceTree = "<group>"; };
-		475A3E231DC7A12300CA45BA /* utouu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "utouu@2x.png"; sourceTree = "<group>"; };
 		475A3E341DC7AF2100CA45BA /* CMAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAnimationEffect.h; sourceTree = "<group>"; };
 		475A3E351DC7AF2100CA45BA /* CMAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAnimationEffect.m; sourceTree = "<group>"; };
 		475A3E371DC7AF8500CA45BA /* CMAnimationSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAnimationSampleController.h; sourceTree = "<group>"; };
@@ -553,6 +548,7 @@
 		4774D1801DCA571B0067A67F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4774D1821DCA57390067A67F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		47B527AE1DD62FED005B4500 /* MBProgressHUD+CMKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+CMKit.bundle"; sourceTree = "<group>"; };
+		47B527B01DD63138005B4500 /* CMQRCodeManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CMQRCodeManager.bundle; sourceTree = "<group>"; };
 		47E6F5721DCB6D1B00E0D9FF /* CMAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAnimationCell.h; sourceTree = "<group>"; };
 		47E6F5731DCB6D1C00E0D9FF /* CMAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAnimationCell.m; sourceTree = "<group>"; };
 		47E6F5791DCB983700E0D9FF /* CMQRCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMQRCodeManager.h; sourceTree = "<group>"; };
@@ -1398,11 +1394,9 @@
 		475A3DFB1DC78E3C00CA45BA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				47B527B01DD63138005B4500 /* CMQRCodeManager.bundle */,
 				47E6F5791DCB983700E0D9FF /* CMQRCodeManager.h */,
 				47E6F57A1DCB983700E0D9FF /* CMQRCodeManager.m */,
-				475A3E1F1DC7A11700CA45BA /* 扫描框@2x.png */,
-				475A3E201DC7A11700CA45BA /* 扫描线@2x.png */,
-				475A3E231DC7A12300CA45BA /* utouu@2x.png */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1661,21 +1655,19 @@
 				470C34561DCB415300664D54 /* profile-image-placeholder.png in Resources */,
 				471D732B1DD0E7580046C955 /* btn01_on@2x.png in Resources */,
 				471379811DCA090900B69431 /* UTImagePickerController.bundle in Resources */,
-				475A3E241DC7A12300CA45BA /* utouu@2x.png in Resources */,
 				470A9DD41DC8FC8100206B64 /* 02.jpg in Resources */,
 				475A3E0F1DC7963C00CA45BA /* CMQRCodeSampleController.xib in Resources */,
 				473AD3371DD096F600BF1352 /* CM3DTouchCommitSampleController.xib in Resources */,
 				470C34411DCB3C6700664D54 /* placeholder@2x.png in Resources */,
 				475A3D671DC753BD00CA45BA /* LaunchScreen.storyboard in Resources */,
 				471D73311DD0E9700046C955 /* welcome_guide_3_new@2x.png in Resources */,
-				475A3E211DC7A11700CA45BA /* 扫描框@2x.png in Resources */,
 				470A9DD21DC8FC8100206B64 /* 00.jpg in Resources */,
 				471D732D1DD0E9610046C955 /* welcome_guide_1_new@2x.png in Resources */,
 				471D73161DD0C37B0046C955 /* back@2x.png in Resources */,
-				475A3E221DC7A11700CA45BA /* 扫描线@2x.png in Resources */,
 				4774CF791DCA55700067A67F /* MasterViewController.xib in Resources */,
 				475A3E3B1DC7AF8500CA45BA /* CMAnimationSampleController.xib in Resources */,
 				471D73291DD0E7430046C955 /* btn01_normal@2x.png in Resources */,
+				47B527B11DD63138005B4500 /* CMQRCodeManager.bundle in Resources */,
 				470A9DD51DC8FC8100206B64 /* 03.jpg in Resources */,
 				471D732F1DD0E96A0046C955 /* welcome_guide_2_new@2x.png in Resources */,
 			);
