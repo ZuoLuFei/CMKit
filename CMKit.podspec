@@ -6,10 +6,9 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
   s.author             = { 'ZuoLuFei' => 'yuan_ren_ge@163.com' }
-  s.platform     = :ios, '5.0'
-  s.source       = { :git => 'https://github.com/ZuoLuFei/CMKit.git', :tag => '#{s.version}' }
-  s.source_files  = 'CMKit/Category/*.{h,m}'
+  s.platform     = :ios, '7.0'
+  s.source       = { :git => 'https://github.com/ZuoLuFei/CMKit.git', :tag => '0.0.1' }
+  s.source_files  = 'CMKit/CMKit-Category(分类)/**/*.{h,m}'
   # s.framework  = 'UIKit'
   s.requires_arc = true
-
 end
