@@ -54,7 +54,7 @@ end
 ###CMKit pod目录概述
 若只使用CMKit工具类中的指定功能，可根据如下目录单独导入
 
-整个工具类：pod 'CMKit', '~> 0.0.7'[具体地址](https://github.com/ZuoLuFei/CMKit)
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.0.7'
 
     分类：pod 'CMKit/Category', '~> 0.0.7'
 
@@ -76,13 +76,13 @@ end
 
     加密、解密：待更新
 
-上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'     [具体地址](https://github.com/CoderMJLee/MJRefresh)
+上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
-图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'    [具体地址](https://github.com/rs/SDWebImage)
+图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2'    
 
-无限轮播：pod 'SDCycleScrollView','~> 1.64'    [具体地址](https://github.com/gsdios/SDCycleScrollView)
+无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64'    
 
-网络请求：pod 'AFNetworking', '~> 3.0'      （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons）[具体地址](https://github.com/AFNetworking/AFNetworking)
+网络请求（CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons）[具体地址](https://github.com/AFNetworking/AFNetworking)：pod 'AFNetworking', '~> 3.0'      
 
     
 /**********************************************************************/
@@ -104,7 +104,7 @@ C.CMKit/CMKit-Category/Category-UIKit 整理的所有UIKit框架分类目录
 
 D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，不导入目标项目
 
-E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标项目参考Demo使用
+E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
 
 
 /**********************************************************************/
@@ -135,11 +135,11 @@ Demo共分为三个版块，目前集成功能如下：
 
     1.10 Cryptor(数据加密/解密)
 
-    1.11 增加3D Touch功能
+    1.11 3D Touch
 
-    1.12 增加CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
+    1.12 CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
 
-    1.13 增加NewFeatures(新特性)
+    1.13 NewFeatures(新特性)
 
     1.14 ThirdPartyLogin(第三方登录) -- 新浪微博
 
