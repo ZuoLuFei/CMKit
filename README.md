@@ -45,8 +45,10 @@ platform :ios, ‘7.0’
 target ‘******’ do
 pod 'CMKit', '~> 0.0.7’
 end
+```
 
 ###CMKit pod目录概述
+若只使用CMKit工具类中的指定功能，可根据如下目录单独导入
 
 整个工具类：pod 'CMKit', '~> 0.0.7'[具体地址](https://github.com/ZuoLuFei/CMKit)
 
