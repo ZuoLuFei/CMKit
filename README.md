@@ -28,21 +28,25 @@ $ gem sources -a http://rubygems-china.oss.aliyuncs.com
 ```
 - 再次检查ruby源地址
 ```bash
+$ gem sources -l
+```
+
+- 安装CocoaPods
+```bash
 $ sudo gem install cocoapods
 ```
 
-- 安装更新podspec库
+- 下载更新podspec库
 ```bash
 $ pod setup
 ```
 > 若在pod setup步骤后一直卡住，参照[使用CocoaPods时遇到pod setup失败的解决办法](http://www.cocoachina.com/bbs/read.php?tid=193398)
 
 ###Podfile导入使用
-如下******为目标Target
 ```ruby
 platform :ios, ‘7.0’
 
-target ‘******’ do
+target ‘TargetName’ do
 pod 'CMKit', '~> 0.0.7’
 end
 ```
@@ -78,7 +82,7 @@ end
 
 无限轮播：pod 'SDCycleScrollView','~> 1.64'    [具体地址](https://github.com/gsdios/SDCycleScrollView)
 
-网络请求：pod 'AFNetworking', '~> 3.0'      （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考）[具体地址](https://github.com/AFNetworking/AFNetworking)
+网络请求：pod 'AFNetworking', '~> 3.0'      （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons）[具体地址](https://github.com/AFNetworking/AFNetworking)
 
     
 /**********************************************************************/
