@@ -54,7 +54,7 @@ end
 ###CMKit pod目录概述
 若只使用CMKit工具类中的指定功能，可根据如下目录单独导入
 
-整个工具类([具体地址])(https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.0.7'
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.0.7'
 
     分类：pod 'CMKit/Category', '~> 0.0.7'
 
@@ -76,13 +76,14 @@ end
 
     加密、解密：待更新
 
-上拉、下拉刷新([具体地址])(https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
+上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
-图片缓存([具体地址])(https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2'    
+图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2'    
 
-无限轮播([具体地址])(https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64'    
+无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64'    
 
-网络请求([具体地址])(https://github.com/AFNetworking/AFNetworking)（：pod 'AFNetworking', '~> 3.0'
+网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)（：pod 'AFNetworking', '~> 3.0'
+
     CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons） 
 
     
