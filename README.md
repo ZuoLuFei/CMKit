@@ -5,13 +5,13 @@
 
 /************************************导入**********************************/
 
-【手动导入】
+##【手动导入】
 
 根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
 
-【CocoaPods导入】
+##【CocoaPods导入】
 
-整个工具类：pod 'CMKit', '~> 0.0.7'
+整个工具类：pod 'CMKit', '~> 0.0.7'[具体地址](https://github.com/ZuoLuFei/CMKit)
 
     分类：pod 'CMKit/Category', '~> 0.0.7'
 
@@ -33,29 +33,25 @@
 
     加密、解密：待更新
 
-上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
+上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12' [具体地址](https://github.com/CoderMJLee/MJRefresh)
 
-图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
+图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'[具体地址](https://github.com/rs/SDWebImage)
 
-无限轮播：pod 'SDCycleScrollView','~> 1.64'
+无限轮播：pod 'SDCycleScrollView','~> 1.64'[具体地址](https://github.com/gsdios/SDCycleScrollView)
 
-网络请求：pod 'AFNetworking', '~> 3.0'  （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考）
+网络请求：pod 'AFNetworking', '~> 3.0'  （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考）[具体地址](https://github.com/AFNetworking/AFNetworking)
 
     
-
-
-
-
 /**********************************************************************/
 
-【示例】
+##【示例】
 
 请下载、运行并查看Demo
 
 
 /**********************************************************************/
 
-【CMKit目录说明】
+##【CMKit目录说明】
 
 A.CMKit/CMKit.h   框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件，可根据项目需求自行导入相关头文件或使用CocoaPods导入使用
 
@@ -69,7 +65,8 @@ E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标�
 
 
 /**********************************************************************/
-【功能列表】
+
+##【功能列表】
 
 Demo共分为三个版块，目前集成功能如下：
 
