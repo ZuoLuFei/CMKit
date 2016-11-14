@@ -1,5 +1,56 @@
 # CMKit
-A project about iOS development Contains lots of tools and Category.
+一个包含很多分类和工具类的快速集成项目。
+使用前请先下载、运行并查看Demo。
+
+
+
+/**********************************************************************/
+
+CocoaPods导入:
+
+整个工具类：pod 'CMKit', '~> 0.0.6'
+
+    分类：pod 'CMKit/Category', '~> 0.0.6'
+
+    警告框：pod 'CMKit/AlertView', '~> 0.0.6’
+
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.6’
+
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.6’
+
+    二维码：pod 'CMKit/QRCode', '~> 0.0.6’
+
+    新特性：pod 'CMKit/NewFeatures', '~> 0.0.6’  (目前使用传入图片数组即可，后期会不断完善)
+
+    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.6’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+
+    3DTouch：待更新
+
+    相机、相册：待更新
+
+    加密、解密：待更新
+
+上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
+
+图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
+
+无限轮播：pod 'SDCycleScrollView','~> 1.64'
+
+网络请求：pod 'AFNetworking', '~> 3.0'  （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考）
+
+    
+
+手动导入:
+
+根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
+
+
+/**********************************************************************/
+
+示例：
+
+请下载、运行并查看Demo
+
 
 /**********************************************************************/
 
@@ -15,104 +66,40 @@ D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，�
 
 E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标项目参考Demo使用
 
-/**********************************************************************/
 
-Installation【安装】
-
-CocoaPods【使用CocoaPods导入】
-
-整个工具类：pod 'CMKit', '~> 0.0.6'
-
-    分类：pod 'CMKit/Category', '~> 0.0.6'
-
-    警告框：pod 'CMKit/AlertView', '~> 0.0.6’
-
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.6’
-
-    上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
-
-    图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
-
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.6’
-
-    二维码：pod 'CMKit/QRCode', '~> 0.0.6’
-
-    无限轮播：pod 'SDCycleScrollView','~> 1.64'
-
-    网络请求：pod 'AFNetworking', '~> 3.0'  （CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考）
-
-    新特性：待更新
-
-    共用父类：待更新
-
-    3DTouch：待更新
-
-    
-
-    相机、相册：待更新
-
-    加密、解密：待更新
-
-    
-
-Manually【手动导入】
-根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
-
-Examples【示例】
-.....
-
-
-
-
-/**********************************************************************/
-
-2016-11-8 Version：1.0.1 Build：1
-
-更新内容：
-
-1.修改CMKit.pch 和 info.plist 的预编译地址为相对地址，避免编译时找不到pch和plist文件
-
-2.增加3D Touch功能
-
-3.增加CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
-
-4.增加NewFeatures(新特性)
-
-5.增加README.md说明文档
-
-/**********************************************************************/
-
-2016-11-3 Version：1.0 Build：1
-
-更新内容：
-
-一.第一次整合CMKit，共分为三个版块
+Demo共分为三个版块，目前集成功能如下：
 
 1 Tool
 
-1.1 NetWork(网络请求)
+    1.1 NetWork(网络请求)
 
-1.2 ImageCache(图片缓存)
+    1.2 ImageCache(图片缓存)
 
-1.3 AlterView(警告框)
+    1.3 AlterView(警告框)
 
-1.4 QRCode(二维码/条形码)
+    1.4 QRCode(二维码/条形码)
 
-1.5 AnimationEffect(动画特效)
+    1.5 AnimationEffect(动画特效)
 
-1.6 MBProgressHUD(提示框)
+    1.6 MBProgressHUD(提示框)
 
-1.7 ImagePicker(相机/相册)
+    1.7 ImagePicker(相机/相册)
 
-1.8 Refresh(上拉/下拉刷新)
+    1.8 Refresh(上拉/下拉刷新)
 
-1.9 CyclePicture(无限轮播)
+    1.9 CyclePicture(无限轮播)
 
-1.10 ThirdPartyLogin(第三方登录) -- 新浪微博
+    1.10 Cryptor(数据加密/解密)
 
-1.11 Macro(宏)
+    1.11 增加3D Touch功能
 
-1.12 Cryptor(数据加密/解密)
+    1.12 增加CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
+
+    1.13 增加NewFeatures(新特性)
+
+    1.14 ThirdPartyLogin(第三方登录) -- 新浪微博
+
+    1.15 Macro(宏)
 
 2.Foundation分类(关于Foundation框架的分类)
 
