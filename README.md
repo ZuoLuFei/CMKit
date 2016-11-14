@@ -82,7 +82,7 @@ end
 
 无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64'    
 
-网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)（：pod 'AFNetworking', '~> 3.0'
+网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)：pod 'AFNetworking', '~> 3.0'
 
     CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons） 
 
@@ -149,4 +149,59 @@ Demo共分为三个版块，目前集成功能如下：
 
 2.Foundation分类(关于Foundation框架的分类)
 
+    2.1 NSArray+CMKit
+
+    2.2 NSData+CMKit
+
+    2.3 NSDate+CMKit
+
+    2.4 NSDictionary+CMKit
+
+    2.5 NSFileManager+CMKit
+
+    2.6 NSMutableArray+CMKit
+
+    2.7 NSMutableDictionary+CMKit
+
+    2.8 NSNumber+CMKit
+
+    2.9 NSObject+CMKit
+
+    2.10 NSProcessInfo+CMKit
+
+    2.11 NSString+CMKit
+
+
 3.UIKit分类(关于UIKit框架的分类)
+
+    3.1 UIButton+CMKit
+
+    3.2 UIColor+CMKit
+
+    3.3 UIDevice+CMKit
+
+    3.4 UIImage+CMKit
+
+    3.5 UIImageView+CMKit
+
+    3.6 UILabel+CMKit
+
+    3.7 UINavigationBar+CMKit
+
+    3.8 UIScreen+CMKit
+
+    3.9 UIScrollView+CMKit
+
+    3.10 UITableView+CMKit
+
+    3.11 UITextField+CMKit
+
+    3.12 UIToolbar+CMKit
+
+    3.13 UIView+CMKit
+
+    3.14 UIWebView+CMKit
+
+    3.15 UIWindow+CMKit
+
+
