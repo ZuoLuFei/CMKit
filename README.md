@@ -47,28 +47,28 @@ $ pod setup
 platform :ios, ‘7.0’
 
 target ‘TargetName’ do
-pod 'CMKit', '~> 0.0.7’
+pod 'CMKit', '~> 0.0.8’
 end
 ```
 
 ###CMKit pod目录概述
 若只使用CMKit工具类中的指定功能，可根据如下目录单独导入
 
-整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.0.7'
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.0.8'
 
-    分类：pod 'CMKit/Category', '~> 0.0.7'
+    分类：pod 'CMKit/Category', '~> 0.0.8'
 
-    警告框：pod 'CMKit/AlertView', '~> 0.0.7’
+    警告框：pod 'CMKit/AlertView', '~> 0.0.8’
 
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.7’
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.8’
 
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.7’
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.8’
 
-    二维码：pod 'CMKit/QRCode', '~> 0.0.7’
+    二维码：pod 'CMKit/QRCode', '~> 0.0.8’
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.0.7’  (目前使用传入图片数组即可，后期会不断完善)
+    新特性：pod 'CMKit/NewFeatures', '~> 0.0.8’  (目前使用传入图片数组即可，后期会不断完善)
 
-    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.7’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.8’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
     3DTouch：待更新
 
@@ -98,16 +98,27 @@ end
 
 ##【CMKit目录说明】
 
-A.CMKit/CMKit.h   框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件，可根据项目需求自行导入相关头文件或使用CocoaPods导入使用
+1 CMKit 
 
-B.CMKit/CMKit-Category/Category-Foundation 整理的所有Foundation框架分类目录
+    CMKit.h  框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件
+    
+    CMKit-Category(分类)
 
-C.CMKit/CMKit-Category/Category-UIKit 整理的所有UIKit框架分类目录
+        Category-Foundation 所有Foundation框架分类目录
 
-D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，不导入目标项目
+        Category-UIKit 所有UIKit框架分类目录
 
-E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
+    CMKit-Tool(工具类)
 
+        Tool-#### 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
+
+2 Example 演示Demo目录
+
+3 CMKit.podspec Cocoapods编辑目录
+
+4 LICENSE 许可证文件 (默认MIT许可证)
+
+5 README.md github说明文件
 
 /**********************************************************************/
 
@@ -147,7 +158,7 @@ Demo共分为三个版块，目前集成功能如下：
 
     1.15 Macro(宏)
 
-2.Foundation分类(关于Foundation框架的分类)
+2 Foundation分类(关于Foundation框架的分类)
 
     2.1 NSArray+CMKit
 
@@ -172,7 +183,7 @@ Demo共分为三个版块，目前集成功能如下：
     2.11 NSString+CMKit
 
 
-3.UIKit分类(关于UIKit框架的分类)
+3 UIKit分类(关于UIKit框架的分类)
 
     3.1 UIButton+CMKit
 
