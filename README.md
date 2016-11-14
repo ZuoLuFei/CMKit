@@ -1,31 +1,41 @@
 # CMKit
 A project about iOS development Contains lots of tools and Category.
 
+/**********************************************************************/
 
-Getting Started【开始使用】
+CMKit目录说明
 
-Features【能做什么】
+A.CMKit/CMKit.h   框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件，可根据项目需求自行导入相关头文件或使用CocoaPods导入使用
 
+B.CMKit/CMKit-Category/Category-Foundation 整理的所有Foundation框架分类目录
+
+C.CMKit/CMKit-Category/Category-UIKit 整理的所有UIKit框架分类目录
+
+D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，不导入目标项目
+
+E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标项目参考Demo使用
+
+/**********************************************************************/
 
 Installation【安装】
 
-From CocoaPods【使用CocoaPods导入】
+CocoaPods【使用CocoaPods导入】
 
-整个工具类：pod 'CMKit' ->'0.0.5'
+整个工具类：pod 'CMKit', '~> 0.0.5'
 
-    分类：pod 'CMKit/Category' ->'0.0.5'
+    分类：pod 'CMKit/Category', '~> 0.0.5'
 
-    警告框：pod 'CMKit/AlertView’, '~> 0.0.5’
+    警告框：pod 'CMKit/AlertView', '~> 0.0.5’
 
-    动画效果：pod 'CMKit/AnimationEffect’, '~> 0.0.5’
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.5’
 
     上拉、下拉刷新：pod 'MJRefresh', '~> 3.1.12'
 
     图片缓存：pod 'SDWebImage', '~> 4.0.0-beta2'
 
-    HUD提示框：pod 'CMKit/ProgressHUD’, '~> 0.0.5’
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.5’
 
-    二维码：pod 'CMKit/QRCode’, '~> 0.0.5’
+    二维码：pod 'CMKit/QRCode', '~> 0.0.5’
 
     新特性：待更新
 
@@ -43,25 +53,14 @@ From CocoaPods【使用CocoaPods导入】
 
     
 
-
 Manually【手动导入】
-.....
+根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
 
 Examples【示例】
 .....
 
-/**********************************************************************/
-CMKit目录说明
 
-A.CMKit/CMKit.h   框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件，可根据项目需求自行导入相关头文件
 
-B.CMKit/CMKit-Category/Category-Foundation 整理的所有Foundation框架分类目录
-
-C.CMKit/CMKit-Category/Category-UIKit 整理的所有UIKit框架分类目录
-
-D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，不导入目标项目
-
-E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标项目参考Demo使用
 
 /**********************************************************************/
 
