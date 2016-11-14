@@ -1,28 +1,31 @@
 # CMKit
 一个包含很多分类和工具类的快速集成项目。
+
 使用前请先下载、运行并查看Demo。
 
+/************************************导入**********************************/
 
+【手动导入】
 
-/**********************************************************************/
+根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
 
-CocoaPods导入:
+【CocoaPods导入】
 
-整个工具类：pod 'CMKit', '~> 0.0.6'
+整个工具类：pod 'CMKit', '~> 0.0.7'
 
-    分类：pod 'CMKit/Category', '~> 0.0.6'
+    分类：pod 'CMKit/Category', '~> 0.0.7'
 
-    警告框：pod 'CMKit/AlertView', '~> 0.0.6’
+    警告框：pod 'CMKit/AlertView', '~> 0.0.7’
 
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.6’
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.0.7’
 
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.6’
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.0.7’
 
-    二维码：pod 'CMKit/QRCode', '~> 0.0.6’
+    二维码：pod 'CMKit/QRCode', '~> 0.0.7’
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.0.6’  (目前使用传入图片数组即可，后期会不断完善)
+    新特性：pod 'CMKit/NewFeatures', '~> 0.0.7’  (目前使用传入图片数组即可，后期会不断完善)
 
-    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.6’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.7’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
     3DTouch：待更新
 
@@ -40,21 +43,19 @@ CocoaPods导入:
 
     
 
-手动导入:
 
-根据目录结构，找到对应功能，将Tool目录中的文件拖入项目，再import相关头文件即可
 
 
 /**********************************************************************/
 
-示例：
+【示例】
 
 请下载、运行并查看Demo
 
 
 /**********************************************************************/
 
-CMKit目录说明
+【CMKit目录说明】
 
 A.CMKit/CMKit.h   框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件，可根据项目需求自行导入相关头文件或使用CocoaPods导入使用
 
@@ -66,6 +67,9 @@ D.CMKit/CMKit-Tool/Tool-####/Sample 工具类演示Demo目录，仅做参考，�
 
 E.CMKit/CMKit-Tool/Tool-####/Tool 工具类目录，开发中直接导入目标项目参考Demo使用
 
+
+/**********************************************************************/
+【功能列表】
 
 Demo共分为三个版块，目前集成功能如下：
 
