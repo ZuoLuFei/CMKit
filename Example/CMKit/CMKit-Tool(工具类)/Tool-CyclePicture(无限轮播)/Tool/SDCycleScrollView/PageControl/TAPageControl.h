@@ -1,6 +1,6 @@
 //
-//  UTPageControl
-//  UTPageControl
+//  TAPageControl.h
+//  TAPageControl
 //
 //  Created by Tanguy Aladenise on 2015-01-21.
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol UTPageControlDelegate;
+@protocol TAPageControlDelegate;
 
 
-@interface UTPageControl : UIControl
+@interface TAPageControl : UIControl
 
 
 /**
@@ -58,7 +58,7 @@
 /**
  * Delegate for TAPageControl
  */
-@property(nonatomic,assign) id<UTPageControlDelegate> delegate;
+@property(nonatomic,assign) id<TAPageControlDelegate> delegate;
 
 
 /**
@@ -98,9 +98,9 @@
 @end
 
 
-@protocol UTPageControlDelegate <NSObject>
+@protocol TAPageControlDelegate <NSObject>
 
 @optional
-- (void)UTPageControl:(UTPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
+- (void)TAPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
 
 @end

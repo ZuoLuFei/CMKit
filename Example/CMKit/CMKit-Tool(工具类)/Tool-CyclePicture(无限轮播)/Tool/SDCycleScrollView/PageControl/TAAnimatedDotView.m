@@ -1,16 +1,16 @@
 //
-//  UTAnimatedDotView
-//  UTAnimatedDotView
+//  TAAnimatedDotView.m
+//  TAPageControl
 //
 //  Created by Tanguy Aladenise on 2015-01-22.
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
-#import "UTAnimatedDotView.h"
+#import "TAAnimatedDotView.h"
 
 static CGFloat const kAnimateDuration = 1;
 
-@implementation UTAnimatedDotView
+@implementation TAAnimatedDotView
 
 - (instancetype)init
 {

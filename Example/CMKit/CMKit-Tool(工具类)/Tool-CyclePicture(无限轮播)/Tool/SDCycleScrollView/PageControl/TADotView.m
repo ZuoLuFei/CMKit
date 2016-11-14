@@ -1,14 +1,14 @@
 //
-//  UTDotView
-//  UTDotView
+//  TADotView.m
+//  TAPageControl
 //
 //  Created by Tanguy Aladenise on 2015-01-22.
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
-#import "UTDotView.h"
+#import "TADotView.h"
 
-@implementation UTDotView
+@implementation TADotView
 
 
 - (instancetype)init

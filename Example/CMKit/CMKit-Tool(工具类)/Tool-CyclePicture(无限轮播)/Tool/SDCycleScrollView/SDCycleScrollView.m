@@ -1,16 +1,38 @@
 //
-//  UTCycleScrollView.m
-//  UTCycleScrollView
+//  SDCycleScrollView.m
+//  SDCycleScrollView
 //
 //  Created by aier on 15-3-22.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
 
+/*
+ 
+ *********************************************************************************
+ *
+ * 🌟🌟🌟 新建SDCycleScrollView交流QQ群：185534916 🌟🌟🌟
+ *
+ * 在您使用此自动轮播库的过程中如果出现bug请及时以以下任意一种方式联系我们，我们会及时修复bug并
+ * 帮您解决问题。
+ * 新浪微博:GSD_iOS
+ * Email : gsdios@126.com
+ * GitHub: https://github.com/gsdios
+ *
+ * 另（我的自动布局库SDAutoLayout）：
+ *  一行代码搞定自动布局！支持Cell和Tableview高度自适应，Label和ScrollView内容自适应，致力于
+ *  做最简单易用的AutoLayout库。
+ * 视频教程：http://www.letv.com/ptv/vplay/24038772.html
+ * 用法示例：https://github.com/gsdios/SDAutoLayout/blob/master/README.md
+ * GitHub：https://github.com/gsdios/SDAutoLayout
+ *********************************************************************************
+ 
+ */
 
-#import "UTCycleScrollView.h"
-#import "UTCollectionViewCell.h"
-#import "UIView+UTExtension.h"
-#import "UTPageControl.h"
+
+#import "SDCycleScrollView.h"
+#import "SDCollectionViewCell.h"
+#import "UIView+SDExtension.h"
+#import "TAPageControl.h"
 #import "UIImageView+WebCache.h"
 #import "SDImageCache.h"
 
@@ -18,20 +40,21 @@
 
 NSString * const ID = @"cycleCell";
 
-@interface UTCycleScrollView () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface SDCycleScrollView () <UICollectionViewDataSource, UICollectionViewDelegate>
+
 
 @property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 @property (nonatomic, weak) UICollectionViewFlowLayout *flowLayout;
-@property (nonatomic, weak) UIControl *pageControl;
-@property (nonatomic, strong) UIImageView *backgroundImageView; // 当imageURLs为空时的背景图
-
-@property (nonatomic, weak) NSTimer *timer;
 @property (nonatomic, strong) NSArray *imagePathsGroup;
+@property (nonatomic, weak) NSTimer *timer;
 @property (nonatomic, assign) NSInteger totalItemsCount;
+@property (nonatomic, weak) UIControl *pageControl;
+
+@property (nonatomic, strong) UIImageView *backgroundImageView; // 当imageURLs为空时的背景图
 
 @end
 
-@implementation UTCycleScrollView
+@implementation SDCycleScrollView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -42,18 +65,15 @@ NSString * const ID = @"cycleCell";
     return self;
 }
 
-#pragma mark 初始化设置
 - (void)awakeFromNib
 {
-    [super awakeFromNib];
-    
     [self initialization];
     [self setupMainView];
 }
 
 - (void)initialization
 {
-    _pageControlAliment = UTCycleScrollViewPageContolAlimentCenter;
+    _pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
     _autoScrollTimeInterval = 2.0;
     _titleLabelTextColor = [UIColor whiteColor];
     _titleLabelTextFont= [UIFont systemFontOfSize:14];
@@ -65,7 +85,7 @@ NSString * const ID = @"cycleCell";
     _pageControlDotSize = kCycleScrollViewInitialPageControlDotSize;
     _pageControlBottomOffset = 0;
     _pageControlRightOffset = 0;
-    _pageControlStyle = UTCycleScrollViewPageContolStyleClassic;
+    _pageControlStyle = SDCycleScrollViewPageContolStyleClassic;
     _hidesForSinglePage = YES;
     _currentPageDotColor = [UIColor whiteColor];
     _pageDotColor = [UIColor lightGrayColor];
@@ -77,14 +97,14 @@ NSString * const ID = @"cycleCell";
 
 + (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageNamesGroup:(NSArray *)imageNamesGroup
 {
-    UTCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    SDCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
     cycleScrollView.localizationImageNamesGroup = [NSMutableArray arrayWithArray:imageNamesGroup];
     return cycleScrollView;
 }
 
 + (instancetype)cycleScrollViewWithFrame:(CGRect)frame shouldInfiniteLoop:(BOOL)infiniteLoop imageNamesGroup:(NSArray *)imageNamesGroup
 {
-    UTCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    SDCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
     cycleScrollView.infiniteLoop = infiniteLoop;
     cycleScrollView.localizationImageNamesGroup = [NSMutableArray arrayWithArray:imageNamesGroup];
     return cycleScrollView;
@@ -92,14 +112,14 @@ NSString * const ID = @"cycleCell";
 
 + (instancetype)cycleScrollViewWithFrame:(CGRect)frame imageURLStringsGroup:(NSArray *)imageURLsGroup
 {
-    UTCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    SDCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
     cycleScrollView.imageURLStringsGroup = [NSMutableArray arrayWithArray:imageURLsGroup];
     return cycleScrollView;
 }
 
-+ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<UTCycleScrollViewDelegate>)delegate placeholderImage:(UIImage *)placeholderImage
++ (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<SDCycleScrollViewDelegate>)delegate placeholderImage:(UIImage *)placeholderImage
 {
-    UTCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
+    SDCycleScrollView *cycleScrollView = [[self alloc] initWithFrame:frame];
     cycleScrollView.delegate = delegate;
     cycleScrollView.placeholderImage = placeholderImage;
     
@@ -119,7 +139,7 @@ NSString * const ID = @"cycleCell";
     mainView.pagingEnabled = YES;
     mainView.showsHorizontalScrollIndicator = NO;
     mainView.showsVerticalScrollIndicator = NO;
-    [mainView registerClass:[UTCollectionViewCell class] forCellWithReuseIdentifier:ID];
+    [mainView registerClass:[SDCollectionViewCell class] forCellWithReuseIdentifier:ID];
     mainView.dataSource = self;
     mainView.delegate = self;
     mainView.scrollsToTop = NO;
@@ -128,7 +148,8 @@ NSString * const ID = @"cycleCell";
 }
 
 
-#pragma mark - properties设置
+#pragma mark - properties
+
 - (void)setPlaceholderImage:(UIImage *)placeholderImage
 {
     _placeholderImage = placeholderImage;
@@ -147,8 +168,8 @@ NSString * const ID = @"cycleCell";
 {
     _pageControlDotSize = pageControlDotSize;
     [self setupPageControl];
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageContol = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageContol = (TAPageControl *)_pageControl;
         pageContol.dotSize = pageControlDotSize;
     }
 }
@@ -163,8 +184,8 @@ NSString * const ID = @"cycleCell";
 - (void)setCurrentPageDotColor:(UIColor *)currentPageDotColor
 {
     _currentPageDotColor = currentPageDotColor;
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageControl = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageControl = (TAPageControl *)_pageControl;
         pageControl.dotColor = currentPageDotColor;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
@@ -187,8 +208,8 @@ NSString * const ID = @"cycleCell";
 {
     _currentPageDotImage = currentPageDotImage;
     
-    if (self.pageControlStyle != UTCycleScrollViewPageContolStyleAnimated) {
-        self.pageControlStyle = UTCycleScrollViewPageContolStyleAnimated;
+    if (self.pageControlStyle != SDCycleScrollViewPageContolStyleAnimated) {
+        self.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
     }
     
     [self setCustomPageControlDotImage:currentPageDotImage isCurrentPageDot:YES];
@@ -198,8 +219,8 @@ NSString * const ID = @"cycleCell";
 {
     _pageDotImage = pageDotImage;
     
-    if (self.pageControlStyle != UTCycleScrollViewPageContolStyleAnimated) {
-        self.pageControlStyle = UTCycleScrollViewPageContolStyleAnimated;
+    if (self.pageControlStyle != SDCycleScrollViewPageContolStyleAnimated) {
+        self.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
     }
     
     [self setCustomPageControlDotImage:pageDotImage isCurrentPageDot:NO];
@@ -209,8 +230,8 @@ NSString * const ID = @"cycleCell";
 {
     if (!image || !self.pageControl) return;
     
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageControl = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageControl = (TAPageControl *)_pageControl;
         if (isCurrentPageDot) {
             pageControl.currentDotImage = image;
         } else {
@@ -252,7 +273,7 @@ NSString * const ID = @"cycleCell";
     [self setAutoScroll:self.autoScroll];
 }
 
-- (void)setPageControlStyle:(UTCycleScrollViewPageContolStyle)pageControlStyle
+- (void)setPageControlStyle:(SDCycleScrollViewPageContolStyle)pageControlStyle
 {
     _pageControlStyle = pageControlStyle;
     
@@ -317,6 +338,21 @@ NSString * const ID = @"cycleCell";
     }
 }
 
+#pragma mark - actions
+
+- (void)setupTimer
+{
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
+    _timer = timer;
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)invalidateTimer
+{
+    [_timer invalidate];
+    _timer = nil;
+}
+
 - (void)setupPageControl
 {
     if (_pageControl) [_pageControl removeFromSuperview]; // 重新加载数据时调整
@@ -328,9 +364,9 @@ NSString * const ID = @"cycleCell";
     int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:[self currentIndex]];
     
     switch (self.pageControlStyle) {
-        case UTCycleScrollViewPageContolStyleAnimated:
+        case SDCycleScrollViewPageContolStyleAnimated:
         {
-            UTPageControl *pageControl = [[UTPageControl alloc] init];
+            TAPageControl *pageControl = [[TAPageControl alloc] init];
             pageControl.numberOfPages = self.imagePathsGroup.count;
             pageControl.dotColor = self.currentPageDotColor;
             pageControl.userInteractionEnabled = NO;
@@ -340,7 +376,7 @@ NSString * const ID = @"cycleCell";
         }
             break;
             
-        case UTCycleScrollViewPageContolStyleClassic:
+        case SDCycleScrollViewPageContolStyleClassic:
         {
             UIPageControl *pageControl = [[UIPageControl alloc] init];
             pageControl.numberOfPages = self.imagePathsGroup.count;
@@ -366,21 +402,7 @@ NSString * const ID = @"cycleCell";
     }
 }
 
-#pragma mark - timer
-- (void)setupTimer
-{
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
-    _timer = timer;
-    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-}
 
-- (void)invalidateTimer
-{
-    [_timer invalidate];
-    _timer = nil;
-}
-
-#pragma mark action
 - (void)automaticScroll
 {
     if (0 == _totalItemsCount) return;
@@ -394,7 +416,7 @@ NSString * const ID = @"cycleCell";
     if (targetIndex >= _totalItemsCount) {
         if (self.infiniteLoop) {
             targetIndex = _totalItemsCount * 0.5;
-            [_mainView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+            [_mainView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
         }
         return;
     }
@@ -429,9 +451,7 @@ NSString * const ID = @"cycleCell";
 
 + (void)clearImagesCache
 {
-//    [[[SDWebImageManager sharedManager] imageCache] clearDisk];
-    [[SDImageCache sharedImageCache] clearMemory];
-    
+    [[[SDWebImageManager sharedManager] imageCache] clearMemory];
 }
 
 #pragma mark - life circles
@@ -454,8 +474,8 @@ NSString * const ID = @"cycleCell";
     }
     
     CGSize size = CGSizeZero;
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageControl = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageControl = (TAPageControl *)_pageControl;
         if (!(self.pageDotImage && self.currentPageDotImage && CGSizeEqualToSize(kCycleScrollViewInitialPageControlDotSize, self.pageControlDotSize))) {
             pageControl.dotSize = self.pageControlDotSize;
         }
@@ -464,13 +484,13 @@ NSString * const ID = @"cycleCell";
         size = CGSizeMake(self.imagePathsGroup.count * self.pageControlDotSize.width * 1.5, self.pageControlDotSize.height);
     }
     CGFloat x = (self.sd_width - size.width) * 0.5;
-    if (self.pageControlAliment == UTCycleScrollViewPageContolAlimentRight) {
+    if (self.pageControlAliment == SDCycleScrollViewPageContolAlimentRight) {
         x = self.mainView.sd_width - size.width - 10;
     }
     CGFloat y = self.mainView.sd_height - size.height - 10;
     
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageControl = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageControl = (TAPageControl *)_pageControl;
         [pageControl sizeToFit];
     }
     
@@ -520,7 +540,7 @@ NSString * const ID = @"cycleCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UTCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    SDCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     long itemIndex = [self pageControlIndexWithCurrentCellIndex:indexPath.item];
     
     NSString *imagePath = self.imagePathsGroup[itemIndex];
@@ -576,8 +596,8 @@ NSString * const ID = @"cycleCell";
     int itemIndex = [self currentIndex];
     int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
     
-    if ([self.pageControl isKindOfClass:[UTPageControl class]]) {
-        UTPageControl *pageControl = (UTPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
+        TAPageControl *pageControl = (TAPageControl *)_pageControl;
         pageControl.currentPage = indexOnPageControl;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
@@ -616,5 +636,6 @@ NSString * const ID = @"cycleCell";
         self.itemDidScrollOperationBlock(indexOnPageControl);
     }
 }
+
 
 @end

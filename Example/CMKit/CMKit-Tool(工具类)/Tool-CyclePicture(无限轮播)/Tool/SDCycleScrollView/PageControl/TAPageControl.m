@@ -1,15 +1,15 @@
 //
-//  UTPageControl
-//  UTPageControl
+//  TAPageControl.m
+//  TAPageControl
 //
 //  Created by Tanguy Aladenise on 2015-01-21.
 //  Copyright (c) 2015 Tanguy Aladenise. All rights reserved.
 //
 
-#import "UTPageControl.h"
-#import "UTAbstractDotView.h"
-#import "UTAnimatedDotView.h"
-#import "UTDotView.h"
+#import "TAPageControl.h"
+#import "TAAbstractDotView.h"
+#import "TAAnimatedDotView.h"
+#import "TADotView.h"
 
 /**
  *  Default number of pages for initialization
@@ -42,7 +42,7 @@ static NSInteger const kDefaultSpacingBetweenDots = 8;
 static CGSize const kDefaultDotSize = {8, 8};
 
 
-@interface UTPageControl()
+@interface TAPageControl()
 
 
 /**
@@ -53,7 +53,7 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 @end
 
-@implementation UTPageControl
+@implementation TAPageControl
 
 
 #pragma mark - Lifecycle
@@ -96,7 +96,7 @@ static CGSize const kDefaultDotSize = {8, 8};
  */
 - (void)initialization
 {
-    self.dotViewClass           = [UTAnimatedDotView class];
+    self.dotViewClass           = [TAAnimatedDotView class];
     self.spacingBetweenDots     = kDefaultSpacingBetweenDots;
     self.numberOfPages          = kDefaultNumberOfPages;
     self.currentPage            = kDefaultCurrentPage;
@@ -112,8 +112,8 @@ static CGSize const kDefaultDotSize = {8, 8};
     UITouch *touch = [touches anyObject];
     if (touch.view != self) {
         NSInteger index = [self.dots indexOfObject:touch.view];
-        if ([self.delegate respondsToSelector:@selector(UTPageControl:didSelectPageAtIndex:)]) {
-            [self.delegate UTPageControl:self didSelectPageAtIndex:index];
+        if ([self.delegate respondsToSelector:@selector(TAPageControl:didSelectPageAtIndex:)]) {
+            [self.delegate TAPageControl:self didSelectPageAtIndex:index];
         }
     }
 }
@@ -215,8 +215,8 @@ static CGSize const kDefaultDotSize = {8, 8};
     
     if (self.dotViewClass) {
         dotView = [[self.dotViewClass alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
-        if ([dotView isKindOfClass:[UTAnimatedDotView class]] && self.dotColor) {
-            ((UTAnimatedDotView *)dotView).dotColor = self.dotColor;
+        if ([dotView isKindOfClass:[TAAnimatedDotView class]] && self.dotColor) {
+            ((TAAnimatedDotView *)dotView).dotColor = self.dotColor;
         }
     } else {
         dotView = [[UIImageView alloc] initWithImage:self.dotImage];
@@ -242,11 +242,11 @@ static CGSize const kDefaultDotSize = {8, 8};
 - (void)changeActivity:(BOOL)active atIndex:(NSInteger)index
 {
     if (self.dotViewClass) {
-        UTAbstractDotView *abstractDotView = (UTAbstractDotView *)[self.dots objectAtIndex:index];
+        TAAbstractDotView *abstractDotView = (TAAbstractDotView *)[self.dots objectAtIndex:index];
         if ([abstractDotView respondsToSelector:@selector(changeActivityState:)]) {
             [abstractDotView changeActivityState:active];
         } else {
-            NSLog(@"Custom view : %@ must implement an 'changeActivityState' method or you can subclass %@ to help you.", self.dotViewClass, [UTAbstractDotView class]);
+            NSLog(@"Custom view : %@ must implement an 'changeActivityState' method or you can subclass %@ to help you.", self.dotViewClass, [TAAbstractDotView class]);
         }
     } else if (self.dotImage && self.currentDotImage) {
         UIImageView *dotView = (UIImageView *)[self.dots objectAtIndex:index];
