@@ -11,15 +11,6 @@
 
 
 /**
- *  CMKit 版本信息
- */
-#define CMKIT_VERSION @"0.0.7"
-/**
- *  CMKit 作者
- */
-#define CMKIT_AUTHOR @"Utouu iOS Technical Department"
-
-/**
  *  CMKit-Category-Foundation
  */
 #import "NSArray+CMKit.h"

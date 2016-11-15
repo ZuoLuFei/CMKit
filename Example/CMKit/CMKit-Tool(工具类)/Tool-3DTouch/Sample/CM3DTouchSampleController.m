@@ -38,7 +38,8 @@
     self.view.backgroundColor = [UIColor orangeColor];
     
     UILabel *label = [[UILabel alloc] init];
-    label.text = @"请压力按压屏幕(真机)";
+    label.numberOfLines = 0;
+    label.text = @"请压力按压屏幕(真机)\n具体应用可参考'新浪新闻'App";
     label.textColor = [UIColor blackColor];
     label.font = [UIFont boldSystemFontOfSize:20.0f];
     label.frame = self.view.bounds;

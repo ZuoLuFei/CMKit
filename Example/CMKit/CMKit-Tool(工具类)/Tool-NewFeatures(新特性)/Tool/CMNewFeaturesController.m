@@ -137,7 +137,7 @@
 - (void)setExperienceBtn:(int)i
 {
     UIButton *experienceBtn = [[UIButton alloc] init];
-    [experienceBtn setTitle:@"立即体验 >" forState:UIControlStateNormal];
+    [experienceBtn setTitle:@"退出新特性 >" forState:UIControlStateNormal];
     experienceBtn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
     [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_normal@2x.png"] forState:UIControlStateNormal];
     [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_on@2x.png"] forState:UIControlStateHighlighted];
