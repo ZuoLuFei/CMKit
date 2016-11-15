@@ -70,7 +70,7 @@ end
 
     公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.8’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
-    相机、相册：
+    相机、相册：pod 'CMKit/ImagePicker', '~> 0.0.8’  (打开系统自带相册选择和相机，多选请移步[图片选择器](#AlbumImagesPicker)框架)
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
@@ -82,7 +82,9 @@ end
 
     CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->Tool-NetWork(网络请求)->Sample->Networking Extenslons） 
 
-图片选择器[具体地址](https://github.com/banchichen/TZImagePickerController)：pod 'TZImagePickerController'
+<a id="AlbumImagesPicker"></a>图片选择器[具体地址](https://github.com/banchichen/TZImagePickerController)：pod 'TZImagePickerController'
+
+字典转模型工具[具体地址](https://github.com/CoderMJLee/MJExtension#Features):pod 'MJExtension'
     
 /**********************************************************************/
 
