@@ -1,15 +1,16 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.0.8'
+  s.version      = '0.0.9'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
   s.author             = { 'ZuoLuFei' => 'yuan_ren_ge@163.com' }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => 'https://github.com/ZuoLuFei/CMKit.git', :tag => '0.0.8' }
+  s.source       = { :git => 'https://github.com/ZuoLuFei/CMKit.git', :tag => s.version }
   # s.frameworks  = 'UIKit'
   s.public_header_files = 'CMKit/CMKit.h'
+  s.source_files = 'CMKit/CMKit.h'
   s.requires_arc = true
 
   s.subspec 'Category' do |category|
@@ -43,6 +44,11 @@ Pod::Spec.new do |s|
 
   s.subspec 'NewFeatures' do |newFeatures|
     newFeatures.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-NewFeatures(新特性)/*.{h,m}'
+  end
+
+  s.subspec 'ImagePicker' do |imagePicker|
+    imagePicker.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-ImagePicker(相机、相册)/CMImagePickerManager.{h,m}'
+    imagePicker.frameworks  = 'AVFoundation','AssetsLibrary','Photos'
   end
 
 

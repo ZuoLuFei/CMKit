@@ -9,13 +9,13 @@
 #import "CMAlbumImagesSampleController.h"
 #import "UTTestCell.h"
 #import "CMImagePickerManager.h"
-#import "UTImagePickerController.h"
-#import "UTVideoPlayerController.h"
-#import "UTAssetModel.h"
+#import "TZImagePickerController.h"
+#import "TZVideoPlayerController.h"
+#import "TZAssetModel.h"
 #import <Photos/Photos.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface CMAlbumImagesSampleController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UTImagePickerControllerDelegate>
+@interface CMAlbumImagesSampleController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,TZImagePickerControllerDelegate>
 {
     NSMutableArray *_selectedPhotos;
     NSMutableArray *_selectedAssets;
@@ -80,7 +80,7 @@
     if (maxImagesCount <= 0) {
         return;
     }
-    UTImagePickerController *imagePickerVC = [[UTImagePickerController alloc] initWithMaxImagesCount:maxImagesCount columnNumber:columnNumber delegate:self pushPhotoPickerVc:YES];
+    TZImagePickerController *imagePickerVC = [[TZImagePickerController alloc] initWithMaxImagesCount:maxImagesCount columnNumber:columnNumber delegate:self pushPhotoPickerVc:YES];
     
     imagePickerVC.isSelectOriginalPhoto = YES;
     
@@ -150,12 +150,12 @@
 #pragma clang diagnostic pop
 
     if (isVideo) { // perview video
-        UTVideoPlayerController *vc = [[UTVideoPlayerController alloc] init];
-        UTAssetModel *model = [UTAssetModel modelWithAsset:asset type:UTAssetModelMediaTypeVideo timeLength:@""];
+        TZVideoPlayerController *vc = [[TZVideoPlayerController alloc] init];
+        TZAssetModel *model = [TZAssetModel modelWithAsset:asset type:TZAssetModelMediaTypeVideo timeLength:@""];
         vc.model = model;
         [self presentViewController:vc animated:YES completion:nil];
     } else { // preview photos / 预览照片
-        UTImagePickerController *imagePickerVc = [[UTImagePickerController alloc] initWithSelectedAssets:_selectedAssets selectedPhotos:_selectedPhotos index:indexPath.row];
+        TZImagePickerController *imagePickerVc = [[TZImagePickerController alloc] initWithSelectedAssets:_selectedAssets selectedPhotos:_selectedPhotos index:indexPath.row];
         imagePickerVc.maxImagesCount = maxImagesCount;
         imagePickerVc.allowPickingOriginalPhoto = YES;
         imagePickerVc.isSelectOriginalPhoto = NO;

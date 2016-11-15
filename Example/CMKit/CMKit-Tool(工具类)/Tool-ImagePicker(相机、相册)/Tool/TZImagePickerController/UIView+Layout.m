@@ -1,113 +1,113 @@
 //
 //  UIView+Layout.m
 //
-//  Created by yons on 15/2/24.
-//  Copyright © 2015年 yons. All rights reserved.
+//  Created by 谭真 on 15/2/24.
+//  Copyright © 2015年 谭真. All rights reserved.
 //
 
 #import "UIView+Layout.h"
 
 @implementation UIView (Layout)
 
-- (CGFloat)ut_left {
+- (CGFloat)tz_left {
     return self.frame.origin.x;
 }
 
-- (void)setUt_left:(CGFloat)x {
+- (void)setTz_left:(CGFloat)x {
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)ut_top {
+- (CGFloat)tz_top {
     return self.frame.origin.y;
 }
 
-- (void)setUt_top:(CGFloat)y {
+- (void)setTz_top:(CGFloat)y {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
 }
 
-- (CGFloat)ut_right {
+- (CGFloat)tz_right {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setUt_right:(CGFloat)right {
+- (void)setTz_right:(CGFloat)right {
     CGRect frame = self.frame;
     frame.origin.x = right - frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)ut_bottom {
+- (CGFloat)tz_bottom {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setUt_bottom:(CGFloat)bottom {
+- (void)setTz_bottom:(CGFloat)bottom {
     CGRect frame = self.frame;
     frame.origin.y = bottom - frame.size.height;
     self.frame = frame;
 }
 
-- (CGFloat)ut_width {
+- (CGFloat)tz_width {
     return self.frame.size.width;
 }
 
-- (void)setUt_width:(CGFloat)width {
+- (void)setTz_width:(CGFloat)width {
     CGRect frame = self.frame;
     frame.size.width = width;
     self.frame = frame;
 }
 
-- (CGFloat)ut_height {
+- (CGFloat)tz_height {
     return self.frame.size.height;
 }
 
-- (void)setUt_height:(CGFloat)height {
+- (void)setTz_height:(CGFloat)height {
     CGRect frame = self.frame;
     frame.size.height = height;
     self.frame = frame;
 }
 
-- (CGFloat)ut_centerX {
+- (CGFloat)tz_centerX {
     return self.center.x;
 }
 
-- (void)setUt_centerX:(CGFloat)centerX {
+- (void)setTz_centerX:(CGFloat)centerX {
     self.center = CGPointMake(centerX, self.center.y);
 }
 
-- (CGFloat)ut_centerY {
+- (CGFloat)tz_centerY {
     return self.center.y;
 }
 
-- (void)setUt_centerY:(CGFloat)centerY {
+- (void)setTz_centerY:(CGFloat)centerY {
     self.center = CGPointMake(self.center.x, centerY);
 }
 
-- (CGPoint)ut_origin {
+- (CGPoint)tz_origin {
     return self.frame.origin;
 }
 
-- (void)setUt_origin:(CGPoint)origin {
+- (void)setTz_origin:(CGPoint)origin {
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
 }
 
-- (CGSize)ut_size {
+- (CGSize)tz_size {
     return self.frame.size;
 }
 
-- (void)setUt_size:(CGSize)size {
+- (void)setTz_size:(CGSize)size {
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
 }
 
-+ (void)showOscillatoryAnimationWithLayer:(CALayer *)layer type:(UTOscillatoryAnimationType)type{
-    NSNumber *animationScale1 = type == UTOscillatoryAnimationToBigger ? @(1.15) : @(0.5);
-    NSNumber *animationScale2 = type == UTOscillatoryAnimationToBigger ? @(0.92) : @(1.15);
++ (void)showOscillatoryAnimationWithLayer:(CALayer *)layer type:(TZOscillatoryAnimationType)type{
+    NSNumber *animationScale1 = type == TZOscillatoryAnimationToBigger ? @(1.15) : @(0.5);
+    NSNumber *animationScale2 = type == TZOscillatoryAnimationToBigger ? @(0.92) : @(1.15);
     
     [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionCurveEaseInOut animations:^{
         [layer setValue:animationScale1 forKeyPath:@"transform.scale"];

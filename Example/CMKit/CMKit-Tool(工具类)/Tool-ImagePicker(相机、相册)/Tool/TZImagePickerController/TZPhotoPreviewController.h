@@ -1,14 +1,14 @@
 //
-//  UTPhotoPreviewController.h
-//  UTImagePickerController
+//  TZPhotoPreviewController.h
+//  TZImagePickerController
 //
-//  Created by yons on 15/12/24.
-//  Copyright © 2015年 yons. All rights reserved.
+//  Created by 谭真 on 15/12/24.
+//  Copyright © 2015年 谭真. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UTPhotoPreviewController : UIViewController
+@interface TZPhotoPreviewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray *models;                  ///< All photo models / 所有图片模型数组
 @property (nonatomic, strong) NSMutableArray *photos;                  ///< All photos  / 所有图片数组

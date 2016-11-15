@@ -1,13 +1,13 @@
 //
-//  UTImagePickerController.h
-//  UTImagePickerController
+//  TZImagePickerController.h
+//  TZImagePickerController
 //
-//  Created by yons on 15/12/24.
-//  Copyright © 2015年 yons. All rights reserved.
+//  Created by 谭真 on 15/12/24.
+//  Copyright © 2015年 谭真. All rights reserved.
 //  version 1.7.1 - 2016.10.18
 
 /*
- 经过测试，比起xib的方式，把UTAssetCell改用纯代码的方式来写，滑动帧数明显提高了（约提高10帧左右）
+ 经过测试，比起xib的方式，把TZAssetCell改用纯代码的方式来写，滑动帧数明显提高了（约提高10帧左右）
  
  最初发现这个问题并修复的是@小鱼周凌宇同学，她的博客地址: http://zhoulingyu.com/
  表示感谢~
@@ -16,19 +16,21 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "UTAssetModel.h"
-#import "NSBundle+UTImagePicker.h"
-#import "UTImagePick.h"
+#import "TZAssetModel.h"
+#import "NSBundle+TZImagePicker.h"
 
+#define iOS7Later ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f)
+#define iOS8Later ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f)
+#define iOS9Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
+#define iOS9_1Later ([UIDevice currentDevice].systemVersion.floatValue >= 9.1f)
 
-@protocol UTImagePickerControllerDelegate;
-/*照片预览界面*/
-@interface UTImagePickerController : UINavigationController
+@protocol TZImagePickerControllerDelegate;
+@interface TZImagePickerController : UINavigationController
 
 /// Use this init method / 用这个初始化方法
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount delegate:(id<UTImagePickerControllerDelegate>)delegate;
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<UTImagePickerControllerDelegate>)delegate;
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<UTImagePickerControllerDelegate>)delegate pushPhotoPickerVc:(BOOL)pushPhotoPickerVc;
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount delegate:(id<TZImagePickerControllerDelegate>)delegate;
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<TZImagePickerControllerDelegate>)delegate;
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<TZImagePickerControllerDelegate>)delegate pushPhotoPickerVc:(BOOL)pushPhotoPickerVc;
 /// This init method just for previewing photos / 用这个初始化方法以预览图片
 - (instancetype)initWithSelectedAssets:(NSMutableArray *)selectedAssets selectedPhotos:(NSMutableArray *)selectedPhotos index:(NSInteger)index;
 
@@ -80,7 +82,7 @@
 /// The photos user have selected
 /// 用户选中过的图片数组
 @property (nonatomic, strong) NSMutableArray *selectedAssets;
-@property (nonatomic, strong) NSMutableArray<UTAssetModel *> *selectedModels;
+@property (nonatomic, strong) NSMutableArray<TZAssetModel *> *selectedModels;
 
 /// Minimum selectable photo width, Default is 0
 /// 最小可选中的图片宽度，默认是0，小于这个宽度的图片不可选中
@@ -112,12 +114,12 @@
 // The picker should dismiss itself; when it dismissed these handle will be called.
 // You can also set autoDismiss to NO, then the picker don't dismiss itself.
 // If isOriginalPhoto is YES, user picked the original photo.
-// You can get original photo with asset, by the method [[UTImageManager manager] getOriginalPhotoWithAsset:completion:].
+// You can get original photo with asset, by the method [[TZImageManager manager] getOriginalPhotoWithAsset:completion:].
 // The UIImage Object in photos default width is 828px, you can set it by photoWidth property.
 // 这个照片选择器会自己dismiss，当选择器dismiss的时候，会执行下面的handle
 // 你也可以设置autoDismiss属性为NO，选择器就不会自己dismis了
 // 如果isSelectOriginalPhoto为YES，表明用户选择了原图
-// 你可以通过一个asset获得原图，通过这个方法：[[UTImageManager manager] getOriginalPhotoWithAsset:completion:]
+// 你可以通过一个asset获得原图，通过这个方法：[[TZImageManager manager] getOriginalPhotoWithAsset:completion:]
 // photos数组里的UIImage对象，默认是828像素宽，你可以通过设置photoWidth属性的值来改变它
 @property (nonatomic, copy) void (^didFinishPickingPhotosHandle)(NSArray<UIImage *> *photos,NSArray *assets,BOOL isSelectOriginalPhoto);
 @property (nonatomic, copy) void (^didFinishPickingPhotosWithInfosHandle)(NSArray<UIImage *> *photos,NSArray *assets,BOOL isSelectOriginalPhoto,NSArray<NSDictionary *> *infos);
@@ -128,37 +130,37 @@
 // 如果系统版本大于iOS8，asset是PHAsset类的对象，否则是ALAsset类的对象
 @property (nonatomic, copy) void (^didFinishPickingVideoHandle)(UIImage *coverImage,id asset);
 
-@property (nonatomic, weak) id<UTImagePickerControllerDelegate> pickerDelegate;
+@property (nonatomic, weak) id<TZImagePickerControllerDelegate> pickerDelegate;
 
 @end
 
 
-@protocol UTImagePickerControllerDelegate <NSObject>
+@protocol TZImagePickerControllerDelegate <NSObject>
 @optional
 // The picker should dismiss itself; when it dismissed these handle will be called.
 // You can also set autoDismiss to NO, then the picker don't dismiss itself.
 // If isOriginalPhoto is YES, user picked the original photo.
-// You can get original photo with asset, by the method [[UTImageManager manager] getOriginalPhotoWithAsset:completion:].
+// You can get original photo with asset, by the method [[TZImageManager manager] getOriginalPhotoWithAsset:completion:].
 // The UIImage Object in photos default width is 828px, you can set it by photoWidth property.
 // 这个照片选择器会自己dismiss，当选择器dismiss的时候，会执行下面的handle
 // 你也可以设置autoDismiss属性为NO，选择器就不会自己dismis了
 // 如果isSelectOriginalPhoto为YES，表明用户选择了原图
-// 你可以通过一个asset获得原图，通过这个方法：[[UTImageManager manager] getOriginalPhotoWithAsset:completion:]
+// 你可以通过一个asset获得原图，通过这个方法：[[TZImageManager manager] getOriginalPhotoWithAsset:completion:]
 // photos数组里的UIImage对象，默认是828像素宽，你可以通过设置photoWidth属性的值来改变它
-- (void)imagePickerController:(UTImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto;
-- (void)imagePickerController:(UTImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto infos:(NSArray<NSDictionary *> *)infos;
-- (void)imagePickerControllerDidCancel:(UTImagePickerController *)picker __attribute__((deprecated("Use -ut_imagePickerControllerDidCancel:.")));
-- (void)ut_imagePickerControllerDidCancel:(UTImagePickerController *)picker;
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto;
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos sourceAssets:(NSArray *)assets isSelectOriginalPhoto:(BOOL)isSelectOriginalPhoto infos:(NSArray<NSDictionary *> *)infos;
+- (void)imagePickerControllerDidCancel:(TZImagePickerController *)picker __attribute__((deprecated("Use -tz_imagePickerControllerDidCancel:.")));
+- (void)tz_imagePickerControllerDidCancel:(TZImagePickerController *)picker;
 
 // If user picking a video, this callback will be called.
 // If system version > iOS8,asset is kind of PHAsset class, else is ALAsset class.
 // 如果用户选择了一个视频，下面的handle会被执行
 // 如果系统版本大于iOS8，asset是PHAsset类的对象，否则是ALAsset类的对象
-- (void)imagePickerController:(UTImagePickerController *)picker didFinishPickingVideo:(UIImage *)coverImage sourceAssets:(id)asset;
+- (void)imagePickerController:(TZImagePickerController *)picker didFinishPickingVideo:(UIImage *)coverImage sourceAssets:(id)asset;
 @end
 
 
-@interface UTAlbumPickerController : UIViewController
+@interface TZAlbumPickerController : UIViewController
 @property (nonatomic, assign) NSInteger columnNumber;
 @end
 

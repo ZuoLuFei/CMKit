@@ -1,20 +1,20 @@
 //
-//  UTImagePickerController.m
-//  UTImagePickerController
+//  TZImagePickerController.m
+//  TZImagePickerController
 //
-//  Created by yons on 15/12/24.
-//  Copyright © 2015年 yons. All rights reserved.
+//  Created by 谭真 on 15/12/24.
+//  Copyright © 2015年 谭真. All rights reserved.
 //  version 1.7.1 - 2016.10.18
 
-#import "UTImagePickerController.h"
-#import "UTPhotoPickerController.h"
-#import "UTPhotoPreviewController.h"
-#import "UTAssetModel.h"
-#import "UTAssetCell.h"
+#import "TZImagePickerController.h"
+#import "TZPhotoPickerController.h"
+#import "TZPhotoPreviewController.h"
+#import "TZAssetModel.h"
+#import "TZAssetCell.h"
 #import "UIView+Layout.h"
-#import "UTImageManager.h"
+#import "TZImageManager.h"
 
-@interface UTImagePickerController () {
+@interface TZImagePickerController () {
     NSTimer *_timer;
     UILabel *_tipLable;
     UIButton *_settingBtn;
@@ -28,19 +28,19 @@
     
     UIStatusBarStyle _originStatusBarStyle;
 }
-/// Default is 4, Use in photos collectionView in UTPhotoPickerController
-/// 默认4列, UTPhotoPickerController中的照片collectionView
+/// Default is 4, Use in photos collectionView in TZPhotoPickerController
+/// 默认4列, TZPhotoPickerController中的照片collectionView
 @property (nonatomic, assign) NSInteger columnNumber;
 @end
 
-@implementation UTImagePickerController
+@implementation TZImagePickerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationBar.translucent = YES;
-    [UTImageManager manager].shouldFixOrientation = YES;
+    [TZImageManager manager].shouldFixOrientation = NO;
 
     // Default appearance, you can reset these after this method
     // 默认的外观，你可以在这个方法后重置
@@ -67,11 +67,11 @@
 - (void)configBarButtonItemAppearance {
     UIBarButtonItem *barItem;
     if (iOS9Later) {
-        barItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UTImagePickerController class]]];
+        barItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[TZImagePickerController class]]];
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        barItem = [UIBarButtonItem appearanceWhenContainedIn:[UTImagePickerController class], nil];
+        barItem = [UIBarButtonItem appearanceWhenContainedIn:[TZImagePickerController class], nil];
 #pragma clang diagnostic pop
     }
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
@@ -95,17 +95,17 @@
     [self hideProgressHUD];
 }
 
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount delegate:(id<UTImagePickerControllerDelegate>)delegate {
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount delegate:(id<TZImagePickerControllerDelegate>)delegate {
     return [self initWithMaxImagesCount:maxImagesCount columnNumber:4 delegate:delegate pushPhotoPickerVc:YES];
 }
 
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<UTImagePickerControllerDelegate>)delegate {
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<TZImagePickerControllerDelegate>)delegate {
     return [self initWithMaxImagesCount:maxImagesCount columnNumber:columnNumber delegate:delegate pushPhotoPickerVc:YES];
 }
 
-- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<UTImagePickerControllerDelegate>)delegate pushPhotoPickerVc:(BOOL)pushPhotoPickerVc {
+- (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount columnNumber:(NSInteger)columnNumber delegate:(id<TZImagePickerControllerDelegate>)delegate pushPhotoPickerVc:(BOOL)pushPhotoPickerVc {
     _pushPhotoPickerVc = pushPhotoPickerVc;
-    UTAlbumPickerController *albumPickerVc = [[UTAlbumPickerController alloc] init];
+    TZAlbumPickerController *albumPickerVc = [[TZAlbumPickerController alloc] init];
     albumPickerVc.columnNumber = columnNumber;
     self = [super initWithRootViewController:albumPickerVc];
     if (self) {
@@ -129,22 +129,22 @@
         self.columnNumber = columnNumber;
         [self configDefaultImageName];
         
-        if (![[UTImageManager manager] authorizationStatusAuthorized]) {
+        if (![[TZImageManager manager] authorizationStatusAuthorized]) {
             _tipLable = [[UILabel alloc] init];
-            _tipLable.frame = CGRectMake(8, 120, self.view.ut_width - 16, 60);
+            _tipLable.frame = CGRectMake(8, 120, self.view.tz_width - 16, 60);
             _tipLable.textAlignment = NSTextAlignmentCenter;
             _tipLable.numberOfLines = 0;
             _tipLable.font = [UIFont systemFontOfSize:16];
             _tipLable.textColor = [UIColor blackColor];
             NSString *appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleDisplayName"];
             if (!appName) appName = [[NSBundle mainBundle].infoDictionary valueForKey:@"CFBundleName"];
-            NSString *tipText = [NSString stringWithFormat:[NSBundle ut_localizedStringForKey:@"Allow %@ to access your album in \"Settings -> Privacy -> Photos\""],appName];
+            NSString *tipText = [NSString stringWithFormat:[NSBundle tz_localizedStringForKey:@"Allow %@ to access your album in \"Settings -> Privacy -> Photos\""],appName];
             _tipLable.text = tipText;
             [self.view addSubview:_tipLable];
             
             _settingBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-            [_settingBtn setTitle:[NSBundle ut_localizedStringForKey:@"Setting"] forState:UIControlStateNormal];
-            _settingBtn.frame = CGRectMake(0, 180, self.view.ut_width, 44);
+            [_settingBtn setTitle:[NSBundle tz_localizedStringForKey:@"Setting"] forState:UIControlStateNormal];
+            _settingBtn.frame = CGRectMake(0, 180, self.view.tz_width, 44);
             _settingBtn.titleLabel.font = [UIFont systemFontOfSize:18];
             [_settingBtn addTarget:self action:@selector(settingBtnClick) forControlEvents:UIControlEventTouchUpInside];
             [self.view addSubview:_settingBtn];
@@ -159,7 +159,7 @@
 
 /// This init method just for previewing photos / 用这个初始化方法以预览图片
 - (instancetype)initWithSelectedAssets:(NSMutableArray *)selectedAssets selectedPhotos:(NSMutableArray *)selectedPhotos index:(NSInteger)index{
-    UTPhotoPreviewController *previewVc = [[UTPhotoPreviewController alloc] init];
+    TZPhotoPreviewController *previewVc = [[TZPhotoPreviewController alloc] init];
     self = [super initWithRootViewController:previewVc];
     if (self) {
         self.selectedAssets = [NSMutableArray arrayWithArray:selectedAssets];
@@ -195,7 +195,7 @@
 }
 
 - (void)observeAuthrizationStatusChange {
-    if ([[UTImageManager manager] authorizationStatusAuthorized]) {
+    if ([[TZImageManager manager] authorizationStatusAuthorized]) {
         [_tipLable removeFromSuperview];
         [_settingBtn removeFromSuperview];
         [_timer invalidate];
@@ -208,10 +208,10 @@
     _didPushPhotoPickerVc = NO;
     // 1.6.8 判断是否需要push到照片选择页，如果_pushPhotoPickerVc为NO,则不push
     if (!_didPushPhotoPickerVc && _pushPhotoPickerVc) {
-        UTPhotoPickerController *photoPickerVc = [[UTPhotoPickerController alloc] init];
+        TZPhotoPickerController *photoPickerVc = [[TZPhotoPickerController alloc] init];
         photoPickerVc.isFirstAppear = YES;
         photoPickerVc.columnNumber = self.columnNumber;
-        [[UTImageManager manager] getCameraRollAlbum:self.allowPickingVideo allowPickingImage:self.allowPickingImage completion:^(UTAlbumModel *model) {
+        [[TZImageManager manager] getCameraRollAlbum:self.allowPickingVideo allowPickingImage:self.allowPickingImage completion:^(TZAlbumModel *model) {
             photoPickerVc.model = model;
             [self pushViewController:photoPickerVc animated:YES];
             _didPushPhotoPickerVc = YES;
@@ -222,12 +222,12 @@
 - (void)showAlertWithTitle:(NSString *)title {
     if (iOS8Later) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:[UIAlertAction actionWithTitle:[NSBundle ut_localizedStringForKey:@"OK"] style:UIAlertActionStyleDefault handler:nil]];
+        [alertController addAction:[UIAlertAction actionWithTitle:[NSBundle tz_localizedStringForKey:@"OK"] style:UIAlertActionStyleDefault handler:nil]];
         [self presentViewController:alertController animated:YES completion:nil];
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        [[[UIAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:[NSBundle ut_localizedStringForKey:@"OK"] otherButtonTitles:nil, nil] show];
+        [[[UIAlertView alloc] initWithTitle:title message:nil delegate:nil cancelButtonTitle:[NSBundle tz_localizedStringForKey:@"OK"] otherButtonTitles:nil, nil] show];
 #pragma clang diagnostic pop
     }
 }
@@ -238,7 +238,7 @@
         [_progressHUD setBackgroundColor:[UIColor clearColor]];
 
         _HUDContainer = [[UIView alloc] init];
-        _HUDContainer.frame = CGRectMake((self.view.ut_width - 120) / 2, (self.view.ut_height - 90) / 2, 120, 90);
+        _HUDContainer.frame = CGRectMake((self.view.tz_width - 120) / 2, (self.view.tz_height - 90) / 2, 120, 90);
         _HUDContainer.layer.cornerRadius = 8;
         _HUDContainer.clipsToBounds = YES;
         _HUDContainer.backgroundColor = [UIColor darkGrayColor];
@@ -291,24 +291,24 @@
         _columnNumber = 6;
     }
     
-    UTAlbumPickerController *albumPickerVc = [self.childViewControllers firstObject];
+    TZAlbumPickerController *albumPickerVc = [self.childViewControllers firstObject];
     albumPickerVc.columnNumber = _columnNumber;
-    [UTImageManager manager].columnNumber = _columnNumber;
+    [TZImageManager manager].columnNumber = _columnNumber;
 }
 
 - (void)setMinPhotoWidthSelectable:(NSInteger)minPhotoWidthSelectable {
     _minPhotoWidthSelectable = minPhotoWidthSelectable;
-    [UTImageManager manager].minPhotoWidthSelectable = minPhotoWidthSelectable;
+    [TZImageManager manager].minPhotoWidthSelectable = minPhotoWidthSelectable;
 }
 
 - (void)setMinPhotoHeightSelectable:(NSInteger)minPhotoHeightSelectable {
     _minPhotoHeightSelectable = minPhotoHeightSelectable;
-    [UTImageManager manager].minPhotoHeightSelectable = minPhotoHeightSelectable;
+    [TZImageManager manager].minPhotoHeightSelectable = minPhotoHeightSelectable;
 }
 
 - (void)setHideWhenCanNotSelect:(BOOL)hideWhenCanNotSelect {
     _hideWhenCanNotSelect = hideWhenCanNotSelect;
-    [UTImageManager manager].hideWhenCanNotSelect = hideWhenCanNotSelect;
+    [TZImageManager manager].hideWhenCanNotSelect = hideWhenCanNotSelect;
 }
 
 - (void)setPhotoPreviewMaxWidth:(CGFloat)photoPreviewMaxWidth {
@@ -318,14 +318,14 @@
     } else if (photoPreviewMaxWidth < 500) {
         _photoPreviewMaxWidth = 500;
     }
-    [UTImageManager manager].photoPreviewMaxWidth = _photoPreviewMaxWidth;
+    [TZImageManager manager].photoPreviewMaxWidth = _photoPreviewMaxWidth;
 }
 
 - (void)setSelectedAssets:(NSMutableArray *)selectedAssets {
     _selectedAssets = selectedAssets;
     _selectedModels = [NSMutableArray array];
     for (id asset in selectedAssets) {
-        UTAssetModel *model = [UTAssetModel modelWithAsset:asset type:UTAssetModelMediaTypePhoto];
+        TZAssetModel *model = [TZAssetModel modelWithAsset:asset type:TZAssetModelMediaTypePhoto];
         model.isSelected = YES;
         [_selectedModels addObject:model];
     }
@@ -334,34 +334,32 @@
 - (void)setAllowPickingImage:(BOOL)allowPickingImage {
     _allowPickingImage = allowPickingImage;
     NSString *allowPickingImageStr = _allowPickingImage ? @"1" : @"0";
-    [[NSUserDefaults standardUserDefaults] setObject:allowPickingImageStr forKey:@"ut_allowPickingImage"];
+    [[NSUserDefaults standardUserDefaults] setObject:allowPickingImageStr forKey:@"tz_allowPickingImage"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)setAllowPickingVideo:(BOOL)allowPickingVideo {
     _allowPickingVideo = allowPickingVideo;
     NSString *allowPickingVideoStr = _allowPickingVideo ? @"1" : @"0";
-    [[NSUserDefaults standardUserDefaults] setObject:allowPickingVideoStr forKey:@"ut_allowPickingVideo"];
+    [[NSUserDefaults standardUserDefaults] setObject:allowPickingVideoStr forKey:@"tz_allowPickingVideo"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)setSortAscendingByModificationDate:(BOOL)sortAscendingByModificationDate {
     _sortAscendingByModificationDate = sortAscendingByModificationDate;
-    [UTImageManager manager].sortAscendingByModificationDate = sortAscendingByModificationDate;
+    [TZImageManager manager].sortAscendingByModificationDate = sortAscendingByModificationDate;
 }
 
 - (void)settingBtnClick {
-    if (iOS10Later) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:nil];
-    }else if (iOS8Later) {
+    if (iOS8Later) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
     } else {
         NSURL *privacyUrl = [NSURL URLWithString:@"prefs:root=Privacy&path=PHOTOS"];
         if ([[UIApplication sharedApplication] canOpenURL:privacyUrl]) {
             [[UIApplication sharedApplication] openURL:privacyUrl];
         } else {
-            NSString *message = [NSBundle ut_localizedStringForKey:@"Can not jump to the privacy settings page, please go to the settings page by self, thank you"];
-            UIAlertView * alert = [[UIAlertView alloc]initWithTitle:[NSBundle ut_localizedStringForKey:@"Sorry"] message:message delegate:nil cancelButtonTitle:[NSBundle ut_localizedStringForKey:@"OK"] otherButtonTitles: nil];
+            NSString *message = [NSBundle tz_localizedStringForKey:@"Can not jump to the privacy settings page, please go to the settings page by self, thank you"];
+            UIAlertView * alert = [[UIAlertView alloc]initWithTitle:[NSBundle tz_localizedStringForKey:@"Sorry"] message:message delegate:nil cancelButtonTitle:[NSBundle tz_localizedStringForKey:@"OK"] otherButtonTitles: nil];
             [alert show];
         }
     }
@@ -380,30 +378,30 @@
 @end
 
 
-@interface UTAlbumPickerController ()<UITableViewDataSource,UITableViewDelegate> {
+@interface TZAlbumPickerController ()<UITableViewDataSource,UITableViewDelegate> {
     UITableView *_tableView;
 }
 @property (nonatomic, strong) NSMutableArray *albumArr;
 @end
 
-@implementation UTAlbumPickerController
+@implementation TZAlbumPickerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = [NSBundle ut_localizedStringForKey:@"Photos"];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[NSBundle ut_localizedStringForKey:@"Cancel"] style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
+    self.navigationItem.title = [NSBundle tz_localizedStringForKey:@"Photos"];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[NSBundle tz_localizedStringForKey:@"Cancel"] style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     [self configTableView];
     // 1.6.10 采用微信的方式，只在相册列表页定义backBarButtonItem为返回，其余的顺系统的做法
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[NSBundle ut_localizedStringForKey:@"Back"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:[NSBundle tz_localizedStringForKey:@"Back"] style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     [imagePickerVc hideProgressHUD];
     if (_albumArr) {
-        for (UTAlbumModel *albumModel in _albumArr) {
+        for (TZAlbumModel *albumModel in _albumArr) {
             albumModel.selectedModels = imagePickerVc.selectedModels;
         }
         [_tableView reloadData];
@@ -413,21 +411,21 @@
 }
 
 - (void)configTableView {
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
-    [[UTImageManager manager] getAllAlbums:imagePickerVc.allowPickingVideo allowPickingImage:imagePickerVc.allowPickingImage completion:^(NSArray<UTAlbumModel *> *models) {
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
+    [[TZImageManager manager] getAllAlbums:imagePickerVc.allowPickingVideo allowPickingImage:imagePickerVc.allowPickingImage completion:^(NSArray<TZAlbumModel *> *models) {
         _albumArr = [NSMutableArray arrayWithArray:models];
-        for (UTAlbumModel *albumModel in _albumArr) {
+        for (TZAlbumModel *albumModel in _albumArr) {
             albumModel.selectedModels = imagePickerVc.selectedModels;
         }
         if (!_tableView) {
             CGFloat top = 44;
             if (iOS7Later) top += 20;
-            _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.ut_width, self.view.ut_height - top) style:UITableViewStylePlain];
+            _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.tz_width, self.view.tz_height - top) style:UITableViewStylePlain];
             _tableView.rowHeight = 70;
             _tableView.tableFooterView = [[UIView alloc] init];
             _tableView.dataSource = self;
             _tableView.delegate = self;
-            [_tableView registerClass:[UTAlbumCell class] forCellReuseIdentifier:@"UTAlbumCell"];
+            [_tableView registerClass:[TZAlbumCell class] forCellReuseIdentifier:@"TZAlbumCell"];
             [self.view addSubview:_tableView];
         } else {
             [_tableView reloadData];
@@ -438,15 +436,15 @@
 #pragma mark - Click Event
 
 - (void)cancel {
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     if (imagePickerVc.autoDismiss) {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
     if ([imagePickerVc.pickerDelegate respondsToSelector:@selector(imagePickerControllerDidCancel:)]) {
         [imagePickerVc.pickerDelegate imagePickerControllerDidCancel:imagePickerVc];
     }
-    if ([imagePickerVc.pickerDelegate respondsToSelector:@selector(ut_imagePickerControllerDidCancel:)]) {
-        [imagePickerVc.pickerDelegate ut_imagePickerControllerDidCancel:imagePickerVc];
+    if ([imagePickerVc.pickerDelegate respondsToSelector:@selector(tz_imagePickerControllerDidCancel:)]) {
+        [imagePickerVc.pickerDelegate tz_imagePickerControllerDidCancel:imagePickerVc];
     }
     if (imagePickerVc.imagePickerControllerDidCancelHandle) {
         imagePickerVc.imagePickerControllerDidCancelHandle();
@@ -460,8 +458,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UTAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UTAlbumCell"];
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
+    TZAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TZAlbumCell"];
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     cell.selectedCountButton.backgroundColor = imagePickerVc.oKButtonTitleColorNormal;
     cell.model = _albumArr[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -469,12 +467,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UTPhotoPickerController *photoPickerVc = [[UTPhotoPickerController alloc] init];
+    TZPhotoPickerController *photoPickerVc = [[TZPhotoPickerController alloc] init];
     photoPickerVc.columnNumber = self.columnNumber;
-    UTAlbumModel *model = _albumArr[indexPath.row];
+    TZAlbumModel *model = _albumArr[indexPath.row];
     photoPickerVc.model = model;
     __weak typeof(self) weakSelf = self;
-    [photoPickerVc setBackButtonClickHandle:^(UTAlbumModel *model) {
+    [photoPickerVc setBackButtonClickHandle:^(TZAlbumModel *model) {
         [weakSelf.albumArr replaceObjectAtIndex:indexPath.row withObject:model];
     }];
     [self.navigationController pushViewController:photoPickerVc animated:YES];
@@ -487,11 +485,11 @@
 @implementation UIImage (MyBundle)
 
 + (UIImage *)imageNamedFromMyBundle:(NSString *)name {
-    UIImage *image = [UIImage imageNamed:[@"UTImagePickerController.bundle" stringByAppendingPathComponent:name]];
+    UIImage *image = [UIImage imageNamed:[@"TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
     if (image) {
         return image;
     } else {
-        image = [UIImage imageNamed:[@"Frameworks/UTImagePickerController.framework/UTImagePickerController.bundle" stringByAppendingPathComponent:name]];
+        image = [UIImage imageNamed:[@"Frameworks/TZImagePickerController.framework/TZImagePickerController.bundle" stringByAppendingPathComponent:name]];
         if (!image) {
             image = [UIImage imageNamed:name];
         }

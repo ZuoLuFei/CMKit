@@ -31,8 +31,6 @@
 		47094A131DD9C84600CF53FF /* h7.png in Resources */ = {isa = PBXBuildFile; fileRef = 47094A121DD9C84600CF53FF /* h7.png */; };
 		470A9D921DC8AB8700206B64 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9D911DC8AB8700206B64 /* MBProgressHUD.m */; };
 		470A9D951DC8ABD400206B64 /* MBProgressHUD+CMKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9D941DC8ABD400206B64 /* MBProgressHUD+CMKit.m */; };
-		470A9DA81DC8BA1E00206B64 /* CMImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DA71DC8BA1E00206B64 /* CMImagePickerManager.m */; };
-		470A9DAE1DC8CE1700206B64 /* CMImagePickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DAD1DC8CE1700206B64 /* CMImagePickerSampleController.m */; };
 		470A9DC31DC8EE9F00206B64 /* CMDetailedFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */; };
 		470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBD1DC8EE9F00206B64 /* CMFoundationCategoryController.m */; };
 		470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBF1DC8EE9F00206B64 /* CMToolViewController.m */; };
@@ -94,19 +92,6 @@
 		4713795C1DC9FC3200B69431 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379541DC9FC3200B69431 /* AFURLRequestSerialization.m */; };
 		4713795D1DC9FC3200B69431 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379561DC9FC3200B69431 /* AFURLResponseSerialization.m */; };
 		4713795E1DC9FC3200B69431 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379581DC9FC3200B69431 /* AFURLSessionManager.m */; };
-		471379641DCA086C00B69431 /* CMAlbumImagesSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379631DCA086C00B69431 /* CMAlbumImagesSampleController.m */; };
-		4713797C1DCA090900B69431 /* NSBundle+UTImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379671DCA090900B69431 /* NSBundle+UTImagePicker.m */; };
-		4713797D1DCA090900B69431 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379691DCA090900B69431 /* UIView+Layout.m */; };
-		4713797E1DCA090900B69431 /* UTAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713796B1DCA090900B69431 /* UTAssetCell.m */; };
-		4713797F1DCA090900B69431 /* UTAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713796D1DCA090900B69431 /* UTAssetModel.m */; };
-		471379801DCA090900B69431 /* UTImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713796F1DCA090900B69431 /* UTImageManager.m */; };
-		471379811DCA090900B69431 /* UTImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 471379711DCA090900B69431 /* UTImagePickerController.bundle */; };
-		471379821DCA090900B69431 /* UTImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379731DCA090900B69431 /* UTImagePickerController.m */; };
-		471379831DCA090900B69431 /* UTPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379751DCA090900B69431 /* UTPhotoPickerController.m */; };
-		471379841DCA090900B69431 /* UTPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379771DCA090900B69431 /* UTPhotoPreviewCell.m */; };
-		471379851DCA090900B69431 /* UTPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379791DCA090900B69431 /* UTPhotoPreviewController.m */; };
-		471379861DCA090900B69431 /* UTVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4713797B1DCA090900B69431 /* UTVideoPlayerController.m */; };
-		471379891DCA28D400B69431 /* UTTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471379881DCA28D400B69431 /* UTTestCell.m */; };
 		471D73161DD0C37B0046C955 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471D73151DD0C37B0046C955 /* back@2x.png */; };
 		471D73191DD0C3B30046C955 /* CMCommonSuperClassSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471D73181DD0C3B30046C955 /* CMCommonSuperClassSampleController.m */; };
 		471D73261DD0E5E50046C955 /* CMNewFeaturesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471D73251DD0E5E50046C955 /* CMNewFeaturesController.m */; };
@@ -115,6 +100,21 @@
 		471D732D1DD0E9610046C955 /* welcome_guide_1_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471D732C1DD0E9610046C955 /* welcome_guide_1_new@2x.png */; };
 		471D732F1DD0E96A0046C955 /* welcome_guide_2_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471D732E1DD0E96A0046C955 /* welcome_guide_2_new@2x.png */; };
 		471D73311DD0E9700046C955 /* welcome_guide_3_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471D73301DD0E9700046C955 /* welcome_guide_3_new@2x.png */; };
+		47394C081DDA2806004719AE /* CMAlbumImagesSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394BE91DDA2806004719AE /* CMAlbumImagesSampleController.m */; };
+		47394C091DDA2806004719AE /* CMImagePickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394BEB1DDA2806004719AE /* CMImagePickerSampleController.m */; };
+		47394C0A1DDA2806004719AE /* UTTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394BED1DDA2806004719AE /* UTTestCell.m */; };
+		47394C0B1DDA2806004719AE /* CMImagePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394BF01DDA2806004719AE /* CMImagePickerManager.m */; };
+		47394C2D1DDA282E004719AE /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C191DDA282E004719AE /* NSBundle+TZImagePicker.m */; };
+		47394C2E1DDA282E004719AE /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C1B1DDA282E004719AE /* TZAssetCell.m */; };
+		47394C2F1DDA282E004719AE /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C1D1DDA282E004719AE /* TZAssetModel.m */; };
+		47394C301DDA282E004719AE /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C1F1DDA282E004719AE /* TZImageManager.m */; };
+		47394C311DDA282E004719AE /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47394C201DDA282E004719AE /* TZImagePickerController.bundle */; };
+		47394C321DDA282E004719AE /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C221DDA282E004719AE /* TZImagePickerController.m */; };
+		47394C331DDA282E004719AE /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C241DDA282E004719AE /* TZPhotoPickerController.m */; };
+		47394C341DDA282E004719AE /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C261DDA282E004719AE /* TZPhotoPreviewCell.m */; };
+		47394C351DDA282E004719AE /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C281DDA282E004719AE /* TZPhotoPreviewController.m */; };
+		47394C361DDA282E004719AE /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C2A1DDA282E004719AE /* TZVideoPlayerController.m */; };
+		47394C371DDA282E004719AE /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 47394C2C1DDA282E004719AE /* UIView+Layout.m */; };
 		473AD31F1DD07FBC00BF1352 /* CMCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AD31E1DD07FBC00BF1352 /* CMCryptor.m */; };
 		473AD3231DD07FD800BF1352 /* CMDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AD3221DD07FD800BF1352 /* CMDataStructures.m */; };
 		473AD32D1DD08B5E00BF1352 /* CM3DTouchSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AD32C1DD08B5E00BF1352 /* CM3DTouchSampleController.m */; };
@@ -255,10 +255,6 @@
 		470A9D931DC8ABD400206B64 /* MBProgressHUD+CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CMKit.h"; sourceTree = "<group>"; };
 		470A9D941DC8ABD400206B64 /* MBProgressHUD+CMKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CMKit.m"; sourceTree = "<group>"; };
 		470A9D9E1DC8B95D00206B64 /* CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMKit.h; sourceTree = "<group>"; };
-		470A9DA61DC8BA1E00206B64 /* CMImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerManager.h; sourceTree = "<group>"; };
-		470A9DA71DC8BA1E00206B64 /* CMImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerManager.m; sourceTree = "<group>"; };
-		470A9DAC1DC8CE1700206B64 /* CMImagePickerSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerSampleController.h; sourceTree = "<group>"; };
-		470A9DAD1DC8CE1700206B64 /* CMImagePickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerSampleController.m; sourceTree = "<group>"; };
 		470A9DBA1DC8EE9F00206B64 /* CMDetailedFunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDetailedFunctionController.h; sourceTree = "<group>"; };
 		470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDetailedFunctionController.m; sourceTree = "<group>"; };
 		470A9DBC1DC8EE9F00206B64 /* CMFoundationCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFoundationCategoryController.h; sourceTree = "<group>"; };
@@ -376,32 +372,6 @@
 		471379561DC9FC3200B69431 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		471379571DC9FC3200B69431 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		471379581DC9FC3200B69431 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		471379621DCA086C00B69431 /* CMAlbumImagesSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAlbumImagesSampleController.h; sourceTree = "<group>"; };
-		471379631DCA086C00B69431 /* CMAlbumImagesSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAlbumImagesSampleController.m; sourceTree = "<group>"; };
-		471379661DCA090900B69431 /* NSBundle+UTImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+UTImagePicker.h"; sourceTree = "<group>"; };
-		471379671DCA090900B69431 /* NSBundle+UTImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+UTImagePicker.m"; sourceTree = "<group>"; };
-		471379681DCA090900B69431 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		471379691DCA090900B69431 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
-		4713796A1DCA090900B69431 /* UTAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAssetCell.h; sourceTree = "<group>"; };
-		4713796B1DCA090900B69431 /* UTAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTAssetCell.m; sourceTree = "<group>"; };
-		4713796C1DCA090900B69431 /* UTAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAssetModel.h; sourceTree = "<group>"; };
-		4713796D1DCA090900B69431 /* UTAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTAssetModel.m; sourceTree = "<group>"; };
-		4713796E1DCA090900B69431 /* UTImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTImageManager.h; sourceTree = "<group>"; };
-		4713796F1DCA090900B69431 /* UTImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTImageManager.m; sourceTree = "<group>"; };
-		471379701DCA090900B69431 /* UTImagePick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTImagePick.h; sourceTree = "<group>"; };
-		471379711DCA090900B69431 /* UTImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UTImagePickerController.bundle; sourceTree = "<group>"; };
-		471379721DCA090900B69431 /* UTImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTImagePickerController.h; sourceTree = "<group>"; };
-		471379731DCA090900B69431 /* UTImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTImagePickerController.m; sourceTree = "<group>"; };
-		471379741DCA090900B69431 /* UTPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPhotoPickerController.h; sourceTree = "<group>"; };
-		471379751DCA090900B69431 /* UTPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPhotoPickerController.m; sourceTree = "<group>"; };
-		471379761DCA090900B69431 /* UTPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPhotoPreviewCell.h; sourceTree = "<group>"; };
-		471379771DCA090900B69431 /* UTPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPhotoPreviewCell.m; sourceTree = "<group>"; };
-		471379781DCA090900B69431 /* UTPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPhotoPreviewController.h; sourceTree = "<group>"; };
-		471379791DCA090900B69431 /* UTPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPhotoPreviewController.m; sourceTree = "<group>"; };
-		4713797A1DCA090900B69431 /* UTVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTVideoPlayerController.h; sourceTree = "<group>"; };
-		4713797B1DCA090900B69431 /* UTVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTVideoPlayerController.m; sourceTree = "<group>"; };
-		471379871DCA28D400B69431 /* UTTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTTestCell.h; sourceTree = "<group>"; };
-		471379881DCA28D400B69431 /* UTTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTTestCell.m; sourceTree = "<group>"; };
 		471D73151DD0C37B0046C955 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		471D73171DD0C3B30046C955 /* CMCommonSuperClassSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommonSuperClassSampleController.h; sourceTree = "<group>"; };
 		471D73181DD0C3B30046C955 /* CMCommonSuperClassSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCommonSuperClassSampleController.m; sourceTree = "<group>"; };
@@ -412,6 +382,35 @@
 		471D732C1DD0E9610046C955 /* welcome_guide_1_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_guide_1_new@2x.png"; sourceTree = "<group>"; };
 		471D732E1DD0E96A0046C955 /* welcome_guide_2_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_guide_2_new@2x.png"; sourceTree = "<group>"; };
 		471D73301DD0E9700046C955 /* welcome_guide_3_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome_guide_3_new@2x.png"; sourceTree = "<group>"; };
+		47394BE81DDA2806004719AE /* CMAlbumImagesSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAlbumImagesSampleController.h; sourceTree = "<group>"; };
+		47394BE91DDA2806004719AE /* CMAlbumImagesSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAlbumImagesSampleController.m; sourceTree = "<group>"; };
+		47394BEA1DDA2806004719AE /* CMImagePickerSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerSampleController.h; sourceTree = "<group>"; };
+		47394BEB1DDA2806004719AE /* CMImagePickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerSampleController.m; sourceTree = "<group>"; };
+		47394BEC1DDA2806004719AE /* UTTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTTestCell.h; sourceTree = "<group>"; };
+		47394BED1DDA2806004719AE /* UTTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTTestCell.m; sourceTree = "<group>"; };
+		47394BEF1DDA2806004719AE /* CMImagePickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerManager.h; sourceTree = "<group>"; };
+		47394BF01DDA2806004719AE /* CMImagePickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerManager.m; sourceTree = "<group>"; };
+		47394C181DDA282E004719AE /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		47394C191DDA282E004719AE /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		47394C1A1DDA282E004719AE /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		47394C1B1DDA282E004719AE /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		47394C1C1DDA282E004719AE /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		47394C1D1DDA282E004719AE /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		47394C1E1DDA282E004719AE /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		47394C1F1DDA282E004719AE /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		47394C201DDA282E004719AE /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		47394C211DDA282E004719AE /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		47394C221DDA282E004719AE /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		47394C231DDA282E004719AE /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		47394C241DDA282E004719AE /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		47394C251DDA282E004719AE /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		47394C261DDA282E004719AE /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		47394C271DDA282E004719AE /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		47394C281DDA282E004719AE /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		47394C291DDA282E004719AE /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		47394C2A1DDA282E004719AE /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		47394C2B1DDA282E004719AE /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		47394C2C1DDA282E004719AE /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		473AD31D1DD07FBC00BF1352 /* CMCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCryptor.h; sourceTree = "<group>"; };
 		473AD31E1DD07FBC00BF1352 /* CMCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCryptor.m; sourceTree = "<group>"; };
 		473AD3211DD07FD800BF1352 /* CMDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDataStructures.h; sourceTree = "<group>"; };
@@ -654,33 +653,10 @@
 		470A9DA31DC8B9FB00206B64 /* Tool-ImagePicker(相机、相册) */ = {
 			isa = PBXGroup;
 			children = (
-				470A9DA41DC8BA1200206B64 /* Sample */,
-				470A9DA51DC8BA1200206B64 /* Tool */,
+				47394BE71DDA2806004719AE /* Sample */,
+				47394BEE1DDA2806004719AE /* Tool */,
 			);
 			path = "Tool-ImagePicker(相机、相册)";
-			sourceTree = "<group>";
-		};
-		470A9DA41DC8BA1200206B64 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				470A9DAC1DC8CE1700206B64 /* CMImagePickerSampleController.h */,
-				470A9DAD1DC8CE1700206B64 /* CMImagePickerSampleController.m */,
-				471379621DCA086C00B69431 /* CMAlbumImagesSampleController.h */,
-				471379631DCA086C00B69431 /* CMAlbumImagesSampleController.m */,
-				471379871DCA28D400B69431 /* UTTestCell.h */,
-				471379881DCA28D400B69431 /* UTTestCell.m */,
-			);
-			path = Sample;
-			sourceTree = "<group>";
-		};
-		470A9DA51DC8BA1200206B64 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				470A9DA61DC8BA1E00206B64 /* CMImagePickerManager.h */,
-				470A9DA71DC8BA1E00206B64 /* CMImagePickerManager.m */,
-				471379651DCA090900B69431 /* UTImagePickerController */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		470A9DB91DC8EE9F00206B64 /* ViewController */ = {
@@ -1055,35 +1031,6 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		471379651DCA090900B69431 /* UTImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-				471379661DCA090900B69431 /* NSBundle+UTImagePicker.h */,
-				471379671DCA090900B69431 /* NSBundle+UTImagePicker.m */,
-				471379681DCA090900B69431 /* UIView+Layout.h */,
-				471379691DCA090900B69431 /* UIView+Layout.m */,
-				4713796A1DCA090900B69431 /* UTAssetCell.h */,
-				4713796B1DCA090900B69431 /* UTAssetCell.m */,
-				4713796C1DCA090900B69431 /* UTAssetModel.h */,
-				4713796D1DCA090900B69431 /* UTAssetModel.m */,
-				4713796E1DCA090900B69431 /* UTImageManager.h */,
-				4713796F1DCA090900B69431 /* UTImageManager.m */,
-				471379701DCA090900B69431 /* UTImagePick.h */,
-				471379711DCA090900B69431 /* UTImagePickerController.bundle */,
-				471379721DCA090900B69431 /* UTImagePickerController.h */,
-				471379731DCA090900B69431 /* UTImagePickerController.m */,
-				471379741DCA090900B69431 /* UTPhotoPickerController.h */,
-				471379751DCA090900B69431 /* UTPhotoPickerController.m */,
-				471379761DCA090900B69431 /* UTPhotoPreviewCell.h */,
-				471379771DCA090900B69431 /* UTPhotoPreviewCell.m */,
-				471379781DCA090900B69431 /* UTPhotoPreviewController.h */,
-				471379791DCA090900B69431 /* UTPhotoPreviewController.m */,
-				4713797A1DCA090900B69431 /* UTVideoPlayerController.h */,
-				4713797B1DCA090900B69431 /* UTVideoPlayerController.m */,
-			);
-			path = UTImagePickerController;
-			sourceTree = "<group>";
-		};
 		471D73141DD0C37B0046C955 /* Smaple */ = {
 			isa = PBXGroup;
 			children = (
@@ -1122,6 +1069,57 @@
 				471D732A1DD0E7580046C955 /* btn01_on@2x.png */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		47394BE71DDA2806004719AE /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				47394BE81DDA2806004719AE /* CMAlbumImagesSampleController.h */,
+				47394BE91DDA2806004719AE /* CMAlbumImagesSampleController.m */,
+				47394BEA1DDA2806004719AE /* CMImagePickerSampleController.h */,
+				47394BEB1DDA2806004719AE /* CMImagePickerSampleController.m */,
+				47394BEC1DDA2806004719AE /* UTTestCell.h */,
+				47394BED1DDA2806004719AE /* UTTestCell.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		47394BEE1DDA2806004719AE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				47394BEF1DDA2806004719AE /* CMImagePickerManager.h */,
+				47394BF01DDA2806004719AE /* CMImagePickerManager.m */,
+				47394C171DDA282E004719AE /* TZImagePickerController */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		47394C171DDA282E004719AE /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				47394C181DDA282E004719AE /* NSBundle+TZImagePicker.h */,
+				47394C191DDA282E004719AE /* NSBundle+TZImagePicker.m */,
+				47394C1A1DDA282E004719AE /* TZAssetCell.h */,
+				47394C1B1DDA282E004719AE /* TZAssetCell.m */,
+				47394C1C1DDA282E004719AE /* TZAssetModel.h */,
+				47394C1D1DDA282E004719AE /* TZAssetModel.m */,
+				47394C1E1DDA282E004719AE /* TZImageManager.h */,
+				47394C1F1DDA282E004719AE /* TZImageManager.m */,
+				47394C201DDA282E004719AE /* TZImagePickerController.bundle */,
+				47394C211DDA282E004719AE /* TZImagePickerController.h */,
+				47394C221DDA282E004719AE /* TZImagePickerController.m */,
+				47394C231DDA282E004719AE /* TZPhotoPickerController.h */,
+				47394C241DDA282E004719AE /* TZPhotoPickerController.m */,
+				47394C251DDA282E004719AE /* TZPhotoPreviewCell.h */,
+				47394C261DDA282E004719AE /* TZPhotoPreviewCell.m */,
+				47394C271DDA282E004719AE /* TZPhotoPreviewController.h */,
+				47394C281DDA282E004719AE /* TZPhotoPreviewController.m */,
+				47394C291DDA282E004719AE /* TZVideoPlayerController.h */,
+				47394C2A1DDA282E004719AE /* TZVideoPlayerController.m */,
+				47394C2B1DDA282E004719AE /* UIView+Layout.h */,
+				47394C2C1DDA282E004719AE /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
 		473AD31C1DD07FBC00BF1352 /* Tool */ = {
@@ -1680,6 +1678,7 @@
 				470949F81DD9C7EE00CF53FF /* DemoVCWithXib.xib in Resources */,
 				470A9E601DC903EC00206B64 /* MJRefresh.bundle in Resources */,
 				475A3D661DC753BD00CA45BA /* Assets.xcassets in Resources */,
+				47394C311DDA282E004719AE /* TZImagePickerController.bundle in Resources */,
 				47094A111DD9C84000CF53FF /* h6@2x.png in Resources */,
 				470C34401DCB3C6700664D54 /* placeholder.png in Resources */,
 				4774CF781DCA55700067A67F /* DetailViewController.xib in Resources */,
@@ -1688,7 +1687,6 @@
 				470C34561DCB415300664D54 /* profile-image-placeholder.png in Resources */,
 				471D732B1DD0E7580046C955 /* btn01_on@2x.png in Resources */,
 				47094A0B1DD9C82D00CF53FF /* pageControlDot@2x.png in Resources */,
-				471379811DCA090900B69431 /* UTImagePickerController.bundle in Resources */,
 				475A3E0F1DC7963C00CA45BA /* CMQRCodeSampleController.xib in Resources */,
 				47094A011DD9C82400CF53FF /* h2.jpg in Resources */,
 				473AD3371DD096F600BF1352 /* CM3DTouchCommitSampleController.xib in Resources */,
@@ -1736,34 +1734,36 @@
 				470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */,
 				470949F21DD9C7CD00CF53FF /* SDCycleScrollView.m in Sources */,
 				475A3DCC1DC7552B00CA45BA /* UIWindow+CMKit.m in Sources */,
-				4713797F1DCA090900B69431 /* UTAssetModel.m in Sources */,
-				471379831DCA090900B69431 /* UTPhotoPickerController.m in Sources */,
 				475A3E0E1DC7963C00CA45BA /* CMQRCodeSampleController.m in Sources */,
 				470949ED1DD9C7CD00CF53FF /* TAAbstractDotView.m in Sources */,
 				4713795E1DC9FC3200B69431 /* AFURLSessionManager.m in Sources */,
 				471378F31DC9E9C300B69431 /* MJTableViewController.m in Sources */,
 				4774CF5E1DCA55430067A67F /* NSData+ImageContentType.m in Sources */,
-				471379851DCA090900B69431 /* UTPhotoPreviewController.m in Sources */,
 				475A3DC51DC7552B00CA45BA /* UIScrollView+CMKit.m in Sources */,
 				470A9E571DC903EC00206B64 /* MJRefreshAutoGifFooter.m in Sources */,
+				47394C371DDA282E004719AE /* UIView+Layout.m in Sources */,
 				475A3DBB1DC7552B00CA45BA /* NSProcessInfo+CMKIt.m in Sources */,
+				47394C301DDA282E004719AE /* TZImageManager.m in Sources */,
 				475A3DC61DC7552B00CA45BA /* UITableView+CMKit.m in Sources */,
 				470C343C1DCB397400664D54 /* FLAnimatedImageView.m in Sources */,
 				4774CF6B1DCA55430067A67F /* UIImage+WebP.m in Sources */,
 				475A3DB81DC7552B00CA45BA /* NSMutableDictionary+CMKit.m in Sources */,
 				47E6F5741DCB6D1C00E0D9FF /* CMAnimationCell.m in Sources */,
 				475A3E3A1DC7AF8500CA45BA /* CMAnimationSampleController.m in Sources */,
+				47394C2D1DDA282E004719AE /* NSBundle+TZImagePicker.m in Sources */,
 				470A9E891DC9059D00206B64 /* MJNavigationController.m in Sources */,
 				471379331DC9F91200B69431 /* CMThirdPartyLoginSampleController.m in Sources */,
 				471378F61DC9E9C300B69431 /* MJWebViewViewController.m in Sources */,
 				4774CF5D1DCA55430067A67F /* MKAnnotationView+WebCache.m in Sources */,
 				470A9E531DC903EC00206B64 /* MJRefreshBackFooter.m in Sources */,
 				4774CF5F1DCA55430067A67F /* NSImage+WebCache.m in Sources */,
+				47394C0B1DDA2806004719AE /* CMImagePickerManager.m in Sources */,
 				4774CF5C1DCA55430067A67F /* FLAnimatedImageView+WebCache.m in Sources */,
+				47394C361DDA282E004719AE /* TZVideoPlayerController.m in Sources */,
 				475A3DBF1DC7552B00CA45BA /* UIDevice+CMKit.m in Sources */,
+				47394C331DDA282E004719AE /* TZPhotoPickerController.m in Sources */,
 				470A9E611DC903EC00206B64 /* MJRefreshConst.m in Sources */,
 				473AD3231DD07FD800BF1352 /* CMDataStructures.m in Sources */,
-				4713797D1DCA090900B69431 /* UIView+Layout.m in Sources */,
 				471378F41DC9E9C300B69431 /* MJTestViewController.m in Sources */,
 				470A9E9F1DC9066400206B64 /* MJChiBaoZiHeader.m in Sources */,
 				470A9E871DC9059D00206B64 /* MJExampleViewController.m in Sources */,
@@ -1776,9 +1776,10 @@
 				470A9E8A1DC9059D00206B64 /* MJSingleViewController.m in Sources */,
 				475A3DBA1DC7552B00CA45BA /* NSObject+CMKit.m in Sources */,
 				475A3DC91DC7552B00CA45BA /* UIView+CMKit.m in Sources */,
+				47394C351DDA282E004719AE /* TZPhotoPreviewController.m in Sources */,
 				470949EE1DD9C7CD00CF53FF /* TAAnimatedDotView.m in Sources */,
-				4713797E1DCA090900B69431 /* UTAssetCell.m in Sources */,
 				4713795A1DC9FC3200B69431 /* AFNetworkReachabilityManager.m in Sources */,
+				47394C2F1DDA282E004719AE /* TZAssetModel.m in Sources */,
 				470A9EA21DC9066400206B64 /* MJDIYHeader.m in Sources */,
 				470949F31DD9C7CD00CF53FF /* UIView+SDExtension.m in Sources */,
 				475A3DB21DC7552B00CA45BA /* NSArray+CMKit.m in Sources */,
@@ -1803,15 +1804,12 @@
 				470A9E581DC903EC00206B64 /* MJRefreshAutoNormalFooter.m in Sources */,
 				475A3DB41DC7552B00CA45BA /* NSDate+CMKit.m in Sources */,
 				470A9E561DC903EC00206B64 /* MJRefreshHeader.m in Sources */,
-				4713797C1DCA090900B69431 /* NSBundle+UTImagePicker.m in Sources */,
 				475A3DC21DC7552B00CA45BA /* UILabel+CMKit.m in Sources */,
-				471379801DCA090900B69431 /* UTImageManager.m in Sources */,
 				4774CF6C1DCA55430067A67F /* UIImageView+HighlightedWebCache.m in Sources */,
 				4774CF641DCA55430067A67F /* SDWebImageDownloader.m in Sources */,
 				470A9EA01DC9066400206B64 /* MJDIYAutoFooter.m in Sources */,
 				475A3DC31DC7552B00CA45BA /* UINavigationBar+CMKit.m in Sources */,
 				470C345D1DCB527900664D54 /* CMPostRequest.m in Sources */,
-				470A9DA81DC8BA1E00206B64 /* CMImagePickerManager.m in Sources */,
 				475A3DBD1DC7552B00CA45BA /* UIButton+CMKit.m in Sources */,
 				470A9E551DC903EC00206B64 /* MJRefreshFooter.m in Sources */,
 				4713795C1DC9FC3200B69431 /* AFURLRequestSerialization.m in Sources */,
@@ -1823,14 +1821,10 @@
 				4774CF751DCA55640067A67F /* DetailViewController.m in Sources */,
 				470A9E5B1DC903EC00206B64 /* MJRefreshBackNormalFooter.m in Sources */,
 				4774CF601DCA55430067A67F /* SDImageCache.m in Sources */,
-				470A9DAE1DC8CE1700206B64 /* CMImagePickerSampleController.m in Sources */,
 				4774CF631DCA55430067A67F /* SDWebImageDecoder.m in Sources */,
-				471379641DCA086C00B69431 /* CMAlbumImagesSampleController.m in Sources */,
 				470A9E9D1DC9066400206B64 /* MJChiBaoZiFooter.m in Sources */,
 				475A3DB51DC7552B00CA45BA /* NSDictionary+CMKit.m in Sources */,
-				471379841DCA090900B69431 /* UTPhotoPreviewCell.m in Sources */,
 				470A9E641DC903EC00206B64 /* UIScrollView+MJRefresh.m in Sources */,
-				471379821DCA090900B69431 /* UTImagePickerController.m in Sources */,
 				470A9E5A1DC903EC00206B64 /* MJRefreshBackGifFooter.m in Sources */,
 				4774CF6F1DCA55440067A67F /* UIView+WebCacheOperation.m in Sources */,
 				470A9E861DC9059D00206B64 /* MJExample.m in Sources */,
@@ -1841,28 +1835,32 @@
 				470A9E651DC903EC00206B64 /* UIView+MJExtension.m in Sources */,
 				470A9E9E1DC9066400206B64 /* MJChiBaoZiFooter2.m in Sources */,
 				4774CF611DCA55430067A67F /* SDImageCacheConfig.m in Sources */,
+				47394C0A1DDA2806004719AE /* UTTestCell.m in Sources */,
 				475A3DC41DC7552B00CA45BA /* UIScreen+CMKit.m in Sources */,
 				470C343B1DCB397400664D54 /* FLAnimatedImage.m in Sources */,
 				4774CF691DCA55430067A67F /* UIImage+GIF.m in Sources */,
 				4774CF661DCA55430067A67F /* SDWebImageManager.m in Sources */,
 				470A9E621DC903EC00206B64 /* NSBundle+MJRefresh.m in Sources */,
+				47394C2E1DDA282E004719AE /* TZAssetCell.m in Sources */,
 				4774CF621DCA55430067A67F /* SDWebImageCompat.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				470A9E5C1DC903EC00206B64 /* MJRefreshBackStateFooter.m in Sources */,
+				47394C341DDA282E004719AE /* TZPhotoPreviewCell.m in Sources */,
 				470949FB1DD9C80200CF53FF /* CMCyclePictureSampleController.m in Sources */,
+				47394C081DDA2806004719AE /* CMAlbumImagesSampleController.m in Sources */,
 				470C344B1DCB404F00664D54 /* User.m in Sources */,
-				471379861DCA090900B69431 /* UTVideoPlayerController.m in Sources */,
 				470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */,
 				470949EF1DD9C7CD00CF53FF /* TADotView.m in Sources */,
-				471379891DCA28D400B69431 /* UTTestCell.m in Sources */,
 				470A9E631DC903EC00206B64 /* UIScrollView+MJExtension.m in Sources */,
 				475A3E411DC7AFC700CA45BA /* CMTransitionAnimationSampleController.m in Sources */,
+				47394C091DDA2806004719AE /* CMImagePickerSampleController.m in Sources */,
 				470A9D951DC8ABD400206B64 /* MBProgressHUD+CMKit.m in Sources */,
 				475A3E151DC7996200CA45BA /* CMAlterViewSampleController.m in Sources */,
 				470A9EA11DC9066400206B64 /* MJDIYBackFooter.m in Sources */,
 				470949F01DD9C7CD00CF53FF /* TAPageControl.m in Sources */,
 				4774CF721DCA555A0067A67F /* MasterViewController.m in Sources */,
 				4774CF681DCA55430067A67F /* UIButton+WebCache.m in Sources */,
+				47394C321DDA282E004719AE /* TZImagePickerController.m in Sources */,
 				473AD3361DD096F600BF1352 /* CM3DTouchCommitSampleController.m in Sources */,
 				473AD31F1DD07FBC00BF1352 /* CMCryptor.m in Sources */,
 				470C345A1DCB49EF00664D54 /* CMHttpClientTool.m in Sources */,
@@ -2034,6 +2032,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utouu.CMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -2048,6 +2047,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utouu.CMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -1,20 +1,20 @@
 //
-//  UTVideoPlayerController.m
-//  UTImagePickerController
+//  TZVideoPlayerController.m
+//  TZImagePickerController
 //
-//  Created by yons on 16/1/5.
-//  Copyright © 2016年 yons. All rights reserved.
+//  Created by 谭真 on 16/1/5.
+//  Copyright © 2016年 谭真. All rights reserved.
 //
 
-#import "UTVideoPlayerController.h"
+#import "TZVideoPlayerController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "UIView+Layout.h"
-#import "UTImageManager.h"
-#import "UTAssetModel.h"
-#import "UTImagePickerController.h"
-#import "UTPhotoPreviewController.h"
+#import "TZImageManager.h"
+#import "TZAssetModel.h"
+#import "TZImagePickerController.h"
+#import "TZPhotoPreviewController.h"
 
-@interface UTVideoPlayerController () {
+@interface TZVideoPlayerController () {
     AVPlayer *_player;
     UIButton *_playButton;
     UIImage *_cover;
@@ -25,20 +25,20 @@
 }
 @end
 
-@implementation UTVideoPlayerController
+@implementation TZVideoPlayerController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    self.navigationItem.title = [NSBundle ut_localizedStringForKey:@"Preview"];
+    self.navigationItem.title = [NSBundle tz_localizedStringForKey:@"Preview"];
     [self configMoviePlayer];
 }
 
 - (void)configMoviePlayer {
-    [[UTImageManager manager] getPhotoWithAsset:_model.asset completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+    [[TZImageManager manager] getPhotoWithAsset:_model.asset completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
         _cover = photo;
     }];
-    [[UTImageManager manager] getVideoWithAsset:_model.asset completion:^(AVPlayerItem *playerItem, NSDictionary *info) {
+    [[TZImageManager manager] getVideoWithAsset:_model.asset completion:^(AVPlayerItem *playerItem, NSDictionary *info) {
         dispatch_async(dispatch_get_main_queue(), ^{
             _player = [AVPlayer playerWithPlayerItem:playerItem];
             AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
@@ -67,7 +67,7 @@
 
 - (void)configPlayButton {
     _playButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _playButton.frame = CGRectMake(0, 64, self.view.ut_width, self.view.ut_height - 64 - 44);
+    _playButton.frame = CGRectMake(0, 64, self.view.tz_width, self.view.tz_height - 64 - 44);
     [_playButton setImage:[UIImage imageNamedFromMyBundle:@"MMVideoPreviewPlay.png"] forState:UIControlStateNormal];
     [_playButton setImage:[UIImage imageNamedFromMyBundle:@"MMVideoPreviewPlayHL.png"] forState:UIControlStateHighlighted];
     [_playButton addTarget:self action:@selector(playButtonClick) forControlEvents:UIControlEventTouchUpInside];
@@ -75,17 +75,17 @@
 }
 
 - (void)configBottomToolBar {
-    _toolBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.ut_height - 44, self.view.ut_width, 44)];
+    _toolBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.tz_height - 44, self.view.tz_width, 44)];
     CGFloat rgb = 34 / 255.0;
     _toolBar.backgroundColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:1.0];
     _toolBar.alpha = 0.7;
     
     _okButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _okButton.frame = CGRectMake(self.view.ut_width - 44 - 12, 0, 44, 44);
+    _okButton.frame = CGRectMake(self.view.tz_width - 44 - 12, 0, 44, 44);
     _okButton.titleLabel.font = [UIFont systemFontOfSize:16];
     [_okButton addTarget:self action:@selector(okButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [_okButton setTitle:[NSBundle ut_localizedStringForKey:@"Done"] forState:UIControlStateNormal];
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
+    [_okButton setTitle:[NSBundle tz_localizedStringForKey:@"Done"] forState:UIControlStateNormal];
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     [_okButton setTitleColor:imagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
     
     [_toolBar addSubview:_okButton];
@@ -110,7 +110,7 @@
 }
 
 - (void)okButtonClick {
-    UTImagePickerController *imagePickerVc = (UTImagePickerController *)self.navigationController;
+    TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     if ([imagePickerVc.pickerDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingVideo:sourceAssets:)]) {
         [imagePickerVc.pickerDelegate imagePickerController:imagePickerVc didFinishPickingVideo:_cover sourceAssets:_model.asset];
     }

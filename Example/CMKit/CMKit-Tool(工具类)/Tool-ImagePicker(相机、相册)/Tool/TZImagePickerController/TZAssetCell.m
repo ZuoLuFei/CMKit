@@ -1,18 +1,18 @@
 //
-//  UTAssetCell.m
-//  UTImagePickerController
+//  TZAssetCell.m
+//  TZImagePickerController
 //
-//  Created by yons on 15/12/24.
-//  Copyright © 2015年 yons. All rights reserved.
+//  Created by 谭真 on 15/12/24.
+//  Copyright © 2015年 谭真. All rights reserved.
 //
 
-#import "UTAssetCell.h"
-#import "UTAssetModel.h"
+#import "TZAssetCell.h"
+#import "TZAssetModel.h"
 #import "UIView+Layout.h"
-#import "UTImageManager.h"
-#import "UTImagePickerController.h"
+#import "TZImageManager.h"
+#import "TZImagePickerController.h"
 
-@interface UTAssetCell ()
+@interface TZAssetCell ()
 @property (weak, nonatomic) UIImageView *imageView;       // The photo / 照片
 @property (weak, nonatomic) UIImageView *selectImageView;
 @property (weak, nonatomic) UIView *bottomView;
@@ -22,10 +22,10 @@
 
 @end
 
-@implementation UTAssetCell
+@implementation TZAssetCell
 
 // Now we use code to create subViews for improve performance
-// 现在我们用代码来创建UTAssetCell和UTAlbumCell的子控件，以提高性能
+// 现在我们用代码来创建TZAssetCell和TZAlbumCell的子控件，以提高性能
 
 /*
 - (void)awakeFromNib {
@@ -33,17 +33,17 @@
 }
 */
 
-- (void)setModel:(UTAssetModel *)model {
+- (void)setModel:(TZAssetModel *)model {
     _model = model;
     if (iOS8Later) {
-        self.representedAssetIdentifier = [[UTImageManager manager] getAssetIdentifier:model.asset];
+        self.representedAssetIdentifier = [[TZImageManager manager] getAssetIdentifier:model.asset];
     }
-    PHImageRequestID imageRequestID = [[UTImageManager manager] getPhotoWithAsset:model.asset photoWidth:self.ut_width completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+    PHImageRequestID imageRequestID = [[TZImageManager manager] getPhotoWithAsset:model.asset photoWidth:self.tz_width completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
         // Set the cell's thumbnail image if it's still showing the same asset.
         if (!iOS8Later) {
             self.imageView.image = photo; return;
         }
-        if ([self.representedAssetIdentifier isEqualToString:[[UTImageManager manager] getAssetIdentifier:model.asset]]) {
+        if ([self.representedAssetIdentifier isEqualToString:[[TZImageManager manager] getAssetIdentifier:model.asset]]) {
             self.imageView.image = photo;
         } else {
             // NSLog(@"this cell is showing other asset");
@@ -60,16 +60,16 @@
     self.imageRequestID = imageRequestID;
     self.selectPhotoButton.selected = model.isSelected;
     self.selectImageView.image = self.selectPhotoButton.isSelected ? [UIImage imageNamedFromMyBundle:self.photoSelImageName] : [UIImage imageNamedFromMyBundle:self.photoDefImageName];
-    self.type = UTAssetCellTypePhoto;
-    if (model.type == UTAssetModelMediaTypeLivePhoto)      self.type = UTAssetCellTypeLivePhoto;
-    else if (model.type == UTAssetModelMediaTypeAudio)     self.type = UTAssetCellTypeAudio;
-    else if (model.type == UTAssetModelMediaTypeVideo) {
-        self.type = UTAssetCellTypeVideo;
+    self.type = TZAssetCellTypePhoto;
+    if (model.type == TZAssetModelMediaTypeLivePhoto)      self.type = TZAssetCellTypeLivePhoto;
+    else if (model.type == TZAssetModelMediaTypeAudio)     self.type = TZAssetCellTypeAudio;
+    else if (model.type == TZAssetModelMediaTypeVideo) {
+        self.type = TZAssetCellTypeVideo;
         self.timeLength.text = model.timeLength;
     }
     
     // 让宽度/高度小于 最小可选照片尺寸 的图片不能选中
-    if (![[UTImageManager manager] isPhotoSelectableWithAsset:model.asset]) {
+    if (![[TZImageManager manager] isPhotoSelectableWithAsset:model.asset]) {
         if (_selectImageView.hidden == NO) {
             self.selectPhotoButton.hidden = YES;
             _selectImageView.hidden = YES;
@@ -87,9 +87,9 @@
     }
 }
 
-- (void)setType:(UTAssetCellType)type {
+- (void)setType:(TZAssetCellType)type {
     _type = type;
-    if (type == UTAssetCellTypePhoto || type == UTAssetCellTypeLivePhoto) {
+    if (type == TZAssetCellTypePhoto || type == TZAssetCellTypeLivePhoto) {
         _selectImageView.hidden = NO;
         _selectPhotoButton.hidden = NO;
         _bottomView.hidden = YES;
@@ -106,15 +106,16 @@
     }
     self.selectImageView.image = sender.isSelected ? [UIImage imageNamedFromMyBundle:self.photoSelImageName] : [UIImage imageNamedFromMyBundle:self.photoDefImageName];
     if (sender.isSelected) {
-        [UIView showOscillatoryAnimationWithLayer:_selectImageView.layer type:UTOscillatoryAnimationToBigger];
+        [UIView showOscillatoryAnimationWithLayer:_selectImageView.layer type:TZOscillatoryAnimationToBigger];
     }
 }
 
-#pragma mark - Lazy load
+#pragma mark - Lazy load 
+
 - (UIButton *)selectPhotoButton {
     if (_selectImageView == nil) {
         UIButton *selectPhotoButton = [[UIButton alloc] init];
-        selectPhotoButton.frame = CGRectMake(self.ut_width - 44, 0, 44, 44);
+        selectPhotoButton.frame = CGRectMake(self.tz_width - 44, 0, 44, 44);
         [selectPhotoButton addTarget:self action:@selector(selectPhotoButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:selectPhotoButton];
         _selectPhotoButton = selectPhotoButton;
@@ -125,7 +126,7 @@
 - (UIImageView *)imageView {
     if (_imageView == nil) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.frame = CGRectMake(0, 0, self.ut_width, self.ut_height);
+        imageView.frame = CGRectMake(0, 0, self.tz_width, self.tz_height);
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
         [self.contentView addSubview:imageView];
@@ -140,7 +141,7 @@
 - (UIImageView *)selectImageView {
     if (_selectImageView == nil) {
         UIImageView *selectImageView = [[UIImageView alloc] init];
-        selectImageView.frame = CGRectMake(self.ut_width - 27, 0, 27, 27);
+        selectImageView.frame = CGRectMake(self.tz_width - 27, 0, 27, 27);
         [self.contentView addSubview:selectImageView];
         _selectImageView = selectImageView;
     }
@@ -150,7 +151,7 @@
 - (UIView *)bottomView {
     if (_bottomView == nil) {
         UIView *bottomView = [[UIView alloc] init];
-        bottomView.frame = CGRectMake(0, self.ut_height - 17, self.ut_width, 17);
+        bottomView.frame = CGRectMake(0, self.tz_height - 17, self.tz_width, 17);
         bottomView.backgroundColor = [UIColor blackColor];
         bottomView.alpha = 0.8;
         [self.contentView addSubview:bottomView];
@@ -174,7 +175,7 @@
     if (_timeLength == nil) {
         UILabel *timeLength = [[UILabel alloc] init];
         timeLength.font = [UIFont boldSystemFontOfSize:11];
-        timeLength.frame = CGRectMake(self.viewImgView.ut_right, 0, self.ut_width - self.viewImgView.ut_right - 5, 17);
+        timeLength.frame = CGRectMake(self.viewImgView.tz_right, 0, self.tz_width - self.viewImgView.tz_right - 5, 17);
         timeLength.textColor = [UIColor whiteColor];
         timeLength.textAlignment = NSTextAlignmentRight;
         [self.bottomView addSubview:timeLength];
@@ -185,13 +186,13 @@
 
 @end
 
-@interface UTAlbumCell ()
+@interface TZAlbumCell ()
 @property (weak, nonatomic) UIImageView *posterImageView;
 @property (weak, nonatomic) UILabel *titleLable;
 @property (weak, nonatomic) UIImageView *arrowImageView;
 @end
 
-@implementation UTAlbumCell
+@implementation TZAlbumCell
 
 /*
 - (void)awakeFromNib {
@@ -199,14 +200,14 @@
 }
  */
 
-- (void)setModel:(UTAlbumModel *)model {
+- (void)setModel:(TZAlbumModel *)model {
     _model = model;
     
     NSMutableAttributedString *nameString = [[NSMutableAttributedString alloc] initWithString:model.name attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16],NSForegroundColorAttributeName:[UIColor blackColor]}];
     NSAttributedString *countString = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"  (%zd)",model.count] attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16],NSForegroundColorAttributeName:[UIColor lightGrayColor]}];
     [nameString appendAttributedString:countString];
     self.titleLable.attributedText = nameString;
-    [[UTImageManager manager] getPostImageWithAlbumModel:model completion:^(UIImage *postImage) {
+    [[TZImageManager manager] getPostImageWithAlbumModel:model completion:^(UIImage *postImage) {
         self.posterImageView.image = postImage;
     }];
     if (model.selectedCount) {
@@ -217,10 +218,10 @@
     }
 }
 
-// For fitting iOS6
+/// For fitting iOS6
 - (void)layoutSubviews {
     if (iOS7Later) [super layoutSubviews];
-    _selectedCountButton.frame = CGRectMake(self.ut_width - 24 - 30, 23, 24, 24);
+    _selectedCountButton.frame = CGRectMake(self.tz_width - 24 - 30, 23, 24, 24);
 }
 
 - (void)layoutSublayersOfLayer:(CALayer *)layer {
@@ -228,6 +229,7 @@
 }
 
 #pragma mark - Lazy load
+
 - (UIImageView *)posterImageView {
     if (_posterImageView == nil) {
         UIImageView *posterImageView = [[UIImageView alloc] init];
@@ -244,7 +246,7 @@
     if (_titleLable == nil) {
         UILabel *titleLable = [[UILabel alloc] init];
         titleLable.font = [UIFont boldSystemFontOfSize:17];
-        titleLable.frame = CGRectMake(80, 0, self.ut_width - 80 - 50, self.ut_height);
+        titleLable.frame = CGRectMake(80, 0, self.tz_width - 80 - 50, self.tz_height);
         titleLable.textColor = [UIColor blackColor];
         titleLable.textAlignment = NSTextAlignmentLeft;
         [self.contentView addSubview:titleLable];
@@ -257,7 +259,7 @@
     if (_arrowImageView == nil) {
         UIImageView *arrowImageView = [[UIImageView alloc] init];
         CGFloat arrowWH = 15;
-        arrowImageView.frame = CGRectMake(self.ut_width - arrowWH - 12, 28, arrowWH, arrowWH);
+        arrowImageView.frame = CGRectMake(self.tz_width - arrowWH - 12, 28, arrowWH, arrowWH);
         [arrowImageView setImage:[UIImage imageNamedFromMyBundle:@"TableViewArrow.png"]];
         [self.contentView addSubview:arrowImageView];
         _arrowImageView = arrowImageView;
@@ -283,7 +285,7 @@
 
 
 
-@implementation UTAssetCameraCell
+@implementation TZAssetCameraCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

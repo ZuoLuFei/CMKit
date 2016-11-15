@@ -1,33 +1,31 @@
 //
-//  UTImageManager.m
-//  UTImagePickerController
+//  TZImageManager.m
+//  TZImagePickerController
 //
-//  Created by yons on 16/1/4.
-//  Copyright © 2016年 yons. All rights reserved.
+//  Created by 谭真 on 16/1/4.
+//  Copyright © 2016年 谭真. All rights reserved.
 //
 
-#import "UTImageManager.h"
+#import "TZImageManager.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "UTAssetModel.h"
-#import "UTImagePickerController.h"
-#import "UTImagePick.h"
+#import "TZAssetModel.h"
+#import "TZImagePickerController.h"
 
-
-@interface UTImageManager ()
+@interface TZImageManager ()
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic, strong) ALAssetsLibrary *assetLibrary;
 #pragma clang diagnostic pop
 @end
 
-@implementation UTImageManager
+@implementation TZImageManager
 
 static CGSize AssetGridThumbnailSize;
-static CGFloat UTScreenWidth;
-static CGFloat UTScreenScale;
+static CGFloat TZScreenWidth;
+static CGFloat TZScreenScale;
 
 + (instancetype)manager {
-    static UTImageManager *manager;
+    static TZImageManager *manager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [[self alloc] init];
@@ -36,11 +34,11 @@ static CGFloat UTScreenScale;
             // manager.cachingImageManager.allowsCachingHighQualityImages = YES;
         }
    
-        UTScreenWidth = [UIScreen mainScreen].bounds.size.width;
+        TZScreenWidth = [UIScreen mainScreen].bounds.size.width;
         // 测试发现，如果scale在plus真机上取到3.0，内存会增大特别多。故这里写死成2.0
-        UTScreenScale = 2.0;
-        if (UTScreenWidth > 700) {
-            UTScreenScale = 1.5;
+        TZScreenScale = 2.0;
+        if (TZScreenWidth > 700) {
+            TZScreenScale = 1.5;
         }
     });
     return manager;
@@ -49,8 +47,8 @@ static CGFloat UTScreenScale;
 - (void)setColumnNumber:(NSInteger)columnNumber {
     _columnNumber = columnNumber;
     CGFloat margin = 4;
-    CGFloat itemWH = (UTScreenWidth - 2 * margin - 4) / columnNumber - margin;
-    AssetGridThumbnailSize = CGSizeMake(itemWH * UTScreenScale, itemWH * UTScreenScale);
+    CGFloat itemWH = (TZScreenWidth - 2 * margin - 4) / columnNumber - margin;
+    AssetGridThumbnailSize = CGSizeMake(itemWH * TZScreenScale, itemWH * TZScreenScale);
 }
 
 #pragma clang diagnostic push
@@ -61,8 +59,7 @@ static CGFloat UTScreenScale;
     return _assetLibrary;
 }
 
-// Return YES if Authorized 返回YES如果得到了授权
-#pragma mark 获取用户授权状态
+/// Return YES if Authorized 返回YES如果得到了授权
 - (BOOL)authorizationStatusAuthorized {
     return [self authorizationStatus] == 3;
 }
@@ -79,10 +76,11 @@ static CGFloat UTScreenScale;
     return NO;
 }
 
-// Get Album
-#pragma mark 获得相册/相册数组
-- (void)getCameraRollAlbum:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(UTAlbumModel *))completion{
-    __block UTAlbumModel *model;
+#pragma mark - Get Album
+
+/// Get Album 获得相册/相册数组
+- (void)getCameraRollAlbum:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(TZAlbumModel *))completion{
+    __block TZAlbumModel *model;
     if (iOS8Later) {
         PHFetchOptions *option = [[PHFetchOptions alloc] init];
         if (!allowPickingVideo) option.predicate = [NSPredicate predicateWithFormat:@"mediaType == %ld", PHAssetMediaTypeImage];
@@ -119,7 +117,7 @@ static CGFloat UTScreenScale;
     }
 }
 
-- (void)getAllAlbums:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(NSArray<UTAlbumModel *> *))completion{
+- (void)getAllAlbums:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(NSArray<TZAlbumModel *> *))completion{
     NSMutableArray *albumArr = [NSMutableArray array];
     if (iOS8Later) {
         PHFetchOptions *option = [[PHFetchOptions alloc] init];
@@ -186,24 +184,25 @@ static CGFloat UTScreenScale;
     }
 }
 
-// Get Assets
-#pragma mark 获得照片数组
-- (void)getAssetsFromFetchResult:(id)result allowPickingVideo:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(NSArray<UTAssetModel *> *))completion {
+#pragma mark - Get Assets
+
+/// Get Assets 获得照片数组
+- (void)getAssetsFromFetchResult:(id)result allowPickingVideo:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(NSArray<TZAssetModel *> *))completion {
     NSMutableArray *photoArr = [NSMutableArray array];
     if ([result isKindOfClass:[PHFetchResult class]]) {
         PHFetchResult *fetchResult = (PHFetchResult *)result;
         [fetchResult enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             PHAsset *asset = (PHAsset *)obj;
-            UTAssetModelMediaType type = UTAssetModelMediaTypePhoto;
-            if (asset.mediaType == PHAssetMediaTypeVideo)      type = UTAssetModelMediaTypeVideo;
-            else if (asset.mediaType == PHAssetMediaTypeAudio) type = UTAssetModelMediaTypeAudio;
+            TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
+            if (asset.mediaType == PHAssetMediaTypeVideo)      type = TZAssetModelMediaTypeVideo;
+            else if (asset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
             else if (asset.mediaType == PHAssetMediaTypeImage) {
                 if (iOS9_1Later) {
-                    // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = UTAssetModelMediaTypeLivePhoto;
+                    // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
                 }
             }
-            if (!allowPickingVideo && type == UTAssetModelMediaTypeVideo) return;
-            if (!allowPickingImage && type == UTAssetModelMediaTypePhoto) return;
+            if (!allowPickingVideo && type == TZAssetModelMediaTypeVideo) return;
+            if (!allowPickingImage && type == TZAssetModelMediaTypePhoto) return;
             
             if (self.hideWhenCanNotSelect) {
                 // 过滤掉尺寸不满足要求的图片
@@ -212,9 +211,9 @@ static CGFloat UTScreenScale;
                 }
             }
             
-            NSString *timeLength = type == UTAssetModelMediaTypeVideo ? [NSString stringWithFormat:@"%0.0f",asset.duration] : @"";
+            NSString *timeLength = type == TZAssetModelMediaTypeVideo ? [NSString stringWithFormat:@"%0.0f",asset.duration] : @"";
             timeLength = [self getNewTimeFromDurationSecond:timeLength.integerValue];
-            [photoArr addObject:[UTAssetModel modelWithAsset:asset type:type timeLength:timeLength]];
+            [photoArr addObject:[TZAssetModel modelWithAsset:asset type:type timeLength:timeLength]];
         }];
         if (completion) completion(photoArr);
 #pragma clang diagnostic push
@@ -233,21 +232,21 @@ static CGFloat UTScreenScale;
             if (result == nil) {
                 if (completion) completion(photoArr);
             }
-            UTAssetModelMediaType type = UTAssetModelMediaTypePhoto;
+            TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
             if (!allowPickingVideo){
-                [photoArr addObject:[UTAssetModel modelWithAsset:result type:type]];
+                [photoArr addObject:[TZAssetModel modelWithAsset:result type:type]];
                 return;
             }
             /// Allow picking video
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
             if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
-                type = UTAssetModelMediaTypeVideo;
+                type = TZAssetModelMediaTypeVideo;
                 NSTimeInterval duration = [[result valueForProperty:ALAssetPropertyDuration] integerValue];
 #pragma clang diagnostic pop
                 NSString *timeLength = [NSString stringWithFormat:@"%0.0f",duration];
                 timeLength = [self getNewTimeFromDurationSecond:timeLength.integerValue];
-                [photoArr addObject:[UTAssetModel modelWithAsset:result type:type timeLength:timeLength]];
+                [photoArr addObject:[TZAssetModel modelWithAsset:result type:type timeLength:timeLength]];
             } else {
                 if (self.hideWhenCanNotSelect) {
                     // 过滤掉尺寸不满足要求的图片
@@ -255,7 +254,7 @@ static CGFloat UTScreenScale;
                         return;
                     }
                 }
-                [photoArr addObject:[UTAssetModel modelWithAsset:result type:type]];
+                [photoArr addObject:[TZAssetModel modelWithAsset:result type:type]];
             }
         };
 #pragma clang diagnostic push
@@ -276,10 +275,9 @@ static CGFloat UTScreenScale;
     }
 }
 
-//  Get asset at index
-//  if index beyond bounds, return nil in callback 果索引越界, 在回调中返回 nil
-#pragma mark 获得下标为index的单个照片
-- (void)getAssetFromFetchResult:(id)result atIndex:(NSInteger)index allowPickingVideo:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(UTAssetModel *))completion {
+///  Get asset at index 获得下标为index的单个照片
+///  if index beyond bounds, return nil in callback 果索引越界, 在回调中返回 nil
+- (void)getAssetFromFetchResult:(id)result atIndex:(NSInteger)index allowPickingVideo:(BOOL)allowPickingVideo allowPickingImage:(BOOL)allowPickingImage completion:(void (^)(TZAssetModel *))completion {
     if ([result isKindOfClass:[PHFetchResult class]]) {
         PHFetchResult *fetchResult = (PHFetchResult *)result;
         PHAsset *asset;
@@ -291,17 +289,17 @@ static CGFloat UTScreenScale;
             return;
         }
         
-        UTAssetModelMediaType type = UTAssetModelMediaTypePhoto;
-        if (asset.mediaType == PHAssetMediaTypeVideo)      type = UTAssetModelMediaTypeVideo;
-        else if (asset.mediaType == PHAssetMediaTypeAudio) type = UTAssetModelMediaTypeAudio;
+        TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
+        if (asset.mediaType == PHAssetMediaTypeVideo)      type = TZAssetModelMediaTypeVideo;
+        else if (asset.mediaType == PHAssetMediaTypeAudio) type = TZAssetModelMediaTypeAudio;
         else if (asset.mediaType == PHAssetMediaTypeImage) {
             if (iOS9_1Later) {
-                // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = UTAssetModelMediaTypeLivePhoto;
+                // if (asset.mediaSubtypes == PHAssetMediaSubtypePhotoLive) type = TZAssetModelMediaTypeLivePhoto;
             }
         }
-        NSString *timeLength = type == UTAssetModelMediaTypeVideo ? [NSString stringWithFormat:@"%0.0f",asset.duration] : @"";
+        NSString *timeLength = type == TZAssetModelMediaTypeVideo ? [NSString stringWithFormat:@"%0.0f",asset.duration] : @"";
         timeLength = [self getNewTimeFromDurationSecond:timeLength.integerValue];
-        UTAssetModel *model = [UTAssetModel modelWithAsset:asset type:type timeLength:timeLength];
+        TZAssetModel *model = [TZAssetModel modelWithAsset:asset type:type timeLength:timeLength];
         if (completion) completion(model);
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -325,10 +323,10 @@ static CGFloat UTScreenScale;
                 
                 if (!result) return;
                 
-                UTAssetModel *model;
-                UTAssetModelMediaType type = UTAssetModelMediaTypePhoto;
+                TZAssetModel *model;
+                TZAssetModelMediaType type = TZAssetModelMediaTypePhoto;
                 if (!allowPickingVideo){
-                    model = [UTAssetModel modelWithAsset:result type:type];
+                    model = [TZAssetModel modelWithAsset:result type:type];
                     if (completion) completion(model);
                     return;
                 }
@@ -336,14 +334,14 @@ static CGFloat UTScreenScale;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
                 if ([[result valueForProperty:ALAssetPropertyType] isEqualToString:ALAssetTypeVideo]) {
-                    type = UTAssetModelMediaTypeVideo;
+                    type = TZAssetModelMediaTypeVideo;
                     NSTimeInterval duration = [[result valueForProperty:ALAssetPropertyDuration] integerValue];
 #pragma clang diagnostic pop
                     NSString *timeLength = [NSString stringWithFormat:@"%0.0f",duration];
                     timeLength = [self getNewTimeFromDurationSecond:timeLength.integerValue];
-                    model = [UTAssetModel modelWithAsset:result type:type timeLength:timeLength];
+                    model = [TZAssetModel modelWithAsset:result type:type timeLength:timeLength];
                 } else {
-                    model = [UTAssetModel modelWithAsset:result type:type];
+                    model = [TZAssetModel modelWithAsset:result type:type];
                 }
                 if (completion) completion(model);
             }];
@@ -373,16 +371,15 @@ static CGFloat UTScreenScale;
     return newTime;
 }
 
-// Get photo bytes
-#pragma mark 获得一组照片的大小
+/// Get photo bytes 获得一组照片的大小
 - (void)getPhotosBytesWithArray:(NSArray *)photos completion:(void (^)(NSString *totalBytes))completion {
     __block NSInteger dataLength = 0;
     __block NSInteger assetCount = 0;
     for (NSInteger i = 0; i < photos.count; i++) {
-        UTAssetModel *model = photos[i];
+        TZAssetModel *model = photos[i];
         if ([model.asset isKindOfClass:[PHAsset class]]) {
             [[PHImageManager defaultManager] requestImageDataForAsset:model.asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
-                if (model.type != UTAssetModelMediaTypeVideo) dataLength += imageData.length;
+                if (model.type != TZAssetModelMediaTypeVideo) dataLength += imageData.length;
                 assetCount ++;
                 if (assetCount >= photos.count) {
                     NSString *bytes = [self getBytesFromDataLength:dataLength];
@@ -393,7 +390,7 @@ static CGFloat UTScreenScale;
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         } else if ([model.asset isKindOfClass:[ALAsset class]]) {
             ALAssetRepresentation *representation = [model.asset defaultRepresentation];
-            if (model.type != UTAssetModelMediaTypeVideo) dataLength += (NSInteger)representation.size;
+            if (model.type != TZAssetModelMediaTypeVideo) dataLength += (NSInteger)representation.size;
 #pragma clang diagnostic pop
             if (i >= photos.count - 1) {
                 NSString *bytes = [self getBytesFromDataLength:dataLength];
@@ -415,10 +412,11 @@ static CGFloat UTScreenScale;
     return bytes;
 }
 
-// Get photo
-#pragma mark 获得照片本身
+#pragma mark - Get Photo
+
+/// Get photo 获得照片本身
 - (PHImageRequestID)getPhotoWithAsset:(id)asset completion:(void (^)(UIImage *, NSDictionary *, BOOL isDegraded))completion {
-    CGFloat fullScreenWidth = UTScreenWidth;
+    CGFloat fullScreenWidth = TZScreenWidth;
     if (fullScreenWidth > _photoPreviewMaxWidth) {
         fullScreenWidth = _photoPreviewMaxWidth;
     }
@@ -428,12 +426,12 @@ static CGFloat UTScreenScale;
 - (PHImageRequestID)getPhotoWithAsset:(id)asset photoWidth:(CGFloat)photoWidth completion:(void (^)(UIImage *, NSDictionary *, BOOL isDegraded))completion {
     if ([asset isKindOfClass:[PHAsset class]]) {
         CGSize imageSize;
-        if (photoWidth < UTScreenWidth && photoWidth < _photoPreviewMaxWidth) {
+        if (photoWidth < TZScreenWidth && photoWidth < _photoPreviewMaxWidth) {
             imageSize = AssetGridThumbnailSize;
         } else {
             PHAsset *phAsset = (PHAsset *)asset;
             CGFloat aspectRatio = phAsset.pixelWidth / (CGFloat)phAsset.pixelHeight;
-            CGFloat pixelWidth = photoWidth * UTScreenScale;
+            CGFloat pixelWidth = photoWidth * TZScreenScale;
             CGFloat pixelHeight = pixelWidth / aspectRatio;
             imageSize = CGSizeMake(pixelWidth, pixelHeight);
         }
@@ -474,7 +472,7 @@ static CGFloat UTScreenScale;
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (completion) completion(thumbnailImage,nil,YES);
                 
-                if (photoWidth == UTScreenWidth || photoWidth == _photoPreviewMaxWidth) {
+                if (photoWidth == TZScreenWidth || photoWidth == _photoPreviewMaxWidth) {
                     dispatch_async(dispatch_get_global_queue(0,0), ^{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -494,15 +492,14 @@ static CGFloat UTScreenScale;
     return 0;
 }
 
-// Get postImage
-#pragma mark 获取封面图
-- (void)getPostImageWithAlbumModel:(UTAlbumModel *)model completion:(void (^)(UIImage *))completion {
+/// Get postImage / 获取封面图
+- (void)getPostImageWithAlbumModel:(TZAlbumModel *)model completion:(void (^)(UIImage *))completion {
     if (iOS8Later) {
         id asset = [model.result lastObject];
         if (!self.sortAscendingByModificationDate) {
             asset = [model.result firstObject];
         }
-        [[UTImageManager manager] getPhotoWithAsset:asset photoWidth:80 completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+        [[TZImageManager manager] getPhotoWithAsset:asset photoWidth:80 completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
             if (completion) completion(photo);
         }];
     } else {
@@ -515,8 +512,7 @@ static CGFloat UTScreenScale;
     }
 }
 
-// Get Original Photo
-#pragma mark 获取原图
+/// Get Original Photo / 获取原图
 - (void)getOriginalPhotoWithAsset:(id)asset completion:(void (^)(UIImage *photo,NSDictionary *info))completion {
     if ([asset isKindOfClass:[PHAsset class]]) {
         PHImageRequestOptions *option = [[PHImageRequestOptions alloc]init];
@@ -580,7 +576,8 @@ static CGFloat UTScreenScale;
     }
 }
 
-#pragma mark - 保存图片
+#pragma mark - Save photo
+
 - (void)savePhotoWithImage:(UIImage *)image completion:(void (^)(NSError *error))completion {
     NSData *data = UIImageJPEGRepresentation(image, 0.9);
     if (iOS9Later) { // 这里有坑... iOS8系统下这个方法保存图片会失败
@@ -593,7 +590,7 @@ static CGFloat UTScreenScale;
                 if (success && completion) {
                     completion(nil);
                 } else if (error) {
-                    //NSLog(@"保存照片出错:%@",error.localizedDescription);
+                    NSLog(@"保存照片出错:%@",error.localizedDescription);
                     if (completion) {
                         completion(error);
                     }
@@ -606,7 +603,7 @@ static CGFloat UTScreenScale;
         [self.assetLibrary writeImageToSavedPhotosAlbum:image.CGImage orientation:[self orientationFromImage:image] completionBlock:^(NSURL *assetURL, NSError *error) {
 #pragma clang diagnostic pop
             if (error) {
-                //NSLog(@"保存图片失败:%@",error.localizedDescription);
+                NSLog(@"保存图片失败:%@",error.localizedDescription);
                 if (completion) {
                     completion(error);
                 }
@@ -622,8 +619,9 @@ static CGFloat UTScreenScale;
     }
 }
 
-// Get Video
-#pragma mark 获取视频
+#pragma mark - Get Video
+
+/// Get Video / 获取视频
 - (void)getVideoWithAsset:(id)asset completion:(void (^)(AVPlayerItem * _Nullable, NSDictionary * _Nullable))completion {
     if ([asset isKindOfClass:[PHAsset class]]) {
         [[PHImageManager defaultManager] requestPlayerItemForVideo:asset options:nil resultHandler:^(AVPlayerItem * _Nullable playerItem, NSDictionary * _Nullable info) {
@@ -642,8 +640,9 @@ static CGFloat UTScreenScale;
     }
 }
 
-// Export Video
-#pragma mark 导出视频
+#pragma mark - Export video
+
+/// Export Video / 导出视频
 - (void)getVideoOutputPathWithAsset:(id)asset completion:(void (^)(NSString *outputPath))completion {
     if ([asset isKindOfClass:[PHAsset class]]) {
         PHVideoRequestOptions* options = [[PHVideoRequestOptions alloc] init];
@@ -728,8 +727,7 @@ static CGFloat UTScreenScale;
     }
 }
 
-// Judge is a assets array contain the asset
-#pragma mark 判断一个assets数组是否包含这个asset
+/// Judge is a assets array contain the asset 判断一个assets数组是否包含这个asset
 - (BOOL)isAssetsArray:(NSArray *)assets containAsset:(id)asset {
     if (iOS8Later) {
         return [assets containsObject:asset];
@@ -761,7 +759,6 @@ static CGFloat UTScreenScale;
     }
 }
 
-#pragma mark 获取资源标识
 - (NSString *)getAssetIdentifier:(id)asset {
     if (iOS8Later) {
         PHAsset *phAsset = (PHAsset *)asset;
@@ -776,7 +773,7 @@ static CGFloat UTScreenScale;
     }
 }
 
-#pragma mark 检查照片大小是否满足最小要求
+/// 检查照片大小是否满足最小要求
 - (BOOL)isPhotoSelectableWithAsset:(id)asset {
     CGSize photoSize = [self photoSizeWithAsset:asset];
     if (self.minPhotoWidthSelectable > photoSize.width || self.minPhotoHeightSelectable > photoSize.height) {
@@ -799,8 +796,9 @@ static CGFloat UTScreenScale;
 }
 
 #pragma mark - Private Method
-- (UTAlbumModel *)modelWithResult:(id)result name:(NSString *)name{
-    UTAlbumModel *model = [[UTAlbumModel alloc] init];
+
+- (TZAlbumModel *)modelWithResult:(id)result name:(NSString *)name{
+    TZAlbumModel *model = [[TZAlbumModel alloc] init];
     model.result = result;
     model.name = name;
     if ([result isKindOfClass:[PHFetchResult class]]) {
@@ -827,7 +825,6 @@ static CGFloat UTScreenScale;
         return image;
     }
 }
-
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (ALAssetOrientation)orientationFromImage:(UIImage *)image {
@@ -836,7 +833,7 @@ static CGFloat UTScreenScale;
     return orientation;
 }
 
-#pragma mark 获取优化后的视频转向信息
+/// 获取优化后的视频转向信息
 - (AVMutableVideoComposition *)fixedCompositionWithAsset:(AVAsset *)videoAsset {
     AVMutableVideoComposition *videoComposition = [AVMutableVideoComposition videoComposition];
     // 视频转向
@@ -879,7 +876,7 @@ static CGFloat UTScreenScale;
     return videoComposition;
 }
 
-#pragma mark 获取视频角度
+/// 获取视频角度
 - (int)degressFromVideoFileWithAsset:(AVAsset *)asset {
     int degress = 0;
     NSArray *tracks = [asset tracksWithMediaType:AVMediaTypeVideo];
@@ -903,7 +900,7 @@ static CGFloat UTScreenScale;
     return degress;
 }
 
-#pragma mark 修正图片转向
+/// 修正图片转向
 - (UIImage *)fixOrientation:(UIImage *)aImage {
     if (!self.shouldFixOrientation) return aImage;
     
@@ -985,10 +982,10 @@ static CGFloat UTScreenScale;
 @end
 
 
-//@implementation UTSortDescriptor
+//@implementation TZSortDescriptor
 //
 //- (id)reversedSortDescriptor {
-//    return [NSNumber numberWithBool:![UTImageManager manager].sortAscendingByModificationDate];
+//    return [NSNumber numberWithBool:![TZImageManager manager].sortAscendingByModificationDate];
 //}
 //
 //@end

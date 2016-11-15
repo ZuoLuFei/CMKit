@@ -87,7 +87,7 @@ static CMImagePickerManager *_CMImagePickerManager = nil;
     } else {
 #if TARGET_IPHONE_SIMULATOR
         NSLog(@"当前为模拟器");
-        [MBProgressHUD showError:@"模拟器无法打开相机"];
+//        [MBProgressHUD showError:@"模拟器无法打开相机"];
 #elif TARGET_OS_IPHONE
         //打开相机
         [self imagePickerOnViewController:viewController soureType:UIImagePickerControllerSourceTypeCamera];
