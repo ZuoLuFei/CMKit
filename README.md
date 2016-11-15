@@ -70,7 +70,7 @@ end
 
     公用父类：pod 'CMKit/CommonSuperClass', '~> 0.0.8’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
-    相机、相册：pod 'CMKit/ImagePicker', '~> 0.0.8’    打开系统自带相册选择和相机，多选请移步[图片选择器](https://github.com/banchichen/TZImagePickerController)框架
+    相机、相册：pod 'CMKit/ImagePicker', '~> 0.0.8’    打开系统自带相册选择和相机，多选请移步下面'图片选择器'框架
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
