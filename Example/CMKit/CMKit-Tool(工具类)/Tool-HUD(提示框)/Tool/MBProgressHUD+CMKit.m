@@ -32,11 +32,11 @@
 
 #pragma mark 显示错误或正确信息
 + (void)showError:(NSString *)error toView:(UIView *)view {
-    [self show:error icon:@"error.png" view:view];
+    [self show:error icon:@"MBProgressHUD+CMKit.bundle/error" view:view];
 }
 
 + (void)showSuccess:(NSString *)success toView:(UIView *)view {
-    [self show:success icon:@"success.png" view:view];
+    [self show:success icon:@"MBProgressHUD+CMKit.bundle/success" view:view];
 }
 
 #pragma mark 显示一些信息

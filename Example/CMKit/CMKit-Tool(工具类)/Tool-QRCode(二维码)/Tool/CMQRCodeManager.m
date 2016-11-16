@@ -253,7 +253,7 @@ static CMQRCodeManager *_CMQRCodeManager = nil;
     UIImageView *backImgV = [[UIImageView alloc] initWithFrame:rect];
     self.backImgV = backImgV;
     backImgV.backgroundColor = [UIColor clearColor];
-    backImgV.image = [UIImage imageNamed:@"扫描框@2x.png"];
+    backImgV.image = [UIImage imageNamed:@"CMQRCodeManager.bundle/扫描框"];
     [view addSubview:backImgV];
     
     UILabel *msg = [[UILabel alloc] initWithFrame:CGRectMake(30, CGRectGetMaxY(rect)+10, CGRectGetWidth(view.frame)-60, 60)];
@@ -266,7 +266,7 @@ static CMQRCodeManager *_CMQRCodeManager = nil;
     
     //扫描线
     self.lineImgV = [[UIImageView alloc] initWithFrame:CGRectMake(X, Y, W, 2)];
-    self.lineImgV.image = [UIImage imageNamed:@"扫描线@2x.png"];
+    self.lineImgV.image = [UIImage imageNamed:@"CMQRCodeManager.bundle/扫描线"];
     self.lineImgV.contentMode = UIViewContentModeScaleAspectFill;
     self.lineImgV.backgroundColor = [UIColor clearColor];
     [view addSubview:self.lineImgV];
