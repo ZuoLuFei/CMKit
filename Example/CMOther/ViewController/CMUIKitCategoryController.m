@@ -8,6 +8,7 @@
 
 #import "CMUIKitCategoryController.h"
 #import "CMDetailedFunctionController.h"
+#import "CMHeadView.h"
 
 @interface CMUIKitCategoryController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -169,6 +170,17 @@
     
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    
+    CMHeadView *headView = [[CMHeadView alloc] initWithReuseIdentifier:@"CMHeadView"];
+    headView.titleStr = @"UIKit 框架分类";
+    
+    return headView;
+    
+}
+
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -182,11 +194,16 @@
         Vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:Vc animated:YES];
         
-        
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 35;
+}
+
 
 @end

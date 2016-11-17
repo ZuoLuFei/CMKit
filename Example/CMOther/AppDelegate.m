@@ -15,6 +15,7 @@
 #import "CM3DTouchSampleController.h"
 #import "CMBaseNavigationController.h"
 #import "CMNewFeaturesController.h"
+#import "CMThirdFrameworkController.h"
 
 
 static NSString * const shortItemType1 = @"com.utouu.CMKit.Animatation";
@@ -28,9 +29,13 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
 
 @property (nonatomic, strong) CMBaseNavigationController *toolNavigationController;
 
+@property (nonatomic, strong) CMBaseNavigationController *thirdFrameworkNavigationController;
+
 @property (nonatomic, strong) CMBaseNavigationController *foundationNavigationController;
 
 @property (nonatomic, strong) CMBaseNavigationController *uiKitNavigationController;
+
+
 
 
 @property (nonatomic, assign , getter=isLoaded) BOOL loaded;//程序是否载入过
@@ -63,13 +68,16 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
     
     _toolNavigationController = [CMBaseNavigationController createNavigationController:[CMToolViewController class] title:@"Tool" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
+    _thirdFrameworkNavigationController = [CMBaseNavigationController createNavigationController:[CMThirdFrameworkController class] title:@"Framework" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
+    
+    
     _foundationNavigationController = [CMBaseNavigationController createNavigationController:[CMFoundationCategoryController class] title:@"Foundation" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
 
     _uiKitNavigationController = [CMBaseNavigationController createNavigationController:[CMUIKitCategoryController class] title:@"UIKit" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
     _tabBarController = [[UITabBarController alloc] init];
-    [_tabBarController setViewControllers:@[_toolNavigationController,_foundationNavigationController,_uiKitNavigationController]];
+    [_tabBarController setViewControllers:@[_toolNavigationController,_thirdFrameworkNavigationController,_foundationNavigationController,_uiKitNavigationController]];
     
     self.window.rootViewController = _tabBarController;
     [self.window makeKeyAndVisible];
@@ -121,10 +129,10 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
         
         
     }else if ([shortcutItem.type isEqualToString:shortItemType2]) {
-        [_tabBarController setSelectedIndex:1];
+        [_tabBarController setSelectedIndex:2];
         
     }else if ([shortcutItem.type isEqualToString:shortItemType3]) {
-        [_tabBarController setSelectedIndex:2];
+        [_tabBarController setSelectedIndex:3];
         
     }else if ([shortcutItem.type isEqualToString:shortItemType4]) {
         [_tabBarController setSelectedIndex:0];

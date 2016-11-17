@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
+
 /**
  *  此类增加了一些关于数据加密/解密的有用方法
  *  所有的方法都是私有

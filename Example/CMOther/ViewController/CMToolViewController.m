@@ -19,6 +19,10 @@
 #import "CM3DTouchSampleController.h"
 #import "CMCommonSuperClassSampleController.h"
 #import "CMNewFeaturesController.h"
+#import "CMVideoPlayerSampleController.h"
+
+
+#import "CMHeadView.h"
 
 #define SourceCode @"SourceCode"
 
@@ -49,8 +53,6 @@
 - (void)initData{
     self.toolArray = @[@{@"name":@"NewFeatures(新特性)",@"classType":[CMNewFeaturesController class]},
                        @{@"name":@"CommonSuperClass(共用父类)",@"classType":[CMCommonSuperClassSampleController class]},
-                       @{@"name":@"NetWork(网络请求)",@"classType":[GlobalTimelineViewController class]},
-                       @{@"name":@"ImageCache(图片缓存)",@"classType":[MasterViewController class]},
                        @{@"name":@"AlterView(警告框)",@"classType":[CMAlterViewSampleController class]},
                        @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
@@ -58,13 +60,11 @@
                        
 //                       @{@"name":@"Share(分享)",@"classType":@""},
                        @{@"name":@"ImagePicker(相机/相册)",@"classType":[CMImagePickerSampleController class]},
-                       @{@"name":@"Refresh(上拉/下拉刷新)",@"classType":[MJExampleViewController class]},
-                       @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
                        @{@"name":@"ThirdPartyLogin(第三方登录)",@"classType":[CMThirdPartyLoginSampleController class]},
 //                       @{@"name":@"ThirdPartyStatistics(第三方统计)",@"classType":@""},
 //                       @{@"name":@"ThirdPartyPay(第三方支付)",@"classType":@""},
 //                       @{@"name":@"MapKit(地图)",@"classType":@""},
-//                       @{@"name":@"AudioVideo(音频/视频)",@"classType":@""},
+//                       @{@"name":@"AudioVideo(音频/视频)",@"classType":[CMVideoPlayerSampleController class]},
                        @{@"name":@"3D Touch",@"classType":[CM3DTouchSampleController class]},
 //                       @{@"name":@"IM(及时通讯)",@"classType":@""},
 //                       @{@"name":@"StoreKit(苹果内购)",@"classType":@""},
@@ -109,6 +109,17 @@
 
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    
+    CMHeadView *headView = [[CMHeadView alloc] initWithReuseIdentifier:@"CMHeadView"];
+    headView.titleStr = @"UTOUU 集成工具类";
+    
+    return headView;
+
+}
+
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -138,6 +149,10 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 35;
 }
 
 

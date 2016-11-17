@@ -8,6 +8,7 @@
 
 #import "CMFoundationCategoryController.h"
 #import "CMDetailedFunctionController.h"
+#import "CMHeadView.h"
 
 @interface CMFoundationCategoryController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -149,6 +150,16 @@
     return cell;
     
 }
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    
+    
+    CMHeadView *headView = [[CMHeadView alloc] initWithReuseIdentifier:@"CMHeadView"];
+    headView.titleStr = @"Foundation 框架分类";
+    
+    return headView;
+    
+}
 
 
 #pragma mark - UITableViewDelegate
@@ -166,6 +177,12 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+}
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 35;
 }
 
 
