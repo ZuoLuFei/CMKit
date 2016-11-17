@@ -53,9 +53,8 @@ end
 
 ###CMKit pod目录概述
 
-####                           UTOUU 集成工具类
+####----------UTOUU 集成工具类(若只使用CMKit工具类中的指定功能，可根据如下目录单独导入)
 
-若只使用CMKit工具类中的指定功能，可根据如下目录单独导入
 
 整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.1.0'
 
@@ -75,7 +74,7 @@ end
 
     相机、相册：pod 'CMKit/ImagePicker', '~> 0.1.0’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
-####                              常用第三方框架选型
+####----------常用第三方框架选型
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
