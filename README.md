@@ -74,6 +74,8 @@ end
 
     相机、相册：pod 'CMKit/ImagePicker', '~> 0.1.0’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
+
+
 ####----------常用第三方框架选型
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
@@ -113,7 +115,13 @@ end
 
     CMKit-Tool(工具类)
 
-        Tool-#### 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
+        FrameworkManager   第三方框架选型
+
+            #### 框架目录，开发中可直接手动导入目标项目，请参考Demo使用
+
+        UtouuCreate  UTOUU编写的工具类
+
+            #### 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
 
 2 Example 演示Demo目录
 
@@ -129,93 +137,98 @@ end
 
 Demo共分为三个版块，目前集成功能如下：
 
-1 Tool
+1 UtouuCreate
 
-    1.1 NetWork(网络请求)
+    1.1 AlterView(警告框)
 
-    1.2 ImageCache(图片缓存)
+    1.2 QRCode(二维码/条形码)
 
-    1.3 AlterView(警告框)
+    1.3 AnimationEffect(动画特效)
 
-    1.4 QRCode(二维码/条形码)
+    1.4 MBProgressHUD(提示框)
 
-    1.5 AnimationEffect(动画特效)
+    1.5 ImagePicker(相机/相册)
 
-    1.6 MBProgressHUD(提示框)
+    1.6 Cryptor(数据加密/解密)
 
-    1.7 ImagePicker(相机/相册)
+    1.7 3D Touch
 
-    1.8 Refresh(上拉/下拉刷新)
+    1.8 CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
 
-    1.9 CyclePicture(无限轮播)
+    1.9 NewFeatures(新特性)
 
-    1.10 Cryptor(数据加密/解密)
+    1.10 ThirdPartyLogin(第三方登录) -- 新浪微博
 
-    1.11 3D Touch
-
-    1.12 CommonSuperClass(共用父类)--目前暂时只整理UIViewController和UINavigationController
-
-    1.13 NewFeatures(新特性)
-
-    1.14 ThirdPartyLogin(第三方登录) -- 新浪微博
-
-    1.15 Macro(宏)
-
-2 Foundation分类(关于Foundation框架的分类)
-
-    2.1 NSArray+CMKit
-
-    2.2 NSData+CMKit
-
-    2.3 NSDate+CMKit
-
-    2.4 NSDictionary+CMKit
-
-    2.5 NSFileManager+CMKit
-
-    2.6 NSMutableArray+CMKit
-
-    2.7 NSMutableDictionary+CMKit
-
-    2.8 NSNumber+CMKit
-
-    2.9 NSObject+CMKit
-
-    2.10 NSProcessInfo+CMKit
-
-    2.11 NSString+CMKit
+    1.11 Macro(宏)
 
 
-3 UIKit分类(关于UIKit框架的分类)
+2 FrameworkManager
 
-    3.1 UIButton+CMKit
+    2.1 NetWork(网络请求)
 
-    3.2 UIColor+CMKit
+    2.2 ImageCache(图片缓存)
 
-    3.3 UIDevice+CMKit
+    2.3 ImageMultipleChoice(图片多选器)
 
-    3.4 UIImage+CMKit
+    2.4 Refresh(上拉/下拉刷新)
 
-    3.5 UIImageView+CMKit
+    2.5 CyclePicture(无限轮播)
 
-    3.6 UILabel+CMKit
+3 Foundation分类(关于Foundation框架的分类)
 
-    3.7 UINavigationBar+CMKit
+    3.1 NSArray+CMKit
 
-    3.8 UIScreen+CMKit
+    3.2 NSData+CMKit
 
-    3.9 UIScrollView+CMKit
+    3.3 NSDate+CMKit
 
-    3.10 UITableView+CMKit
+    3.4 NSDictionary+CMKit
 
-    3.11 UITextField+CMKit
+    3.5 NSFileManager+CMKit
 
-    3.12 UIToolbar+CMKit
+    3.6 NSMutableArray+CMKit
 
-    3.13 UIView+CMKit
+    3.7 NSMutableDictionary+CMKit
 
-    3.14 UIWebView+CMKit
+    3.8 NSNumber+CMKit
 
-    3.15 UIWindow+CMKit
+    3.9 NSObject+CMKit
+
+    3.10 NSProcessInfo+CMKit
+
+    3.11 NSString+CMKit
+
+
+4 UIKit分类(关于UIKit框架的分类)
+
+    4.1 UIButton+CMKit
+
+    4.2 UIColor+CMKit
+
+    4.3 UIDevice+CMKit
+
+    4.4 UIImage+CMKit
+
+    4.5 UIImageView+CMKit
+
+    4.6 UILabel+CMKit
+
+    4.7 UINavigationBar+CMKit
+
+    4.8 UIScreen+CMKit
+
+    4.9 UIScrollView+CMKit
+
+    4.10 UITableView+CMKit
+
+    4.11 UITextField+CMKit
+
+    4.12 UIToolbar+CMKit
+
+    4.13 UIView+CMKit
+
+    4.14 UIWebView+CMKit
+
+    4.15 UIWindow+CMKit
 
 
