@@ -82,7 +82,7 @@ end
 
 无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64' 
 
-垂直瀑布流[https://github.com/chiahsien/CHTCollectionViewWaterfallLayout]：pod 'CHTCollectionViewWaterfallLayout'
+垂直瀑布流[具体地址](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout)：pod 'CHTCollectionViewWaterfallLayout'
 
 图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2' 
 
