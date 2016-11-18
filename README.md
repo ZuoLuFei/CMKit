@@ -80,9 +80,11 @@ end
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
-图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2'    
+无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64' 
 
-无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64'    
+垂直瀑布流[https://github.com/chiahsien/CHTCollectionViewWaterfallLayout]：pod 'CHTCollectionViewWaterfallLayout'
+
+图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2' 
 
 网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)：pod 'AFNetworking', '~> 3.0'
 
@@ -161,6 +163,8 @@ Demo共分为三个版块，目前集成功能如下：
 
     1.11 Macro(宏)
 
+    1.12 SystemFontInfo(系统字体列表)
+
 
 2 FrameworkManager
 
@@ -173,6 +177,8 @@ Demo共分为三个版块，目前集成功能如下：
     2.4 Refresh(上拉/下拉刷新)
 
     2.5 CyclePicture(无限轮播)
+
+    2.6 VerticalWaterFlow(垂直瀑布流)
 
 3 Foundation分类(关于Foundation框架的分类)
 

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470183201DDF34AF00320F76 /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 470183141DDF34AF00320F76 /* cat1.jpg */; };
+		470183211DDF34AF00320F76 /* cat2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 470183151DDF34AF00320F76 /* cat2.jpg */; };
+		470183221DDF34AF00320F76 /* cat3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 470183161DDF34AF00320F76 /* cat3.jpg */; };
+		470183231DDF34AF00320F76 /* cat4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 470183171DDF34AF00320F76 /* cat4.jpg */; };
+		470183241DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 470183191DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m */; };
+		470183251DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831B1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m */; };
+		470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831D1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m */; };
+		470183271DDF34AF00320F76 /* CMWaterfallLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */; };
 		470A9DC31DC8EE9F00206B64 /* CMDetailedFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */; };
 		470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBD1DC8EE9F00206B64 /* CMFoundationCategoryController.m */; };
 		470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBF1DC8EE9F00206B64 /* CMToolViewController.m */; };
@@ -165,6 +173,12 @@
 		471A12CB1DDE08EB00574273 /* CMThirdPartyLoginSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A122E1DDE08EB00574273 /* CMThirdPartyLoginSampleController.m */; };
 		471A12CC1DDE08EB00574273 /* CMVideoPlayerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12321DDE08EB00574273 /* CMVideoPlayerSampleController.m */; };
 		471A12CD1DDE08EB00574273 /* CMVideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12351DDE08EB00574273 /* CMVideoPlayerManager.m */; };
+		471A12D21DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D11DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m */; };
+		471A12D51DDE136B00574273 /* CMFontInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D41DDE136B00574273 /* CMFontInfoModel.m */; };
+		471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D71DDE139B00574273 /* CMFontInfomation.m */; };
+		471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DA1DDE13E800574273 /* CMFontListCell.m */; };
+		471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */; };
+		473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */; };
 		475A3D411DC7536D00CA45BA /* CMKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3D401DC7536D00CA45BA /* CMKitTests.m */; };
 		475A3D4C1DC7536D00CA45BA /* CMKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3D4B1DC7536D00CA45BA /* CMKitUITests.m */; };
 		475A3D651DC753BD00CA45BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3D5B1DC753BD00CA45BA /* AppDelegate.m */; };
@@ -223,6 +237,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470183141DDF34AF00320F76 /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
+		470183151DDF34AF00320F76 /* cat2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat2.jpg; sourceTree = "<group>"; };
+		470183161DDF34AF00320F76 /* cat3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat3.jpg; sourceTree = "<group>"; };
+		470183171DDF34AF00320F76 /* cat4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat4.jpg; sourceTree = "<group>"; };
+		470183181DDF34AF00320F76 /* CMCollectionViewWaterfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCollectionViewWaterfallCell.h; sourceTree = "<group>"; };
+		470183191DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionViewWaterfallCell.m; sourceTree = "<group>"; };
+		4701831A1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCollectionViewWaterfallFooter.h; sourceTree = "<group>"; };
+		4701831B1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionViewWaterfallFooter.m; sourceTree = "<group>"; };
+		4701831C1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCollectionViewWaterfallHeader.h; sourceTree = "<group>"; };
+		4701831D1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionViewWaterfallHeader.m; sourceTree = "<group>"; };
+		4701831E1DDF34AF00320F76 /* CMWaterfallLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterfallLayoutController.h; sourceTree = "<group>"; };
+		4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterfallLayoutController.m; sourceTree = "<group>"; };
 		470A9D9E1DC8B95D00206B64 /* CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMKit.h; sourceTree = "<group>"; };
 		470A9DBA1DC8EE9F00206B64 /* CMDetailedFunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDetailedFunctionController.h; sourceTree = "<group>"; };
 		470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDetailedFunctionController.m; sourceTree = "<group>"; };
@@ -511,6 +537,18 @@
 		471A12321DDE08EB00574273 /* CMVideoPlayerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVideoPlayerSampleController.m; sourceTree = "<group>"; };
 		471A12341DDE08EB00574273 /* CMVideoPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVideoPlayerManager.h; sourceTree = "<group>"; };
 		471A12351DDE08EB00574273 /* CMVideoPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVideoPlayerManager.m; sourceTree = "<group>"; };
+		471A12D01DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSystemFontInfoSampleControllerViewController.h; sourceTree = "<group>"; };
+		471A12D11DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSystemFontInfoSampleControllerViewController.m; sourceTree = "<group>"; };
+		471A12D31DDE136B00574273 /* CMFontInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontInfoModel.h; sourceTree = "<group>"; };
+		471A12D41DDE136B00574273 /* CMFontInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontInfoModel.m; sourceTree = "<group>"; };
+		471A12D61DDE139B00574273 /* CMFontInfomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontInfomation.h; sourceTree = "<group>"; };
+		471A12D71DDE139B00574273 /* CMFontInfomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontInfomation.m; sourceTree = "<group>"; };
+		471A12D91DDE13E800574273 /* CMFontListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontListCell.h; sourceTree = "<group>"; };
+		471A12DA1DDE13E800574273 /* CMFontListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListCell.m; sourceTree = "<group>"; };
+		471A12DC1DDE19A700574273 /* CMFontListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontListHeaderView.h; sourceTree = "<group>"; };
+		471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListHeaderView.m; sourceTree = "<group>"; };
+		473AE0AF1DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		475A3D231DC7536D00CA45BA /* CMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475A3D3C1DC7536D00CA45BA /* CMKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		475A3D401DC7536D00CA45BA /* CMKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMKitTests.m; sourceTree = "<group>"; };
@@ -613,6 +651,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470183121DDF34AF00320F76 /* HorizontalWaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HorizontalWaterFlow;
+			sourceTree = "<group>";
+		};
+		470183131DDF34AF00320F76 /* VerticalWaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				470183141DDF34AF00320F76 /* cat1.jpg */,
+				470183151DDF34AF00320F76 /* cat2.jpg */,
+				470183161DDF34AF00320F76 /* cat3.jpg */,
+				470183171DDF34AF00320F76 /* cat4.jpg */,
+				470183181DDF34AF00320F76 /* CMCollectionViewWaterfallCell.h */,
+				470183191DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m */,
+				4701831A1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.h */,
+				4701831B1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m */,
+				4701831C1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.h */,
+				4701831D1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m */,
+				4701831E1DDF34AF00320F76 /* CMWaterfallLayoutController.h */,
+				4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */,
+			);
+			path = VerticalWaterFlow;
+			sourceTree = "<group>";
+		};
 		470A9DB91DC8EE9F00206B64 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,6 +706,7 @@
 		471A10DE1DDE08EA00574273 /* FrameworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				473AE0AC1DDF1F590055AA68 /* Waterfall(瀑布流) */,
 				471A10DF1DDE08EA00574273 /* CyclePicture(无限轮播) */,
 				471A11031DDE08EA00574273 /* ImageCache(图片缓存) */,
 				471A113D1DDE08EA00574273 /* NetWork(网络请求) */,
@@ -1080,6 +1145,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				471A12CE1DDE11D900574273 /* SystemFontInfo(系统字体列表) */,
 				471A11B61DDE08EB00574273 /* 3DTouch */,
 				471A11C01DDE08EB00574273 /* AlertView(警告框) */,
 				471A11C71DDE08EB00574273 /* AnimationEffect(动画特效) */,
@@ -1464,6 +1530,58 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		471A12CE1DDE11D900574273 /* SystemFontInfo(系统字体列表) */ = {
+			isa = PBXGroup;
+			children = (
+				471A12CF1DDE11D900574273 /* Sample */,
+			);
+			path = "SystemFontInfo(系统字体列表)";
+			sourceTree = "<group>";
+		};
+		471A12CF1DDE11D900574273 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				471A12D01DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.h */,
+				471A12D11DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m */,
+				471A12D31DDE136B00574273 /* CMFontInfoModel.h */,
+				471A12D41DDE136B00574273 /* CMFontInfoModel.m */,
+				471A12D61DDE139B00574273 /* CMFontInfomation.h */,
+				471A12D71DDE139B00574273 /* CMFontInfomation.m */,
+				471A12D91DDE13E800574273 /* CMFontListCell.h */,
+				471A12DA1DDE13E800574273 /* CMFontListCell.m */,
+				471A12DC1DDE19A700574273 /* CMFontListHeaderView.h */,
+				471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		473AE0AC1DDF1F590055AA68 /* Waterfall(瀑布流) */ = {
+			isa = PBXGroup;
+			children = (
+				473AE0AD1DDF1F590055AA68 /* Sample */,
+				473AE0AE1DDF1F590055AA68 /* Tool */,
+			);
+			path = "Waterfall(瀑布流)";
+			sourceTree = "<group>";
+		};
+		473AE0AD1DDF1F590055AA68 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				470183121DDF34AF00320F76 /* HorizontalWaterFlow */,
+				470183131DDF34AF00320F76 /* VerticalWaterFlow */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		473AE0AE1DDF1F590055AA68 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				473AE0AF1DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.h */,
+				473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		475A3D1A1DC7536D00CA45BA = {
 			isa = PBXGroup;
 			children = (
@@ -1737,10 +1855,13 @@
 				471A12411DDE08EB00574273 /* pageControlCurrentDot@3x.png in Resources */,
 				471A12361DDE08EB00574273 /* 005.jpg in Resources */,
 				471A12C21DDE08EB00574273 /* welcome_guide_1_new@2x.png in Resources */,
+				470183231DDF34AF00320F76 /* cat4.jpg in Resources */,
 				475A3D691DC753BD00CA45BA /* Info.plist in Resources */,
 				471A12441DDE08EB00574273 /* placeholder@2x.png in Resources */,
 				471A129C1DDE08EB00574273 /* CM3DTouchCommitSampleController.xib in Resources */,
+				470183201DDF34AF00320F76 /* cat1.jpg in Resources */,
 				471A12421DDE08EB00574273 /* pageControlDot@2x.png in Resources */,
+				470183221DDF34AF00320F76 /* cat3.jpg in Resources */,
 				471A12C71DDE08EB00574273 /* CMQRCodeSampleController.xib in Resources */,
 				471A12C81DDE08EB00574273 /* CMQRCodeManager.bundle in Resources */,
 				475A3D681DC753BD00CA45BA /* Main.storyboard in Resources */,
@@ -1760,6 +1881,7 @@
 				471A12A41DDE08EB00574273 /* CMAnimationSampleController.xib in Resources */,
 				471A12401DDE08EB00574273 /* pageControlCurrentDot@2x.png in Resources */,
 				471A12501DDE08EB00574273 /* placeholder.png in Resources */,
+				470183211DDF34AF00320F76 /* cat2.jpg in Resources */,
 				471A126E1DDE08EB00574273 /* profile-image-placeholder@2x.png in Resources */,
 				471A124D1DDE08EB00574273 /* DetailViewController.xib in Resources */,
 				471A12C01DDE08EB00574273 /* btn01_normal@2x.png in Resources */,
@@ -1838,7 +1960,9 @@
 				471A12741DDE08EB00574273 /* AFURLResponseSerialization.m in Sources */,
 				471A12AD1DDE08EB00574273 /* CMDataStructures.m in Sources */,
 				471A12B01DDE08EB00574273 /* MBProgressHUD.m in Sources */,
+				471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */,
 				471A12831DDE08EB00574273 /* MJTestViewController.m in Sources */,
+				471A12D51DDE136B00574273 /* CMFontInfoModel.m in Sources */,
 				471A12601DDE08EB00574273 /* UIButton+WebCache.m in Sources */,
 				475A3DC81DC7552B00CA45BA /* UIToolbar+CMKit.m in Sources */,
 				471A12571DDE08EB00574273 /* NSImage+WebCache.m in Sources */,
@@ -1847,11 +1971,13 @@
 				475A3DB91DC7552B00CA45BA /* NSNumber+CMKit.m in Sources */,
 				471A12AC1DDE08EB00574273 /* CMCryptor.m in Sources */,
 				471A126F1DDE08EB00574273 /* PostTableViewCell.m in Sources */,
+				470183271DDF34AF00320F76 /* CMWaterfallLayoutController.m in Sources */,
 				471A125F1DDE08EB00574273 /* SDWebImagePrefetcher.m in Sources */,
 				475A3DB71DC7552B00CA45BA /* NSMutableArray+CMKit.m in Sources */,
 				471A12B71DDE08EB00574273 /* TZAssetModel.m in Sources */,
 				471A125A1DDE08EB00574273 /* SDWebImageCompat.m in Sources */,
 				471A124C1DDE08EB00574273 /* DetailViewController.m in Sources */,
+				470183251DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m in Sources */,
 				471A12521DDE08EB00574273 /* FLAnimatedImage.m in Sources */,
 				471A12971DDE08EB00574273 /* NSBundle+MJRefresh.m in Sources */,
 				471A12981DDE08EB00574273 /* UIScrollView+MJExtension.m in Sources */,
@@ -1878,6 +2004,7 @@
 				471A12931DDE08EB00574273 /* MJRefreshNormalHeader.m in Sources */,
 				475A3DC31DC7552B00CA45BA /* UINavigationBar+CMKit.m in Sources */,
 				471A126A1DDE08EB00574273 /* User.m in Sources */,
+				471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */,
 				471A12491DDE08EB00574273 /* SDCollectionViewCell.m in Sources */,
 				471A12B21DDE08EB00574273 /* CMImagePickerSampleController.m in Sources */,
 				471A12721DDE08EB00574273 /* AFSecurityPolicy.m in Sources */,
@@ -1908,8 +2035,11 @@
 				471A12581DDE08EB00574273 /* SDImageCache.m in Sources */,
 				471A12AF1DDE08EB00574273 /* MBProgressHUD+CMKit.m in Sources */,
 				475A3DC41DC7552B00CA45BA /* UIScreen+CMKit.m in Sources */,
+				471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */,
 				471A12881DDE08EB00574273 /* MJRefreshBackFooter.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
+				473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */,
 				470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */,
 				471A0EEA1DDDC61100574273 /* CMHeadView.m in Sources */,
 				471A12691DDE08EB00574273 /* Post.m in Sources */,
@@ -1921,6 +2051,7 @@
 				471A12921DDE08EB00574273 /* MJRefreshGifHeader.m in Sources */,
 				471A12A11DDE08EB00574273 /* CMAlertView.m in Sources */,
 				471A12851DDE08EB00574273 /* MJWebViewViewController.m in Sources */,
+				471A12D21DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m in Sources */,
 				471A128C1DDE08EB00574273 /* MJRefreshAutoGifFooter.m in Sources */,
 				471A12B41DDE08EB00574273 /* CMImagePickerManager.m in Sources */,
 				471A12621DDE08EB00574273 /* UIImage+MultiFormat.m in Sources */,
@@ -1930,6 +2061,7 @@
 				471A12481DDE08EB00574273 /* TAPageControl.m in Sources */,
 				475A3D651DC753BD00CA45BA /* AppDelegate.m in Sources */,
 				471A125E1DDE08EB00574273 /* SDWebImageManager.m in Sources */,
+				470183241DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m in Sources */,
 				471A12761DDE08EB00574273 /* UIViewController+Example.m in Sources */,
 				471A12B31DDE08EB00574273 /* UTTestCell.m in Sources */,
 				471A12CC1DDE08EB00574273 /* CMVideoPlayerSampleController.m in Sources */,

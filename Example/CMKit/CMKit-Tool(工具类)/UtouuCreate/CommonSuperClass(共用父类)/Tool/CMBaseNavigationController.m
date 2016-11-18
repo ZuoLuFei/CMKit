@@ -39,10 +39,10 @@
 }
 
 
-+ (CMBaseNavigationController * _Nonnull)createNavigationController:(Class _Nonnull)viewController title:(NSString * _Nullable)title normalTitleColor:(UIColor * _Nullable)normalTitleColor highLightTitleColor:(UIColor * _Nullable)highLightTitleColor normalImage:(NSString * _Nullable)normalImage selectedImage:(NSString * _Nullable)selecteImage fontOfSize:(CGFloat)fontSize{
++ (CMBaseNavigationController * _Nonnull)createNavigationController:(UIViewController * _Nonnull)viewController title:(NSString * _Nullable)title normalTitleColor:(UIColor * _Nullable)normalTitleColor highLightTitleColor:(UIColor * _Nullable)highLightTitleColor normalImage:(NSString * _Nullable)normalImage selectedImage:(NSString * _Nullable)selecteImage fontOfSize:(CGFloat)fontSize{
     
     // 设置标题
-    UIViewController *viewVc = [[viewController alloc] init];
+    UIViewController *viewVc = viewController;
     if (![self isBlankString:title]) {
         viewVc.title = title;
     }
@@ -83,7 +83,14 @@
     return navigationController;
 }
 
+- (instancetype _Nonnull)initWithRootViewController:(UIViewController * _Nonnull)rootViewController setNavigationBarHidden:(BOOL)hidden{
+    CMBaseNavigationController *ncController = [[[self class] alloc] initWithRootViewController:rootViewController];
+    [ncController setNavigationBarHidden:hidden animated:NO];
+//    [rootViewController useInteractivePopGestureRecognizer];
+    
+    return ncController;
 
+}
 
 #pragma mark - 覆写父类方法
 //push的控制器非根控制器时，隐藏底部BottomBar

@@ -1,5 +1,5 @@
 //
-//  CMHeadView.h
+//  CMSystemFontInfoSampleControllerViewController.h
 //  CMKit
 //
 //  Created by HC on 16/11/17.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMHeadView : UITableViewHeaderFooterView
-
-@property (nonatomic, copy) NSString *titleStr;
-
-
+@interface CMSystemFontInfoSampleControllerViewController : UIViewController
 
 @end

@@ -8,22 +8,37 @@
 
 #import "CMBaseViewController.h"
 
-@interface CMBaseViewController ()
+@interface CMBaseViewController ()<UIGestureRecognizerDelegate>
 
 @end
 
 @implementation CMBaseViewController
 
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setup];
+}
+
+- (void)setup {
+    
     //1.设置导航栏返回按钮
-    [self addLeftNavButton];
+    if (!self.navigationController.navigationBar.hidden) {
+        [self addLeftNavButton];
+    }
     
     //2.设置背景图片
     [self setBackgroundView];
+    
+    //3.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.width                                = [UIScreen mainScreen].bounds.size.width;
+    self.height                               = [UIScreen mainScreen].bounds.size.height;
+    self.view.backgroundColor                 = [UIColor whiteColor];
 }
 
+#pragma mark -
 
 //设置导航栏返回按钮
 - (void)addLeftNavButton{
@@ -100,6 +115,36 @@
 
 }
 
+- (void)useInteractivePopGestureRecognizer{
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+}
+
+
+- (void)popViewControllerAnimated:(BOOL)animated{
+    [self.navigationController popViewControllerAnimated:animated];
+}
+
+
+- (void)popToRootViewControllerAnimated:(BOOL)animated{
+    [self.navigationController popToRootViewControllerAnimated:animated];
+}
+
+
+#pragma mark - 重写set和get方法
+
+@synthesize enableInteractivePopGestureRecognizer = _enableInteractivePopGestureRecognizer;
+
+- (void)setEnableInteractivePopGestureRecognizer:(BOOL)enableInteractivePopGestureRecognizer {
+    
+    _enableInteractivePopGestureRecognizer                            = enableInteractivePopGestureRecognizer;
+    self.navigationController.interactivePopGestureRecognizer.enabled = enableInteractivePopGestureRecognizer;
+}
+
+- (BOOL)enableInteractivePopGestureRecognizer {
+    
+    return _enableInteractivePopGestureRecognizer;
+}
+
 
 #pragma mark - 点击事件
 - (void)leftNavItemClick
@@ -136,11 +181,6 @@
     
     return NO;
 }
-    
-    
-    
-
-
 
 
 @end

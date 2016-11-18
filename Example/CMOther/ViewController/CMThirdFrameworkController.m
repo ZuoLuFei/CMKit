@@ -12,6 +12,8 @@
 #import "MasterViewController.h"
 #import "GlobalTimelineViewController.h"
 #import "CMAlbumImagesSampleController.h"
+#import "CMWaterfallLayoutController.h"
+
 #import "CMHeadView.h"
 
 
@@ -45,8 +47,9 @@
                        @{@"name":@"ImageMultipleChoice(图片多选器)",@"classType":[CMAlbumImagesSampleController class]},
                        @{@"name":@"Refresh(上拉/下拉刷新)",@"classType":[MJExampleViewController class]},
                        @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
+                       @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]}
+                       
                    ];
-    
     
 }
 
@@ -56,6 +59,8 @@
     
     //1.创建TableView
     UITableView *tableView = [UITableView initWithFrame:self.view.bounds style:UITableViewStylePlain cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine separatorInset:UIEdgeInsetsMake(0, 0, 0, 0) dataSource:self delegate:self];
+    
+    [tableView registerClass:[CMHeadView class] forHeaderFooterViewReuseIdentifier:@"CMHeadView"];
     [self.view addSubview:tableView];
     
 }

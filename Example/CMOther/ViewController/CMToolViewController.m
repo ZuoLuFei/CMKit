@@ -20,6 +20,7 @@
 #import "CMCommonSuperClassSampleController.h"
 #import "CMNewFeaturesController.h"
 #import "CMVideoPlayerSampleController.h"
+#import "CMSystemFontInfoSampleControllerViewController.h"
 
 
 #import "CMHeadView.h"
@@ -56,6 +57,9 @@
                        @{@"name":@"AlterView(警告框)",@"classType":[CMAlterViewSampleController class]},
                        @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
+                       @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
+                       
+                       
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        
 //                       @{@"name":@"Share(分享)",@"classType":@""},
@@ -83,6 +87,10 @@
     
     //1.创建TableView
     UITableView *tableView = [UITableView initWithFrame:self.view.bounds style:UITableViewStylePlain cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine separatorInset:UIEdgeInsetsMake(0, 0, 0, 0) dataSource:self delegate:self];
+    
+    [tableView registerClass:[CMHeadView class] forHeaderFooterViewReuseIdentifier:@"CMHeadView"];
+    
+
     [self.view addSubview:tableView];
     
 }

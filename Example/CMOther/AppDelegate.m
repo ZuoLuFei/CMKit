@@ -66,15 +66,15 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
 #pragma mark - 设置根控制器
 - (void)setupRootViewController{
     
-    _toolNavigationController = [CMBaseNavigationController createNavigationController:[CMToolViewController class] title:@"UtouuCreate" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
+    _toolNavigationController = [CMBaseNavigationController createNavigationController:[CMToolViewController new] title:@"UtouuCreate" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
-    _thirdFrameworkNavigationController = [CMBaseNavigationController createNavigationController:[CMThirdFrameworkController class] title:@"Framework" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
+    _thirdFrameworkNavigationController = [CMBaseNavigationController createNavigationController:[CMThirdFrameworkController new] title:@"Framework" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
     
-    _foundationNavigationController = [CMBaseNavigationController createNavigationController:[CMFoundationCategoryController class] title:@"Foundation" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
+    _foundationNavigationController = [CMBaseNavigationController createNavigationController:[CMFoundationCategoryController new] title:@"Foundation" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
 
-    _uiKitNavigationController = [CMBaseNavigationController createNavigationController:[CMUIKitCategoryController class] title:@"UIKit" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
+    _uiKitNavigationController = [CMBaseNavigationController createNavigationController:[CMUIKitCategoryController new] title:@"UIKit" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
     _tabBarController = [[UITabBarController alloc] init];
     [_tabBarController setViewControllers:@[_toolNavigationController,_thirdFrameworkNavigationController,_foundationNavigationController,_uiKitNavigationController]];

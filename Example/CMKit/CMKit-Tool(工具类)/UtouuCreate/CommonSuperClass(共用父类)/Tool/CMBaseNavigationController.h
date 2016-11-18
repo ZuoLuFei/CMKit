@@ -32,7 +32,17 @@
  
  @return 被创建的导航控制器
  */
-+ (CMBaseNavigationController * _Nonnull)createNavigationController:(Class _Nonnull)viewController title:(NSString * _Nullable)title normalTitleColor:(UIColor * _Nullable)normalTitleColor highLightTitleColor:(UIColor * _Nullable)highLightTitleColor normalImage:(NSString * _Nullable)normalImage selectedImage:(NSString * _Nullable)selecteImage fontOfSize:(CGFloat)fontSize;
++ (CMBaseNavigationController * _Nonnull)createNavigationController:(UIViewController * _Nonnull)viewController title:(NSString * _Nullable)title normalTitleColor:(UIColor * _Nullable)normalTitleColor highLightTitleColor:(UIColor * _Nullable)highLightTitleColor normalImage:(NSString * _Nullable)normalImage selectedImage:(NSString * _Nullable)selecteImage fontOfSize:(CGFloat)fontSize;
+
+
+/**
+ 创建一个是否隐藏Navigation bar的根控制器
+
+ @param rootViewController 一个被当做根控制器的UIViewController
+ @param hidden Navigation bar 是否被隐藏
+ @return 被创建的导航控制器
+ */
+- (instancetype _Nonnull)initWithRootViewController:(UIViewController * _Nonnull)rootViewController setNavigationBarHidden:(BOOL)hidden;
 
 
 @end

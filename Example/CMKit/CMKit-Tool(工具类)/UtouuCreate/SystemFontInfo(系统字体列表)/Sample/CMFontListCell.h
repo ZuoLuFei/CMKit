@@ -1,5 +1,5 @@
 //
-//  CMHeadView.h
+//  CMFontListCell.h
 //  CMKit
 //
 //  Created by HC on 16/11/17.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMHeadView : UITableViewHeaderFooterView
+@interface CMFontListCell : UITableViewCell
 
-@property (nonatomic, copy) NSString *titleStr;
-
+@property (nonatomic, copy) NSString *fontStr;
 
 
 @end
