@@ -8,7 +8,8 @@
 
 
 #import <Foundation/Foundation.h>
-@import UIKit;
+#import <UIKit/UIKit.h>
+//@import UIKit;
 
 /**
  *  此分类增加了一些关于NSString的有用方法

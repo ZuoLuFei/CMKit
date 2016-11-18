@@ -15,6 +15,10 @@
 		470183251DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831B1DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m */; };
 		470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831D1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m */; };
 		470183271DDF34AF00320F76 /* CMWaterfallLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */; };
+		470183301DDF582D00320F76 /* CMScratchAnimationSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701832F1DDF582D00320F76 /* CMScratchAnimationSampleController.m */; };
+		470183361DDF586C00320F76 /* MDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 470183331DDF586C00320F76 /* MDMatrix.m */; };
+		470183371DDF586C00320F76 /* MDScratchImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 470183351DDF586C00320F76 /* MDScratchImageView.mm */; };
+		470183391DDF58AA00320F76 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 470183381DDF58AA00320F76 /* 1.jpg */; };
 		470A9DC31DC8EE9F00206B64 /* CMDetailedFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */; };
 		470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBD1DC8EE9F00206B64 /* CMFoundationCategoryController.m */; };
 		470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBF1DC8EE9F00206B64 /* CMToolViewController.m */; };
@@ -249,6 +253,13 @@
 		4701831D1DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCollectionViewWaterfallHeader.m; sourceTree = "<group>"; };
 		4701831E1DDF34AF00320F76 /* CMWaterfallLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWaterfallLayoutController.h; sourceTree = "<group>"; };
 		4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMWaterfallLayoutController.m; sourceTree = "<group>"; };
+		4701832E1DDF582D00320F76 /* CMScratchAnimationSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMScratchAnimationSampleController.h; sourceTree = "<group>"; };
+		4701832F1DDF582D00320F76 /* CMScratchAnimationSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMScratchAnimationSampleController.m; sourceTree = "<group>"; };
+		470183321DDF586C00320F76 /* MDMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMatrix.h; sourceTree = "<group>"; };
+		470183331DDF586C00320F76 /* MDMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMatrix.m; sourceTree = "<group>"; };
+		470183341DDF586C00320F76 /* MDScratchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDScratchImageView.h; sourceTree = "<group>"; };
+		470183351DDF586C00320F76 /* MDScratchImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MDScratchImageView.mm; sourceTree = "<group>"; };
+		470183381DDF58AA00320F76 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		470A9D9E1DC8B95D00206B64 /* CMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMKit.h; sourceTree = "<group>"; };
 		470A9DBA1DC8EE9F00206B64 /* CMDetailedFunctionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDetailedFunctionController.h; sourceTree = "<group>"; };
 		470A9DBB1DC8EE9F00206B64 /* CMDetailedFunctionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDetailedFunctionController.m; sourceTree = "<group>"; };
@@ -675,6 +686,17 @@
 				4701831F1DDF34AF00320F76 /* CMWaterfallLayoutController.m */,
 			);
 			path = VerticalWaterFlow;
+			sourceTree = "<group>";
+		};
+		470183311DDF586C00320F76 /* MDScratchImageView */ = {
+			isa = PBXGroup;
+			children = (
+				470183321DDF586C00320F76 /* MDMatrix.h */,
+				470183331DDF586C00320F76 /* MDMatrix.m */,
+				470183341DDF586C00320F76 /* MDScratchImageView.h */,
+				470183351DDF586C00320F76 /* MDScratchImageView.mm */,
+			);
+			path = MDScratchImageView;
 			sourceTree = "<group>";
 		};
 		470A9DB91DC8EE9F00206B64 /* ViewController */ = {
@@ -1235,6 +1257,9 @@
 				471A11CF1DDE08EB00574273 /* CMBaseAnimationSampleController.m */,
 				471A11D01DDE08EB00574273 /* CMTransitionAnimationSampleController.h */,
 				471A11D11DDE08EB00574273 /* CMTransitionAnimationSampleController.m */,
+				4701832E1DDF582D00320F76 /* CMScratchAnimationSampleController.h */,
+				4701832F1DDF582D00320F76 /* CMScratchAnimationSampleController.m */,
+				470183381DDF58AA00320F76 /* 1.jpg */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -1242,6 +1267,7 @@
 		471A11D21DDE08EB00574273 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				470183311DDF586C00320F76 /* MDScratchImageView */,
 				471A11D31DDE08EB00574273 /* CMAnimationEffect.h */,
 				471A11D41DDE08EB00574273 /* CMAnimationEffect.m */,
 			);
@@ -1885,6 +1911,7 @@
 				471A126E1DDE08EB00574273 /* profile-image-placeholder@2x.png in Resources */,
 				471A124D1DDE08EB00574273 /* DetailViewController.xib in Resources */,
 				471A12C01DDE08EB00574273 /* btn01_normal@2x.png in Resources */,
+				470183391DDF58AA00320F76 /* 1.jpg in Resources */,
 				471A124F1DDE08EB00574273 /* MasterViewController.xib in Resources */,
 				471A12B91DDE08EB00574273 /* TZImagePickerController.bundle in Resources */,
 				471A12951DDE08EB00574273 /* MJRefresh.bundle in Resources */,
@@ -1952,6 +1979,7 @@
 				471A12911DDE08EB00574273 /* MJRefreshBackStateFooter.m in Sources */,
 				475A3DC91DC7552B00CA45BA /* UIView+CMKit.m in Sources */,
 				475A3DB21DC7552B00CA45BA /* NSArray+CMKit.m in Sources */,
+				470183301DDF582D00320F76 /* CMScratchAnimationSampleController.m in Sources */,
 				471A124A1DDE08EB00574273 /* SDCycleScrollView.m in Sources */,
 				471A126B1DDE08EB00574273 /* CMHttpClientTool.m in Sources */,
 				471A128D1DDE08EB00574273 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1977,6 +2005,7 @@
 				471A12B71DDE08EB00574273 /* TZAssetModel.m in Sources */,
 				471A125A1DDE08EB00574273 /* SDWebImageCompat.m in Sources */,
 				471A124C1DDE08EB00574273 /* DetailViewController.m in Sources */,
+				470183371DDF586C00320F76 /* MDScratchImageView.mm in Sources */,
 				470183251DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m in Sources */,
 				471A12521DDE08EB00574273 /* FLAnimatedImage.m in Sources */,
 				471A12971DDE08EB00574273 /* NSBundle+MJRefresh.m in Sources */,
@@ -2037,6 +2066,7 @@
 				475A3DC41DC7552B00CA45BA /* UIScreen+CMKit.m in Sources */,
 				471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */,
 				471A12881DDE08EB00574273 /* MJRefreshBackFooter.m in Sources */,
+				470183361DDF586C00320F76 /* MDMatrix.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */,

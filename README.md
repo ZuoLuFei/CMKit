@@ -47,7 +47,7 @@ $ pod setup
 platform :ios, ‘7.0’
 
 target ‘TargetName’ do
-pod 'CMKit', '~> 0.1.0’
+pod 'CMKit', '~> 0.1.1’
 end
 ```
 
@@ -56,23 +56,23 @@ end
 ####----------UTOUU 集成工具类(若只使用CMKit工具类中的指定功能，可根据如下目录单独导入)
 
 
-整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.1.0'
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.1.1'
 
-    分类：pod 'CMKit/Category', '~> 0.1.0'
+    分类：pod 'CMKit/Category', '~> 0.1.1'
 
-    警告框：pod 'CMKit/AlertView', '~> 0.1.0’
+    警告框：pod 'CMKit/AlertView', '~> 0.1.1’
 
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.1.0’
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.1.1’
 
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.1.0’
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.1.1’
 
-    二维码：pod 'CMKit/QRCode', '~> 0.1.0’
+    二维码：pod 'CMKit/QRCode', '~> 0.1.1’
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.1.0’  (目前使用传入图片数组即可，后期会不断完善)
+    新特性：pod 'CMKit/NewFeatures', '~> 0.1.1’  (目前使用传入图片数组即可，后期会不断完善)
 
-    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.1.0’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.1.1’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
-    相机、相册：pod 'CMKit/ImagePicker', '~> 0.1.0’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
+    相机、相册：pod 'CMKit/ImagePicker', '~> 0.1.1’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
 
 

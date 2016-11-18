@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import CoreGraphics;
+#import <CoreGraphics/CoreGraphics.h>
 
 /**
  *  此分类增加了一些关于NSNumber的有用方法

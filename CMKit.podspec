@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.0'
+  s.version      = '0.1.1'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -22,7 +22,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AnimationEffect' do |animationEffect|
-    animationEffect.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-AnimationEffect(动画特效)/*.{h,m}'
+    animationEffect.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-AnimationEffect(动画特效)/*'
+    animationEffect.dependency 'CMKit/Category'
   end
 
   s.subspec 'ProgressHUD' do |progressHUD|
