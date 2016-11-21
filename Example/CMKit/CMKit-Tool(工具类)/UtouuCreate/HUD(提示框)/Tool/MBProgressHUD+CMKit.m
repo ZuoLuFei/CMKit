@@ -20,6 +20,18 @@
     hud.labelText = text;
     // 设置图片
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: icon]];
+    
+    
+    //    FLAnimatedImageView *customView = [[FLAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    //    UIImage *image = [UIImage imageWithContentsOfFile:[NSFileManager getBundlePathForFile:@"请检查网络2.gif"]];
+    //    CGRect rect = CGRectMake(0, 0, image.size.width, image.size.height);
+    //    FLAnimatedImageView *customView = [[FLAnimatedImageView alloc] initWithFrame:rect];
+    //    customView.backgroundColor = [UIColor redColor];
+    //    NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"请检查网络2" withExtension:@"gif"];
+    //    [customView sd_setImageWithURL:bundleUrl];
+    //    hud.customView = customView;
+    
+    
     // 再设置模式
     hud.mode = MBProgressHUDModeCustomView;
     

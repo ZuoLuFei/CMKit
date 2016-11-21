@@ -13,6 +13,7 @@
 #import "GlobalTimelineViewController.h"
 #import "CMAlbumImagesSampleController.h"
 #import "CMWaterfallLayoutController.h"
+#import "CMRevealSampleController.h"
 
 #import "CMHeadView.h"
 
@@ -47,7 +48,8 @@
                        @{@"name":@"ImageMultipleChoice(图片多选器)",@"classType":[CMAlbumImagesSampleController class]},
                        @{@"name":@"Refresh(上拉/下拉刷新)",@"classType":[MJExampleViewController class]},
                        @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
-                       @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]}
+                       @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]},
+                       @{@"name":@"RevealContorller(侧滑菜单控制器)",@"classType":[CMRevealSampleController class]},
                        
                    ];
     
@@ -114,6 +116,9 @@
         }else if([dict[@"classType"] isEqual:SourceCode]){
             [MBProgressHUD showSuccess:@"请移步源码对应的类"];
             
+        }else if ([dict[@"classType"] isEqual:[CMRevealSampleController class]]){
+            CMRevealSampleController *Vc = [[CMRevealSampleController alloc] init];
+            [self presentViewController:Vc animated:YES completion:nil];
         }else{
             UIViewController *Vc = [[dict[@"classType"] alloc] init];
             Vc.hidesBottomBarWhenPushed = YES;

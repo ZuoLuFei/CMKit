@@ -21,6 +21,8 @@
 #import "CMNewFeaturesController.h"
 #import "CMVideoPlayerSampleController.h"
 #import "CMSystemFontInfoSampleControllerViewController.h"
+#import "AFNetworkReachabilityManager.h"
+
 
 
 #import "CMHeadView.h"
@@ -48,6 +50,31 @@
     
     //2.创建UI
     [self initUI];
+
+}
+
+
+- (void)viewWillAppear:(BOOL)animated{
+    //3.
+    [self test];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
+    
+}
+
+
+- (void)test{
+
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+    
+        
+    }];
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
 }
 
 #pragma mark - 初始化数据
@@ -58,7 +85,7 @@
                        @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
                        @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
-                       
+
                        
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        
@@ -153,6 +180,7 @@
             Vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:Vc animated:YES];
         }
+        
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -48,6 +48,7 @@ platform :ios, ‘7.0’
 
 target ‘TargetName’ do
 pod 'CMKit', '~> 0.1.1’
+pod 'AFNetworking', '~> 3.0'
 end
 ```
 
@@ -93,6 +94,8 @@ end
 图片选择器[具体地址](https://github.com/banchichen/TZImagePickerController)：pod 'TZImagePickerController'
 
 字典转模型工具[具体地址](https://github.com/CoderMJLee/MJExtension#Features):pod 'MJExtension'
+
+侧滑菜单控制器[具体地址](https://github.com/pkluz/PKRevealController):pod 'PKRevealController'
     
 /**********************************************************************/
 
@@ -179,6 +182,8 @@ Demo共分为三个版块，目前集成功能如下：
     2.5 CyclePicture(无限轮播)
 
     2.6 VerticalWaterFlow(垂直瀑布流)
+
+    2.7 RevealController(侧滑菜单控制器)
 
 3 Foundation分类(关于Foundation框架的分类)
 

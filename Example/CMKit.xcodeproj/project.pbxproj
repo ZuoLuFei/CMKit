@@ -221,6 +221,18 @@
 		4774D17F1DCA566F0067A67F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D17E1DCA566F0067A67F /* Foundation.framework */; };
 		4774D1811DCA571B0067A67F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1801DCA571B0067A67F /* CoreGraphics.framework */; };
 		4774D1831DCA57390067A67F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774D1821DCA57390067A67F /* UIKit.framework */; };
+		4780DB2F1DE301F100343324 /* CMNetworkReachablityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB2E1DE301F100343324 /* CMNetworkReachablityManager.m */; };
+		4780DB741DE343C600343324 /* CAAnimation+PKIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB5A1DE343C600343324 /* CAAnimation+PKIdentifier.m */; };
+		4780DB751DE343C600343324 /* CALayer+PKConvenienceAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB5C1DE343C600343324 /* CALayer+PKConvenienceAnimations.m */; };
+		4780DB761DE343C600343324 /* NSObject+PKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB5E1DE343C600343324 /* NSObject+PKBlocks.m */; };
+		4780DB771DE343C600343324 /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB601DE343C600343324 /* UIViewController+PKRevealController.m */; };
+		4780DB781DE343C600343324 /* PKRevealControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB631DE343C600343324 /* PKRevealControllerView.m */; };
+		4780DB791DE343C600343324 /* PKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB681DE343C600343324 /* PKAnimation.m */; };
+		4780DB7A1DE343C600343324 /* PKLayerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB6A1DE343C600343324 /* PKLayerAnimator.m */; };
+		4780DB7B1DE343C600343324 /* PKSequentialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB6C1DE343C600343324 /* PKSequentialAnimation.m */; };
+		4780DB7C1DE343C600343324 /* PKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB6F1DE343C600343324 /* PKLog.m */; };
+		4780DB7D1DE343C600343324 /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB731DE343C600343324 /* PKRevealController.m */; };
+		4780DB811DE345F400343324 /* CMRevealSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB801DE345F400343324 /* CMRevealSampleController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -632,6 +644,31 @@
 		4774D17E1DCA566F0067A67F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4774D1801DCA571B0067A67F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4774D1821DCA57390067A67F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4780DB2D1DE301F100343324 /* CMNetworkReachablityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNetworkReachablityManager.h; sourceTree = "<group>"; };
+		4780DB2E1DE301F100343324 /* CMNetworkReachablityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNetworkReachablityManager.m; sourceTree = "<group>"; };
+		4780DB591DE343C600343324 /* CAAnimation+PKIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+PKIdentifier.h"; sourceTree = "<group>"; };
+		4780DB5A1DE343C600343324 /* CAAnimation+PKIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+PKIdentifier.m"; sourceTree = "<group>"; };
+		4780DB5B1DE343C600343324 /* CALayer+PKConvenienceAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PKConvenienceAnimations.h"; sourceTree = "<group>"; };
+		4780DB5C1DE343C600343324 /* CALayer+PKConvenienceAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PKConvenienceAnimations.m"; sourceTree = "<group>"; };
+		4780DB5D1DE343C600343324 /* NSObject+PKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PKBlocks.h"; sourceTree = "<group>"; };
+		4780DB5E1DE343C600343324 /* NSObject+PKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PKBlocks.m"; sourceTree = "<group>"; };
+		4780DB5F1DE343C600343324 /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PKRevealController.h"; sourceTree = "<group>"; };
+		4780DB601DE343C600343324 /* UIViewController+PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PKRevealController.m"; sourceTree = "<group>"; };
+		4780DB621DE343C600343324 /* PKRevealControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealControllerView.h; sourceTree = "<group>"; };
+		4780DB631DE343C600343324 /* PKRevealControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealControllerView.m; sourceTree = "<group>"; };
+		4780DB661DE343C600343324 /* PKAnimating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAnimating.h; sourceTree = "<group>"; };
+		4780DB671DE343C600343324 /* PKAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAnimation.h; sourceTree = "<group>"; };
+		4780DB681DE343C600343324 /* PKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAnimation.m; sourceTree = "<group>"; };
+		4780DB691DE343C600343324 /* PKLayerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLayerAnimator.h; sourceTree = "<group>"; };
+		4780DB6A1DE343C600343324 /* PKLayerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLayerAnimator.m; sourceTree = "<group>"; };
+		4780DB6B1DE343C600343324 /* PKSequentialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSequentialAnimation.h; sourceTree = "<group>"; };
+		4780DB6C1DE343C600343324 /* PKSequentialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSequentialAnimation.m; sourceTree = "<group>"; };
+		4780DB6E1DE343C600343324 /* PKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLog.h; sourceTree = "<group>"; };
+		4780DB6F1DE343C600343324 /* PKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLog.m; sourceTree = "<group>"; };
+		4780DB721DE343C600343324 /* PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealController.h; sourceTree = "<group>"; };
+		4780DB731DE343C600343324 /* PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealController.m; sourceTree = "<group>"; };
+		4780DB7F1DE345F400343324 /* CMRevealSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRevealSampleController.h; sourceTree = "<group>"; };
+		4780DB801DE345F400343324 /* CMRevealSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRevealSampleController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -728,6 +765,7 @@
 		471A10DE1DDE08EA00574273 /* FrameworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				4780DB551DE343C600343324 /* RevealController(侧滑控制器) */,
 				473AE0AC1DDF1F590055AA68 /* Waterfall(瀑布流) */,
 				471A10DF1DDE08EA00574273 /* CyclePicture(无限轮播) */,
 				471A11031DDE08EA00574273 /* ImageCache(图片缓存) */,
@@ -1167,6 +1205,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				4780DB2B1DE301BF00343324 /* NetworkReachabilityManager(网络检测) */,
 				471A12CE1DDE11D900574273 /* SystemFontInfo(系统字体列表) */,
 				471A11B61DDE08EB00574273 /* 3DTouch */,
 				471A11C01DDE08EB00574273 /* AlertView(警告框) */,
@@ -1771,6 +1810,117 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4780DB2B1DE301BF00343324 /* NetworkReachabilityManager(网络检测) */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB2C1DE301BF00343324 /* Tool */,
+			);
+			path = "NetworkReachabilityManager(网络检测)";
+			sourceTree = "<group>";
+		};
+		4780DB2C1DE301BF00343324 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB2D1DE301F100343324 /* CMNetworkReachablityManager.h */,
+				4780DB2E1DE301F100343324 /* CMNetworkReachablityManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4780DB551DE343C600343324 /* RevealController(侧滑控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB7E1DE345B600343324 /* Sample */,
+				4780DB561DE343C600343324 /* Tool */,
+			);
+			path = "RevealController(侧滑控制器)";
+			sourceTree = "<group>";
+		};
+		4780DB561DE343C600343324 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB571DE343C600343324 /* PKRevealController */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4780DB571DE343C600343324 /* PKRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB581DE343C600343324 /* Categories */,
+				4780DB611DE343C600343324 /* Classes */,
+				4780DB641DE343C600343324 /* Modules */,
+				4780DB721DE343C600343324 /* PKRevealController.h */,
+				4780DB731DE343C600343324 /* PKRevealController.m */,
+			);
+			path = PKRevealController;
+			sourceTree = "<group>";
+		};
+		4780DB581DE343C600343324 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB591DE343C600343324 /* CAAnimation+PKIdentifier.h */,
+				4780DB5A1DE343C600343324 /* CAAnimation+PKIdentifier.m */,
+				4780DB5B1DE343C600343324 /* CALayer+PKConvenienceAnimations.h */,
+				4780DB5C1DE343C600343324 /* CALayer+PKConvenienceAnimations.m */,
+				4780DB5D1DE343C600343324 /* NSObject+PKBlocks.h */,
+				4780DB5E1DE343C600343324 /* NSObject+PKBlocks.m */,
+				4780DB5F1DE343C600343324 /* UIViewController+PKRevealController.h */,
+				4780DB601DE343C600343324 /* UIViewController+PKRevealController.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4780DB611DE343C600343324 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB621DE343C600343324 /* PKRevealControllerView.h */,
+				4780DB631DE343C600343324 /* PKRevealControllerView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4780DB641DE343C600343324 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB651DE343C600343324 /* PKLayerAnimator */,
+				4780DB6D1DE343C600343324 /* PKLog */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4780DB651DE343C600343324 /* PKLayerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB661DE343C600343324 /* PKAnimating.h */,
+				4780DB671DE343C600343324 /* PKAnimation.h */,
+				4780DB681DE343C600343324 /* PKAnimation.m */,
+				4780DB691DE343C600343324 /* PKLayerAnimator.h */,
+				4780DB6A1DE343C600343324 /* PKLayerAnimator.m */,
+				4780DB6B1DE343C600343324 /* PKSequentialAnimation.h */,
+				4780DB6C1DE343C600343324 /* PKSequentialAnimation.m */,
+			);
+			path = PKLayerAnimator;
+			sourceTree = "<group>";
+		};
+		4780DB6D1DE343C600343324 /* PKLog */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB6E1DE343C600343324 /* PKLog.h */,
+				4780DB6F1DE343C600343324 /* PKLog.m */,
+			);
+			path = PKLog;
+			sourceTree = "<group>";
+		};
+		4780DB7E1DE345B600343324 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4780DB7F1DE345F400343324 /* CMRevealSampleController.h */,
+				4780DB801DE345F400343324 /* CMRevealSampleController.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1954,6 +2104,7 @@
 				471A12A21DDE08EB00574273 /* CMAnimationCell.m in Sources */,
 				471A12631DDE08EB00574273 /* UIImage+WebP.m in Sources */,
 				471A0EE61DDDC57000574273 /* CMThirdFrameworkController.m in Sources */,
+				4780DB7C1DE343C600343324 /* PKLog.m in Sources */,
 				471A12BF1DDE08EB00574273 /* UIView+Layout.m in Sources */,
 				475A3DBB1DC7552B00CA45BA /* NSProcessInfo+CMKIt.m in Sources */,
 				475A3DC61DC7552B00CA45BA /* UITableView+CMKit.m in Sources */,
@@ -1977,6 +2128,7 @@
 				471A12BE1DDE08EB00574273 /* TZVideoPlayerController.m in Sources */,
 				471A124E1DDE08EB00574273 /* MasterViewController.m in Sources */,
 				471A12911DDE08EB00574273 /* MJRefreshBackStateFooter.m in Sources */,
+				4780DB791DE343C600343324 /* PKAnimation.m in Sources */,
 				475A3DC91DC7552B00CA45BA /* UIView+CMKit.m in Sources */,
 				475A3DB21DC7552B00CA45BA /* NSArray+CMKit.m in Sources */,
 				470183301DDF582D00320F76 /* CMScratchAnimationSampleController.m in Sources */,
@@ -1996,6 +2148,7 @@
 				471A12571DDE08EB00574273 /* NSImage+WebCache.m in Sources */,
 				471A12751DDE08EB00574273 /* AFURLSessionManager.m in Sources */,
 				475A3DCB1DC7552B00CA45BA /* UIWebView+CMKit.m in Sources */,
+				4780DB741DE343C600343324 /* CAAnimation+PKIdentifier.m in Sources */,
 				475A3DB91DC7552B00CA45BA /* NSNumber+CMKit.m in Sources */,
 				471A12AC1DDE08EB00574273 /* CMCryptor.m in Sources */,
 				471A126F1DDE08EB00574273 /* PostTableViewCell.m in Sources */,
@@ -2010,6 +2163,7 @@
 				471A12521DDE08EB00574273 /* FLAnimatedImage.m in Sources */,
 				471A12971DDE08EB00574273 /* NSBundle+MJRefresh.m in Sources */,
 				471A12981DDE08EB00574273 /* UIScrollView+MJExtension.m in Sources */,
+				4780DB751DE343C600343324 /* CALayer+PKConvenienceAnimations.m in Sources */,
 				471A12551DDE08EB00574273 /* MKAnnotationView+WebCache.m in Sources */,
 				471A12C61DDE08EB00574273 /* CMQRCodeSampleController.m in Sources */,
 				471A128E1DDE08EB00574273 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -2023,6 +2177,7 @@
 				471A129D1DDE08EB00574273 /* CM3DTouchPreviewSampleController.m in Sources */,
 				471A12B81DDE08EB00574273 /* TZImageManager.m in Sources */,
 				475A3DB41DC7552B00CA45BA /* NSDate+CMKit.m in Sources */,
+				4780DB781DE343C600343324 /* PKRevealControllerView.m in Sources */,
 				471A127D1DDE08EB00574273 /* MJExample.m in Sources */,
 				471A12821DDE08EB00574273 /* MJTableViewController.m in Sources */,
 				471A12A31DDE08EB00574273 /* CMAnimationSampleController.m in Sources */,
@@ -2054,6 +2209,7 @@
 				471A127E1DDE08EB00574273 /* MJExampleViewController.m in Sources */,
 				471A12471DDE08EB00574273 /* TADotView.m in Sources */,
 				471A12BC1DDE08EB00574273 /* TZPhotoPreviewCell.m in Sources */,
+				4780DB811DE345F400343324 /* CMRevealSampleController.m in Sources */,
 				471A12961DDE08EB00574273 /* MJRefreshConst.m in Sources */,
 				475A3DCA1DC7552B00CA45BA /* UIViewController+CMKit.m in Sources */,
 				471A12991DDE08EB00574273 /* UIScrollView+MJRefresh.m in Sources */,
@@ -2069,6 +2225,7 @@
 				470183361DDF586C00320F76 /* MDMatrix.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				4780DB761DE343C600343324 /* NSObject+PKBlocks.m in Sources */,
 				470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */,
 				470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */,
 				471A0EEA1DDDC61100574273 /* CMHeadView.m in Sources */,
@@ -2083,14 +2240,17 @@
 				471A12851DDE08EB00574273 /* MJWebViewViewController.m in Sources */,
 				471A12D21DDE120E00574273 /* CMSystemFontInfoSampleControllerViewController.m in Sources */,
 				471A128C1DDE08EB00574273 /* MJRefreshAutoGifFooter.m in Sources */,
+				4780DB7B1DE343C600343324 /* PKSequentialAnimation.m in Sources */,
 				471A12B41DDE08EB00574273 /* CMImagePickerManager.m in Sources */,
 				471A12621DDE08EB00574273 /* UIImage+MultiFormat.m in Sources */,
+				4780DB771DE343C600343324 /* UIViewController+PKRevealController.m in Sources */,
 				471A12771DDE08EB00574273 /* MJChiBaoZiFooter.m in Sources */,
 				471A12541DDE08EB00574273 /* FLAnimatedImageView.m in Sources */,
 				471A12AB1DDE08EB00574273 /* CMBaseViewController.m in Sources */,
 				471A12481DDE08EB00574273 /* TAPageControl.m in Sources */,
 				475A3D651DC753BD00CA45BA /* AppDelegate.m in Sources */,
 				471A125E1DDE08EB00574273 /* SDWebImageManager.m in Sources */,
+				4780DB7A1DE343C600343324 /* PKLayerAnimator.m in Sources */,
 				470183241DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m in Sources */,
 				471A12761DDE08EB00574273 /* UIViewController+Example.m in Sources */,
 				471A12B31DDE08EB00574273 /* UTTestCell.m in Sources */,
@@ -2105,10 +2265,12 @@
 				471A12681DDE08EB00574273 /* GlobalTimelineViewController.m in Sources */,
 				471A128B1DDE08EB00574273 /* MJRefreshHeader.m in Sources */,
 				471A12C91DDE08EB00574273 /* CMQRCodeManager.m in Sources */,
+				4780DB2F1DE301F100343324 /* CMNetworkReachablityManager.m in Sources */,
 				471A12371DDE08EB00574273 /* CMCyclePictureSampleController.m in Sources */,
 				471A12381DDE08EB00574273 /* DemoVCWithXib.m in Sources */,
 				471A12871DDE08EB00574273 /* MJRefreshAutoFooter.m in Sources */,
 				471A12BB1DDE08EB00574273 /* TZPhotoPickerController.m in Sources */,
+				4780DB7D1DE343C600343324 /* PKRevealController.m in Sources */,
 				475A3DB61DC7552B00CA45BA /* NSFileManager+CMKit.m in Sources */,
 				471A12B11DDE08EB00574273 /* CMAlbumImagesSampleController.m in Sources */,
 			);

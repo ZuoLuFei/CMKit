@@ -18,6 +18,7 @@
 #import "CMThirdFrameworkController.h"
 
 
+
 static NSString * const shortItemType1 = @"com.utouu.CMKit.Animatation";
 static NSString * const shortItemType2 = @"com.utouu.CMKit.Foundation";
 static NSString * const shortItemType3 = @"com.utouu.CMKit.UIKit";
@@ -34,6 +35,7 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
 @property (nonatomic, strong) CMBaseNavigationController *foundationNavigationController;
 
 @property (nonatomic, strong) CMBaseNavigationController *uiKitNavigationController;
+
 
 
 
@@ -68,6 +70,9 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
     
     _toolNavigationController = [CMBaseNavigationController createNavigationController:[CMToolViewController new] title:@"UtouuCreate" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
+
+    
+    
     _thirdFrameworkNavigationController = [CMBaseNavigationController createNavigationController:[CMThirdFrameworkController new] title:@"Framework" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
     
@@ -82,6 +87,7 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
     self.window.rootViewController = _tabBarController;
     [self.window makeKeyAndVisible];
 }
+
 
 
 #pragma mark - 创建Touch Items
