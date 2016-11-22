@@ -1,0 +1,14 @@
+
+2016.11.12  
+
+->提升版本至0.1.2
+
+新增功能板块：
+1.CItyList（城市列表选择）
+2.SystemFontInfo（系统字体列表）
+3.VerticalWaterFlow(垂直瀑布流)
+4.RevealController(侧滑菜单控制器)
+
+扩充功能板块：
+1.AnimationEffect(动画特效)  —> 扩充ScratchAnimation（刮奖动画效果）
+2.CommonSuperClass(共用父类) —>扩充部分方法
