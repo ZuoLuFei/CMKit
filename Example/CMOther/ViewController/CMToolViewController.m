@@ -22,6 +22,7 @@
 #import "CMVideoPlayerSampleController.h"
 #import "CMSystemFontInfoSampleControllerViewController.h"
 #import "AFNetworkReachabilityManager.h"
+#import "CMCityListSampleController.h"
 
 
 
@@ -85,7 +86,8 @@
                        @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
                        @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
-
+                       @{@"name":@"CityList(城市列表)",@"classType":[CMCityListSampleController class]},
+                       
                        
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        

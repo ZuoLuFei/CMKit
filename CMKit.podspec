@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.1'
+  s.version      = '0.1.2'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'AnimationEffect' do |animationEffect|
-    animationEffect.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-AnimationEffect(动画特效)/*'
+    animationEffect.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-AnimationEffect(动画特效)/**/*.{h,m}'
     animationEffect.dependency 'CMKit/Category'
   end
 
@@ -50,6 +50,11 @@ Pod::Spec.new do |s|
   s.subspec 'ImagePicker' do |imagePicker|
     imagePicker.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-ImagePicker(相机、相册)/CMImagePickerManager.{h,m}'
     imagePicker.frameworks  = 'AVFoundation','AssetsLibrary','Photos'
+  end
+
+  s.subspec 'CityList' do |cityList|
+    cityList.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/**/*.{h,m}'
+    cityList.resources = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/CMCityList.bundle'
   end
 
 
