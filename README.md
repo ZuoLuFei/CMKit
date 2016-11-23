@@ -100,6 +100,9 @@ end
 字典转模型工具[具体地址](https://github.com/CoderMJLee/MJExtension#Features):pod 'MJExtension'
 
 侧滑菜单控制器[具体地址](https://github.com/pkluz/PKRevealController):pod 'PKRevealController'
+
+图片裁剪[具体地址](https://github.com/TimOliver/TOCropViewController):pod 'TOCropViewController'
+
     
 /**********************************************************************/
 
@@ -192,6 +195,8 @@ Demo共分为三个版块，目前集成功能如下：
     2.6 VerticalWaterFlow(垂直瀑布流)
 
     2.7 RevealController(侧滑菜单控制器)
+
+    2.8 CropPicture(图片裁剪)
 
 3 Foundation分类(关于Foundation框架的分类)
 

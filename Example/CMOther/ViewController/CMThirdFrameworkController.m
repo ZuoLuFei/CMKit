@@ -14,6 +14,7 @@
 #import "CMAlbumImagesSampleController.h"
 #import "CMWaterfallLayoutController.h"
 #import "CMRevealSampleController.h"
+#import "CMCropPictureSampleController.h"
 
 #import "CMHeadView.h"
 
@@ -50,6 +51,7 @@
                        @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
                        @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]},
                        @{@"name":@"RevealContorller(侧滑菜单控制器)",@"classType":[CMRevealSampleController class]},
+                       @{@"name":@"CropPicture(裁剪图片)",@"classType":[CMCropPictureSampleController class]}
                        
                    ];
     
