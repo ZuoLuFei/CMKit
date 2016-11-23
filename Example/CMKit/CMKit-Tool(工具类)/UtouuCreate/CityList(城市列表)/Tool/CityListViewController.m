@@ -466,7 +466,6 @@ NSInteger cityNameSort(id str1, id str2, void *context)
  *  通过搜索条件过滤得到搜索结果
  *
  *  @param searchText 关键词
- *  @param scope      范围
  */
 - (void)filterContentForSearchText:(NSString*)searchText {
     

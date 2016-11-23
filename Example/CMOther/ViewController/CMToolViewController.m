@@ -6,6 +6,7 @@
 //  Copyright © 2016年 UTOUU. All rights reserved.
 //
 
+// Controller
 #import "CMToolViewController.h"
 #import "CMAlterViewSampleController.h"
 #import "CMQRCodeSampleController.h"
@@ -23,10 +24,12 @@
 #import "CMSystemFontInfoSampleControllerViewController.h"
 #import "AFNetworkReachabilityManager.h"
 #import "CMCityListSampleController.h"
+#import "CMDBOperationSamplyController.h"
 
-
-
+//View
 #import "CMHeadView.h"
+
+
 
 #define SourceCode @"SourceCode"
 
@@ -55,28 +58,28 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated{
-    //3.
-    [self test];
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
-    
-}
-
-
-- (void)test{
-
-    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
-    
-        
-    }];
-    
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    //3.
+//    [self networkTest];
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated{
+//    [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
+//    
+//}
+//
+//
+//- (void)networkTest{
+//
+//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+//    
+//        
+//    }];
+//    
+//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+//    
+//}
 
 #pragma mark - 初始化数据
 - (void)initData{
@@ -87,7 +90,7 @@
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
                        @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
                        @{@"name":@"CityList(城市列表)",@"classType":[CMCityListSampleController class]},
-                       
+                       @{@"name":@"FMDBOperation(FMDB操作)",@"classType":[CMDBOperationSamplyController class]},
                        
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        

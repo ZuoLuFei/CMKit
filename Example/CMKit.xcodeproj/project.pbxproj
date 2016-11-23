@@ -183,6 +183,20 @@
 		471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DA1DDE13E800574273 /* CMFontListCell.m */; };
 		471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */; };
 		473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */; };
+		4750522C1DE5B33000FEE189 /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750521D1DE5B33000FEE189 /* JKDBHelper.m */; };
+		4750522D1DE5B33000FEE189 /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750521F1DE5B33000FEE189 /* JKDBModel.m */; };
+		4750522E1DE5B33000FEE189 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 475052221DE5B33000FEE189 /* FMDatabase.m */; };
+		4750522F1DE5B33000FEE189 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 475052241DE5B33000FEE189 /* FMDatabaseAdditions.m */; };
+		475052301DE5B33000FEE189 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 475052261DE5B33000FEE189 /* FMDatabasePool.m */; };
+		475052311DE5B33000FEE189 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 475052281DE5B33000FEE189 /* FMDatabaseQueue.m */; };
+		475052321DE5B33000FEE189 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750522B1DE5B33000FEE189 /* FMResultSet.m */; };
+		475052431DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750523D1DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.m */; };
+		475052441DE5B4AC00FEE189 /* CMDBOperationSamplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750523F1DE5B4AC00FEE189 /* CMDBOperationSamplyController.m */; };
+		475052451DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475052401DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib */; };
+		4750524B1DE5B61F00FEE189 /* CMDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750524A1DE5B61F00FEE189 /* CMDBUserModel.m */; };
+		4750524D1DE5B85900FEE189 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4750524C1DE5B85900FEE189 /* libsqlite3.tbd */; };
+		475052511DE5BB4100FEE189 /* CMDBOperationQueryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750524F1DE5BB4100FEE189 /* CMDBOperationQueryCell.m */; };
+		475052521DE5BB4100FEE189 /* CMDBOperationQueryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475052501DE5BB4100FEE189 /* CMDBOperationQueryCell.xib */; };
 		4759CF381DE4532A0085230D /* CMCityList.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4759CF371DE4532A0085230D /* CMCityList.bundle */; };
 		475A3D411DC7536D00CA45BA /* CMKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3D401DC7536D00CA45BA /* CMKitTests.m */; };
 		475A3D4C1DC7536D00CA45BA /* CMKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475A3D4B1DC7536D00CA45BA /* CMKitUITests.m */; };
@@ -247,6 +261,8 @@
 		4780DBAB1DE3638B00343324 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB9C1DE3638B00343324 /* PinyinHelper.m */; };
 		4780DBAD1DE3638B00343324 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB9F1DE3638B00343324 /* ZYPinYinSearch.m */; };
 		4780DBB01DE363CF00343324 /* CMCityListSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DBAF1DE363CF00343324 /* CMCityListSampleController.m */; };
+		47F4356F1DE5E10B00F4DD4A /* eay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F4356E1DE5E10B00F4DD4A /* eay@2x.png */; };
+		47F435711DE5E11000F4DD4A /* portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F435701DE5E11000F4DD4A /* portrait.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -586,6 +602,32 @@
 		471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListHeaderView.m; sourceTree = "<group>"; };
 		473AE0AF1DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		4750521C1DE5B33000FEE189 /* JKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBHelper.h; sourceTree = "<group>"; };
+		4750521D1DE5B33000FEE189 /* JKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBHelper.m; sourceTree = "<group>"; };
+		4750521E1DE5B33000FEE189 /* JKDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBModel.h; sourceTree = "<group>"; };
+		4750521F1DE5B33000FEE189 /* JKDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKDBModel.m; sourceTree = "<group>"; };
+		475052211DE5B33000FEE189 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		475052221DE5B33000FEE189 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		475052231DE5B33000FEE189 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		475052241DE5B33000FEE189 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		475052251DE5B33000FEE189 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		475052261DE5B33000FEE189 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		475052271DE5B33000FEE189 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		475052281DE5B33000FEE189 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		475052291DE5B33000FEE189 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		4750522A1DE5B33000FEE189 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		4750522B1DE5B33000FEE189 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		4750523C1DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDBOperationQuerySampleController.h; sourceTree = "<group>"; };
+		4750523D1DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDBOperationQuerySampleController.m; sourceTree = "<group>"; };
+		4750523E1DE5B4AC00FEE189 /* CMDBOperationSamplyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDBOperationSamplyController.h; sourceTree = "<group>"; };
+		4750523F1DE5B4AC00FEE189 /* CMDBOperationSamplyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDBOperationSamplyController.m; sourceTree = "<group>"; };
+		475052401DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMDBOperationSamplyController.xib; sourceTree = "<group>"; };
+		475052491DE5B61F00FEE189 /* CMDBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDBUserModel.h; sourceTree = "<group>"; };
+		4750524A1DE5B61F00FEE189 /* CMDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDBUserModel.m; sourceTree = "<group>"; };
+		4750524C1DE5B85900FEE189 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4750524E1DE5BB4100FEE189 /* CMDBOperationQueryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDBOperationQueryCell.h; sourceTree = "<group>"; };
+		4750524F1DE5BB4100FEE189 /* CMDBOperationQueryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMDBOperationQueryCell.m; sourceTree = "<group>"; };
+		475052501DE5BB4100FEE189 /* CMDBOperationQueryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMDBOperationQueryCell.xib; sourceTree = "<group>"; };
 		4759CF371DE4532A0085230D /* CMCityList.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CMCityList.bundle; sourceTree = "<group>"; };
 		475A3D231DC7536D00CA45BA /* CMKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475A3D3C1DC7536D00CA45BA /* CMKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -710,6 +752,8 @@
 		4780DB9F1DE3638B00343324 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
 		4780DBAE1DE363CF00343324 /* CMCityListSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCityListSampleController.h; sourceTree = "<group>"; };
 		4780DBAF1DE363CF00343324 /* CMCityListSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCityListSampleController.m; sourceTree = "<group>"; };
+		47F4356E1DE5E10B00F4DD4A /* eay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eay@2x.png"; sourceTree = "<group>"; };
+		47F435701DE5E11000F4DD4A /* portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +761,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4750524D1DE5B85900FEE189 /* libsqlite3.tbd in Frameworks */,
 				4774D1831DCA57390067A67F /* UIKit.framework in Frameworks */,
 				4774D1811DCA571B0067A67F /* CoreGraphics.framework in Frameworks */,
 				4774D17F1DCA566F0067A67F /* Foundation.framework in Frameworks */,
@@ -1246,6 +1291,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				475052181DE5B33000FEE189 /* FMDBOperation(FMDB操作) */,
 				4780DB821DE3638B00343324 /* CityList(城市列表) */,
 				4780DB2B1DE301BF00343324 /* NetworkReachabilityManager(网络检测) */,
 				471A12CE1DDE11D900574273 /* SystemFontInfo(系统字体列表) */,
@@ -1689,6 +1735,96 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		475052181DE5B33000FEE189 /* FMDBOperation(FMDB操作) */ = {
+			isa = PBXGroup;
+			children = (
+				475052191DE5B33000FEE189 /* Sample */,
+				4750521A1DE5B33000FEE189 /* Tool */,
+			);
+			path = "FMDBOperation(FMDB操作)";
+			sourceTree = "<group>";
+		};
+		475052191DE5B33000FEE189 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4750523B1DE5B4AC00FEE189 /* Controllers */,
+				475052411DE5B4AC00FEE189 /* Models */,
+				475052421DE5B4AC00FEE189 /* Views */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		4750521A1DE5B33000FEE189 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4750521B1DE5B33000FEE189 /* DBModel */,
+				475052201DE5B33000FEE189 /* FMDB */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4750521B1DE5B33000FEE189 /* DBModel */ = {
+			isa = PBXGroup;
+			children = (
+				4750521C1DE5B33000FEE189 /* JKDBHelper.h */,
+				4750521D1DE5B33000FEE189 /* JKDBHelper.m */,
+				4750521E1DE5B33000FEE189 /* JKDBModel.h */,
+				4750521F1DE5B33000FEE189 /* JKDBModel.m */,
+			);
+			path = DBModel;
+			sourceTree = "<group>";
+		};
+		475052201DE5B33000FEE189 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				475052211DE5B33000FEE189 /* FMDatabase.h */,
+				475052221DE5B33000FEE189 /* FMDatabase.m */,
+				475052231DE5B33000FEE189 /* FMDatabaseAdditions.h */,
+				475052241DE5B33000FEE189 /* FMDatabaseAdditions.m */,
+				475052251DE5B33000FEE189 /* FMDatabasePool.h */,
+				475052261DE5B33000FEE189 /* FMDatabasePool.m */,
+				475052271DE5B33000FEE189 /* FMDatabaseQueue.h */,
+				475052281DE5B33000FEE189 /* FMDatabaseQueue.m */,
+				475052291DE5B33000FEE189 /* FMDB.h */,
+				4750522A1DE5B33000FEE189 /* FMResultSet.h */,
+				4750522B1DE5B33000FEE189 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		4750523B1DE5B4AC00FEE189 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4750523C1DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.h */,
+				4750523D1DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.m */,
+				4750523E1DE5B4AC00FEE189 /* CMDBOperationSamplyController.h */,
+				4750523F1DE5B4AC00FEE189 /* CMDBOperationSamplyController.m */,
+				475052401DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib */,
+				47F4356E1DE5E10B00F4DD4A /* eay@2x.png */,
+				47F435701DE5E11000F4DD4A /* portrait.png */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		475052411DE5B4AC00FEE189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				475052491DE5B61F00FEE189 /* CMDBUserModel.h */,
+				4750524A1DE5B61F00FEE189 /* CMDBUserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		475052421DE5B4AC00FEE189 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4750524E1DE5BB4100FEE189 /* CMDBOperationQueryCell.h */,
+				4750524F1DE5BB4100FEE189 /* CMDBOperationQueryCell.m */,
+				475052501DE5BB4100FEE189 /* CMDBOperationQueryCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		475A3D1A1DC7536D00CA45BA = {
 			isa = PBXGroup;
 			children = (
@@ -1845,6 +1981,7 @@
 		4774D17D1DCA566E0067A67F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4750524C1DE5B85900FEE189 /* libsqlite3.tbd */,
 				4774D1821DCA57390067A67F /* UIKit.framework */,
 				4774D1801DCA571B0067A67F /* CoreGraphics.framework */,
 				4774D17E1DCA566F0067A67F /* Foundation.framework */,
@@ -2129,12 +2266,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				471A12411DDE08EB00574273 /* pageControlCurrentDot@3x.png in Resources */,
+				475052451DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib in Resources */,
 				471A12361DDE08EB00574273 /* 005.jpg in Resources */,
 				471A12C21DDE08EB00574273 /* welcome_guide_1_new@2x.png in Resources */,
 				470183231DDF34AF00320F76 /* cat4.jpg in Resources */,
 				475A3D691DC753BD00CA45BA /* Info.plist in Resources */,
 				471A12441DDE08EB00574273 /* placeholder@2x.png in Resources */,
 				471A129C1DDE08EB00574273 /* CM3DTouchCommitSampleController.xib in Resources */,
+				47F435711DE5E11000F4DD4A /* portrait.png in Resources */,
 				470183201DDF34AF00320F76 /* cat1.jpg in Resources */,
 				471A12421DDE08EB00574273 /* pageControlDot@2x.png in Resources */,
 				470183221DDF34AF00320F76 /* cat3.jpg in Resources */,
@@ -2149,6 +2288,7 @@
 				471A12511DDE08EB00574273 /* placeholder@2x.png in Resources */,
 				471A123D1DDE08EB00574273 /* h4.jpg in Resources */,
 				471A12861DDE08EB00574273 /* MJWebViewViewController.xib in Resources */,
+				47F4356F1DE5E10B00F4DD4A /* eay@2x.png in Resources */,
 				471A12431DDE08EB00574273 /* pageControlDot@3x.png in Resources */,
 				471A123C1DDE08EB00574273 /* h3.jpg in Resources */,
 				471A129E1DDE08EB00574273 /* CM3DTouchPreviewSampleController.xib in Resources */,
@@ -2170,6 +2310,7 @@
 				471A123E1DDE08EB00574273 /* h6@2x.png in Resources */,
 				471A123A1DDE08EB00574273 /* h1.jpg in Resources */,
 				4759CF381DE4532A0085230D /* CMCityList.bundle in Resources */,
+				475052521DE5BB4100FEE189 /* CMDBOperationQueryCell.xib in Resources */,
 				471A12C11DDE08EB00574273 /* btn01_on@2x.png in Resources */,
 				471A123B1DDE08EB00574273 /* h2.jpg in Resources */,
 				471A12841DDE08EB00574273 /* MJTestViewController.xib in Resources */,
@@ -2201,6 +2342,7 @@
 				470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */,
 				475A3DCC1DC7552B00CA45BA /* UIWindow+CMKit.m in Sources */,
 				475A3DC51DC7552B00CA45BA /* UIScrollView+CMKit.m in Sources */,
+				4750522C1DE5B33000FEE189 /* JKDBHelper.m in Sources */,
 				471A12AA1DDE08EB00574273 /* CMBaseNavigationController.m in Sources */,
 				471A12A21DDE08EB00574273 /* CMAnimationCell.m in Sources */,
 				471A12631DDE08EB00574273 /* UIImage+WebP.m in Sources */,
@@ -2246,6 +2388,7 @@
 				471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */,
 				471A12831DDE08EB00574273 /* MJTestViewController.m in Sources */,
 				471A12D51DDE136B00574273 /* CMFontInfoModel.m in Sources */,
+				4750522D1DE5B33000FEE189 /* JKDBModel.m in Sources */,
 				471A12601DDE08EB00574273 /* UIButton+WebCache.m in Sources */,
 				475A3DC81DC7552B00CA45BA /* UIToolbar+CMKit.m in Sources */,
 				471A12571DDE08EB00574273 /* NSImage+WebCache.m in Sources */,
@@ -2253,7 +2396,9 @@
 				475A3DCB1DC7552B00CA45BA /* UIWebView+CMKit.m in Sources */,
 				4780DB741DE343C600343324 /* CAAnimation+PKIdentifier.m in Sources */,
 				475A3DB91DC7552B00CA45BA /* NSNumber+CMKit.m in Sources */,
+				475052321DE5B33000FEE189 /* FMResultSet.m in Sources */,
 				471A12AC1DDE08EB00574273 /* CMCryptor.m in Sources */,
+				4750522E1DE5B33000FEE189 /* FMDatabase.m in Sources */,
 				471A126F1DDE08EB00574273 /* PostTableViewCell.m in Sources */,
 				470183271DDF34AF00320F76 /* CMWaterfallLayoutController.m in Sources */,
 				471A125F1DDE08EB00574273 /* SDWebImagePrefetcher.m in Sources */,
@@ -2261,10 +2406,12 @@
 				471A12B71DDE08EB00574273 /* TZAssetModel.m in Sources */,
 				471A125A1DDE08EB00574273 /* SDWebImageCompat.m in Sources */,
 				471A124C1DDE08EB00574273 /* DetailViewController.m in Sources */,
+				475052301DE5B33000FEE189 /* FMDatabasePool.m in Sources */,
 				470183371DDF586C00320F76 /* MDScratchImageView.mm in Sources */,
 				470183251DDF34AF00320F76 /* CMCollectionViewWaterfallFooter.m in Sources */,
 				471A12521DDE08EB00574273 /* FLAnimatedImage.m in Sources */,
 				471A12971DDE08EB00574273 /* NSBundle+MJRefresh.m in Sources */,
+				4750522F1DE5B33000FEE189 /* FMDatabaseAdditions.m in Sources */,
 				471A12981DDE08EB00574273 /* UIScrollView+MJExtension.m in Sources */,
 				4780DB751DE343C600343324 /* CALayer+PKConvenienceAnimations.m in Sources */,
 				471A12551DDE08EB00574273 /* MKAnnotationView+WebCache.m in Sources */,
@@ -2273,6 +2420,7 @@
 				475A3DC71DC7552B00CA45BA /* UITextField+CMKit.m in Sources */,
 				470A9DC61DC8EE9F00206B64 /* CMUIKitCategoryController.m in Sources */,
 				471A12C51DDE08EB00574273 /* CMNewFeaturesController.m in Sources */,
+				475052511DE5BB4100FEE189 /* CMDBOperationQueryCell.m in Sources */,
 				471A12661DDE08EB00574273 /* UIView+WebCache.m in Sources */,
 				4780DBAA1DE3638B00343324 /* PinYinForObjc.m in Sources */,
 				4780DBA51DE3638B00343324 /* ChineseInclude.m in Sources */,
@@ -2290,9 +2438,11 @@
 				471A12A51DDE08EB00574273 /* CMBaseAnimationSampleController.m in Sources */,
 				475A3DC21DC7552B00CA45BA /* UILabel+CMKit.m in Sources */,
 				471A12811DDE08EB00574273 /* MJCollectionViewController.m in Sources */,
+				4750524B1DE5B61F00FEE189 /* CMDBUserModel.m in Sources */,
 				471A12931DDE08EB00574273 /* MJRefreshNormalHeader.m in Sources */,
 				475A3DC31DC7552B00CA45BA /* UINavigationBar+CMKit.m in Sources */,
 				471A126A1DDE08EB00574273 /* User.m in Sources */,
+				475052311DE5B33000FEE189 /* FMDatabaseQueue.m in Sources */,
 				4780DBAD1DE3638B00343324 /* ZYPinYinSearch.m in Sources */,
 				471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */,
 				471A12491DDE08EB00574273 /* SDCollectionViewCell.m in Sources */,
@@ -2336,6 +2486,7 @@
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */,
 				4780DB761DE343C600343324 /* NSObject+PKBlocks.m in Sources */,
+				475052431DE5B4AC00FEE189 /* CMDBOperationQuerySampleController.m in Sources */,
 				470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */,
 				470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */,
 				4780DBA11DE3638B00343324 /* CityButton.m in Sources */,
@@ -2344,6 +2495,7 @@
 				471A12691DDE08EB00574273 /* Post.m in Sources */,
 				471A12531DDE08EB00574273 /* FLAnimatedImageView+WebCache.m in Sources */,
 				471A12561DDE08EB00574273 /* NSData+ImageContentType.m in Sources */,
+				475052441DE5B4AC00FEE189 /* CMDBOperationSamplyController.m in Sources */,
 				471A129A1DDE08EB00574273 /* UIView+MJExtension.m in Sources */,
 				471A129B1DDE08EB00574273 /* CM3DTouchCommitSampleController.m in Sources */,
 				471A12711DDE08EB00574273 /* AFNetworkReachabilityManager.m in Sources */,
