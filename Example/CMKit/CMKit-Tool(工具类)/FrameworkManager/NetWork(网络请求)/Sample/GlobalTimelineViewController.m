@@ -39,13 +39,14 @@
     [MBProgressHUD showMessage:@"此为AFNetworking官方示例"];
     
     [CMPostRequest globalTimelinePostsWithBlock:^(NSArray * _Nullable postsArray) {
-        self.posts = postsArray;
-        [MBProgressHUD hideHUD];
-        
-        [self.tableView reloadData];
-        
-        [self.refreshControl endRefreshing];
+        //有数据
+        if (postsArray) {
+            self.posts = postsArray;
+            [self.tableView reloadData];
+            [self.refreshControl endRefreshing];
+        }
     }];
+    
     
 }
 

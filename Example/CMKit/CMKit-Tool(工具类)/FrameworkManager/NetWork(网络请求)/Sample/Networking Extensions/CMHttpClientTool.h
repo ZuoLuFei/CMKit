@@ -10,6 +10,14 @@
 #import "AFNetworking.h"
 
 
+//typedef NS_ENUM(NSInteger,CMHttpClientReachabilityStatus) {
+//    CMHttpClientReachabilityStatusAvailable  = 0, //网络正常(WWAN或wifi网络)
+//    CMHttpClientReachabilityStatusUnavailable = 1  //网络异常(未知网络或没有接受到网络状态)
+//};
+
+//typedef void(^ _Nonnull HttpClientBlock)(id _Nullable JSON, NSError * _Nullable error,CMHttpClientReachabilityStatus status);
+
+
 typedef void(^ _Nonnull HttpClientBlock)(id _Nullable JSON, NSError * _Nullable error);
 
 

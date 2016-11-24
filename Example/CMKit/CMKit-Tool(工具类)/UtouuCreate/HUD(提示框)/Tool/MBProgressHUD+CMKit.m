@@ -10,17 +10,18 @@
 
 @implementation MBProgressHUD (CMKit)
 
+
 #pragma mark 信息显示
 + (void)show:(NSString *)text icon:(NSString *)icon view:(UIView *)view {
     if (view == nil) {
         view = [[UIApplication sharedApplication].windows lastObject];
     }
+
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.labelText = text;
     // 设置图片
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: icon]];
-    
     
     //    FLAnimatedImageView *customView = [[FLAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     //    UIImage *image = [UIImage imageWithContentsOfFile:[NSFileManager getBundlePathForFile:@"请检查网络2.gif"]];
@@ -30,7 +31,6 @@
     //    NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"请检查网络2" withExtension:@"gif"];
     //    [customView sd_setImageWithURL:bundleUrl];
     //    hud.customView = customView;
-    
     
     // 再设置模式
     hud.mode = MBProgressHUDModeCustomView;

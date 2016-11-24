@@ -43,12 +43,19 @@ static NSString * const CMHttpClientToolBaseURLString = @"https://api.app.net/";
 
 + (NSURLSessionDataTask * _Nonnull)GET:(nullable NSString *)URLString parameters:(nullable id)parameters progress:(nullable void (^)(NSProgress * _Nullable downloadProgress))downloadProgress withBlock:(HttpClientBlock)block;{
     return [[CMHttpClientTool sharedClient] GET:URLString parameters:parameters progress:downloadProgress success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        [MBProgressHUD hideHUD];
+        
+        NSLog(@"网络请求JSON-->%@",JSON);
+        
         if (block) {
             block(JSON , nil);
         }
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        
+        [MBProgressHUD hideHUD];
+        NSLog(@"网络请求error-->%@",error);
         if (block) {
-            block(nil, error);
+            [self monitorNetworkReachabilityithBlock:block error:error];
         }
     }];
 }
@@ -62,34 +69,45 @@ static NSString * const CMHttpClientToolBaseURLString = @"https://api.app.net/";
 + (NSURLSessionDataTask * _Nonnull)POST:(nullable NSString *)URLString parameters:(nullable id)parameters progress:(nullable void (^)(NSProgress * _Nullable downloadProgress))downloadProgress withBlock:(HttpClientBlock)block{
 
     return [[CMHttpClientTool sharedClient] GET:URLString parameters:parameters progress:downloadProgress success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        [MBProgressHUD hideHUD];
+        
+        NSLog(@"网络请求JSON-->%@",JSON);
+        
         if (block) {
             block(JSON , nil);
         }
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        
+        [MBProgressHUD hideHUD];
+        NSLog(@"网络请求error-->%@",error);
+        
         if (block) {
+            
+            //检测是否网络异常
+            [self monitorNetworkReachabilityithBlock:block error:error];
             block(nil, error);
         }
     }];
 }
 
 
-//+ (NSURLSessionDataTask *)globalTimelinePostsWithBlock:(void (^)(NSArray *posts, NSError *error))block {
-//    return [[AFAppDotNetAPIClient sharedClient] GET:@"stream/0/posts/stream/global" parameters:nil progress:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
-//        NSArray *postsFromResponse = [JSON valueForKeyPath:@"data"];
-//        NSMutableArray *mutablePosts = [NSMutableArray arrayWithCapacity:[postsFromResponse count]];
-//        for (NSDictionary *attributes in postsFromResponse) {
-//            Post *post = [[Post alloc] initWithAttributes:attributes];
-//            [mutablePosts addObject:post];
-//        }
-//        
-//        if (block) {
-//            block([NSArray arrayWithArray:mutablePosts], nil);
-//        }
-//    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
-//        if (block) {
-//            block([NSArray array], error);
-//        }
-//    }];
-//}
+#pragma mark - 网络监测
+// 网络监测
++ (void)monitorNetworkReachabilityithBlock:(HttpClientBlock)block error:(NSError *)error{
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        //        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+        if (status == AFNetworkReachabilityStatusUnknown || status == AFNetworkReachabilityStatusNotReachable) {
+            
+            //此处提示界面，使用时请根据项目自定义修改
+            [MBProgressHUD showError:@"网络异常,请稍后再试"];
+        }
+        
+        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
+    }];
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+
+}
+
 
 @end
