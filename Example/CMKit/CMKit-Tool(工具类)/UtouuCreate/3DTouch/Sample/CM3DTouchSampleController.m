@@ -44,7 +44,6 @@
     label.font = [UIFont boldSystemFontOfSize:20.0f];
     label.frame = self.view.bounds;
     label.textAlignment = NSTextAlignmentCenter;
-    
     [self.view addSubview:label];
 }
 

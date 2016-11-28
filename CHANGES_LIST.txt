@@ -6,10 +6,10 @@
 新增功能板块：
 1.FMDBOperation(FMDB操作)
 2.CropPicture(图片裁剪)
+3.PictureBrowse(图片浏览器)
 
 扩充功能板块：
-1.
-
+1.UIKit分类  —>增加UIView+Layout分类
 
 
 2016.11.22  

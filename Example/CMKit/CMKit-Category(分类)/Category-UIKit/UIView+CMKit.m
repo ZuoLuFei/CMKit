@@ -182,4 +182,11 @@
     [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
+// 获取指定视图在window中的位置
++ (CGRect)getFrameInWindow:(UIView *)view
+{
+    // 改用[UIApplication sharedApplication].keyWindow.rootViewController.view，防止present新viewController坐标转换不准问题
+    return [view.superview convertRect:view.frame toView:[UIApplication sharedApplication].keyWindow.rootViewController.view];
+}
+
 @end

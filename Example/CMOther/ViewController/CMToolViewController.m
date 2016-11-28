@@ -25,6 +25,7 @@
 #import "AFNetworkReachabilityManager.h"
 #import "CMCityListSampleController.h"
 #import "CMDBOperationSamplyController.h"
+#import "CMPictureBrowseSampleController.h"
 
 //View
 #import "CMHeadView.h"
@@ -58,29 +59,6 @@
 }
 
 
-//- (void)viewWillAppear:(BOOL)animated{
-//    //3.
-//    [self networkTest];
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated{
-//    [[AFNetworkReachabilityManager sharedManager] stopMonitoring];
-//    
-//}
-//
-//
-//- (void)networkTest{
-//
-//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
-//    
-//        
-//    }];
-//    
-//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-//    
-//}
-
 #pragma mark - 初始化数据
 - (void)initData{
     self.toolArray = @[@{@"name":@"NewFeatures(新特性)",@"classType":[CMNewFeaturesController class]},
@@ -91,6 +69,8 @@
                        @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
                        @{@"name":@"CityList(城市列表)",@"classType":[CMCityListSampleController class]},
                        @{@"name":@"FMDBOperation(FMDB操作)",@"classType":[CMDBOperationSamplyController class]},
+                       @{@"name":@"PictureBrowse(图片浏览器)",@"classType":[CMPictureBrowseSampleController class]},
+                       
                        
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        

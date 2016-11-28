@@ -57,4 +57,9 @@
     self.layer.masksToBounds = YES;
 }
 
+- (void)setFrameInSuperViewCenterWithSize:(CGSize)size
+{
+    self.frame = CGRectMake((self.superview.frame.size.width - size.width) / 2, (self.superview.frame.size.height - size.height) / 2, size.width, size.height);
+}
+
 @end
