@@ -67,8 +67,6 @@ end
 
     HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.1.5’
 
-    二维码：pod 'CMKit/QRCode', '~> 0.1.5’
-
     新特性：pod 'CMKit/NewFeatures', '~> 0.1.5’  (目前使用传入图片数组即可，后期会不断完善)
 
     公用父类：pod 'CMKit/CommonSuperClass', '~> 0.1.5’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
@@ -107,7 +105,7 @@ end
 
 图片裁剪[具体地址](https://github.com/TimOliver/TOCropViewController):pod 'TOCropViewController'
 
-二维码扫描、生成[具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan','~> 1.1.1'
+二维码扫描、生成[具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan','~> 1.1.1'    pod 'ZXingObjC', '~> 3.2.0'
 
 
     
