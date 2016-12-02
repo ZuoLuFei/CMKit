@@ -28,7 +28,7 @@
 
 - (void)createImageView
 {
-    self.image = [UIImage imageNamed:@"MSSBrowse.bundle/mss_browseLoading"];
+    self.image = [UIImage imageNamed:@"mss_browseLoading"];
     _rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     _rotationAnimation.toValue = [NSNumber numberWithFloat:(2 * M_PI)];
     _rotationAnimation.duration = 0.6f;

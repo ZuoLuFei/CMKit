@@ -119,5 +119,12 @@
  */
 - (void)removeAllSubviews;
 
+/**
+ 获取指定视图在window根控制器中的位置
+
+ @param view 指定View
+ @return 返回在window根控制器中的位置
+ */
++ (CGRect)getFrameInWindow:(UIView * _Nonnull)view;
 
 @end

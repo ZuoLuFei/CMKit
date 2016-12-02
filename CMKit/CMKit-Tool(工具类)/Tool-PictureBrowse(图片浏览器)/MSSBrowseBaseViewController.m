@@ -13,7 +13,6 @@
 #import "MSSBrowseRemindView.h"
 #import "MSSBrowseActionSheet.h"
 #import "MSSBrowseDefine.h"
-#import "MSSBrowseModel.h"
 
 @interface MSSBrowseBaseViewController ()
 
@@ -186,12 +185,16 @@
         }];
         [cell longPress:^(MSSBrowseCollectionViewCell *browseCell) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
-            
+//            if([[SDImageCache sharedImageCache] diskImageExistsWithKey:browseItem.bigImageUrl])
+//            {
+//                [strongSelf longPress:browseCell];
+//            }
             
             if ([[SDImageCache sharedImageCache] imageFromCacheForKey:browseItem.bigImageUrl]) {
                 [strongSelf longPress:browseCell];
             }
-
+            
+            
         }];
     }
     return cell;
@@ -295,23 +298,14 @@
 
 - (void)longPress:(MSSBrowseCollectionViewCell *)browseCell
 {
-
-    [[CMAlertView alloc] showActionSheetController:self title:nil message:nil cancelTitle:@"取消" destructive:nil actionBlock:^(NSInteger buttonTag) {
-        
-        if (buttonTag == 1) {
-            UIImageWriteToSavedPhotosAlbum(browseCell.zoomScrollView.zoomImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-            
-        }else if(buttonTag == 2){
-            MSSBrowseModel *currentBwowseItem = _browseItemArray[_currentIndex];
-            UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-            pasteboard.string = currentBwowseItem.bigImageUrl;
-            [MBProgressHUD showSuccess:@"复制图片地址成功"];
-        }
-    
-    } otherButtonTitles:@"保存图片",@"复制图片地址", nil];
-    
-    
-    
+    [_browseActionSheet removeFromSuperview];
+    _browseActionSheet = nil;
+    __weak __typeof(self)weakSelf = self;
+    _browseActionSheet = [[MSSBrowseActionSheet alloc]initWithTitleArray:@[@"保存图片",@"复制图片地址"] cancelButtonTitle:@"取消" didSelectedBlock:^(NSInteger index) {
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf browseActionSheetDidSelectedAtIndex:index currentCell:browseCell];
+    }];
+    [_browseActionSheet showInView:_bgView];
 }
 
 #pragma mark StatusBar Method
@@ -369,11 +363,24 @@
         _collectionView.contentOffset = CGPointMake((_screenWidth + kBrowseSpace) * _currentIndex, 0);
         [_collectionView reloadData];
     }
-    
-    
-    
 }
 
+#pragma mark MSSActionSheetClick
+- (void)browseActionSheetDidSelectedAtIndex:(NSInteger)index currentCell:(MSSBrowseCollectionViewCell *)currentCell
+{    // 保存图片
+    if(index == 0)
+    {
+        UIImageWriteToSavedPhotosAlbum(currentCell.zoomScrollView.zoomImageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    }
+    // 复制图片地址
+    else if(index == 1)
+    {
+        MSSBrowseModel *currentBwowseItem = _browseItemArray[_currentIndex];
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = currentBwowseItem.bigImageUrl;
+        [self showBrowseRemindViewWithText:@"复制图片地址成功"];
+    }
+}
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
@@ -386,7 +393,7 @@
     {
         text = @"保存图片成功";
     }
-    [MBProgressHUD showSuccess:text];
+    [self showBrowseRemindViewWithText:text];
 }
 
 #pragma mark RemindView Method

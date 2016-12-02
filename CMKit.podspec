@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.4'
+  s.version      = '0.1.5'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -64,8 +64,13 @@ Pod::Spec.new do |s|
 
   s.subspec 'PictureBrowse' do |pictureBrowse|
     pictureBrowse.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-PictureBrowse(图片浏览器)/*.{h,m}'
-    pictureBrowse.dependency 'CMKit/ProgressHUD'
-    pictureBrowse.resources = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/MSSBrowse.bundle'
+    pictureBrowse.dependency 'SDWebImage', '~> 4.0.0-beta2'
+    pictureBrowse.resources = 'CMKit/CMKit-Tool(工具类)/Tool-PictureBrowse(图片浏览器)/MSSBrowse.bundle'
+  end
+
+  s.subspec 'UnLock' do |unLock|
+    unLock.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-UnLock(手势、指纹解锁)/*.{h,m}'
+    unLock.resources = 'CMKit/CMKit-Tool(工具类)/Tool-UnLock(手势、指纹解锁)/DWUNlock.bundle'
   end
 
 

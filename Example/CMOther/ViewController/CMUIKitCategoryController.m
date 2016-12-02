@@ -129,6 +129,7 @@
                                                                      @"获取当前view的屏幕截图",
                                                                      @"获取当前view的屏幕截图并保存到照片专辑中",
                                                                      @"从当前view移除所有的子视图"]},
+                        @{@"name":@"UIView+Layout",@"classFunction":@[@"获取视图的绝对坐标，如x,y,width,height,top,bottom,left,right等",@"获取视图的相对坐标，如middleX,middleY,middlePoint等"]},
                         @{@"name":@"UIViewController+CMKit",@"classFunction":@[@"使用方法调配替换系统的viewDidLoad方法，在viewDidLoad中打印当前控制器"]},
                         @{@"name":@"UIWebView+CMKit",@"classFunction":@[@"移除当前UIWebView的背景阴影",
                                                                         @"加载网址"]},

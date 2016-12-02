@@ -26,6 +26,7 @@
 #import "CMCityListSampleController.h"
 #import "CMDBOperationSamplyController.h"
 #import "CMPictureBrowseSampleController.h"
+#import "CMUnLockSampleController.h"
 
 //View
 #import "CMHeadView.h"
@@ -70,7 +71,7 @@
                        @{@"name":@"CityList(城市列表)",@"classType":[CMCityListSampleController class]},
                        @{@"name":@"FMDBOperation(FMDB操作)",@"classType":[CMDBOperationSamplyController class]},
                        @{@"name":@"PictureBrowse(图片浏览器)",@"classType":[CMPictureBrowseSampleController class]},
-                       
+                       @{@"name":@"UnLock(手势、指纹解锁)",@"classType":[CMUnLockSampleController class]},
                        
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        

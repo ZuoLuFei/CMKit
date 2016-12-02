@@ -19,8 +19,7 @@
     // 停止加载
     [cell.loadingView stopAnimation];
     // 判断大图是否存在
-    UIImage *image = [[SDImageCache sharedImageCache] imageFromCacheForKey:browseItem.bigImageUrl];;
-    if (image) {
+    if ([[SDImageCache sharedImageCache] imageFromCacheForKey:browseItem.bigImageUrl]) {
         // 显示大图
         [self showBigImage:cell.zoomScrollView.zoomImageView browseItem:browseItem rect:bigImageRect];
     }else{
@@ -28,6 +27,9 @@
         // 加载大图
         [self loadBigImageWithBrowseItem:browseItem cell:cell rect:bigImageRect];
     }
+    
+    
+    
     
 //    if([[SDImageCache sharedImageCache]diskImageExistsWithKey:browseItem.bigImageUrl])
 //    {
@@ -48,6 +50,7 @@
     // 取消当前请求防止复用问题
 //    [imageView sd_cancelCurrentImageLoad];
     [imageView sd_cancelCurrentAnimationImagesLoad];
+    
     // 如果存在直接显示图片
     imageView.image = [[SDImageCache sharedImageCache]imageFromDiskCacheForKey:browseItem.bigImageUrl];
     // 当大图frame为空时，需要大图加载完成后重新计算坐标
