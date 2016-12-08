@@ -70,8 +70,6 @@ static NSString * const shortItemType4 = @"com.utouu.CMKit.3DTouch";
     
     _toolNavigationController = [CMBaseNavigationController createNavigationController:[CMToolViewController new] title:@"UtouuCreate" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     
-
-    
     
     _thirdFrameworkNavigationController = [CMBaseNavigationController createNavigationController:[CMThirdFrameworkController new] title:@"Framework" normalTitleColor:nil highLightTitleColor:nil normalImage:@"utouu" selectedImage:nil fontOfSize:12.0f];
     

@@ -105,7 +105,8 @@ end
 
 图片裁剪[具体地址](https://github.com/TimOliver/TOCropViewController):pod 'TOCropViewController'
 
-二维码扫描、生成[具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan','~> 1.1.1'    pod 'ZXingObjC', '~> 3.2.0'
+二维码扫描、生成[LBXScan具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan','~> 1.1.1'
+[ZXingObjC具体地址](https://github.com/MxABC/LBXScan):pod 'ZXingObjC', '~> 3.2.0'
 
 
     
