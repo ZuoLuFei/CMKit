@@ -9,7 +9,6 @@
 // Controller
 #import "CMToolViewController.h"
 #import "CMAlterViewSampleController.h"
-#import "CMQRCodeSampleController.h"
 #import "CMAnimationSampleController.h"
 #import "CMImagePickerSampleController.h"
 #import "CMCyclePictureSampleController.h"
@@ -65,7 +64,6 @@
     self.toolArray = @[@{@"name":@"NewFeatures(新特性)",@"classType":[CMNewFeaturesController class]},
                        @{@"name":@"CommonSuperClass(共用父类)",@"classType":[CMCommonSuperClassSampleController class]},
                        @{@"name":@"AlterView(警告框)",@"classType":[CMAlterViewSampleController class]},
-                       @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"AnimationEffect(动画特效)",@"classType":[CMAnimationSampleController class]},
                        @{@"name":@"SystemFontInfo(系统字体列表)",@"classType":[CMSystemFontInfoSampleControllerViewController class]},
                        @{@"name":@"CityList(城市列表)",@"classType":[CMCityListSampleController class]},

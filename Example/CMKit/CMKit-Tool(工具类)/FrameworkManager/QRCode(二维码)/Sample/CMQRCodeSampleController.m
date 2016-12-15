@@ -460,7 +460,8 @@
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     picker.delegate = self;
-
+    //注:若是打开相册识别二维码，必须开启编辑功能，否则识别成功率将大幅度降低
+    picker.allowsEditing = YES;
     [self presentViewController:picker animated:YES completion:nil];
 }
 
