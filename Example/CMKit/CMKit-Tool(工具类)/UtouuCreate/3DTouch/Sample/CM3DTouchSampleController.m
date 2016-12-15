@@ -93,6 +93,8 @@
 #pragma mark - 3D Touch代理
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
     
+    NSLog(@"previewingContext->%@",previewingContext);
+    
     //检测是否已经展示了预览界面
     if ([self.presentedViewController isKindOfClass:[CM3DTouchPreviewSampleController class]]) {
         return nil;

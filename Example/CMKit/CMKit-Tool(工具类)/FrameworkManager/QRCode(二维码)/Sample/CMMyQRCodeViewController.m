@@ -126,7 +126,6 @@
     CGSize logoSize=CGSizeMake(30, 30);
     UIImageView* imageView = [self roundCornerWithImage:[UIImage imageNamed:@"logo.JPG"] size:logoSize];
     [LBXScanWrapper addImageViewLogo:_qrImgView centerLogoImageView:imageView logoSize:logoSize];
-    
 }
 
 - (UIImageView*)roundCornerWithImage:(UIImage*)logoImg size:(CGSize)size
