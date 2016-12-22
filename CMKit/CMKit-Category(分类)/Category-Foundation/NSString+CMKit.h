@@ -30,7 +30,7 @@
  
  @return YES空，NO非空
  */
-+ (BOOL)isBlankString:(NSString * _Nonnull)string;
++ (BOOL)isBlankString:(NSString * _Nullable)string;
 
 
 

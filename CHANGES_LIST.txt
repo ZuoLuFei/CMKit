@@ -12,7 +12,7 @@
 扩充功能板块：
 1.UIKit分类  —>增加UIView+Layout分类
 
-注：已移除UtouuCreate中的QRCode(二维码)，在FrameworkManager中添加采用集成于ZXingObjC的框架
+注：已移除UtouuCreate中的QRCode(二维码)，在FrameworkManager中添加采用集成于ZXingObjC的二维码框架
 
 /*************************************************************/
 

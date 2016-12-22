@@ -16,7 +16,7 @@
     return [NSString isBlankString:self];
 }
 
-+ (BOOL)isBlankString:(NSString * _Nonnull)string
++ (BOOL)isBlankString:(NSString * _Nullable)string
 {
     // 判断字符串是否为空
     if (string == nil || string == NULL)
