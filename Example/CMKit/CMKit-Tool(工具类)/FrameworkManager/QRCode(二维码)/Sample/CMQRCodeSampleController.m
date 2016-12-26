@@ -31,9 +31,6 @@
     
     [self initUI];
     
-    
-    
-    
 }
 #pragma mark - 初始化数据
 - (void)initData {

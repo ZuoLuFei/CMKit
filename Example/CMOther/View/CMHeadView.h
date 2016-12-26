@@ -12,6 +12,11 @@
 
 @property (nonatomic, copy) NSString *titleStr;
 
+@property (nonatomic, assign) CGFloat hight;
+
+
+/** 创建HeadView */
++ (instancetype)headView;
 
 
 @end

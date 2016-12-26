@@ -16,7 +16,7 @@
 #import "CMRevealSampleController.h"
 #import "CMCropPictureSampleController.h"
 #import "CMQRCodeSampleController.h"
-
+#import "CMLaunchAdSampleController.h"
 #import "CMHeadView.h"
 
 
@@ -46,14 +46,14 @@
     self.toolArray = @[
                        @{@"name":@"NetWork(网络请求)",@"classType":[GlobalTimelineViewController class]},
                        @{@"name":@"ImageCache(图片缓存)",@"classType":[MasterViewController class]},
-                       
                        @{@"name":@"ImageMultipleChoice(图片多选器)",@"classType":[CMAlbumImagesSampleController class]},
                        @{@"name":@"QRCode(二维码/条形码)",@"classType":[CMQRCodeSampleController class]},
                        @{@"name":@"Refresh(上拉/下拉刷新)",@"classType":[MJExampleViewController class]},
                        @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
                        @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]},
                        @{@"name":@"RevealContorller(侧滑菜单控制器)",@"classType":[CMRevealSampleController class]},
-                       @{@"name":@"CropPicture(裁剪图片)",@"classType":[CMCropPictureSampleController class]}
+                       @{@"name":@"CropPicture(裁剪图片)",@"classType":[CMCropPictureSampleController class]},
+                       @{@"name":@"LaunchAd(广告载入页)",@"classType":[CMLaunchAdSampleController class]}
                    ];
     
 }

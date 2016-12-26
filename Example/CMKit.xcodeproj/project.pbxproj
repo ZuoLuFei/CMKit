@@ -528,6 +528,33 @@
 		47F435AA1DE5F8FE00F4DD4A /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F4359D1DE5F8FE00F4DD4A /* TOCropView.m */; };
 		47F435AE1DE5F93300F4DD4A /* CMCropPictureSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F435AC1DE5F93200F4DD4A /* CMCropPictureSampleController.m */; };
 		47F435AF1DE5F93300F4DD4A /* CMCropPictureSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F435AD1DE5F93200F4DD4A /* CMCropPictureSampleController.xib */; };
+		47F601EB1E118315002AD000 /* CMLaunchAdSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601BC1E118315002AD000 /* CMLaunchAdSampleController.m */; };
+		47F601EC1E118315002AD000 /* CMLaunchAdWebSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601BE1E118315002AD000 /* CMLaunchAdWebSampleController.m */; };
+		47F601ED1E118315002AD000 /* LaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601C11E118315002AD000 /* LaunchAdModel.m */; };
+		47F601EE1E118315002AD000 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601C41E118315002AD000 /* Network.m */; };
+		47F601EF1E118315002AD000 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F601C61E118315002AD000 /* image0.jpg */; };
+		47F601F01E118315002AD000 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F601C71E118315002AD000 /* image1.jpg */; };
+		47F601F11E118315002AD000 /* image11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 47F601C81E118315002AD000 /* image11.gif */; };
+		47F601F21E118315002AD000 /* image12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 47F601C91E118315002AD000 /* image12.gif */; };
+		47F601F31E118315002AD000 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CA1E118315002AD000 /* image2.jpg */; };
+		47F601F41E118315002AD000 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CB1E118315002AD000 /* image3.jpg */; };
+		47F601F51E118315002AD000 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CC1E118315002AD000 /* image4.jpg */; };
+		47F601F61E118315002AD000 /* LaunchImageAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CD1E118315002AD000 /* LaunchImageAd.json */; };
+		47F601F71E118315002AD000 /* LaunchVideoAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CE1E118315002AD000 /* LaunchVideoAd.json */; };
+		47F601F81E118315002AD000 /* video0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 47F601CF1E118315002AD000 /* video0.mp4 */; };
+		47F601F91E118315002AD000 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 47F601D01E118315002AD000 /* video1.mp4 */; };
+		47F601FA1E118315002AD000 /* NSString+XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601D41E118315002AD000 /* NSString+XHLaunchAd.m */; };
+		47F601FB1E118315002AD000 /* UIImage+XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601D61E118315002AD000 /* UIImage+XHLaunchAd.m */; };
+		47F601FC1E118315002AD000 /* UIImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601D81E118315002AD000 /* UIImageView+XHLaunchAdCache.m */; };
+		47F601FD1E118315002AD000 /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601DA1E118315002AD000 /* XHLaunchAd.m */; };
+		47F601FE1E118315002AD000 /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601DC1E118315002AD000 /* XHLaunchAdButton.m */; };
+		47F601FF1E118315002AD000 /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601DE1E118315002AD000 /* XHLaunchAdCache.m */; };
+		47F602001E118315002AD000 /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601E01E118315002AD000 /* XHLaunchAdConfiguration.m */; };
+		47F602011E118315002AD000 /* XHLaunchAdDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601E21E118315002AD000 /* XHLaunchAdDownload.m */; };
+		47F602021E118315002AD000 /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601E41E118315002AD000 /* XHLaunchAdDownloader.m */; };
+		47F602031E118315002AD000 /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601E61E118315002AD000 /* XHLaunchAdImageManager.m */; };
+		47F602041E118315002AD000 /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601E81E118315002AD000 /* XHLaunchAdView.m */; };
+		47F602051E118315002AD000 /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F601EA1E118315002AD000 /* XHLaunchImageView.m */; };
 		47FD18BD1DE731C40093DBE5 /* CMAlbumImagesSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FD18B71DE731C40093DBE5 /* CMAlbumImagesSampleController.m */; };
 		47FD18BE1DE731C40093DBE5 /* CMImagePickerSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FD18B91DE731C40093DBE5 /* CMImagePickerSampleController.m */; };
 		47FD18BF1DE731C40093DBE5 /* UTTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FD18BC1DE731C40093DBE5 /* UTTestCell.m */; };
@@ -1585,6 +1612,49 @@
 		47F435AB1DE5F93200F4DD4A /* CMCropPictureSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCropPictureSampleController.h; sourceTree = "<group>"; };
 		47F435AC1DE5F93200F4DD4A /* CMCropPictureSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCropPictureSampleController.m; sourceTree = "<group>"; };
 		47F435AD1DE5F93200F4DD4A /* CMCropPictureSampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMCropPictureSampleController.xib; sourceTree = "<group>"; };
+		47F601BB1E118315002AD000 /* CMLaunchAdSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLaunchAdSampleController.h; sourceTree = "<group>"; };
+		47F601BC1E118315002AD000 /* CMLaunchAdSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLaunchAdSampleController.m; sourceTree = "<group>"; };
+		47F601BD1E118315002AD000 /* CMLaunchAdWebSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLaunchAdWebSampleController.h; sourceTree = "<group>"; };
+		47F601BE1E118315002AD000 /* CMLaunchAdWebSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLaunchAdWebSampleController.m; sourceTree = "<group>"; };
+		47F601C01E118315002AD000 /* LaunchAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAdModel.h; sourceTree = "<group>"; };
+		47F601C11E118315002AD000 /* LaunchAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdModel.m; sourceTree = "<group>"; };
+		47F601C31E118315002AD000 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		47F601C41E118315002AD000 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		47F601C61E118315002AD000 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		47F601C71E118315002AD000 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		47F601C81E118315002AD000 /* image11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image11.gif; sourceTree = "<group>"; };
+		47F601C91E118315002AD000 /* image12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image12.gif; sourceTree = "<group>"; };
+		47F601CA1E118315002AD000 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		47F601CB1E118315002AD000 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		47F601CC1E118315002AD000 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		47F601CD1E118315002AD000 /* LaunchImageAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchImageAd.json; sourceTree = "<group>"; };
+		47F601CE1E118315002AD000 /* LaunchVideoAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchVideoAd.json; sourceTree = "<group>"; };
+		47F601CF1E118315002AD000 /* video0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video0.mp4; sourceTree = "<group>"; };
+		47F601D01E118315002AD000 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		47F601D31E118315002AD000 /* NSString+XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XHLaunchAd.h"; sourceTree = "<group>"; };
+		47F601D41E118315002AD000 /* NSString+XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XHLaunchAd.m"; sourceTree = "<group>"; };
+		47F601D51E118315002AD000 /* UIImage+XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XHLaunchAd.h"; sourceTree = "<group>"; };
+		47F601D61E118315002AD000 /* UIImage+XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XHLaunchAd.m"; sourceTree = "<group>"; };
+		47F601D71E118315002AD000 /* UIImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
+		47F601D81E118315002AD000 /* UIImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
+		47F601D91E118315002AD000 /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
+		47F601DA1E118315002AD000 /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
+		47F601DB1E118315002AD000 /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
+		47F601DC1E118315002AD000 /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
+		47F601DD1E118315002AD000 /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
+		47F601DE1E118315002AD000 /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
+		47F601DF1E118315002AD000 /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		47F601E01E118315002AD000 /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		47F601E11E118315002AD000 /* XHLaunchAdDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownload.h; sourceTree = "<group>"; };
+		47F601E21E118315002AD000 /* XHLaunchAdDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownload.m; sourceTree = "<group>"; };
+		47F601E31E118315002AD000 /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
+		47F601E41E118315002AD000 /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
+		47F601E51E118315002AD000 /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
+		47F601E61E118315002AD000 /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
+		47F601E71E118315002AD000 /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
+		47F601E81E118315002AD000 /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
+		47F601E91E118315002AD000 /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
+		47F601EA1E118315002AD000 /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
 		47FD18B61DE731C40093DBE5 /* CMAlbumImagesSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAlbumImagesSampleController.h; sourceTree = "<group>"; };
 		47FD18B71DE731C40093DBE5 /* CMAlbumImagesSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAlbumImagesSampleController.m; sourceTree = "<group>"; };
 		47FD18B81DE731C40093DBE5 /* CMImagePickerSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMImagePickerSampleController.h; sourceTree = "<group>"; };
@@ -1757,6 +1827,7 @@
 		471A10DE1DDE08EA00574273 /* FrameworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				47F601B81E118315002AD000 /* LaunchAd(广告载入页) */,
 				47F26CBD1DF1BE8300F485FA /* QRCode(二维码) */,
 				47F435721DE5F8FE00F4DD4A /* CropPicture(裁剪图片) */,
 				4780DB551DE343C600343324 /* RevealController(侧滑控制器) */,
@@ -3934,6 +4005,112 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		47F601B81E118315002AD000 /* LaunchAd(广告载入页) */ = {
+			isa = PBXGroup;
+			children = (
+				47F601B91E118315002AD000 /* Sample */,
+				47F601D11E118315002AD000 /* Tool */,
+			);
+			path = "LaunchAd(广告载入页)";
+			sourceTree = "<group>";
+		};
+		47F601B91E118315002AD000 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				47F601BA1E118315002AD000 /* Controller */,
+				47F601BF1E118315002AD000 /* Model */,
+				47F601C21E118315002AD000 /* Network */,
+				47F601C51E118315002AD000 /* Source */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		47F601BA1E118315002AD000 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F601BB1E118315002AD000 /* CMLaunchAdSampleController.h */,
+				47F601BC1E118315002AD000 /* CMLaunchAdSampleController.m */,
+				47F601BD1E118315002AD000 /* CMLaunchAdWebSampleController.h */,
+				47F601BE1E118315002AD000 /* CMLaunchAdWebSampleController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		47F601BF1E118315002AD000 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47F601C01E118315002AD000 /* LaunchAdModel.h */,
+				47F601C11E118315002AD000 /* LaunchAdModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47F601C21E118315002AD000 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				47F601C31E118315002AD000 /* Network.h */,
+				47F601C41E118315002AD000 /* Network.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		47F601C51E118315002AD000 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				47F601C61E118315002AD000 /* image0.jpg */,
+				47F601C71E118315002AD000 /* image1.jpg */,
+				47F601C81E118315002AD000 /* image11.gif */,
+				47F601C91E118315002AD000 /* image12.gif */,
+				47F601CA1E118315002AD000 /* image2.jpg */,
+				47F601CB1E118315002AD000 /* image3.jpg */,
+				47F601CC1E118315002AD000 /* image4.jpg */,
+				47F601CD1E118315002AD000 /* LaunchImageAd.json */,
+				47F601CE1E118315002AD000 /* LaunchVideoAd.json */,
+				47F601CF1E118315002AD000 /* video0.mp4 */,
+				47F601D01E118315002AD000 /* video1.mp4 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		47F601D11E118315002AD000 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				47F601D21E118315002AD000 /* XHLaunchAd */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		47F601D21E118315002AD000 /* XHLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				47F601D31E118315002AD000 /* NSString+XHLaunchAd.h */,
+				47F601D41E118315002AD000 /* NSString+XHLaunchAd.m */,
+				47F601D51E118315002AD000 /* UIImage+XHLaunchAd.h */,
+				47F601D61E118315002AD000 /* UIImage+XHLaunchAd.m */,
+				47F601D71E118315002AD000 /* UIImageView+XHLaunchAdCache.h */,
+				47F601D81E118315002AD000 /* UIImageView+XHLaunchAdCache.m */,
+				47F601D91E118315002AD000 /* XHLaunchAd.h */,
+				47F601DA1E118315002AD000 /* XHLaunchAd.m */,
+				47F601DB1E118315002AD000 /* XHLaunchAdButton.h */,
+				47F601DC1E118315002AD000 /* XHLaunchAdButton.m */,
+				47F601DD1E118315002AD000 /* XHLaunchAdCache.h */,
+				47F601DE1E118315002AD000 /* XHLaunchAdCache.m */,
+				47F601DF1E118315002AD000 /* XHLaunchAdConfiguration.h */,
+				47F601E01E118315002AD000 /* XHLaunchAdConfiguration.m */,
+				47F601E11E118315002AD000 /* XHLaunchAdDownload.h */,
+				47F601E21E118315002AD000 /* XHLaunchAdDownload.m */,
+				47F601E31E118315002AD000 /* XHLaunchAdDownloader.h */,
+				47F601E41E118315002AD000 /* XHLaunchAdDownloader.m */,
+				47F601E51E118315002AD000 /* XHLaunchAdImageManager.h */,
+				47F601E61E118315002AD000 /* XHLaunchAdImageManager.m */,
+				47F601E71E118315002AD000 /* XHLaunchAdView.h */,
+				47F601E81E118315002AD000 /* XHLaunchAdView.m */,
+				47F601E91E118315002AD000 /* XHLaunchImageView.h */,
+				47F601EA1E118315002AD000 /* XHLaunchImageView.m */,
+			);
+			path = XHLaunchAd;
+			sourceTree = "<group>";
+		};
 		47FD18B51DE731C40093DBE5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -4078,6 +4255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F601F41E118315002AD000 /* image3.jpg in Resources */,
 				471A12411DDE08EB00574273 /* pageControlCurrentDot@3x.png in Resources */,
 				475052451DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib in Resources */,
 				471A12361DDE08EB00574273 /* 005.jpg in Resources */,
@@ -4089,6 +4267,7 @@
 				47F435711DE5E11000F4DD4A /* portrait.png in Resources */,
 				470183201DDF34AF00320F76 /* cat1.jpg in Resources */,
 				471A12421DDE08EB00574273 /* pageControlDot@2x.png in Resources */,
+				47F601F51E118315002AD000 /* image4.jpg in Resources */,
 				470183221DDF34AF00320F76 /* cat3.jpg in Resources */,
 				475A3D681DC753BD00CA45BA /* Main.storyboard in Resources */,
 				471A12391DDE08EB00574273 /* DemoVCWithXib.xib in Resources */,
@@ -4096,11 +4275,15 @@
 				471A12C31DDE08EB00574273 /* welcome_guide_2_new@2x.png in Resources */,
 				471A12AE1DDE08EB00574273 /* MBProgressHUD+CMKit.bundle in Resources */,
 				47F435A01DE5F8FE00F4DD4A /* TOCropViewControllerLocalizable.strings in Resources */,
+				47F601F11E118315002AD000 /* image11.gif in Resources */,
+				47F601F91E118315002AD000 /* video1.mp4 in Resources */,
 				475A3D661DC753BD00CA45BA /* Assets.xcassets in Resources */,
 				471A12511DDE08EB00574273 /* placeholder@2x.png in Resources */,
+				47F601F81E118315002AD000 /* video0.mp4 in Resources */,
 				47D7E2981DEC9BA500F5232E /* DWUNlock.bundle in Resources */,
 				471A123D1DDE08EB00574273 /* h4.jpg in Resources */,
 				471A12861DDE08EB00574273 /* MJWebViewViewController.xib in Resources */,
+				47F601F01E118315002AD000 /* image1.jpg in Resources */,
 				47F4356F1DE5E10B00F4DD4A /* eay@2x.png in Resources */,
 				471A12431DDE08EB00574273 /* pageControlDot@3x.png in Resources */,
 				471A123C1DDE08EB00574273 /* h3.jpg in Resources */,
@@ -4114,12 +4297,16 @@
 				470183211DDF34AF00320F76 /* cat2.jpg in Resources */,
 				471A126E1DDE08EB00574273 /* profile-image-placeholder@2x.png in Resources */,
 				471A124D1DDE08EB00574273 /* DetailViewController.xib in Resources */,
+				47F601EF1E118315002AD000 /* image0.jpg in Resources */,
 				471A12C01DDE08EB00574273 /* btn01_normal@2x.png in Resources */,
 				47F26FB61DF1C49400F485FA /* CMScanResultViewController.xib in Resources */,
 				470183391DDF58AA00320F76 /* 1.jpg in Resources */,
+				47F601F21E118315002AD000 /* image12.gif in Resources */,
 				471A124F1DDE08EB00574273 /* MasterViewController.xib in Resources */,
 				471A12B91DDE08EB00574273 /* TZImagePickerController.bundle in Resources */,
 				471A12951DDE08EB00574273 /* MJRefresh.bundle in Resources */,
+				47F601F31E118315002AD000 /* image2.jpg in Resources */,
+				47F601F71E118315002AD000 /* LaunchVideoAd.json in Resources */,
 				471A12C41DDE08EB00574273 /* welcome_guide_3_new@2x.png in Resources */,
 				471A123F1DDE08EB00574273 /* h7.png in Resources */,
 				471A123E1DDE08EB00574273 /* h6@2x.png in Resources */,
@@ -4132,6 +4319,7 @@
 				47F26FC21DF1DE7100F485FA /* LBXScan.bundle in Resources */,
 				471A12841DDE08EB00574273 /* MJTestViewController.xib in Resources */,
 				47F26FC41DF1DEC300F485FA /* logo.JPG in Resources */,
+				47F601F61E118315002AD000 /* LaunchImageAd.json in Resources */,
 				47F3EF171DE8A73500896703 /* MSSBrowse.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4166,6 +4354,7 @@
 				47F26F8E1DF1C09100F485FA /* ZXMultiFormatWriter.m in Sources */,
 				475A3DCC1DC7552B00CA45BA /* UIWindow+CMKit.m in Sources */,
 				475A3DC51DC7552B00CA45BA /* UIScrollView+CMKit.m in Sources */,
+				47F602051E118315002AD000 /* XHLaunchImageView.m in Sources */,
 				4750522C1DE5B33000FEE189 /* JKDBHelper.m in Sources */,
 				47F26F411DF1C09100F485FA /* ZXCodaBarWriter.m in Sources */,
 				47F26F031DF1C09100F485FA /* ZXInvertedLuminanceSource.m in Sources */,
@@ -4176,7 +4365,9 @@
 				471A0EE61DDDC57000574273 /* CMThirdFrameworkController.m in Sources */,
 				47F26F3A1DF1C09100F485FA /* ZXAbstractRSSReader.m in Sources */,
 				47F26F231DF1C09100F485FA /* ZXAbstractExpandedDecoder.m in Sources */,
+				47F601EE1E118315002AD000 /* Network.m in Sources */,
 				47F26F551DF1C09100F485FA /* ZXUPCEANExtension5Support.m in Sources */,
+				47F601FC1E118315002AD000 /* UIImageView+XHLaunchAdCache.m in Sources */,
 				47F26EBD1DF1C09100F485FA /* ZXAztecReader.m in Sources */,
 				47F26FAE1DF1C0A100F485FA /* LBXScanViewStyle.m in Sources */,
 				47F26F881DF1C09100F485FA /* ZXMultiDetector.m in Sources */,
@@ -4241,6 +4432,7 @@
 				470183301DDF582D00320F76 /* CMScratchAnimationSampleController.m in Sources */,
 				471A124A1DDE08EB00574273 /* SDCycleScrollView.m in Sources */,
 				471A126B1DDE08EB00574273 /* CMHttpClientTool.m in Sources */,
+				47F602001E118315002AD000 /* XHLaunchAdConfiguration.m in Sources */,
 				47F26ECC1DF1C09100F485FA /* ZXGeoResultParser.m in Sources */,
 				47F26F8A1DF1C09100F485FA /* ZXQRCodeMultiReader.m in Sources */,
 				471A128D1DDE08EB00574273 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -4254,6 +4446,7 @@
 				47F26F4B1DF1C09100F485FA /* ZXEANManufacturerOrgSupport.m in Sources */,
 				471A12741DDE08EB00574273 /* AFURLResponseSerialization.m in Sources */,
 				47F26F0C1DF1C09100F485FA /* ZXDataMatrixDecoder.m in Sources */,
+				47F601ED1E118315002AD000 /* LaunchAdModel.m in Sources */,
 				47F26FB51DF1C49400F485FA /* CMScanResultViewController.m in Sources */,
 				47F26F101DF1C09100F485FA /* ZXDataMatrixBase256Encoder.m in Sources */,
 				471A12AD1DDE08EB00574273 /* CMDataStructures.m in Sources */,
@@ -4367,6 +4560,7 @@
 				47F26FA71DF1C0A100F485FA /* LBXScanLineAnimation.m in Sources */,
 				47F435A91DE5F8FE00F4DD4A /* TOCropToolbar.m in Sources */,
 				471A12821DDE08EB00574273 /* MJTableViewController.m in Sources */,
+				47F602031E118315002AD000 /* XHLaunchAdImageManager.m in Sources */,
 				47F26F6E1DF1C09100F485FA /* ZXPDF417HighLevelEncoder.m in Sources */,
 				47F26F491DF1C09100F485FA /* ZXEAN8Reader.m in Sources */,
 				471A12A31DDE08EB00574273 /* CMAnimationSampleController.m in Sources */,
@@ -4402,7 +4596,10 @@
 				471A12491DDE08EB00574273 /* SDCollectionViewCell.m in Sources */,
 				471A12721DDE08EB00574273 /* AFSecurityPolicy.m in Sources */,
 				47F26F391DF1C09100F485FA /* ZXRSSExpandedRow.m in Sources */,
+				47F602041E118315002AD000 /* XHLaunchAdView.m in Sources */,
 				47F26F441DF1C09100F485FA /* ZXCode39Reader.m in Sources */,
+				47F601FF1E118315002AD000 /* XHLaunchAdCache.m in Sources */,
+				47F601FE1E118315002AD000 /* XHLaunchAdButton.m in Sources */,
 				47F26EE11DF1C09100F485FA /* ZXWifiParsedResult.m in Sources */,
 				47F26F6F1DF1C09100F485FA /* ZXPDF417Common.m in Sources */,
 				471A127B1DDE08EB00574273 /* MJDIYBackFooter.m in Sources */,
@@ -4463,6 +4660,7 @@
 				47F26EF51DF1C09100F485FA /* ZXDetectorResult.m in Sources */,
 				47F26EB61DF1C09100F485FA /* ZXAztecCode.m in Sources */,
 				47F26ED81DF1C09100F485FA /* ZXTelResultParser.m in Sources */,
+				47F601FB1E118315002AD000 /* UIImage+XHLaunchAd.m in Sources */,
 				47F26ED11DF1C09100F485FA /* ZXProductResultParser.m in Sources */,
 				47F26F661DF1C09100F485FA /* ZXPDF417ScanningDecoder.m in Sources */,
 				47F26F4F1DF1C09100F485FA /* ZXMultiFormatUPCEANReader.m in Sources */,
@@ -4480,10 +4678,12 @@
 				47F26F6A1DF1C09100F485FA /* ZXPDF417BarcodeMatrix.m in Sources */,
 				47F26F451DF1C09100F485FA /* ZXCode39Writer.m in Sources */,
 				47F26F841DF1C09100F485FA /* ZXQRCodeBlockPair.m in Sources */,
+				47F601EC1E118315002AD000 /* CMLaunchAdWebSampleController.m in Sources */,
 				471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */,
 				471A12881DDE08EB00574273 /* MJRefreshBackFooter.m in Sources */,
 				4780DBA41DE3638B00343324 /* CityListViewController.m in Sources */,
 				4780DBA71DE3638B00343324 /* HanyuPinyinOutputFormat.m in Sources */,
+				47F602011E118315002AD000 /* XHLaunchAdDownload.m in Sources */,
 				470183361DDF586C00320F76 /* MDMatrix.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				47F26F461DF1C09100F485FA /* ZXCode93Reader.m in Sources */,
@@ -4496,6 +4696,7 @@
 				47F26F5E1DF1C09100F485FA /* ZXPDF417BarcodeValue.m in Sources */,
 				47F26FB91DF1DA0800F485FA /* CMScanViewController.m in Sources */,
 				47F26EC91DF1C09100F485FA /* ZXExpandedProductParsedResult.m in Sources */,
+				47F602021E118315002AD000 /* XHLaunchAdDownloader.m in Sources */,
 				47F26EF31DF1C09100F485FA /* ZXDecoderResult.m in Sources */,
 				470183261DDF34AF00320F76 /* CMCollectionViewWaterfallHeader.m in Sources */,
 				47F26EE71DF1C09100F485FA /* ZXMonochromeRectangleDetector.m in Sources */,
@@ -4556,6 +4757,7 @@
 				47F26F761DF1C09100F485FA /* ZXQRCodeDecodedBitStreamParser.m in Sources */,
 				471A12541DDE08EB00574273 /* FLAnimatedImageView.m in Sources */,
 				47F26F621DF1C09100F485FA /* ZXPDF417DecodedBitStreamParser.m in Sources */,
+				47F601FD1E118315002AD000 /* XHLaunchAd.m in Sources */,
 				47F26F291DF1C09100F485FA /* ZXAI013x0xDecoder.m in Sources */,
 				471A12AB1DDE08EB00574273 /* CMBaseViewController.m in Sources */,
 				47F26F821DF1C09100F485FA /* ZXQRCodeFinderPatternInfo.m in Sources */,
@@ -4570,6 +4772,7 @@
 				470183241DDF34AF00320F76 /* CMCollectionViewWaterfallCell.m in Sources */,
 				47F26EB81DF1C09100F485FA /* ZXAztecHighLevelEncoder.m in Sources */,
 				47F26F721DF1C09100F485FA /* ZXPDF417Writer.m in Sources */,
+				47F601EB1E118315002AD000 /* CMLaunchAdSampleController.m in Sources */,
 				471A12761DDE08EB00574273 /* UIViewController+Example.m in Sources */,
 				471A12CC1DDE08EB00574273 /* CMVideoPlayerSampleController.m in Sources */,
 				47F26F541DF1C09100F485FA /* ZXUPCEANExtension2Support.m in Sources */,
@@ -4580,6 +4783,7 @@
 				471A12A01DDE08EB00574273 /* CMAlterViewSampleController.m in Sources */,
 				47F26F851DF1C09100F485FA /* ZXQRCodeEncoder.m in Sources */,
 				471A12CA1DDE08EB00574273 /* CMSinaLoginController.m in Sources */,
+				47F601FA1E118315002AD000 /* NSString+XHLaunchAd.m in Sources */,
 				471A12461DDE08EB00574273 /* TAAnimatedDotView.m in Sources */,
 				47F26F141DF1C09100F485FA /* ZXDataMatrixEncoderContext.m in Sources */,
 				471A127A1DDE08EB00574273 /* MJDIYAutoFooter.m in Sources */,
