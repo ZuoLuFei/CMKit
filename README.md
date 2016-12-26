@@ -210,6 +210,8 @@ Demo共分为三个版块，目前集成功能如下：
 
     2.9 QRCode(二维码/条形码)
 
+    2.10 LaunchAd(广告载入页)
+
 3 Foundation分类(关于Foundation框架的分类)
 
     3.1 NSArray+CMKit
