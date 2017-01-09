@@ -26,6 +26,7 @@
 #import "CMDBOperationSamplyController.h"
 #import "CMPictureBrowseSampleController.h"
 #import "CMUnLockSampleController.h"
+#import "CMSemiSceneSampleController.h"
 
 //View
 #import "CMHeadView.h"
@@ -70,7 +71,7 @@
                        @{@"name":@"FMDBOperation(FMDB操作)",@"classType":[CMDBOperationSamplyController class]},
                        @{@"name":@"PictureBrowse(图片浏览器)",@"classType":[CMPictureBrowseSampleController class]},
                        @{@"name":@"UnLock(手势、指纹解锁)",@"classType":[CMUnLockSampleController class]},
-                       
+                       @{@"name":@"SemiScene(半挂式场景切换)",@"classType":[CMSemiSceneSampleController class]},
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        
 //                       @{@"name":@"Share(分享)",@"classType":@""},

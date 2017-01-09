@@ -178,6 +178,15 @@
 		471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D71DDE139B00574273 /* CMFontInfomation.m */; };
 		471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DA1DDE13E800574273 /* CMFontListCell.m */; };
 		471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */; };
+		473402D81E23D79000DA3A13 /* KNFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402D61E23D79000DA3A13 /* KNFirstViewController.m */; };
+		473402D91E23D79000DA3A13 /* KNFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473402D71E23D79000DA3A13 /* KNFirstViewController.xib */; };
+		473402DD1E23D7C300DA3A13 /* KNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402DB1E23D7C300DA3A13 /* KNSecondViewController.m */; };
+		473402DE1E23D7C300DA3A13 /* KNSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473402DC1E23D7C300DA3A13 /* KNSecondViewController.xib */; };
+		473402E21E23D7CE00DA3A13 /* KNThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402E01E23D7CE00DA3A13 /* KNThirdViewController.m */; };
+		473402E31E23D7CE00DA3A13 /* KNThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473402E11E23D7CE00DA3A13 /* KNThirdViewController.xib */; };
+		473402E61E23D7D800DA3A13 /* KNModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402E51E23D7D800DA3A13 /* KNModalTableViewController.m */; };
+		473402E91E23D7DF00DA3A13 /* KNTableDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402E81E23D7DF00DA3A13 /* KNTableDemoController.m */; };
+		473402EC1E23D83A00DA3A13 /* CMSemiSceneSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402EB1E23D83A00DA3A13 /* CMSemiSceneSampleController.m */; };
 		473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */; };
 		4750522C1DE5B33000FEE189 /* JKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750521D1DE5B33000FEE189 /* JKDBHelper.m */; };
 		4750522D1DE5B33000FEE189 /* JKDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750521F1DE5B33000FEE189 /* JKDBModel.m */; };
@@ -257,6 +266,13 @@
 		4780DBAB1DE3638B00343324 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB9C1DE3638B00343324 /* PinyinHelper.m */; };
 		4780DBAD1DE3638B00343324 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DB9F1DE3638B00343324 /* ZYPinYinSearch.m */; };
 		4780DBB01DE363CF00343324 /* CMCityListSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4780DBAF1DE363CF00343324 /* CMCityListSampleController.m */; };
+		4785031C1E23CF220009856A /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785031B1E23CF220009856A /* UIViewController+KNSemiModal.m */; };
+		4785031E1E23CF4B0009856A /* temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4785031D1E23CF4B0009856A /* temp.jpg */; };
+		478503211E23CF520009856A /* background_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4785031F1E23CF520009856A /* background_01.png */; };
+		478503221E23CF520009856A /* background_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478503201E23CF520009856A /* background_01@2x.png */; };
+		478503251E23CF920009856A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 478503231E23CF920009856A /* second.png */; };
+		478503261E23CF920009856A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478503241E23CF920009856A /* second@2x.png */; };
+		4785033D1E23D0AB0009856A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4785033C1E23D0AB0009856A /* QuartzCore.framework */; };
 		47D7E2951DEC9BA500F5232E /* DWFingerprintUNlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E28E1DEC9BA500F5232E /* DWFingerprintUNlock.m */; };
 		47D7E2961DEC9BA500F5232E /* DWGesturesLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E2901DEC9BA500F5232E /* DWGesturesLock.m */; };
 		47D7E2971DEC9BA500F5232E /* DWiPhoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E2921DEC9BA500F5232E /* DWiPhoneType.m */; };
@@ -889,6 +905,21 @@
 		471A12DA1DDE13E800574273 /* CMFontListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListCell.m; sourceTree = "<group>"; };
 		471A12DC1DDE19A700574273 /* CMFontListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontListHeaderView.h; sourceTree = "<group>"; };
 		471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListHeaderView.m; sourceTree = "<group>"; };
+		473402D51E23D79000DA3A13 /* KNFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFirstViewController.h; sourceTree = "<group>"; };
+		473402D61E23D79000DA3A13 /* KNFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFirstViewController.m; sourceTree = "<group>"; };
+		473402D71E23D79000DA3A13 /* KNFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNFirstViewController.xib; sourceTree = "<group>"; };
+		473402DA1E23D7C300DA3A13 /* KNSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSecondViewController.h; sourceTree = "<group>"; };
+		473402DB1E23D7C300DA3A13 /* KNSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSecondViewController.m; sourceTree = "<group>"; };
+		473402DC1E23D7C300DA3A13 /* KNSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNSecondViewController.xib; sourceTree = "<group>"; };
+		473402DF1E23D7CE00DA3A13 /* KNThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNThirdViewController.h; sourceTree = "<group>"; };
+		473402E01E23D7CE00DA3A13 /* KNThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNThirdViewController.m; sourceTree = "<group>"; };
+		473402E11E23D7CE00DA3A13 /* KNThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNThirdViewController.xib; sourceTree = "<group>"; };
+		473402E41E23D7D800DA3A13 /* KNModalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNModalTableViewController.h; sourceTree = "<group>"; };
+		473402E51E23D7D800DA3A13 /* KNModalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNModalTableViewController.m; sourceTree = "<group>"; };
+		473402E71E23D7DF00DA3A13 /* KNTableDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTableDemoController.h; sourceTree = "<group>"; };
+		473402E81E23D7DF00DA3A13 /* KNTableDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTableDemoController.m; sourceTree = "<group>"; };
+		473402EA1E23D83A00DA3A13 /* CMSemiSceneSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSemiSceneSampleController.h; sourceTree = "<group>"; };
+		473402EB1E23D83A00DA3A13 /* CMSemiSceneSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSemiSceneSampleController.m; sourceTree = "<group>"; };
 		473AE0AF1DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		473AE0B01DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
 		4750521C1DE5B33000FEE189 /* JKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKDBHelper.h; sourceTree = "<group>"; };
@@ -1041,6 +1072,14 @@
 		4780DB9F1DE3638B00343324 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
 		4780DBAE1DE363CF00343324 /* CMCityListSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCityListSampleController.h; sourceTree = "<group>"; };
 		4780DBAF1DE363CF00343324 /* CMCityListSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCityListSampleController.m; sourceTree = "<group>"; };
+		4785031A1E23CF220009856A /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		4785031B1E23CF220009856A /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		4785031D1E23CF4B0009856A /* temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = temp.jpg; sourceTree = "<group>"; };
+		4785031F1E23CF520009856A /* background_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_01.png; sourceTree = "<group>"; };
+		478503201E23CF520009856A /* background_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_01@2x.png"; sourceTree = "<group>"; };
+		478503231E23CF920009856A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		478503241E23CF920009856A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		4785033C1E23D0AB0009856A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		47D7E28D1DEC9BA500F5232E /* DWFingerprintUNlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWFingerprintUNlock.h; sourceTree = "<group>"; };
 		47D7E28E1DEC9BA500F5232E /* DWFingerprintUNlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWFingerprintUNlock.m; sourceTree = "<group>"; };
 		47D7E28F1DEC9BA500F5232E /* DWGesturesLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWGesturesLock.h; sourceTree = "<group>"; };
@@ -1668,6 +1707,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4785033D1E23D0AB0009856A /* QuartzCore.framework in Frameworks */,
 				4750524D1DE5B85900FEE189 /* libsqlite3.tbd in Frameworks */,
 				4774D1831DCA57390067A67F /* UIKit.framework in Frameworks */,
 				4774D1811DCA571B0067A67F /* CoreGraphics.framework in Frameworks */,
@@ -2270,6 +2310,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				478503141E23CEFA0009856A /* SemiScene(半挂式场景切换) */,
 				47D7E2891DEC974800F5232E /* UnLock(手势、指纹解锁) */,
 				4709E4B11DE85EA5005006BA /* PictureBrowse(图片浏览器) */,
 				475052181DE5B33000FEE189 /* FMDBOperation(FMDB操作) */,
@@ -2930,6 +2971,7 @@
 		4774D17D1DCA566E0067A67F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4785033C1E23D0AB0009856A /* QuartzCore.framework */,
 				4750524C1DE5B85900FEE189 /* libsqlite3.tbd */,
 				4774D1821DCA57390067A67F /* UIKit.framework */,
 				4774D1801DCA571B0067A67F /* CoreGraphics.framework */,
@@ -3105,6 +3147,91 @@
 				4780DB9F1DE3638B00343324 /* ZYPinYinSearch.m */,
 			);
 			path = ZYPinYinSearchLib;
+			sourceTree = "<group>";
+		};
+		478503141E23CEFA0009856A /* SemiScene(半挂式场景切换) */ = {
+			isa = PBXGroup;
+			children = (
+				478503151E23CEFA0009856A /* Sample */,
+				478503191E23CEFA0009856A /* Tool */,
+			);
+			path = "SemiScene(半挂式场景切换)";
+			sourceTree = "<group>";
+		};
+		478503151E23CEFA0009856A /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				478503161E23CEFA0009856A /* Controllers */,
+				478503171E23CEFA0009856A /* Source */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		478503161E23CEFA0009856A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				473402EA1E23D83A00DA3A13 /* CMSemiSceneSampleController.h */,
+				473402EB1E23D83A00DA3A13 /* CMSemiSceneSampleController.m */,
+				4785033E1E23D1E20009856A /* Demo1 */,
+				478503421E23D1E20009856A /* Demo2 */,
+				478503491E23D1E20009856A /* Demo3 */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		478503171E23CEFA0009856A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4785031F1E23CF520009856A /* background_01.png */,
+				478503201E23CF520009856A /* background_01@2x.png */,
+				4785031D1E23CF4B0009856A /* temp.jpg */,
+				478503231E23CF920009856A /* second.png */,
+				478503241E23CF920009856A /* second@2x.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		478503191E23CEFA0009856A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4785031A1E23CF220009856A /* UIViewController+KNSemiModal.h */,
+				4785031B1E23CF220009856A /* UIViewController+KNSemiModal.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4785033E1E23D1E20009856A /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				473402D51E23D79000DA3A13 /* KNFirstViewController.h */,
+				473402D61E23D79000DA3A13 /* KNFirstViewController.m */,
+				473402D71E23D79000DA3A13 /* KNFirstViewController.xib */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
+		478503421E23D1E20009856A /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				473402DA1E23D7C300DA3A13 /* KNSecondViewController.h */,
+				473402DB1E23D7C300DA3A13 /* KNSecondViewController.m */,
+				473402DC1E23D7C300DA3A13 /* KNSecondViewController.xib */,
+				473402DF1E23D7CE00DA3A13 /* KNThirdViewController.h */,
+				473402E01E23D7CE00DA3A13 /* KNThirdViewController.m */,
+				473402E11E23D7CE00DA3A13 /* KNThirdViewController.xib */,
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
+		478503491E23D1E20009856A /* Demo3 */ = {
+			isa = PBXGroup;
+			children = (
+				473402E41E23D7D800DA3A13 /* KNModalTableViewController.h */,
+				473402E51E23D7D800DA3A13 /* KNModalTableViewController.m */,
+				473402E71E23D7DF00DA3A13 /* KNTableDemoController.h */,
+				473402E81E23D7DF00DA3A13 /* KNTableDemoController.m */,
+			);
+			path = Demo3;
 			sourceTree = "<group>";
 		};
 		47D7E2891DEC974800F5232E /* UnLock(手势、指纹解锁) */ = {
@@ -4263,6 +4390,7 @@
 				470183231DDF34AF00320F76 /* cat4.jpg in Resources */,
 				475A3D691DC753BD00CA45BA /* Info.plist in Resources */,
 				471A12441DDE08EB00574273 /* placeholder@2x.png in Resources */,
+				4785031E1E23CF4B0009856A /* temp.jpg in Resources */,
 				471A129C1DDE08EB00574273 /* CM3DTouchCommitSampleController.xib in Resources */,
 				47F435711DE5E11000F4DD4A /* portrait.png in Resources */,
 				470183201DDF34AF00320F76 /* cat1.jpg in Resources */,
@@ -4275,6 +4403,7 @@
 				471A12C31DDE08EB00574273 /* welcome_guide_2_new@2x.png in Resources */,
 				471A12AE1DDE08EB00574273 /* MBProgressHUD+CMKit.bundle in Resources */,
 				47F435A01DE5F8FE00F4DD4A /* TOCropViewControllerLocalizable.strings in Resources */,
+				473402E31E23D7CE00DA3A13 /* KNThirdViewController.xib in Resources */,
 				47F601F11E118315002AD000 /* image11.gif in Resources */,
 				47F601F91E118315002AD000 /* video1.mp4 in Resources */,
 				475A3D661DC753BD00CA45BA /* Assets.xcassets in Resources */,
@@ -4298,16 +4427,21 @@
 				471A126E1DDE08EB00574273 /* profile-image-placeholder@2x.png in Resources */,
 				471A124D1DDE08EB00574273 /* DetailViewController.xib in Resources */,
 				47F601EF1E118315002AD000 /* image0.jpg in Resources */,
+				473402DE1E23D7C300DA3A13 /* KNSecondViewController.xib in Resources */,
 				471A12C01DDE08EB00574273 /* btn01_normal@2x.png in Resources */,
 				47F26FB61DF1C49400F485FA /* CMScanResultViewController.xib in Resources */,
 				470183391DDF58AA00320F76 /* 1.jpg in Resources */,
 				47F601F21E118315002AD000 /* image12.gif in Resources */,
+				478503211E23CF520009856A /* background_01.png in Resources */,
+				478503261E23CF920009856A /* second@2x.png in Resources */,
 				471A124F1DDE08EB00574273 /* MasterViewController.xib in Resources */,
 				471A12B91DDE08EB00574273 /* TZImagePickerController.bundle in Resources */,
 				471A12951DDE08EB00574273 /* MJRefresh.bundle in Resources */,
 				47F601F31E118315002AD000 /* image2.jpg in Resources */,
 				47F601F71E118315002AD000 /* LaunchVideoAd.json in Resources */,
+				478503221E23CF520009856A /* background_01@2x.png in Resources */,
 				471A12C41DDE08EB00574273 /* welcome_guide_3_new@2x.png in Resources */,
+				473402D91E23D79000DA3A13 /* KNFirstViewController.xib in Resources */,
 				471A123F1DDE08EB00574273 /* h7.png in Resources */,
 				471A123E1DDE08EB00574273 /* h6@2x.png in Resources */,
 				47F435A11DE5F8FE00F4DD4A /* Info.plist in Resources */,
@@ -4321,6 +4455,7 @@
 				47F26FC41DF1DEC300F485FA /* logo.JPG in Resources */,
 				47F601F61E118315002AD000 /* LaunchImageAd.json in Resources */,
 				47F3EF171DE8A73500896703 /* MSSBrowse.bundle in Resources */,
+				478503251E23CF920009856A /* second.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4468,6 +4603,7 @@
 				47F26FA81DF1C0A100F485FA /* LBXScanNative.m in Sources */,
 				471A12601DDE08EB00574273 /* UIButton+WebCache.m in Sources */,
 				475A3DC81DC7552B00CA45BA /* UIToolbar+CMKit.m in Sources */,
+				473402DD1E23D7C300DA3A13 /* KNSecondViewController.m in Sources */,
 				47F26F631DF1C09100F485FA /* ZXPDF417DetectionResult.m in Sources */,
 				47F26EBF1DF1C09100F485FA /* ZXAbstractDoCoMoResultParser.m in Sources */,
 				471A12571DDE08EB00574273 /* NSImage+WebCache.m in Sources */,
@@ -4547,6 +4683,7 @@
 				47F26ED91DF1C09100F485FA /* ZXTextParsedResult.m in Sources */,
 				47F26F4C1DF1C09100F485FA /* ZXITFReader.m in Sources */,
 				47F26F301DF1C09100F485FA /* ZXRSSExpandedDecodedChar.m in Sources */,
+				473402E21E23D7CE00DA3A13 /* KNThirdViewController.m in Sources */,
 				47F26EFE1DF1C09100F485FA /* ZXByteMatrix.m in Sources */,
 				471A12CB1DDE08EB00574273 /* CMThirdPartyLoginSampleController.m in Sources */,
 				471A129D1DDE08EB00574273 /* CM3DTouchPreviewSampleController.m in Sources */,
@@ -4569,6 +4706,7 @@
 				471A12A51DDE08EB00574273 /* CMBaseAnimationSampleController.m in Sources */,
 				47F26F1B1DF1C09100F485FA /* ZXDataMatrixReader.m in Sources */,
 				47F26F171DF1C09100F485FA /* ZXDataMatrixSymbolInfo.m in Sources */,
+				473402EC1E23D83A00DA3A13 /* CMSemiSceneSampleController.m in Sources */,
 				475A3DC21DC7552B00CA45BA /* UILabel+CMKit.m in Sources */,
 				47F26F5C1DF1C09100F485FA /* ZXPDF417ECErrorCorrection.m in Sources */,
 				47F26F581DF1C09100F485FA /* ZXUPCEANWriter.m in Sources */,
@@ -4722,6 +4860,7 @@
 				471A12711DDE08EB00574273 /* AFNetworkReachabilityManager.m in Sources */,
 				47F26F011DF1C09100F485FA /* ZXEncodeHints.m in Sources */,
 				47F26F0E1DF1C09100F485FA /* ZXDataMatrixDetector.m in Sources */,
+				473402E91E23D7DF00DA3A13 /* KNTableDemoController.m in Sources */,
 				4780DBA81DE3638B00343324 /* NSString+PinYin4Cocoa.m in Sources */,
 				47F26F431DF1C09100F485FA /* ZXCode128Writer.m in Sources */,
 				471A12921DDE08EB00574273 /* MJRefreshGifHeader.m in Sources */,
@@ -4755,8 +4894,10 @@
 				47F26FB01DF1C0A100F485FA /* LBXZXCapture.m in Sources */,
 				47F26F861DF1C09100F485FA /* ZXQRCodeMaskUtil.m in Sources */,
 				47F26F761DF1C09100F485FA /* ZXQRCodeDecodedBitStreamParser.m in Sources */,
+				473402E61E23D7D800DA3A13 /* KNModalTableViewController.m in Sources */,
 				471A12541DDE08EB00574273 /* FLAnimatedImageView.m in Sources */,
 				47F26F621DF1C09100F485FA /* ZXPDF417DecodedBitStreamParser.m in Sources */,
+				473402D81E23D79000DA3A13 /* KNFirstViewController.m in Sources */,
 				47F601FD1E118315002AD000 /* XHLaunchAd.m in Sources */,
 				47F26F291DF1C09100F485FA /* ZXAI013x0xDecoder.m in Sources */,
 				471A12AB1DDE08EB00574273 /* CMBaseViewController.m in Sources */,
@@ -4814,6 +4955,7 @@
 				47F26EF61DF1C09100F485FA /* ZXGlobalHistogramBinarizer.m in Sources */,
 				47F3EF081DE897BE00896703 /* MSSBrowseActionSheetCell.m in Sources */,
 				47F26F2F1DF1C09100F485FA /* ZXRSSExpandedCurrentParsingState.m in Sources */,
+				4785031C1E23CF220009856A /* UIViewController+KNSemiModal.m in Sources */,
 				471A12871DDE08EB00574273 /* MJRefreshAutoFooter.m in Sources */,
 				47F26F1E1DF1C09100F485FA /* ZXMaxiCodeDecodedBitStreamParser.m in Sources */,
 				47FD18BF1DE731C40093DBE5 /* UTTestCell.m in Sources */,
@@ -4925,7 +5067,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chao huang (WQ9YT96TVC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4973,7 +5116,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chao huang (WQ9YT96TVC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -4998,6 +5142,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BXC3U9JLBF;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5006,6 +5152,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utouu.CMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
@@ -5014,6 +5162,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BXC3U9JLBF;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5022,6 +5172,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.utouu.CMKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;

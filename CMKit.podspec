@@ -73,5 +73,10 @@ Pod::Spec.new do |s|
     unLock.resources = 'CMKit/CMKit-Tool(工具类)/Tool-UnLock(手势、指纹解锁)/DWUNlock.bundle'
   end
 
+  s.subspec 'SemiScene' do |semiScene|
+    unLock.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-SemiScene(半挂式场景切换)/*.{h,m}'
+    imagePicker.frameworks  = 'QuartzCore'
+  end
+
 
 end
