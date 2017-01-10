@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.5'
+  s.version      = '0.1.7'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -74,9 +74,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'SemiScene' do |semiScene|
-    unLock.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-SemiScene(半挂式场景切换)/*.{h,m}'
-    imagePicker.frameworks  = 'QuartzCore'
+    semiScene.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-SemiScene(半挂式场景切换)/*.{h,m}'
+    semiScene.frameworks  = 'QuartzCore'
   end
 
+  s.subspec 'DropdownAmplify' do |dropdownAmplify|
+    dropdownAmplify.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-DropdownAmplify(下拉放大)/*.{h,m}'
+  end
 
 end

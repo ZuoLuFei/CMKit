@@ -178,6 +178,10 @@
 		471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D71DDE139B00574273 /* CMFontInfomation.m */; };
 		471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DA1DDE13E800574273 /* CMFontListCell.m */; };
 		471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */; };
+		47276CB21E25279E0014C90A /* UTDropdownAmplifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47276CB11E25279E0014C90A /* UTDropdownAmplifyView.m */; };
+		47276CB51E2527D70014C90A /* UTDropdownAmplifySampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47276CB41E2527D70014C90A /* UTDropdownAmplifySampleController.m */; };
+		47276CB91E2528EF0014C90A /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 47276CB71E2528EF0014C90A /* 6.jpeg */; };
+		47276CBA1E2528EF0014C90A /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47276CB81E2528EF0014C90A /* 9.jpg */; };
 		473402D81E23D79000DA3A13 /* KNFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402D61E23D79000DA3A13 /* KNFirstViewController.m */; };
 		473402D91E23D79000DA3A13 /* KNFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473402D71E23D79000DA3A13 /* KNFirstViewController.xib */; };
 		473402DD1E23D7C300DA3A13 /* KNSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 473402DB1E23D7C300DA3A13 /* KNSecondViewController.m */; };
@@ -905,6 +909,12 @@
 		471A12DA1DDE13E800574273 /* CMFontListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListCell.m; sourceTree = "<group>"; };
 		471A12DC1DDE19A700574273 /* CMFontListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontListHeaderView.h; sourceTree = "<group>"; };
 		471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListHeaderView.m; sourceTree = "<group>"; };
+		47276CB01E25279E0014C90A /* UTDropdownAmplifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTDropdownAmplifyView.h; sourceTree = "<group>"; };
+		47276CB11E25279E0014C90A /* UTDropdownAmplifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTDropdownAmplifyView.m; sourceTree = "<group>"; };
+		47276CB31E2527D70014C90A /* UTDropdownAmplifySampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UTDropdownAmplifySampleController.h; path = "CMKit/CMKit-Tool(工具类)/UtouuCreate/DropdownAmplify(下拉放大)/Sample/Controllers/UTDropdownAmplifySampleController.h"; sourceTree = SOURCE_ROOT; };
+		47276CB41E2527D70014C90A /* UTDropdownAmplifySampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTDropdownAmplifySampleController.m; path = "CMKit/CMKit-Tool(工具类)/UtouuCreate/DropdownAmplify(下拉放大)/Sample/Controllers/UTDropdownAmplifySampleController.m"; sourceTree = SOURCE_ROOT; };
+		47276CB71E2528EF0014C90A /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		47276CB81E2528EF0014C90A /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		473402D51E23D79000DA3A13 /* KNFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFirstViewController.h; sourceTree = "<group>"; };
 		473402D61E23D79000DA3A13 /* KNFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFirstViewController.m; sourceTree = "<group>"; };
 		473402D71E23D79000DA3A13 /* KNFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNFirstViewController.xib; sourceTree = "<group>"; };
@@ -2310,6 +2320,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				47276CAC1E2527500014C90A /* DropdownAmplify(下拉放大) */,
 				478503141E23CEFA0009856A /* SemiScene(半挂式场景切换) */,
 				47D7E2891DEC974800F5232E /* UnLock(手势、指纹解锁) */,
 				4709E4B11DE85EA5005006BA /* PictureBrowse(图片浏览器) */,
@@ -2695,6 +2706,53 @@
 			);
 			path = Sample;
 			sourceTree = "<group>";
+		};
+		47276CAC1E2527500014C90A /* DropdownAmplify(下拉放大) */ = {
+			isa = PBXGroup;
+			children = (
+				47276CAD1E2527500014C90A /* Sample */,
+				47276CAF1E2527500014C90A /* Tool */,
+			);
+			name = "DropdownAmplify(下拉放大)";
+			path = "DropDownAmplify(下拉放大)";
+			sourceTree = "<group>";
+		};
+		47276CAD1E2527500014C90A /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				47276CB61E2528D90014C90A /* Source */,
+				47276CAE1E2527500014C90A /* Controllers */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		47276CAE1E2527500014C90A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47276CB31E2527D70014C90A /* UTDropdownAmplifySampleController.h */,
+				47276CB41E2527D70014C90A /* UTDropdownAmplifySampleController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		47276CAF1E2527500014C90A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				47276CB01E25279E0014C90A /* UTDropdownAmplifyView.h */,
+				47276CB11E25279E0014C90A /* UTDropdownAmplifyView.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		47276CB61E2528D90014C90A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				47276CB71E2528EF0014C90A /* 6.jpeg */,
+				47276CB81E2528EF0014C90A /* 9.jpg */,
+			);
+			name = Source;
+			path = "CMKit/CMKit-Tool(工具类)/UtouuCreate/DropdownAmplify(下拉放大)/Sample/Source";
+			sourceTree = SOURCE_ROOT;
 		};
 		473AE0AC1DDF1F590055AA68 /* Waterfall(瀑布流) */ = {
 			isa = PBXGroup;
@@ -4382,6 +4440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47276CB91E2528EF0014C90A /* 6.jpeg in Resources */,
 				47F601F41E118315002AD000 /* image3.jpg in Resources */,
 				471A12411DDE08EB00574273 /* pageControlCurrentDot@3x.png in Resources */,
 				475052451DE5B4AC00FEE189 /* CMDBOperationSamplyController.xib in Resources */,
@@ -4446,6 +4505,7 @@
 				471A123E1DDE08EB00574273 /* h6@2x.png in Resources */,
 				47F435A11DE5F8FE00F4DD4A /* Info.plist in Resources */,
 				471A123A1DDE08EB00574273 /* h1.jpg in Resources */,
+				47276CBA1E2528EF0014C90A /* 9.jpg in Resources */,
 				4759CF381DE4532A0085230D /* CMCityList.bundle in Resources */,
 				475052521DE5BB4100FEE189 /* CMDBOperationQueryCell.xib in Resources */,
 				471A12C11DDE08EB00574273 /* btn01_on@2x.png in Resources */,
@@ -4557,6 +4617,7 @@
 				47F435A41DE5F8FE00F4DD4A /* TOCropViewControllerTransitioning.m in Sources */,
 				47F435A31DE5F8FE00F4DD4A /* TOCroppedImageAttributes.m in Sources */,
 				4780DBAB1DE3638B00343324 /* PinyinHelper.m in Sources */,
+				47276CB21E25279E0014C90A /* UTDropdownAmplifyView.m in Sources */,
 				4780DB791DE343C600343324 /* PKAnimation.m in Sources */,
 				47F26EEE1DF1C09100F485FA /* ZXBitMatrix.m in Sources */,
 				47F26F0F1DF1C09100F485FA /* ZXDataMatrixASCIIEncoder.m in Sources */,
@@ -4595,6 +4656,7 @@
 				471A12D51DDE136B00574273 /* CMFontInfoModel.m in Sources */,
 				47F26F591DF1C09100F485FA /* ZXUPCEReader.m in Sources */,
 				47F26F4A1DF1C09100F485FA /* ZXEAN8Writer.m in Sources */,
+				47276CB51E2527D70014C90A /* UTDropdownAmplifySampleController.m in Sources */,
 				47F26F731DF1C09100F485FA /* ZXQRCodeBitMatrixParser.m in Sources */,
 				47F26F1C1DF1C09100F485FA /* ZXDataMatrixWriter.m in Sources */,
 				47F26F2A1DF1C09100F485FA /* ZXAI01AndOtherAIs.m in Sources */,

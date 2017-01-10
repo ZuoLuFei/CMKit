@@ -27,6 +27,7 @@
 #import "CMPictureBrowseSampleController.h"
 #import "CMUnLockSampleController.h"
 #import "CMSemiSceneSampleController.h"
+#import "UTDropdownAmplifySampleController.h"
 
 //View
 #import "CMHeadView.h"
@@ -72,6 +73,7 @@
                        @{@"name":@"PictureBrowse(图片浏览器)",@"classType":[CMPictureBrowseSampleController class]},
                        @{@"name":@"UnLock(手势、指纹解锁)",@"classType":[CMUnLockSampleController class]},
                        @{@"name":@"SemiScene(半挂式场景切换)",@"classType":[CMSemiSceneSampleController class]},
+                       @{@"name":@"DropdownAmplify(下拉放大)",@"classType":[UTDropdownAmplifySampleController class]},
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
                        
 //                       @{@"name":@"Share(分享)",@"classType":@""},
@@ -100,8 +102,10 @@
     //1.创建TableView
     UITableView *tableView = [UITableView initWithFrame:self.view.bounds style:UITableViewStylePlain cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine separatorInset:UIEdgeInsetsMake(0, 0, 0, 0) dataSource:self delegate:self];
     
-    [tableView registerClass:[CMHeadView class] forHeaderFooterViewReuseIdentifier:@"CMHeadView"];
+//    [tableView registerClass:[CMHeadView class] forHeaderFooterViewReuseIdentifier:@"CMHeadView"];
+//    [tableView registerClass:[CMHeadView headView]];
     
+    tableView.tableHeaderView = [CMHeadView headView];
 
     [self.view addSubview:tableView];
     

@@ -81,6 +81,10 @@ end
 
     手势、指纹解锁：pod 'CMKit/UnLock', '~> 0.1.5’
 
+    半挂式场景切换：pod 'CMKit/SemiScene', '~> 0.1.5’
+
+    下拉放大：pod 'CMKit/DropdownAmplify', '~> 0.1.5’
+
 
 
 ####----------常用第三方框架选型
@@ -188,6 +192,10 @@ Demo共分为三个版块，目前集成功能如下：
     1.14 PictureBrowse(图片浏览器)
 
     1.15 UnLock(手势、指纹解锁)
+
+    1.16 SemiScene(半挂式场景切换)
+
+    1.17 DropdownAmplify(下拉放大)
 
 
 2 FrameworkManager

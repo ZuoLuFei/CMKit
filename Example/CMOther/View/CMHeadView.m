@@ -49,20 +49,20 @@
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         
         //1.背景色
-        self.contentView.backgroundColor = [UIColor lightGrayColor];
+//        self.contentView.backgroundColor = [UIColor redColor];
+//        self.contentView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2f];
         
         //2.
         UILabel *label = [[UILabel alloc] init];
+        label.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2f];
         self.titleLabel = label;
         label.textAlignment = NSTextAlignmentCenter;
         label.numberOfLines = 0;
         label.font = [UIFont boldSystemFontOfSize:17.0f];
         label.textColor = [UIColor blackColor];
-//        label.frame = CGRectMake(0, 0, DEF_SCREEN_WIDTH, 35.0);
         [self.contentView addSubview:label];
         
         //3.分割线
-//        UIView *lineView         = [[UIView alloc] initWithFrame:CGRectMake(0, 34.0, DEF_SCREEN_WIDTH, 1.0f)];
         UIView *lineView         = [[UIView alloc] init];
         self.lineView = lineView;
         lineView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1f];
@@ -84,6 +84,7 @@
         
         self.lineView.frame = CGRectMake(0, _hight-1.0f, DEF_SCREEN_WIDTH, 1.0f);
     }
+    
     
 }
 
