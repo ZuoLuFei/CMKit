@@ -91,8 +91,12 @@
     CGFloat offsetY = [change[@"new"] CGPointValue].y - self.initOffsetY;
     
     //    NSLog(@"\nself.initOffsetY->%f \noffsetY->%f",self.initOffsetY,offsetY);
-    self.stretchView.y = self.initStretchViewFrame.origin.y + offsetY;
-    self.stretchView.height = self.initStretchViewFrame.size.height - offsetY;
+    CGRect newFrame   = self.stretchView.frame;
+    newFrame.origin.y = self.initStretchViewFrame.origin.y + offsetY;
+    newFrame.size.height = self.initStretchViewFrame.size.height - offsetY;
+    self.stretchView.frame       = newFrame;
+    
+    
     
 }
 
