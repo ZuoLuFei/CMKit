@@ -1,5 +1,5 @@
 //
-//  UTDropdownAmplifyView.h
+//  CMDropdownAmplifyView.h
 //  CMKit
 //
 //  Created by HC on 17/1/10.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UTDropdownAmplifyView : UIView
+@interface CMDropdownAmplifyView : UIView
 /** 内容显示View */
 @property (nonatomic, strong) UIView *contentView;
 /** 图片拉伸View */

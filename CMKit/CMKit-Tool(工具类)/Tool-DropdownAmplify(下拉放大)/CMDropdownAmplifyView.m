@@ -1,14 +1,14 @@
 //
-//  UTDropdownAmplifyView.m
+//  CMDropdownAmplifyView.m
 //  CMKit
 //
 //  Created by HC on 17/1/10.
 //  Copyright © 2017年 UTOUU. All rights reserved.
 //
 
-#import "UTDropdownAmplifyView.h"
+#import "CMDropdownAmplifyView.h"
 
-@interface UTDropdownAmplifyView ()
+@interface CMDropdownAmplifyView ()
 
 @property (nonatomic, assign) CGFloat initOffsetY;
 @property (nonatomic, assign) CGRect initStretchViewFrame;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation UTDropdownAmplifyView
+@implementation CMDropdownAmplifyView
 
 
 #pragma mark - 工厂方法
@@ -27,7 +27,7 @@
 
 + (instancetype)dropHeaderViewWithFrame:(CGRect)frame contentView:(UIView *)contentView stretchView:(UIView *)stretchView
 {
-    UTDropdownAmplifyView *dropHeaderView = [[UTDropdownAmplifyView alloc] init];
+    CMDropdownAmplifyView *dropHeaderView = [[CMDropdownAmplifyView alloc] init];
     dropHeaderView.frame = frame;
     dropHeaderView.stretchView = stretchView;
     dropHeaderView.contentView = contentView;

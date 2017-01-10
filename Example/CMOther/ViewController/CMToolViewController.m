@@ -28,6 +28,7 @@
 #import "CMUnLockSampleController.h"
 #import "CMSemiSceneSampleController.h"
 #import "UTDropdownAmplifySampleController.h"
+#import "UTShimmerLabelSampleController.h"
 
 //View
 #import "CMHeadView.h"
@@ -74,8 +75,8 @@
                        @{@"name":@"UnLock(手势、指纹解锁)",@"classType":[CMUnLockSampleController class]},
                        @{@"name":@"SemiScene(半挂式场景切换)",@"classType":[CMSemiSceneSampleController class]},
                        @{@"name":@"DropdownAmplify(下拉放大)",@"classType":[UTDropdownAmplifySampleController class]},
+                       @{@"name":@"ShimmerLabel(闪烁文字)",@"classType":[UTShimmerLabelSampleController class]},
                        @{@"name":@"MBProgressHUD(提示框)",@"classType":[MBProgressHUD class]},
-                       
 //                       @{@"name":@"Share(分享)",@"classType":@""},
                        @{@"name":@"ImagePicker(相机/相册)",@"classType":[CMImagePickerSampleController class]},
                        @{@"name":@"ThirdPartyLogin(第三方登录)",@"classType":[CMThirdPartyLoginSampleController class]},

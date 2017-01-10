@@ -7,7 +7,7 @@
 //
 
 #import "UTDropdownAmplifySampleController.h"
-#import "UTDropdownAmplifyView.h"
+#import "CMDropdownAmplifyView.h"
 
 @interface UTDropdownAmplifySampleController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -50,10 +50,10 @@
     contentView.frame = CGRectMake(contentViewX, contentViewY, contentViewW, contentViewH);
     
     //初始化方法一
-    UTDropdownAmplifyView *transparentView = [UTDropdownAmplifyView dropHeaderViewWithFrame:stretchView.frame contentView:contentView stretchView:stretchView];
+    CMDropdownAmplifyView *transparentView = [CMDropdownAmplifyView dropHeaderViewWithFrame:stretchView.frame contentView:contentView stretchView:stretchView];
     /**
      //初始化方法二
-     UTDropdownAmplifyView *transparentView = [UTDropdownAmplifyView dropHeaderViewWithFrame:stretchView.frame];
+     CMDropdownAmplifyView *transparentView = [CMDropdownAmplifyView dropHeaderViewWithFrame:stretchView.frame];
      transparentView.stretchView = stretchView;
      transparentView.contentView = contentView;
      */
