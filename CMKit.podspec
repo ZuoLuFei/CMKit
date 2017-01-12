@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.7'
+  s.version      = '0.1.8'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -81,5 +81,11 @@ Pod::Spec.new do |s|
   s.subspec 'DropdownAmplify' do |dropdownAmplify|
     dropdownAmplify.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-DropdownAmplify(下拉放大)/*.{h,m}'
   end
+
+  s.subspec 'ShimmerLabel' do |shimmerLabel|
+    shimmerLabel.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-ShimmerLabel(闪烁文字)/*.{h,m}'
+  end
+
+
 
 end
