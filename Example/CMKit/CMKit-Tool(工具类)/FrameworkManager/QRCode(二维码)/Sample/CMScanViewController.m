@@ -185,7 +185,9 @@
 - (void)showError:(NSString*)str
 {
 //    [LBXAlertAction showAlertWithTitle:@"提示" msg:str chooseBlock:nil buttonsStatement:@"知道了",nil];
-    [[CMAlertView sharedInstance] showAlertController:self title:@"提示" message:str cancelTitle:@"知道了" actionBlock:nil otherButtonTitles:nil];
+    [[CMAlertView sharedInstance] showAlertController:self title:@"提示" message:str cancelTitle:@"知道了" actionBlock:^(NSInteger buttonTag) {
+
+    } otherButtonTitles:nil];
 }
 
 

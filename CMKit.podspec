@@ -32,13 +32,6 @@ Pod::Spec.new do |s|
     progressHUD.frameworks   = 'CoreGraphics', 'QuartzCore'
   end
 
-  s.subspec 'QRCode' do |qrCode|
-    qrCode.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-QRCode(二维码)/*.{h,m}'
-    qrCode.resources = 'CMKit/CMKit-Tool(工具类)/Tool-QRCode(二维码)/CMQRCodeManager.bundle'
-    qrCode.dependency 'CMKit/AlertView'
-    qrCode.frameworks  = 'AVFoundation'
-  end
-
   s.subspec 'CommonSuperClass' do |commonSuperClass|
     commonSuperClass.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-CommonSuperClass(共用父类)/*.{h,m}'
   end
