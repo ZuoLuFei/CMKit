@@ -26,6 +26,27 @@
 		470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBD1DC8EE9F00206B64 /* CMFoundationCategoryController.m */; };
 		470A9DC51DC8EE9F00206B64 /* CMToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DBF1DC8EE9F00206B64 /* CMToolViewController.m */; };
 		470A9DC61DC8EE9F00206B64 /* CMUIKitCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470A9DC11DC8EE9F00206B64 /* CMUIKitCategoryController.m */; };
+		4710DDDF1E520E9900202A5E /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDDE1E520E9900202A5E /* UICountingLabel.m */; };
+		4710DDE21E520EBF00202A5E /* CMCountLabelSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDE11E520EBF00202A5E /* CMCountLabelSampleController.m */; };
+		4710DE091E52150200202A5E /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDE81E52150200202A5E /* PNBar.m */; };
+		4710DE0A1E52150200202A5E /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDEA1E52150200202A5E /* PNBarChart.m */; };
+		4710DE0B1E52150200202A5E /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDEE1E52150200202A5E /* PNChartLabel.m */; };
+		4710DE0C1E52150200202A5E /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDF01E52150200202A5E /* PNCircleChart.m */; };
+		4710DE0D1E52150200202A5E /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDF21E52150200202A5E /* PNColor.m */; };
+		4710DE0E1E52150200202A5E /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDF41E52150200202A5E /* PNGenericChart.m */; };
+		4710DE0F1E52150200202A5E /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDF61E52150200202A5E /* PNLineChart.m */; };
+		4710DE101E52150200202A5E /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDF81E52150200202A5E /* PNLineChartData.m */; };
+		4710DE111E52150200202A5E /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDFA1E52150200202A5E /* PNLineChartDataItem.m */; };
+		4710DE121E52150200202A5E /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDFC1E52150200202A5E /* PNPieChart.m */; };
+		4710DE131E52150200202A5E /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DDFE1E52150200202A5E /* PNPieChartDataItem.m */; };
+		4710DE141E52150200202A5E /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE001E52150200202A5E /* PNRadarChart.m */; };
+		4710DE151E52150200202A5E /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE021E52150200202A5E /* PNRadarChartDataItem.m */; };
+		4710DE161E52150200202A5E /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE041E52150200202A5E /* PNScatterChart.m */; };
+		4710DE171E52150200202A5E /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE061E52150200202A5E /* PNScatterChartData.m */; };
+		4710DE181E52150200202A5E /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE081E52150200202A5E /* PNScatterChartDataItem.m */; };
+		4710DE1E1E52157B00202A5E /* CMChartsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE1D1E52157B00202A5E /* CMChartsTableViewController.m */; };
+		4710DE221E52159B00202A5E /* CMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4710DE201E52159B00202A5E /* CMChartViewController.m */; };
+		4710DE231E52159B00202A5E /* CMChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4710DE211E52159B00202A5E /* CMChartViewController.xib */; };
 		471A0EE61DDDC57000574273 /* CMThirdFrameworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A0EE51DDDC57000574273 /* CMThirdFrameworkController.m */; };
 		471A0EEA1DDDC61100574273 /* CMHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A0EE91DDDC61100574273 /* CMHeadView.m */; };
 		471A12361DDE08EB00574273 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 471A10E11DDE08EA00574273 /* 005.jpg */; };
@@ -279,6 +300,11 @@
 		478503251E23CF920009856A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 478503231E23CF920009856A /* second.png */; };
 		478503261E23CF920009856A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 478503241E23CF920009856A /* second@2x.png */; };
 		4785033D1E23D0AB0009856A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4785033C1E23D0AB0009856A /* QuartzCore.framework */; };
+		47CF56211E51F85F00BBC6DA /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CF56201E51F85F00BBC6DA /* iCarousel.m */; };
+		47CF56251E51F89900BBC6DA /* CMICarouselSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CF56231E51F89900BBC6DA /* CMICarouselSampleController.m */; };
+		47CF56261E51F89900BBC6DA /* CMICarouselSampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47CF56241E51F89900BBC6DA /* CMICarouselSampleController.xib */; };
+		47CF56291E51FA6500BBC6DA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CF56271E51FA6500BBC6DA /* background.png */; };
+		47CF562A1E51FA6500BBC6DA /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CF56281E51FA6500BBC6DA /* page.png */; };
 		47D7E2951DEC9BA500F5232E /* DWFingerprintUNlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E28E1DEC9BA500F5232E /* DWFingerprintUNlock.m */; };
 		47D7E2961DEC9BA500F5232E /* DWGesturesLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E2901DEC9BA500F5232E /* DWGesturesLock.m */; };
 		47D7E2971DEC9BA500F5232E /* DWiPhoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D7E2921DEC9BA500F5232E /* DWiPhoneType.m */; };
@@ -634,6 +660,49 @@
 		470A9DBF1DC8EE9F00206B64 /* CMToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMToolViewController.m; sourceTree = "<group>"; };
 		470A9DC01DC8EE9F00206B64 /* CMUIKitCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMUIKitCategoryController.h; sourceTree = "<group>"; };
 		470A9DC11DC8EE9F00206B64 /* CMUIKitCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMUIKitCategoryController.m; sourceTree = "<group>"; };
+		4710DDDD1E520E9900202A5E /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		4710DDDE1E520E9900202A5E /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		4710DDE01E520EBF00202A5E /* CMCountLabelSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCountLabelSampleController.h; sourceTree = "<group>"; };
+		4710DDE11E520EBF00202A5E /* CMCountLabelSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCountLabelSampleController.m; sourceTree = "<group>"; };
+		4710DDE71E52150200202A5E /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		4710DDE81E52150200202A5E /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		4710DDE91E52150200202A5E /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		4710DDEA1E52150200202A5E /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		4710DDEB1E52150200202A5E /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		4710DDEC1E52150200202A5E /* PNChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		4710DDED1E52150200202A5E /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		4710DDEE1E52150200202A5E /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		4710DDEF1E52150200202A5E /* PNCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		4710DDF01E52150200202A5E /* PNCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		4710DDF11E52150200202A5E /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		4710DDF21E52150200202A5E /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		4710DDF31E52150200202A5E /* PNGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGenericChart.h; sourceTree = "<group>"; };
+		4710DDF41E52150200202A5E /* PNGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNGenericChart.m; sourceTree = "<group>"; };
+		4710DDF51E52150200202A5E /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		4710DDF61E52150200202A5E /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		4710DDF71E52150200202A5E /* PNLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		4710DDF81E52150200202A5E /* PNLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		4710DDF91E52150200202A5E /* PNLineChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		4710DDFA1E52150200202A5E /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		4710DDFB1E52150200202A5E /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		4710DDFC1E52150200202A5E /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		4710DDFD1E52150200202A5E /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		4710DDFE1E52150200202A5E /* PNPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		4710DDFF1E52150200202A5E /* PNRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChart.h; sourceTree = "<group>"; };
+		4710DE001E52150200202A5E /* PNRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChart.m; sourceTree = "<group>"; };
+		4710DE011E52150200202A5E /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		4710DE021E52150200202A5E /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		4710DE031E52150200202A5E /* PNScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChart.h; sourceTree = "<group>"; };
+		4710DE041E52150200202A5E /* PNScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChart.m; sourceTree = "<group>"; };
+		4710DE051E52150200202A5E /* PNScatterChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartData.h; sourceTree = "<group>"; };
+		4710DE061E52150200202A5E /* PNScatterChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartData.m; sourceTree = "<group>"; };
+		4710DE071E52150200202A5E /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		4710DE081E52150200202A5E /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		4710DE1C1E52157B00202A5E /* CMChartsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMChartsTableViewController.h; sourceTree = "<group>"; };
+		4710DE1D1E52157B00202A5E /* CMChartsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMChartsTableViewController.m; sourceTree = "<group>"; };
+		4710DE1F1E52159B00202A5E /* CMChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMChartViewController.h; sourceTree = "<group>"; };
+		4710DE201E52159B00202A5E /* CMChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMChartViewController.m; sourceTree = "<group>"; };
+		4710DE211E52159B00202A5E /* CMChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMChartViewController.xib; sourceTree = "<group>"; };
 		471A0EE41DDDC57000574273 /* CMThirdFrameworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMThirdFrameworkController.h; sourceTree = "<group>"; };
 		471A0EE51DDDC57000574273 /* CMThirdFrameworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMThirdFrameworkController.m; sourceTree = "<group>"; };
 		471A0EE81DDDC61100574273 /* CMHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHeadView.h; sourceTree = "<group>"; };
@@ -1096,6 +1165,13 @@
 		478503231E23CF920009856A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		478503241E23CF920009856A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		4785033C1E23D0AB0009856A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		47CF561F1E51F85F00BBC6DA /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		47CF56201E51F85F00BBC6DA /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		47CF56221E51F89900BBC6DA /* CMICarouselSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMICarouselSampleController.h; sourceTree = "<group>"; };
+		47CF56231E51F89900BBC6DA /* CMICarouselSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMICarouselSampleController.m; sourceTree = "<group>"; };
+		47CF56241E51F89900BBC6DA /* CMICarouselSampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CMICarouselSampleController.xib; sourceTree = "<group>"; };
+		47CF56271E51FA6500BBC6DA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		47CF56281E51FA6500BBC6DA /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		47D7E28D1DEC9BA500F5232E /* DWFingerprintUNlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWFingerprintUNlock.h; sourceTree = "<group>"; };
 		47D7E28E1DEC9BA500F5232E /* DWFingerprintUNlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWFingerprintUNlock.m; sourceTree = "<group>"; };
 		47D7E28F1DEC9BA500F5232E /* DWGesturesLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWGesturesLock.h; sourceTree = "<group>"; };
@@ -1871,6 +1947,103 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		4710DDDA1E520E8500202A5E /* UICountingLabel(数字Label) */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDDB1E520E8500202A5E /* Sample */,
+				4710DDDC1E520E8500202A5E /* Tool */,
+			);
+			path = "UICountingLabel(数字Label)";
+			sourceTree = "<group>";
+		};
+		4710DDDB1E520E8500202A5E /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDE01E520EBF00202A5E /* CMCountLabelSampleController.h */,
+				4710DDE11E520EBF00202A5E /* CMCountLabelSampleController.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		4710DDDC1E520E8500202A5E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDDD1E520E9900202A5E /* UICountingLabel.h */,
+				4710DDDE1E520E9900202A5E /* UICountingLabel.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4710DDE31E5214F000202A5E /* Chart(图表) */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDE41E5214F000202A5E /* Sample */,
+				4710DDE51E5214F000202A5E /* Tool */,
+			);
+			path = "Chart(图表)";
+			sourceTree = "<group>";
+		};
+		4710DDE41E5214F000202A5E /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4710DE1C1E52157B00202A5E /* CMChartsTableViewController.h */,
+				4710DE1D1E52157B00202A5E /* CMChartsTableViewController.m */,
+				4710DE1F1E52159B00202A5E /* CMChartViewController.h */,
+				4710DE201E52159B00202A5E /* CMChartViewController.m */,
+				4710DE211E52159B00202A5E /* CMChartViewController.xib */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		4710DDE51E5214F000202A5E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDE61E52150200202A5E /* PNChart */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		4710DDE61E52150200202A5E /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				4710DDE71E52150200202A5E /* PNBar.h */,
+				4710DDE81E52150200202A5E /* PNBar.m */,
+				4710DDE91E52150200202A5E /* PNBarChart.h */,
+				4710DDEA1E52150200202A5E /* PNBarChart.m */,
+				4710DDEB1E52150200202A5E /* PNChart.h */,
+				4710DDEC1E52150200202A5E /* PNChartDelegate.h */,
+				4710DDED1E52150200202A5E /* PNChartLabel.h */,
+				4710DDEE1E52150200202A5E /* PNChartLabel.m */,
+				4710DDEF1E52150200202A5E /* PNCircleChart.h */,
+				4710DDF01E52150200202A5E /* PNCircleChart.m */,
+				4710DDF11E52150200202A5E /* PNColor.h */,
+				4710DDF21E52150200202A5E /* PNColor.m */,
+				4710DDF31E52150200202A5E /* PNGenericChart.h */,
+				4710DDF41E52150200202A5E /* PNGenericChart.m */,
+				4710DDF51E52150200202A5E /* PNLineChart.h */,
+				4710DDF61E52150200202A5E /* PNLineChart.m */,
+				4710DDF71E52150200202A5E /* PNLineChartData.h */,
+				4710DDF81E52150200202A5E /* PNLineChartData.m */,
+				4710DDF91E52150200202A5E /* PNLineChartDataItem.h */,
+				4710DDFA1E52150200202A5E /* PNLineChartDataItem.m */,
+				4710DDFB1E52150200202A5E /* PNPieChart.h */,
+				4710DDFC1E52150200202A5E /* PNPieChart.m */,
+				4710DDFD1E52150200202A5E /* PNPieChartDataItem.h */,
+				4710DDFE1E52150200202A5E /* PNPieChartDataItem.m */,
+				4710DDFF1E52150200202A5E /* PNRadarChart.h */,
+				4710DE001E52150200202A5E /* PNRadarChart.m */,
+				4710DE011E52150200202A5E /* PNRadarChartDataItem.h */,
+				4710DE021E52150200202A5E /* PNRadarChartDataItem.m */,
+				4710DE031E52150200202A5E /* PNScatterChart.h */,
+				4710DE041E52150200202A5E /* PNScatterChart.m */,
+				4710DE051E52150200202A5E /* PNScatterChartData.h */,
+				4710DE061E52150200202A5E /* PNScatterChartData.m */,
+				4710DE071E52150200202A5E /* PNScatterChartDataItem.h */,
+				4710DE081E52150200202A5E /* PNScatterChartDataItem.m */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
 		471A0EE71DDDC5EF00574273 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1883,6 +2056,9 @@
 		471A10DE1DDE08EA00574273 /* FrameworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				4710DDE31E5214F000202A5E /* Chart(图表) */,
+				4710DDDA1E520E8500202A5E /* UICountingLabel(数字Label) */,
+				47CF561C1E51F85300BBC6DA /* iCarousel(旋转木马效果) */,
 				47F601B81E118315002AD000 /* LaunchAd(广告载入页) */,
 				47F26CBD1DF1BE8300F485FA /* QRCode(二维码) */,
 				47F435721DE5F8FE00F4DD4A /* CropPicture(裁剪图片) */,
@@ -3334,6 +3510,36 @@
 			path = Demo3;
 			sourceTree = "<group>";
 		};
+		47CF561C1E51F85300BBC6DA /* iCarousel(旋转木马效果) */ = {
+			isa = PBXGroup;
+			children = (
+				47CF561D1E51F85300BBC6DA /* Sample */,
+				47CF561E1E51F85300BBC6DA /* Tool */,
+			);
+			path = "iCarousel(旋转木马效果)";
+			sourceTree = "<group>";
+		};
+		47CF561D1E51F85300BBC6DA /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				47CF56221E51F89900BBC6DA /* CMICarouselSampleController.h */,
+				47CF56231E51F89900BBC6DA /* CMICarouselSampleController.m */,
+				47CF56241E51F89900BBC6DA /* CMICarouselSampleController.xib */,
+				47CF56271E51FA6500BBC6DA /* background.png */,
+				47CF56281E51FA6500BBC6DA /* page.png */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		47CF561E1E51F85300BBC6DA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				47CF561F1E51F85F00BBC6DA /* iCarousel.h */,
+				47CF56201E51F85F00BBC6DA /* iCarousel.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		47D7E2891DEC974800F5232E /* UnLock(手势、指纹解锁) */ = {
 			isa = PBXGroup;
 			children = (
@@ -4500,6 +4706,7 @@
 				470183221DDF34AF00320F76 /* cat3.jpg in Resources */,
 				475A3D681DC753BD00CA45BA /* Main.storyboard in Resources */,
 				471A12391DDE08EB00574273 /* DemoVCWithXib.xib in Resources */,
+				47CF56261E51F89900BBC6DA /* CMICarouselSampleController.xib in Resources */,
 				471A126D1DDE08EB00574273 /* profile-image-placeholder.png in Resources */,
 				471A12C31DDE08EB00574273 /* welcome_guide_2_new@2x.png in Resources */,
 				471A12AE1DDE08EB00574273 /* MBProgressHUD+CMKit.bundle in Resources */,
@@ -4548,6 +4755,7 @@
 				47F435A11DE5F8FE00F4DD4A /* Info.plist in Resources */,
 				471A123A1DDE08EB00574273 /* h1.jpg in Resources */,
 				47276CBA1E2528EF0014C90A /* 9.jpg in Resources */,
+				47CF56291E51FA6500BBC6DA /* background.png in Resources */,
 				4759CF381DE4532A0085230D /* CMCityList.bundle in Resources */,
 				475052521DE5BB4100FEE189 /* CMDBOperationQueryCell.xib in Resources */,
 				471A12C11DDE08EB00574273 /* btn01_on@2x.png in Resources */,
@@ -4555,9 +4763,11 @@
 				47F26FC21DF1DE7100F485FA /* LBXScan.bundle in Resources */,
 				471A12841DDE08EB00574273 /* MJTestViewController.xib in Resources */,
 				47F26FC41DF1DEC300F485FA /* logo.JPG in Resources */,
+				4710DE231E52159B00202A5E /* CMChartViewController.xib in Resources */,
 				47F601F61E118315002AD000 /* LaunchImageAd.json in Resources */,
 				47F3EF171DE8A73500896703 /* MSSBrowse.bundle in Resources */,
 				478503251E23CF920009856A /* second.png in Resources */,
+				47CF562A1E51FA6500BBC6DA /* page.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4587,6 +4797,7 @@
 				47F26F361DF1C09100F485FA /* ZXBitArrayBuilder.m in Sources */,
 				47F26F8C1DF1C09100F485FA /* ZXQRCodeWriter.m in Sources */,
 				47F26EB51DF1C09100F485FA /* ZXAztecBinaryShiftToken.m in Sources */,
+				47CF56251E51F89900BBC6DA /* CMICarouselSampleController.m in Sources */,
 				470A9DC41DC8EE9F00206B64 /* CMFoundationCategoryController.m in Sources */,
 				47F26F8E1DF1C09100F485FA /* ZXMultiFormatWriter.m in Sources */,
 				475A3DCC1DC7552B00CA45BA /* UIWindow+CMKit.m in Sources */,
@@ -4617,6 +4828,7 @@
 				47F26F131DF1C09100F485FA /* ZXDataMatrixEdifactEncoder.m in Sources */,
 				47F26EED1DF1C09100F485FA /* ZXBitArray.m in Sources */,
 				471A12801DDE08EB00574273 /* MJSingleViewController.m in Sources */,
+				4710DE0E1E52150200202A5E /* PNGenericChart.m in Sources */,
 				47F26F531DF1C09100F485FA /* ZXUPCAWriter.m in Sources */,
 				47F435A81DE5F8FE00F4DD4A /* TOCropScrollView.m in Sources */,
 				471A12BD1DDE08EB00574273 /* TZPhotoPreviewController.m in Sources */,
@@ -4645,6 +4857,7 @@
 				471A12901DDE08EB00574273 /* MJRefreshBackNormalFooter.m in Sources */,
 				4704EC781DE8707E00CE5C06 /* CMPictureBrowseSampleController.m in Sources */,
 				47F26EC01DF1C09100F485FA /* ZXAddressBookAUResultParser.m in Sources */,
+				4710DE0C1E52150200202A5E /* PNCircleChart.m in Sources */,
 				47F26F061DF1C09100F485FA /* ZXResult.m in Sources */,
 				471A127C1DDE08EB00574273 /* MJDIYHeader.m in Sources */,
 				475A3DC01DC7552B00CA45BA /* UIImage+CMKit.m in Sources */,
@@ -4673,8 +4886,10 @@
 				47F602001E118315002AD000 /* XHLaunchAdConfiguration.m in Sources */,
 				47F26ECC1DF1C09100F485FA /* ZXGeoResultParser.m in Sources */,
 				47F26F8A1DF1C09100F485FA /* ZXQRCodeMultiReader.m in Sources */,
+				4710DE1E1E52157B00202A5E /* CMChartsTableViewController.m in Sources */,
 				471A128D1DDE08EB00574273 /* MJRefreshAutoNormalFooter.m in Sources */,
 				471A128A1DDE08EB00574273 /* MJRefreshFooter.m in Sources */,
+				4710DDE21E520EBF00202A5E /* CMCountLabelSampleController.m in Sources */,
 				471A124B1DDE08EB00574273 /* UIView+SDExtension.m in Sources */,
 				47F26F0B1DF1C09100F485FA /* ZXDataMatrixDecodedBitStreamParser.m in Sources */,
 				47F26EB71DF1C09100F485FA /* ZXAztecEncoder.m in Sources */,
@@ -4695,6 +4910,7 @@
 				47F26F521DF1C09100F485FA /* ZXUPCAReader.m in Sources */,
 				471A12831DDE08EB00574273 /* MJTestViewController.m in Sources */,
 				47F26EDC1DF1C09100F485FA /* ZXURLTOResultParser.m in Sources */,
+				4710DE161E52150200202A5E /* PNScatterChart.m in Sources */,
 				471A12D51DDE136B00574273 /* CMFontInfoModel.m in Sources */,
 				47F26F591DF1C09100F485FA /* ZXUPCEReader.m in Sources */,
 				47F26F4A1DF1C09100F485FA /* ZXEAN8Writer.m in Sources */,
@@ -4786,6 +5002,7 @@
 				47F26ED31DF1C09100F485FA /* ZXSMSMMSResultParser.m in Sources */,
 				47F26ED91DF1C09100F485FA /* ZXTextParsedResult.m in Sources */,
 				47F26F4C1DF1C09100F485FA /* ZXITFReader.m in Sources */,
+				4710DE131E52150200202A5E /* PNPieChartDataItem.m in Sources */,
 				47F26F301DF1C09100F485FA /* ZXRSSExpandedDecodedChar.m in Sources */,
 				473402E21E23D7CE00DA3A13 /* KNThirdViewController.m in Sources */,
 				47F26EFE1DF1C09100F485FA /* ZXByteMatrix.m in Sources */,
@@ -4835,14 +5052,17 @@
 				47F26F2B1DF1C09100F485FA /* ZXAI01decoder.m in Sources */,
 				47F26F111DF1C09100F485FA /* ZXDataMatrixC40Encoder.m in Sources */,
 				471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */,
+				4710DE091E52150200202A5E /* PNBar.m in Sources */,
 				471A12491DDE08EB00574273 /* SDCollectionViewCell.m in Sources */,
 				471A12721DDE08EB00574273 /* AFSecurityPolicy.m in Sources */,
+				4710DE181E52150200202A5E /* PNScatterChartDataItem.m in Sources */,
 				47F26F391DF1C09100F485FA /* ZXRSSExpandedRow.m in Sources */,
 				47F602041E118315002AD000 /* XHLaunchAdView.m in Sources */,
 				47F26F441DF1C09100F485FA /* ZXCode39Reader.m in Sources */,
 				47F601FF1E118315002AD000 /* XHLaunchAdCache.m in Sources */,
 				47F601FE1E118315002AD000 /* XHLaunchAdButton.m in Sources */,
 				47F26EE11DF1C09100F485FA /* ZXWifiParsedResult.m in Sources */,
+				4710DDDF1E520E9900202A5E /* UICountingLabel.m in Sources */,
 				47F26F6F1DF1C09100F485FA /* ZXPDF417Common.m in Sources */,
 				471A127B1DDE08EB00574273 /* MJDIYBackFooter.m in Sources */,
 				471A12451DDE08EB00574273 /* TAAbstractDotView.m in Sources */,
@@ -4851,6 +5071,7 @@
 				47F26F331DF1C09100F485FA /* ZXRSSExpandedDecodedObject.m in Sources */,
 				471A12731DDE08EB00574273 /* AFURLRequestSerialization.m in Sources */,
 				471A12641DDE08EB00574273 /* UIImageView+HighlightedWebCache.m in Sources */,
+				4710DE0F1E52150200202A5E /* PNLineChart.m in Sources */,
 				47F26ECD1DF1C09100F485FA /* ZXISBNParsedResult.m in Sources */,
 				475A3DBE1DC7552B00CA45BA /* UIColor+CMKit.m in Sources */,
 				47F435AE1DE5F93300F4DD4A /* CMCropPictureSampleController.m in Sources */,
@@ -4860,14 +5081,17 @@
 				471A12A71DDE08EB00574273 /* CMAnimationEffect.m in Sources */,
 				471A12781DDE08EB00574273 /* MJChiBaoZiFooter2.m in Sources */,
 				47F26EC81DF1C09100F485FA /* ZXEmailDoCoMoResultParser.m in Sources */,
+				4710DE151E52150200202A5E /* PNRadarChartDataItem.m in Sources */,
 				47F26EC71DF1C09100F485FA /* ZXEmailAddressResultParser.m in Sources */,
 				47F26F701DF1C09100F485FA /* ZXPDF417Reader.m in Sources */,
 				475A3DB51DC7552B00CA45BA /* NSDictionary+CMKit.m in Sources */,
 				471A12591DDE08EB00574273 /* SDImageCacheConfig.m in Sources */,
 				47F26FB11DF1C0A100F485FA /* ZXingWrapper.m in Sources */,
+				47CF56211E51F85F00BBC6DA /* iCarousel.m in Sources */,
 				471A12651DDE08EB00574273 /* UIImageView+WebCache.m in Sources */,
 				471A12B61DDE08EB00574273 /* TZAssetCell.m in Sources */,
 				471A127E1DDE08EB00574273 /* MJExampleViewController.m in Sources */,
+				4710DE141E52150200202A5E /* PNRadarChart.m in Sources */,
 				4780DBB01DE363CF00343324 /* CMCityListSampleController.m in Sources */,
 				47F26EBA1DF1C09100F485FA /* ZXAztecState.m in Sources */,
 				471A12471DDE08EB00574273 /* TADotView.m in Sources */,
@@ -4884,14 +5108,17 @@
 				47F26FAB1DF1C0A100F485FA /* LBXScanVideoZoomView.m in Sources */,
 				47F26F261DF1C09100F485FA /* ZXAI01392xDecoder.m in Sources */,
 				47F26FAA1DF1C0A100F485FA /* LBXScanResult.m in Sources */,
+				4710DE101E52150200202A5E /* PNLineChartData.m in Sources */,
 				47F26EE41DF1C09100F485FA /* ZXCGImageLuminanceSource.m in Sources */,
 				471A128F1DDE08EB00574273 /* MJRefreshBackGifFooter.m in Sources */,
 				47F26EE91DF1C09100F485FA /* ZXGenericGF.m in Sources */,
+				4710DE171E52150200202A5E /* PNScatterChartData.m in Sources */,
 				47F26F601DF1C09100F485FA /* ZXPDF417Codeword.m in Sources */,
 				471A12791DDE08EB00574273 /* MJChiBaoZiHeader.m in Sources */,
 				4780DBA61DE3638B00343324 /* ChineseToPinyinResource.m in Sources */,
 				47F26F2E1DF1C09100F485FA /* ZXRSSExpandedBlockParsedResult.m in Sources */,
 				47F26EEA1DF1C09100F485FA /* ZXGenericGFPoly.m in Sources */,
+				4710DE0B1E52150200202A5E /* PNChartLabel.m in Sources */,
 				47F26F0D1DF1C09100F485FA /* ZXDataMatrixVersion.m in Sources */,
 				47F26F481DF1C09100F485FA /* ZXEAN13Writer.m in Sources */,
 				47F26F7C1DF1C09100F485FA /* ZXQRCodeVersion.m in Sources */,
@@ -4928,6 +5155,7 @@
 				4780DBA71DE3638B00343324 /* HanyuPinyinOutputFormat.m in Sources */,
 				47F602011E118315002AD000 /* XHLaunchAdDownload.m in Sources */,
 				470183361DDF586C00320F76 /* MDMatrix.m in Sources */,
+				4710DE111E52150200202A5E /* PNLineChartDataItem.m in Sources */,
 				475A3DC11DC7552B00CA45BA /* UIImageView+CMKit.m in Sources */,
 				47F26F461DF1C09100F485FA /* ZXCode93Reader.m in Sources */,
 				473AE0B11DDF1F710055AA68 /* CHTCollectionViewWaterfallLayout.m in Sources */,
@@ -5021,6 +5249,7 @@
 				47F26F721DF1C09100F485FA /* ZXPDF417Writer.m in Sources */,
 				47F601EB1E118315002AD000 /* CMLaunchAdSampleController.m in Sources */,
 				471A12761DDE08EB00574273 /* UIViewController+Example.m in Sources */,
+				4710DE0A1E52150200202A5E /* PNBarChart.m in Sources */,
 				471A12CC1DDE08EB00574273 /* CMVideoPlayerSampleController.m in Sources */,
 				47F26F541DF1C09100F485FA /* ZXUPCEANExtension2Support.m in Sources */,
 				47F26F811DF1C09100F485FA /* ZXQRCodeFinderPatternFinder.m in Sources */,
@@ -5047,6 +5276,7 @@
 				47F26F091DF1C09100F485FA /* ZXDataMatrixBitMatrixParser.m in Sources */,
 				471A128B1DDE08EB00574273 /* MJRefreshHeader.m in Sources */,
 				47F26F351DF1C09100F485FA /* ZXRSSExpandedGeneralAppIdDecoder.m in Sources */,
+				4710DE121E52150200202A5E /* PNPieChart.m in Sources */,
 				47F26F5B1DF1C09100F485FA /* ZXModulusPoly.m in Sources */,
 				47F26F3D1DF1C09100F485FA /* ZXRSSFinderPattern.m in Sources */,
 				47F26EF41DF1C09100F485FA /* ZXDefaultGridSampler.m in Sources */,
@@ -5055,11 +5285,13 @@
 				471A12371DDE08EB00574273 /* CMCyclePictureSampleController.m in Sources */,
 				47F26EF81DF1C09100F485FA /* ZXHybridBinarizer.m in Sources */,
 				47F26F151DF1C09100F485FA /* ZXDataMatrixErrorCorrection.m in Sources */,
+				4710DE0D1E52150200202A5E /* PNColor.m in Sources */,
 				47F26F3F1DF1C09100F485FA /* ZXRSSUtils.m in Sources */,
 				47F26EDA1DF1C09100F485FA /* ZXURIParsedResult.m in Sources */,
 				471A12381DDE08EB00574273 /* DemoVCWithXib.m in Sources */,
 				47F26EF61DF1C09100F485FA /* ZXGlobalHistogramBinarizer.m in Sources */,
 				47F3EF081DE897BE00896703 /* MSSBrowseActionSheetCell.m in Sources */,
+				4710DE221E52159B00202A5E /* CMChartViewController.m in Sources */,
 				47F26F2F1DF1C09100F485FA /* ZXRSSExpandedCurrentParsingState.m in Sources */,
 				4785031C1E23CF220009856A /* UIViewController+KNSemiModal.m in Sources */,
 				471A12871DDE08EB00574273 /* MJRefreshAutoFooter.m in Sources */,

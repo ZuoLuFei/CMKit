@@ -116,7 +116,11 @@ end
 
 广告载入页[具体地址](https://github.com/CoderZhuXH/XHLaunchAd):pod 'XHLaunchAd'
 
+旋转木马效果[具体地址](https://github.com/nicklockwood/iCarousel):pod 'iCarousel'
 
+数字Label[具体地址](https://github.com/dataxpress/UICountingLabel):pod 'UICountingLabel'
+
+Chart(图表)[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
 
 /**********************************************************************/
 
@@ -223,6 +227,12 @@ Demo共分为三个版块，目前集成功能如下：
     2.9 QRCode(二维码/条形码)
 
     2.10 LaunchAd(广告载入页)
+
+    2.11 iCarousel(旋转木马效果)
+
+    2.12 UICountingLabel(数字Label)
+
+    2.13 Chart(图表)
 
 3 Foundation分类(关于Foundation框架的分类)
 

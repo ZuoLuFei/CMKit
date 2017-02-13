@@ -42,12 +42,17 @@
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [MBProgressHUD showMessage:@"加载中"];
+    [MBProgressHUD showMessage:@"加载中" toView:self.webView];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [MBProgressHUD hideHUD];
+    [MBProgressHUD hideHUDForView:self.webView];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+
+    [MBProgressHUD hideHUDForView:self.webView];
 }
 
 

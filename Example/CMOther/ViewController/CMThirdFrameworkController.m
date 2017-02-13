@@ -17,6 +17,11 @@
 #import "CMCropPictureSampleController.h"
 #import "CMQRCodeSampleController.h"
 #import "CMLaunchAdSampleController.h"
+#import "CMICarouselSampleController.h"
+#import "CMCountLabelSampleController.h"
+#import "CMChartsTableViewController.h"
+
+
 #import "CMHeadView.h"
 
 
@@ -53,7 +58,10 @@
                        @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]},
                        @{@"name":@"RevealContorller(侧滑菜单控制器)",@"classType":[CMRevealSampleController class]},
                        @{@"name":@"CropPicture(裁剪图片)",@"classType":[CMCropPictureSampleController class]},
-                       @{@"name":@"LaunchAd(广告载入页)",@"classType":[CMLaunchAdSampleController class]}
+                       @{@"name":@"LaunchAd(广告载入页)",@"classType":[CMLaunchAdSampleController class]},
+                       @{@"name":@"iCarousel(旋转木马效果)",@"classType":[CMICarouselSampleController class]},
+                       @{@"name":@"UICountingLabel(数字Label)",@"classType":[CMCountLabelSampleController class]},
+                       @{@"name":@"Chart(图表)",@"classType":[CMChartsTableViewController class]}
                    ];
     
 }
