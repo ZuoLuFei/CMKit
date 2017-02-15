@@ -197,6 +197,10 @@
 		471A12D81DDE139B00574273 /* CMFontInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12D71DDE139B00574273 /* CMFontInfomation.m */; };
 		471A12DB1DDE13E800574273 /* CMFontListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DA1DDE13E800574273 /* CMFontListCell.m */; };
 		471A12DE1DDE19A700574273 /* CMFontListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */; };
+		4722CD7D1E54B98C004C61D8 /* CMProgressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722CD7C1E54B98C004C61D8 /* CMProgressTool.m */; };
+		4722CD801E54B9AD004C61D8 /* CMProgressViewSampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722CD7F1E54B9AD004C61D8 /* CMProgressViewSampleController.m */; };
+		4722CD811E54C540004C61D8 /* CMCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722CD761E54B978004C61D8 /* CMCircleProgressView.m */; };
+		4722CD821E54C543004C61D8 /* CMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4722CD781E54B978004C61D8 /* CMProgressView.m */; };
 		47242B671E534BF500BDA30A /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47242B4C1E534BF500BDA30A /* ASValuePopUpView.m */; };
 		47242B681E534BF500BDA30A /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 47242B4E1E534BF500BDA30A /* ASValueTrackingSlider.m */; };
 		47242B691E534BF500BDA30A /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 47242B511E534BF500BDA30A /* UIImageView+ZFCache.m */; };
@@ -1010,6 +1014,14 @@
 		471A12DA1DDE13E800574273 /* CMFontListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListCell.m; sourceTree = "<group>"; };
 		471A12DC1DDE19A700574273 /* CMFontListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFontListHeaderView.h; sourceTree = "<group>"; };
 		471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFontListHeaderView.m; sourceTree = "<group>"; };
+		4722CD751E54B978004C61D8 /* CMCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCircleProgressView.h; sourceTree = "<group>"; };
+		4722CD761E54B978004C61D8 /* CMCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCircleProgressView.m; sourceTree = "<group>"; };
+		4722CD771E54B978004C61D8 /* CMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMProgressView.h; sourceTree = "<group>"; };
+		4722CD781E54B978004C61D8 /* CMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMProgressView.m; sourceTree = "<group>"; };
+		4722CD7B1E54B98C004C61D8 /* CMProgressTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMProgressTool.h; sourceTree = "<group>"; };
+		4722CD7C1E54B98C004C61D8 /* CMProgressTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMProgressTool.m; sourceTree = "<group>"; };
+		4722CD7E1E54B9AD004C61D8 /* CMProgressViewSampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMProgressViewSampleController.h; sourceTree = "<group>"; };
+		4722CD7F1E54B9AD004C61D8 /* CMProgressViewSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMProgressViewSampleController.m; sourceTree = "<group>"; };
 		47242B4B1E534BF500BDA30A /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
 		47242B4C1E534BF500BDA30A /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
 		47242B4D1E534BF500BDA30A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
@@ -2606,6 +2618,7 @@
 		471A11B51DDE08EB00574273 /* UtouuCreate */ = {
 			isa = PBXGroup;
 			children = (
+				4722CD721E54B95A004C61D8 /* ProgressView(进度条) */,
 				47276CBB1E25487A0014C90A /* ShimmerLabel(闪烁文字) */,
 				47276CAC1E2527500014C90A /* DropdownAmplify(下拉放大) */,
 				478503141E23CEFA0009856A /* SemiScene(半挂式场景切换) */,
@@ -2964,6 +2977,37 @@
 				471A12DD1DDE19A700574273 /* CMFontListHeaderView.m */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		4722CD721E54B95A004C61D8 /* ProgressView(进度条) */ = {
+			isa = PBXGroup;
+			children = (
+				4722CD731E54B95A004C61D8 /* Sample */,
+				4722CD741E54B95A004C61D8 /* Tool */,
+			);
+			path = "ProgressView(进度条)";
+			sourceTree = "<group>";
+		};
+		4722CD731E54B95A004C61D8 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4722CD7E1E54B9AD004C61D8 /* CMProgressViewSampleController.h */,
+				4722CD7F1E54B9AD004C61D8 /* CMProgressViewSampleController.m */,
+				4722CD7B1E54B98C004C61D8 /* CMProgressTool.h */,
+				4722CD7C1E54B98C004C61D8 /* CMProgressTool.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		4722CD741E54B95A004C61D8 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4722CD751E54B978004C61D8 /* CMCircleProgressView.h */,
+				4722CD761E54B978004C61D8 /* CMCircleProgressView.m */,
+				4722CD771E54B978004C61D8 /* CMProgressView.h */,
+				4722CD781E54B978004C61D8 /* CMProgressView.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		47242B471E53491400BDA30A /* VideoPlayer(视频播放) */ = {
@@ -5052,6 +5096,7 @@
 				475A3DC61DC7552B00CA45BA /* UITableView+CMKit.m in Sources */,
 				47F26F2C1DF1C09100F485FA /* ZXAI01weightDecoder.m in Sources */,
 				47F26F131DF1C09100F485FA /* ZXDataMatrixEdifactEncoder.m in Sources */,
+				4722CD801E54B9AD004C61D8 /* CMProgressViewSampleController.m in Sources */,
 				47F26EED1DF1C09100F485FA /* ZXBitArray.m in Sources */,
 				471A12801DDE08EB00574273 /* MJSingleViewController.m in Sources */,
 				4710DE0E1E52150200202A5E /* PNGenericChart.m in Sources */,
@@ -5222,6 +5267,7 @@
 				47F3EF0D1DE897BE00896703 /* MSSBrowseModel.m in Sources */,
 				47F26F421DF1C09100F485FA /* ZXCode128Reader.m in Sources */,
 				475052511DE5BB4100FEE189 /* CMDBOperationQueryCell.m in Sources */,
+				4722CD7D1E54B98C004C61D8 /* CMProgressTool.m in Sources */,
 				471A12661DDE08EB00574273 /* UIView+WebCache.m in Sources */,
 				47F26F6D1DF1C09100F485FA /* ZXPDF417ErrorCorrection.m in Sources */,
 				47F26F251DF1C09100F485FA /* ZXAI01320xDecoder.m in Sources */,
@@ -5251,10 +5297,12 @@
 				47F26EDF1DF1C09100F485FA /* ZXVINParsedResult.m in Sources */,
 				4780DB781DE343C600343324 /* PKRevealControllerView.m in Sources */,
 				471A127D1DDE08EB00574273 /* MJExample.m in Sources */,
+				4722CD821E54C543004C61D8 /* CMProgressView.m in Sources */,
 				47F26FA71DF1C0A100F485FA /* LBXScanLineAnimation.m in Sources */,
 				47F435A91DE5F8FE00F4DD4A /* TOCropToolbar.m in Sources */,
 				471A12821DDE08EB00574273 /* MJTableViewController.m in Sources */,
 				47F602031E118315002AD000 /* XHLaunchAdImageManager.m in Sources */,
+				4722CD811E54C540004C61D8 /* CMCircleProgressView.m in Sources */,
 				47F26F6E1DF1C09100F485FA /* ZXPDF417HighLevelEncoder.m in Sources */,
 				47F26F491DF1C09100F485FA /* ZXEAN8Reader.m in Sources */,
 				471A12A31DDE08EB00574273 /* CMAnimationSampleController.m in Sources */,

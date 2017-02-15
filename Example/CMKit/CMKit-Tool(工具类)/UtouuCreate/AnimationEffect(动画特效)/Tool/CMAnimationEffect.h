@@ -87,13 +87,6 @@
 - (void)plainAnimation:(UIView *)animationView;
 
 
-/**
- * 抛物线动画
- */
-+ (void)throwAnimation:(UIView *)animationView from:(CGPoint)start to:(CGPoint)end height:(CGFloat)height
-          duration:(CGFloat)duration completedBlock:(void(^)())completedBlock;
-- (void)throwAnimation:(UIView *)animationView from:(CGPoint)start to:(CGPoint)end height:(CGFloat)height
-              duration:(CGFloat)duration completedBlock:(void(^)())completedBlock;
 #pragma-mark 转场动画
 /**
  *  逐渐消失

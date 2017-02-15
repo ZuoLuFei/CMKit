@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.8'
+  s.version      = '0.1.9'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -79,6 +79,10 @@ Pod::Spec.new do |s|
     shimmerLabel.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-ShimmerLabel(闪烁文字)/*.{h,m}'
   end
 
+  s.subspec 'ProgressView' do |progressView|
+    progressView.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-ProgressView(进度条)/*.{h,m}'
+    progressView.dependency 'UICountingLabel'
+  end
 
 
 end
