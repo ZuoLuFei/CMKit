@@ -83,7 +83,7 @@
 //                       @{@"name":@"ThirdPartyStatistics(第三方统计)",@"classType":@""},
 //                       @{@"name":@"ThirdPartyPay(第三方支付)",@"classType":@""},
 //                       @{@"name":@"MapKit(地图)",@"classType":@""},
-//                       @{@"name":@"AudioVideo(音频/视频)",@"classType":[CMVideoPlayerSampleController class]},
+
                        @{@"name":@"3D Touch",@"classType":[CM3DTouchSampleController class]},
 //                       @{@"name":@"IM(及时通讯)",@"classType":@""},
 //                       @{@"name":@"StoreKit(苹果内购)",@"classType":@""},

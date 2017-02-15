@@ -122,6 +122,8 @@ end
 
 Chart(图表)[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
 
+VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):pod 'ZFPlayer'
+
 /**********************************************************************/
 
 ##【示例】
@@ -233,6 +235,9 @@ Demo共分为三个版块，目前集成功能如下：
     2.12 UICountingLabel(数字Label)
 
     2.13 Chart(图表)
+
+    2.14 VideoPlayer(视频播放)
+
 
 3 Foundation分类(关于Foundation框架的分类)
 

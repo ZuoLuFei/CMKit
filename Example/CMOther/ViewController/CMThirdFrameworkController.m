@@ -20,7 +20,7 @@
 #import "CMICarouselSampleController.h"
 #import "CMCountLabelSampleController.h"
 #import "CMChartsTableViewController.h"
-
+#import "CMVideoPlayerSampleController.h"
 
 #import "CMHeadView.h"
 
@@ -61,7 +61,8 @@
                        @{@"name":@"LaunchAd(广告载入页)",@"classType":[CMLaunchAdSampleController class]},
                        @{@"name":@"iCarousel(旋转木马效果)",@"classType":[CMICarouselSampleController class]},
                        @{@"name":@"UICountingLabel(数字Label)",@"classType":[CMCountLabelSampleController class]},
-                       @{@"name":@"Chart(图表)",@"classType":[CMChartsTableViewController class]}
+                       @{@"name":@"Chart(图表)",@"classType":[CMChartsTableViewController class]},
+                       @{@"name":@"AudioVideo(音频/视频)",@"classType":[CMVideoPlayerSampleController class]}
                    ];
     
 }

@@ -1,0 +1,13 @@
+//
+//  CMVideoResolution.m
+//  CMKit
+//
+//  Created by HC on 17/2/14.
+//  Copyright © 2017年 UTOUU. All rights reserved.
+//
+
+#import "CMVideoResolution.h"
+
+@implementation CMVideoResolution
+
+@end
