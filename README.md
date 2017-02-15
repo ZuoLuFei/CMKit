@@ -135,7 +135,11 @@ VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):p
 
 ##【CMKit目录说明】
 
-1 CMKit 
+1 项目权限配置一览表.md  info.plist权限配置文件
+
+2 CHANGES_LIST.txt  更新内容日志列表
+
+3 CMKit 
 
     CMKit.h  框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件
     
@@ -155,13 +159,13 @@ VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):p
 
             #### 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
 
-2 Example 演示Demo目录
+4 Example 演示Demo目录
 
-3 CMKit.podspec Cocoapods编辑目录
+5 CMKit.podspec Cocoapods编辑目录
 
-4 LICENSE 许可证文件 (默认MIT许可证)
+6 LICENSE 许可证文件 (默认MIT许可证)
 
-5 README.md github说明文件
+7 README.md github说明文件
 
 /**********************************************************************/
 
