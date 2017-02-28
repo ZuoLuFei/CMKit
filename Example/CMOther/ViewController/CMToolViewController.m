@@ -164,9 +164,22 @@
             [MBProgressHUD showSuccess:@"请移步源码对应的类"];
             
         }else if ([dict[@"classType"] isEqual:[CMNewFeaturesController class]]){
+            
+            
+            
             CMNewFeaturesController *Vc = [[CMNewFeaturesController alloc] init];
             Vc.featuresArray = self.featuresArray;
+            [Vc.experienceBtn setTitle:@"你好" forState:UIControlStateNormal];
+            __weak typeof(Vc) weakVc = Vc;
+            Vc.experienceBtnBlock = ^{
+                [weakVc dismissViewControllerAnimated:YES completion:nil];
+            };
             [self presentViewController:Vc animated:YES completion:nil];
+            
+            
+            
+            
+            
         }else{
             UIViewController *Vc = [[dict[@"classType"] alloc] init];
             Vc.hidesBottomBarWhenPushed = YES;

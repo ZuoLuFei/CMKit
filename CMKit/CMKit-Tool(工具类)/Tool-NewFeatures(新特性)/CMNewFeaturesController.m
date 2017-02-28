@@ -48,15 +48,24 @@
 @implementation CMNewFeaturesController
 
 #pragma mark - life cycle
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self initExperienceBtn];
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     //1.创建ScrollView
     [self initUI];
     
     //2.创建Data
     [self initData];
-    
 }
 
 
@@ -69,6 +78,18 @@
     //2.创建pageControl
     [self initPageControl];
     
+}
+
+//创建立即体验Btn
+- (void)initExperienceBtn {
+    UIButton *experienceBtn = [[UIButton alloc] init];
+    self.experienceBtn = experienceBtn;
+    [experienceBtn setTitle:@"退出新特性 >" forState:UIControlStateNormal];
+    experienceBtn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+    [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_normal@2x.png"] forState:UIControlStateNormal];
+    [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_on@2x.png"] forState:UIControlStateHighlighted];
+    [experienceBtn addTarget:self action:@selector(experienceBtnClick) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 //创建scrollView
@@ -127,22 +148,15 @@
         
         //2.在ScrollView中最后一张添加“立即体验”按钮
         if (i == (self.featuresArray.count - 1)) {
-            [self setExperienceBtn:(int)(self.featuresArray.count - 1)];
+            [self configExperienceBtn:(int)(self.featuresArray.count - 1)];
         }
         
     }
 }
 
 /** 设置立即体验按钮 */
-- (void)setExperienceBtn:(int)i
+- (void)configExperienceBtn:(int)i
 {
-    UIButton *experienceBtn = [[UIButton alloc] init];
-    [experienceBtn setTitle:@"立即体验 >" forState:UIControlStateNormal];
-    experienceBtn.titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-    [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_normal@2x.png"] forState:UIControlStateNormal];
-    [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_on@2x.png"] forState:UIControlStateHighlighted];
-    [experienceBtn addTarget:self action:@selector(experienceBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    
     CGFloat experienceBtnX = 20 + DEF_SCREEN_WIDTH * i;
     CGFloat experienceBtnW = DEF_SCREEN_WIDTH - 2 * 20;
     CGFloat experienceBtnH = 40;
@@ -154,18 +168,21 @@
         experienceBtnY = CGRectGetMinY(self.pageControl.frame) - experienceBtnH - 30;
     }
     
-    experienceBtn.frame = CGRectMake(experienceBtnX, experienceBtnY, experienceBtnW, experienceBtnH);
+    self.experienceBtn.frame = CGRectMake(experienceBtnX, experienceBtnY, experienceBtnW, experienceBtnH);
     
-    [self.scrollView addSubview:experienceBtn];
-    
+    [self.scrollView addSubview:self.experienceBtn];
     
 }
 
 /** 立即体验按钮事件 */
 - (void)experienceBtnClick
 {
-
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.experienceBtnBlock) {
+        self.experienceBtnBlock();
+    }
+    
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
     
 //    //2.存储当前版本号
 //    // 获得当前打开软件的版本号

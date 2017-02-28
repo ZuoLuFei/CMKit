@@ -45,14 +45,16 @@
                        @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
                        @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg"];
     
-    _bigUrlArray = @[@"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg",
-                             @"http://www.guimobile.net/blog/uploads/2014/05/141435AZe.jpg"];
+    _bigUrlArray = @[@"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg",
+                     @"http://utouu-web-test.oss-cn-hangzhou.aliyuncs.com/union/1486959780703.jpg"];
     
     
 }
