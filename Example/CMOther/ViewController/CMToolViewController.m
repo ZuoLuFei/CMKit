@@ -96,6 +96,8 @@
                            @"welcome_guide_2_new@2x.png",
                            @"welcome_guide_3_new@2x.png"];
     
+//    self.featuresArray = @[@"welcome_guide_3_new@2x.png"];
+    
 }
 
 #pragma mark - 初始化UI

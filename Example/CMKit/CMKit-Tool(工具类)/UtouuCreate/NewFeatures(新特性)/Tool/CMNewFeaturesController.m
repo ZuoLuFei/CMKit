@@ -78,6 +78,7 @@
     // 创建pageControl
     [self createPageControl];
     
+    
     // 创建关联UI
     [self createExperienceBtn];
     
@@ -124,7 +125,10 @@
     
     [self configScrollViewFrame];
     
-    [self configPageControlFrame];
+    if (self.featuresArray.count > 1) {
+        [self configPageControlFrame];
+    }
+    
     
     [self configAssociatedUIFrame];
     

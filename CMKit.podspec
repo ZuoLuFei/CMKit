@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.1.9'
+  s.version      = '0.2.0'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'Category' do |category|
+    category.public_header_files = 'CMKit/CMKit-Category(分类)/CMCategoryHeader.h'
     category.source_files = 'CMKit/CMKit-Category(分类)/**/*.{h,m}'
   end
 

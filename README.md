@@ -47,7 +47,7 @@ $ pod setup
 platform :ios, ‘7.0’
 
 target ‘TargetName’ do
-pod 'CMKit', '~> 0.1.9’
+pod 'CMKit', '~> 0.2.0’
 pod 'AFNetworking', '~> 3.0'
 end
 ```
@@ -57,37 +57,37 @@ end
 ####----------UTOUU 集成工具类(若只使用CMKit工具类中的指定功能，可根据如下目录单独导入)
 
 
-整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.1.9'
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.2.0'
 
-    分类：pod 'CMKit/Category', '~> 0.1.9'
+    分类：pod 'CMKit/Category', '~> 0.2.0'
 
-    警告框：pod 'CMKit/AlertView', '~> 0.1.9’
+    警告框：pod 'CMKit/AlertView', '~> 0.2.0’
 
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.1.9’
+    动画效果：pod 'CMKit/AnimationEffect', '~> 0.2.0’
 
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.1.9’
+    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.2.0’
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.1.9’  (目前使用传入图片数组即可，后期会不断完善)
+    新特性：pod 'CMKit/NewFeatures', '~> 0.2.0’  (目前使用传入图片数组即可，后期会不断完善)
 
-    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.1.9’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.2.0’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
-    相机、相册：pod 'CMKit/ImagePicker', '~> 0.1.9’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
+    相机、相册：pod 'CMKit/ImagePicker', '~> 0.2.0’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
-    城市列表选择：pod 'CMKit/CityList', '~> 0.1.9’
+    城市列表选择：pod 'CMKit/CityList', '~> 0.2.0’
 
-    FMDB操作：pod 'CMKit/FMDBOperation', '~> 0.1.9’
+    FMDB操作：pod 'CMKit/FMDBOperation', '~> 0.2.0’
     
-    图片浏览器：pod 'CMKit/PictureBrowse', '~> 0.1.9’
+    图片浏览器：pod 'CMKit/PictureBrowse', '~> 0.2.0’
 
-    手势、指纹解锁：pod 'CMKit/UnLock', '~> 0.1.9’
+    手势、指纹解锁：pod 'CMKit/UnLock', '~> 0.2.0’
 
-    半挂式场景切换：pod 'CMKit/SemiScene', '~> 0.1.9’
+    半挂式场景切换：pod 'CMKit/SemiScene', '~> 0.2.0’
 
-    下拉放大：pod 'CMKit/DropdownAmplify', '~> 0.1.9’
+    下拉放大：pod 'CMKit/DropdownAmplify', '~> 0.2.0’
 
-    闪烁文字：pod 'CMKit/ShimmerLabel', '~> 0.1.9’
+    闪烁文字：pod 'CMKit/ShimmerLabel', '~> 0.2.0’
 
-    进度条：pod 'CMKit/ProgressView', '~> 0.1.9’
+    进度条：pod 'CMKit/ProgressView', '~> 0.2.0’
 
 
 

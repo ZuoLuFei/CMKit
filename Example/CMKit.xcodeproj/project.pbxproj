@@ -1907,6 +1907,7 @@
 		47FD18B91DE731C40093DBE5 /* CMImagePickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerSampleController.m; sourceTree = "<group>"; };
 		47FD18BB1DE731C40093DBE5 /* UTTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTTestCell.h; sourceTree = "<group>"; };
 		47FD18BC1DE731C40093DBE5 /* UTTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTTestCell.m; sourceTree = "<group>"; };
+		E47ACF6A1E66B8BB007588F2 /* CMCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMCategoryHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3423,6 +3424,7 @@
 		475A3D6C1DC7552B00CA45BA /* CMKit-Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				E47ACF6A1E66B8BB007588F2 /* CMCategoryHeader.h */,
 				475A3D6D1DC7552B00CA45BA /* Category-Foundation */,
 				475A3D841DC7552B00CA45BA /* Category-UIKit */,
 			);
