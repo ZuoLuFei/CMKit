@@ -26,5 +26,10 @@ typedef void(^ExperienceBtnBlock)();
 /** 立即体验按钮block */
 @property (nonatomic, copy) ExperienceBtnBlock experienceBtnBlock;
 
+/** PageControl的默认指示颜色 */
+@property (strong, nonatomic) UIColor *pageIndicatorTintColor;
+
+/** 当前选中PageControl的指示颜色 */
+@property (strong, nonatomic) UIColor *currentPageIndicatorTintColor;
 
 @end

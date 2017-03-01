@@ -8,7 +8,8 @@
 
 
 #import <Foundation/Foundation.h>
-@import UIKit;
+#import <UIKit/UIKit.h>
+//@import UIKit;
 
 /**
  *  此分类增加了一些关于NSString的有用方法
@@ -16,6 +17,22 @@
 @interface NSString (CMKit)
 
 #pragma mark - 判断字符串非空
+/**
+ 判断字符串是否为空
+ 
+ @return YES非空，NO空
+ */
+- (BOOL)isNotBlank;
+
+/**
+ 判断字符串是否为空
+ 
+ @param string 判断的字符串
+ 
+ @return YES非空，NO空
+ */
++ (BOOL)isNotBlankString:(NSString * _Nullable)string;
+
 /**
  判断字符串是否为空
  

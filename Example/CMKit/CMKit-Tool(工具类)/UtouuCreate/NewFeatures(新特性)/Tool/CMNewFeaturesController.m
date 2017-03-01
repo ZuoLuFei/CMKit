@@ -48,40 +48,43 @@
 @implementation CMNewFeaturesController
 
 #pragma mark - life cycle
-
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self initExperienceBtn];
+        
+        // 创建UI
+        [self initUI];
+        
     }
     return self;
 }
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //1.创建ScrollView
-    [self initUI];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    //2.创建Data
-    [self initData];
+    //  配置UI
+    [self configUI];
 }
 
 
-#pragma mark - 创建UI
-- (void)initUI
-{
-    //1.创建scrollView
-    [self initScrollView];
+#pragma mark - 创建UI控件
+- (void)initUI {
     
-    //2.创建pageControl
-    [self initPageControl];
+    // 创建scrollView
+    [self createScrollView];
+    
+    // 创建pageControl
+    [self createPageControl];
+    
+    // 创建关联UI
+    [self createExperienceBtn];
     
 }
 
 //创建立即体验Btn
-- (void)initExperienceBtn {
+- (void)createExperienceBtn {
     UIButton *experienceBtn = [[UIButton alloc] init];
     self.experienceBtn = experienceBtn;
     [experienceBtn setTitle:@"退出新特性 >" forState:UIControlStateNormal];
@@ -89,11 +92,20 @@
     [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_normal@2x.png"] forState:UIControlStateNormal];
     [experienceBtn setBackgroundImage:[UIImage imageNamed:@"btn01_on@2x.png"] forState:UIControlStateHighlighted];
     [experienceBtn addTarget:self action:@selector(experienceBtnClick) forControlEvents:UIControlEventTouchUpInside];
-
+    
 }
 
+//创建PageControl
+- (void)createPageControl {
+    UIPageControl *pageControl = [[UIPageControl alloc] init];
+    self.pageControl = pageControl;
+    pageControl.pageIndicatorTintColor = DEF_RGB_COLOR(133, 128, 127);
+    pageControl.currentPageIndicatorTintColor = DEF_RGB_COLOR(171, 11, 66);
+}
+
+
 //创建scrollView
-- (void)initScrollView
+- (void)createScrollView
 {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
@@ -101,34 +113,54 @@
     scrollView.delegate = self;
     scrollView.frame = self.view.bounds;
     scrollView.pagingEnabled = YES;
-    scrollView.contentSize = CGSizeMake(DEF_SCREEN_WIDTH * self.featuresArray.count,DEF_SCREEN_HEIGHT);
-    [self.view addSubview:scrollView];
+
     
 }
 
-//创建pageControl
-- (void)initPageControl
+#pragma mark - 配置UI
+- (void)configUI {
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self configScrollViewFrame];
+    
+    [self configPageControlFrame];
+    
+    [self configAssociatedUIFrame];
+    
+}
+
+// 配置pageControl
+- (void)configScrollViewFrame
 {
-    UIPageControl *pageControl = [[UIPageControl alloc] init];
-    self.pageControl = pageControl;
-    pageControl.numberOfPages = self.scrollView.contentSize.width / DEF_SCREEN_WIDTH;
-    pageControl.pageIndicatorTintColor = DEF_RGB_COLOR(133, 128, 127);
-    pageControl.currentPageIndicatorTintColor = DEF_RGB_COLOR(171, 11, 66);
+    self.scrollView.contentSize = CGSizeMake(DEF_SCREEN_WIDTH * self.featuresArray.count,DEF_SCREEN_HEIGHT);
+    [self.view addSubview:self.scrollView];
+    
+}
+
+
+// 配置pageControl
+- (void)configPageControlFrame
+{
+    
+    self.pageControl.numberOfPages = self.featuresArray.count;
+    self.pageControl.currentPageIndicatorTintColor = self.currentPageIndicatorTintColor;
+    self.pageControl.pageIndicatorTintColor = self.pageIndicatorTintColor;
     
     
     CGFloat pageControlW = 100;
     CGFloat pageControlH = 20;
     CGFloat pageControlX = (DEF_SCREEN_WIDTH - pageControlW) / 2 ;
     CGFloat pageControlY = DEF_SCREEN_HEIGHT - 30 - pageControlH;
-    pageControl.frame = CGRectMake(pageControlX, pageControlY, pageControlW, pageControlH);
-    
-    [self.view addSubview:pageControl];
+    self.pageControl.frame = CGRectMake(pageControlX, pageControlY, pageControlW, pageControlH);
+    [self.view addSubview:self.pageControl];
     
 }
 
-#pragma mark - 设置Data
-- (void)initData
-{
+// 配置关联UI
+- (void)configAssociatedUIFrame {
+    
+    
     for (int i = 0; i<self.featuresArray.count; i++) {
         
         //1.创建imageView
@@ -150,7 +182,6 @@
         if (i == (self.featuresArray.count - 1)) {
             [self configExperienceBtn:(int)(self.featuresArray.count - 1)];
         }
-        
     }
 }
 
@@ -163,9 +194,9 @@
     CGFloat experienceBtnY;
     
     if (DEF_iPhone4_4s) {//iPhone 4/4s
-        experienceBtnY = CGRectGetMinY(self.pageControl.frame) - experienceBtnH - 20;
+        experienceBtnY = DEF_SCREEN_HEIGHT - 50 - experienceBtnH - 20;
     }else{//iPhone 5以上屏幕
-        experienceBtnY = CGRectGetMinY(self.pageControl.frame) - experienceBtnH - 30;
+        experienceBtnY = DEF_SCREEN_HEIGHT - 50 - experienceBtnH - 30;
     }
     
     self.experienceBtn.frame = CGRectMake(experienceBtnX, experienceBtnY, experienceBtnW, experienceBtnH);
@@ -174,6 +205,7 @@
     
 }
 
+#pragma mark - 按钮事件
 /** 立即体验按钮事件 */
 - (void)experienceBtnClick
 {
@@ -181,18 +213,6 @@
         self.experienceBtnBlock();
     }
     
-    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-    
-//    //2.存储当前版本号
-//    // 获得当前打开软件的版本号
-//    NSString *versionKey = (__bridge NSString *)kCFBundleVersionKey;
-//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
-//    
-//    // 存储这次使用的软件版本
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    [defaults setObject:currentVersion forKey:versionKey];
-//    [defaults synchronize];
     
 }
 

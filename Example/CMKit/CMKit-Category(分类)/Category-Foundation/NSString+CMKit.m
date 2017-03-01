@@ -11,6 +11,14 @@
 
 @implementation NSString (CMKit)
 
+- (BOOL)isNotBlank {
+    return ![NSString isBlankString:self];
+}
+
++ (BOOL)isNotBlankString:(NSString * _Nullable)string {
+    return ![NSString isBlankString:string];
+}
+
 - (BOOL)isBlank
 {
     return [NSString isBlankString:self];
@@ -21,6 +29,10 @@
     // 判断字符串是否为空
     if (string == nil || string == NULL)
     {
+        return YES;
+    }
+    
+    if (![string isKindOfClass:[NSString class]]) {
         return YES;
     }
     
@@ -53,7 +65,7 @@
 {
     CGSize size = CGSizeZero;
     if (self.length > 0) {
-        CGRect frame = [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: font } context:nil];
+        CGRect frame = [self boundingRectWithSize:maxSize options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{ NSFontAttributeName: font } context:nil];
         size = CGSizeMake(frame.size.width, frame.size.height + 1);
     }
     return size;

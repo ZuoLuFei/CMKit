@@ -170,6 +170,8 @@
             CMNewFeaturesController *Vc = [[CMNewFeaturesController alloc] init];
             Vc.featuresArray = self.featuresArray;
             [Vc.experienceBtn setTitle:@"你好" forState:UIControlStateNormal];
+            Vc.currentPageIndicatorTintColor = [UIColor blackColor];
+            Vc.pageIndicatorTintColor = [UIColor redColor];
             __weak typeof(Vc) weakVc = Vc;
             Vc.experienceBtnBlock = ^{
                 [weakVc dismissViewControllerAnimated:YES completion:nil];

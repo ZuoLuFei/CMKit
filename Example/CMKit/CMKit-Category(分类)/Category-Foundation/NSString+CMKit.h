@@ -20,6 +20,22 @@
 /**
  判断字符串是否为空
  
+ @return YES非空，NO空
+ */
+- (BOOL)isNotBlank;
+
+/**
+ 判断字符串是否为空
+ 
+ @param string 判断的字符串
+ 
+ @return YES非空，NO空
+ */
++ (BOOL)isNotBlankString:(NSString * _Nullable)string;
+
+/**
+ 判断字符串是否为空
+ 
  @return YES空，NO非空
  */
 - (BOOL)isBlank;
