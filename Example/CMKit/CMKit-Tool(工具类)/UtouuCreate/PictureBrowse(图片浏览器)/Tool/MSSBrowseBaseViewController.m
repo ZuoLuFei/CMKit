@@ -228,8 +228,8 @@
 }
 
 #pragma mark Tap Method
-- (void)tap:(MSSBrowseCollectionViewCell *)browseCell
-{
+- (void)tap:(MSSBrowseCollectionViewCell *)browseCell {
+
     // 移除通知
     [[NSNotificationCenter defaultCenter]removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
     if(_snapshotView)
@@ -256,6 +256,11 @@
     _countLabel = nil;
     
     NSIndexPath *indexPath = [_collectionView indexPathForCell:browseCell];
+    
+    if (self.dismissBlock) {
+        self.dismissBlock(indexPath);
+    }
+    
     browseCell.zoomScrollView.zoomScale = 1.0f;
     MSSBrowseModel *browseItem = _browseItemArray[indexPath.row];
     /*

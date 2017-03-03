@@ -56,12 +56,10 @@
     //1.初始化数据
     [self initData];
     
-    
     //2.创建UI
     [self initUI];
 
 }
-
 
 #pragma mark - 初始化数据
 - (void)initData{

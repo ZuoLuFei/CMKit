@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'Category' do |category|
+  #  category.public_header_files = 'CMKit/CMKit-Category(分类)/Category-Foundation/CMCategoryHeader.h'
     category.public_header_files = 'CMKit/CMKit-Category(分类)/CMCategoryHeader.h'
     category.source_files = 'CMKit/CMKit-Category(分类)/**/*.{h,m}'
   end

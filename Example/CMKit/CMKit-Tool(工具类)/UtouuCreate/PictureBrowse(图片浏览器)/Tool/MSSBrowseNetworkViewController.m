@@ -59,10 +59,20 @@
     if(self.isFirstOpen)
     {
         self.isFirstOpen = NO;
-        imageView.frame = [self getFrameInWindow:browseItem.smallImageView];
-        [UIView animateWithDuration:0.5 animations:^{
+
+        if (browseItem.smallImageView) {
+            imageView.frame = [self getFrameInWindow:browseItem.smallImageView];
+            [UIView animateWithDuration:0.5 animations:^{
+                imageView.frame = bigRect;
+            }];
+        }else{
+            self.view.alpha = 0.0;
             imageView.frame = bigRect;
-        }];
+            [UIView animateWithDuration:0.5 animations:^{
+                self.view.alpha = 1.0;
+            }];
+        }
+        
     }
     else
     {

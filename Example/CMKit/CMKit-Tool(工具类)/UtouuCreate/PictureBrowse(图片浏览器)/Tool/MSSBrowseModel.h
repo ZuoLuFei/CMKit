@@ -16,7 +16,11 @@
 @property (nonatomic,copy)NSString *bigImageLocalPath;// 建议使用本地图片路径（减少内存使用）
 @property (nonatomic,strong)NSData *bigImageData;
 @property (nonatomic,strong)UIImage *bigImage;
-// 小图（用来转换坐标用）
+/**
+ 小图
+ 用来转换坐标做Frame转化动画效果
+ 若不传，则是淡入淡出动画效果
+ */
 @property (nonatomic,strong)UIImageView *smallImageView;
 
 @end

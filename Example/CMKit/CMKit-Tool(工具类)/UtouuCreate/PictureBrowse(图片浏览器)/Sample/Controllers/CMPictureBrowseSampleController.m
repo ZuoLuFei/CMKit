@@ -117,10 +117,10 @@
     int i = 0;
     for(i = 0;i < [_smallUrlArray count];i++)
     {
-        UIImageView *imageView = [self.view viewWithTag:i + 100];
+//        UIImageView *imageView = [self.view viewWithTag:i + 100];
         MSSBrowseModel *browseItem = [[MSSBrowseModel alloc]init];
         browseItem.bigImageUrl = _bigUrlArray[i];// 加载网络图片大图地址
-        browseItem.smallImageView = imageView;// 小图
+//        browseItem.smallImageView = imageView;// 小图
         [browseItemArray addObject:browseItem];
     }
     CMPictureBrowseSampleCell *cell = (CMPictureBrowseSampleCell *)[_collectionView cellForItemAtIndexPath:indexPath];

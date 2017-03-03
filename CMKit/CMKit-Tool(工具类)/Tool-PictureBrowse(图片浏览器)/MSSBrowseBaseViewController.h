@@ -10,6 +10,8 @@
 #import "MSSBrowseCollectionViewCell.h"
 #import "MSSBrowseModel.h"
 
+typedef void(^MSSBrowseControllerDismissBlock)(NSIndexPath *);
+
 @interface MSSBrowseBaseViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIViewControllerTransitioningDelegate>
 
 @property (nonatomic,assign)BOOL isEqualRatio;// 大小图是否等比（默认为等比）
@@ -27,5 +29,11 @@
 - (void)showBrowseRemindViewWithText:(NSString *)text;
 // 获取指定视图在window中的位置
 - (CGRect)getFrameInWindow:(UIView *)view;
+
+
+/** 退出图片浏览器后用于回传index的block */
+@property (copy, nonatomic) MSSBrowseControllerDismissBlock dismissBlock;
+
+
 
 @end
