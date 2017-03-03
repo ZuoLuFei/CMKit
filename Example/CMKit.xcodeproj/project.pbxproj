@@ -1907,7 +1907,8 @@
 		47FD18B91DE731C40093DBE5 /* CMImagePickerSampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMImagePickerSampleController.m; sourceTree = "<group>"; };
 		47FD18BB1DE731C40093DBE5 /* UTTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTTestCell.h; sourceTree = "<group>"; };
 		47FD18BC1DE731C40093DBE5 /* UTTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTTestCell.m; sourceTree = "<group>"; };
-		E47ACF6A1E66B8BB007588F2 /* CMCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMCategoryHeader.h; sourceTree = "<group>"; };
+		E4A20B5F1E6944F200F5331F /* CMCategoryFoundationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMCategoryFoundationHeader.h; sourceTree = "<group>"; };
+		E4A20B601E69450700F5331F /* CMCategoryUIKitHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMCategoryUIKitHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3424,7 +3425,6 @@
 		475A3D6C1DC7552B00CA45BA /* CMKit-Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
-				E47ACF6A1E66B8BB007588F2 /* CMCategoryHeader.h */,
 				475A3D6D1DC7552B00CA45BA /* Category-Foundation */,
 				475A3D841DC7552B00CA45BA /* Category-UIKit */,
 			);
@@ -3456,6 +3456,7 @@
 				475A3D811DC7552B00CA45BA /* NSProcessInfo+CMKIt.m */,
 				475A3D821DC7552B00CA45BA /* NSString+CMKit.h */,
 				475A3D831DC7552B00CA45BA /* NSString+CMKit.m */,
+				E4A20B5F1E6944F200F5331F /* CMCategoryFoundationHeader.h */,
 			);
 			path = "Category-Foundation";
 			sourceTree = "<group>";
@@ -3497,6 +3498,7 @@
 				475A3DA41DC7552B00CA45BA /* UIWindow+CMKit.m */,
 				4709E4AE1DE85C9E005006BA /* UIView+Layout.h */,
 				4709E4AF1DE85C9E005006BA /* UIView+Layout.m */,
+				E4A20B601E69450700F5331F /* CMCategoryUIKitHeader.h */,
 			);
 			path = "Category-UIKit";
 			sourceTree = "<group>";

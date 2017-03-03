@@ -18,14 +18,13 @@
 /**
  *  CMKit 分类集合头文件
  */
-#import "CMCategoryHeader.h"
-
+#import "CMCategoryFoundationHeader.h"
+#import "CMCategoryUIKitHeader.h"
 
 /**
  *  CMKit-Tool  注：此工具类包含种类繁多，请根据项目实际使用自行导入
  */
 #import "CMAlertView.h"
-#import "CMFuctionMacroDefinition.h"
 #import "MBProgressHUD+CMKit.h"
 #import "CMBaseViewController.h"
 
