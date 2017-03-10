@@ -122,7 +122,7 @@ end
 
 数字Label[具体地址](https://github.com/dataxpress/UICountingLabel):pod 'UICountingLabel'
 
-Chart(图表一)[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
+Chart(图表一)[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'\n
 Chart(图表二)[具体地址](https://github.com/China131/JHChart):pod 'JHChart'
 
 VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):pod 'ZFPlayer'
