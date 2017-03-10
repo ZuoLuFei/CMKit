@@ -9,7 +9,7 @@
 
 
 修改部分：
-1.为 CMKit-Category(分类)添加CMCategoryHeader.h头文件
+1.为 CMKit-Category(分类)添加Header头文件
 2.优化NSString+CMKit分类
 3.完善PictureBrowse(图片浏览器)功能，
   a.在MSSBrowseModel模型中不添加smallImageView时，自动采用淡入淡出功能
