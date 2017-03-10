@@ -7,12 +7,8 @@
 //
 
 /*
- 作用-->
- 全局宏使用
- 
- 使用场景-->
- 函数宏定义
- 
+ 作用--> 全局宏使用
+ 使用场景--> 函数宏定义
  */
 
 /**
@@ -54,9 +50,15 @@
  */
 #define DEF_SCREEN_FRAME  [UIScreen mainScreen].applicationFrame
 
+/** 高保真UI基数屏幕大小（以iPhone 6/6s为准，实际使用中请按照给出的UI参照图为准进行替换）*/
+#define DEF_HIGHFIDELITY_UI_WIDTH 375
+/**
+ *  根据高保真UI图进行屏幕适配转换 (用于屏幕适配)
+ */
+#define DEF_SCREEN_ADAPTER(Number) (((Number)/DEF_HIGHFIDELITY_UI_WIDTH) * DEF_SCREEN_WIDTH)
+
 
 /*-----------------------------分割线-------------------------------*/
-
 #pragma mark - 当前设备
 /**
  *  iPhone4_4s设备
@@ -147,36 +149,6 @@
  */
 #define DEF_RANDOM_COLOR DEF_RGB_COLOR(arc4random_uniform(256.0),arc4random_uniform(256.0),arc4random_uniform(256.0))
 
-/*-----------------------------分割线-------------------------------*/
-#pragma mark - 数据存储
-/**
- *	偏好设置存储对象
- *
- *	@param	object    需存储的对象
- *	@param	key    对应的key
- */
-#define DEF_USERDEFAULTS_SET_OBJECT(object, key)                                                                                                 \
-({                                                                                                                                             \
-NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];                                                                         \
-[defaults setObject:object forKey:key];                                                                                                    \
-[defaults synchronize];                                                                                                                    \
-})
 
-/**
- *	偏好设置取出对象
- *
- *	@param	key    所需对象对应的key
- *	@return	key所对应的对象
- */
-#define DEF_USERDEFAULTS_GET_OBJECT(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
-
-/**
- *  获取沙盒Document存储中指定文件名路劲
- *
- *  @param pathString 存储文件名称（如 @"area.plist"）
- *
- *  @return 存储文件的沙盒位置
- */
-#define DEF_DOCMENTPATH_GET(pathString) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:pathString];
 
 #endif

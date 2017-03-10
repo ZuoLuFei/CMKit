@@ -1,22 +1,21 @@
 //
-//  CMChartsTableViewController.m
+//  CMPNChartViewController.m
 //  CMKit
 //
-//  Created by HC on 17/2/13.
+//  Created by yons on 17/3/10.
 //  Copyright © 2017年 UTOUU. All rights reserved.
 //
 
-#import "CMChartsTableViewController.h"
-#import "CMJHChartViewController.h"
 #import "CMPNChartViewController.h"
+#import "CMChartViewController.h"
 
-@interface CMChartsTableViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface CMPNChartViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *chartsArray;
 
 @end
 
-@implementation CMChartsTableViewController
+@implementation CMPNChartViewController
 
 #pragma mark - 生命周期
 - (void)viewDidLoad {
@@ -33,8 +32,12 @@
 #pragma mark - 初始化数据
 - (void)initData{
     self.chartsArray = @[
-                       @{@"titleName":@"JHChart"},
-                       @{@"titleName":@"PNChart"}
+                         @{@"titleName":@"Line Chart"},
+                         @{@"titleName":@"Bar Chart"},
+                         @{@"titleName":@"Circle Chart"},
+                         @{@"titleName":@"Pie Chart"},
+                         @{@"titleName":@"Scatter Chart"},
+                         @{@"titleName":@"Radar Chart"}
                          ];
     
 }
@@ -45,7 +48,7 @@
     
     //1.创建TableView
     UITableView *tableView = [UITableView initWithFrame:self.view.bounds style:UITableViewStylePlain cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine separatorInset:UIEdgeInsetsMake(0, 0, 0, 0) dataSource:self delegate:self];
-
+    
     [self.view addSubview:tableView];
     
 }
@@ -79,16 +82,10 @@
     NSDictionary *dict = self.chartsArray[indexPath.row];
     if (dict) {
         
-        if ([dict[@"titleName"] isEqualToString:@"JHChart"]) {
-            CMJHChartViewController *Vc = [[CMJHChartViewController alloc] init];
-            Vc.title = dict[@"titleName"];
-            [self.navigationController pushViewController:Vc animated:YES];
-        }else{
-            CMPNChartViewController *Vc = [[CMPNChartViewController alloc] init];
-            Vc.title = dict[@"titleName"];
-            [self.navigationController pushViewController:Vc animated:YES];
-        }
-
+        CMChartViewController *Vc = [[CMChartViewController alloc] init];
+        Vc.title = dict[@"titleName"];
+        [self.navigationController pushViewController:Vc animated:YES];
+        
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

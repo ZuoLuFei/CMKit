@@ -9,11 +9,13 @@
 
 
 修改部分：
-1.为 CMKit-Category(分类)添加Header头文件
+1.为CMKit-Category(分类)添加Header头文件
 2.优化NSString+CMKit分类
 3.完善PictureBrowse(图片浏览器)功能，
   a.在MSSBrowseModel模型中不添加smallImageView时，自动采用淡入淡出功能
   b.添加退出浏览器后用户回传index的Block回调dismissBlock
+4.在原本Chart(图表)中新增JHChart框架，以完善图表的业务场景
+5.在全局宏文件（CMFuctionMacroDefinition.h）中添加“根据高保真UI图进行屏幕适配转换”宏DEF_SCREEN_ADAPTER(Number)
 
 /*************************************************************/
 2017.02.16
