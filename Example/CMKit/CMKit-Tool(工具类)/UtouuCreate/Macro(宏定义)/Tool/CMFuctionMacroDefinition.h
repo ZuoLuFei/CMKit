@@ -26,6 +26,19 @@
 #define NSLog(...)
 #endif
 
+/*----------------------------—分割线------------------------------*/
+
+#pragma mark - 破除Block循环引用的弱/强指针
+// 推荐添加入自动补全(CodeSnippet)便于快速使用
+
+/**
+ *  破除Block循环引用的弱指针，使用方法：@DEF_WEAKOBJ(Obj)
+ */
+#define DEF_WEAKOBJ(Obj) autoreleasepool{} __weak typeof(Obj) weak##Obj = Obj
+/**
+ *  破除Block循环引用的强指针，使用方法：@DEF_STRONGOBJ(Obj)
+ */
+#define DEF_STRONGOBJ(Obj) autoreleasepool{} __strong typeof(Obj) Obj = weak##Obj
 
 /*-----------------------------分割线-------------------------------*/
 
@@ -50,7 +63,11 @@
  */
 #define DEF_SCREEN_FRAME  [UIScreen mainScreen].applicationFrame
 
-/** 高保真UI基数屏幕大小（以iPhone 6/6s为准，实际使用中请按照给出的UI参照图为准进行替换）*/
+/** 
+ *  高保真UI基数屏幕大小（以iPhone 6/6s为准，实际使用中请按照给出的UI参照图为准进行替换）
+ */
+
+#pragma mark 屏幕UI适配
 #define DEF_HIGHFIDELITY_UI_WIDTH 375
 /**
  *  根据高保真UI图进行屏幕适配转换 (用于屏幕适配)

@@ -128,6 +128,8 @@ Chart(图表二)[具体地址](https://github.com/China131/JHChart):pod 'JHChart
 
 VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):pod 'ZFPlayer'
 
+TopSegumentView(顶部联动滑块视图)[具体地址](https://github.com/jasnig/ZJScrollPageView):作者推荐手动导入，cocoaPods未更新
+
 /**********************************************************************/
 
 ##【示例】
@@ -139,11 +141,13 @@ VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):p
 
 ##【CMKit目录说明】
 
-1 项目权限配置一览表.md ---> info.plist权限配置文件
+1 代码自动补全一览表.md ---> Xcode中CodeSnippet代码自动补全快速配置列表
 
-2 CHANGES_LIST.txt ---> 更新内容日志列表
+2 更新历史一览表.md ---> 更新内容日志列表
 
-3 CMKit 
+3 项目权限配置一览表.md ---> info.plist权限配置文件
+
+4 CMKit 
 
     CMKit.h ---> 框架头文件，记录目标框架当前版本，开发作者，所有的分类(Category)头文件及部分工具类头文件
     
@@ -163,13 +167,13 @@ VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):p
 
             #### ---> 工具类目录，开发中可直接手动导入目标项目，请参考Demo使用
 
-4 Example ---> 演示Demo目录
+5 Example ---> 演示Demo目录
 
-5 CMKit.podspec ---> Cocoapods编辑目录
+6 CMKit.podspec ---> Cocoapods编辑目录
 
-6 LICENSE ---> 许可证文件 (默认MIT许可证)
+7 LICENSE ---> 许可证文件 (默认MIT许可证)
 
-7 README.md ---> github说明文件
+8 README.md ---> github说明文件
 
 /**********************************************************************/
 
@@ -247,6 +251,8 @@ Demo共分为三个版块，目前集成功能如下：
     2.13 Chart(图表)
 
     2.14 VideoPlayer(视频播放)
+
+    2.15 TopSegumentView(顶部联动滑块视图)
 
 
 3 Foundation分类(关于Foundation框架的分类)

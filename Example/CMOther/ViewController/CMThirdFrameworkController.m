@@ -21,6 +21,7 @@
 #import "CMCountLabelSampleController.h"
 #import "CMChartsTableViewController.h"
 #import "CMVideoPlayerSampleController.h"
+#import "CMTopSegumentViewSampleController.h"
 
 #import "CMHeadView.h"
 
@@ -57,6 +58,7 @@
                        @{@"name":@"CyclePicture(无限轮播)",@"classType":[CMCyclePictureSampleController class]},
                        @{@"name":@"VerticalWaterFlow(垂直瀑布流)",@"classType":[CMWaterfallLayoutController class]},
                        @{@"name":@"RevealContorller(侧滑菜单控制器)",@"classType":[CMRevealSampleController class]},
+                       @{@"name":@"TopSegumentView(顶部联动滑块视图)",@"classType":[CMTopSegumentViewSampleController class]},
                        @{@"name":@"CropPicture(裁剪图片)",@"classType":[CMCropPictureSampleController class]},
                        @{@"name":@"LaunchAd(广告载入页)",@"classType":[CMLaunchAdSampleController class]},
                        @{@"name":@"iCarousel(旋转木马效果)",@"classType":[CMICarouselSampleController class]},
