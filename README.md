@@ -67,7 +67,7 @@ end
 
     HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.2.0’
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.2.0’  (目前使用传入图片数组即可，后期会不断完善)
+    新特性：pod 'CMKit/NewFeatures', '~> 0.2.0’  
 
     公用父类：pod 'CMKit/CommonSuperClass', '~> 0.2.0’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
@@ -92,6 +92,8 @@ end
 
 
 ####----------常用第三方框架选型
+
+约束布局[具体地址](https://github.com/SnapKit/Masonry)：pod 'Masonry' 
 
 上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
 
@@ -122,13 +124,16 @@ end
 
 数字Label[具体地址](https://github.com/dataxpress/UICountingLabel):pod 'UICountingLabel'
 
-Chart(图表一)[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
 
-Chart(图表二)[具体地址](https://github.com/China131/JHChart):pod 'JHChart'
 
-VideoPlayer(视频播放)[具体地址](https://github.com/renzifeng/ZFPlayer):pod 'ZFPlayer'
+图表一[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
 
-TopSegumentView(顶部联动滑块视图)[具体地址](https://github.com/jasnig/ZJScrollPageView):作者推荐手动导入，cocoaPods未更新
+图表二[具体地址](https://github.com/China131/JHChart):pod 'JHChart'
+
+视频播放[具体地址](https://github.com/renzifeng/ZFPlayer):pod 'ZFPlayer'
+
+顶部联动滑块视图[具体地址](https://github.com/jasnig/ZJScrollPageView):作者推荐手动导入，cocoaPods未更新
+
 
 /**********************************************************************/
 
@@ -254,6 +259,7 @@ Demo共分为三个版块，目前集成功能如下：
 
     2.15 TopSegumentView(顶部联动滑块视图)
 
+    2.16 ConstraintsLayout(约束布局)
 
 3 Foundation分类(关于Foundation框架的分类)
 

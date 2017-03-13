@@ -22,6 +22,7 @@
 #import "CMChartsTableViewController.h"
 #import "CMVideoPlayerSampleController.h"
 #import "CMTopSegumentViewSampleController.h"
+#import "MASExampleListViewController.h"
 
 #import "CMHeadView.h"
 
@@ -50,6 +51,7 @@
 #pragma mark - 初始化数据
 - (void)initData{
     self.toolArray = @[
+                       @{@"name":@"ConstraintsLayout(约束布局)",@"classType":[MASExampleListViewController class]},
                        @{@"name":@"NetWork(网络请求)",@"classType":[GlobalTimelineViewController class]},
                        @{@"name":@"ImageCache(图片缓存)",@"classType":[MasterViewController class]},
                        @{@"name":@"ImageMultipleChoice(图片多选器)",@"classType":[CMAlbumImagesSampleController class]},
@@ -72,6 +74,8 @@
 #pragma mark - 初始化UI
 //创建UI
 - (void)initUI{
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     //1.创建TableView
     UITableView *tableView = [UITableView initWithFrame:self.view.bounds style:UITableViewStylePlain cellSeparatorStyle:UITableViewCellSeparatorStyleSingleLine separatorInset:UIEdgeInsetsMake(0, 0, 0, 0) dataSource:self delegate:self];
