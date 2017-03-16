@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.2.0'
+  s.version      = '0.2.1'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'

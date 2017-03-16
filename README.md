@@ -47,8 +47,8 @@ $ pod setup
 platform :ios, ‘7.0’
 
 target ‘TargetName’ do
-pod 'CMKit', '~> 0.2.0’
-pod 'AFNetworking', '~> 3.0'
+pod 'CMKit'
+pod 'AFNetworking'
 end
 ```
 
@@ -57,37 +57,37 @@ end
 ####----------UTOUU 集成工具类(若只使用CMKit工具类中的指定功能，可根据如下目录单独导入)
 
 
-整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit', '~> 0.2.0'
+整个工具类[具体地址](https://github.com/ZuoLuFei/CMKit)：pod 'CMKit'
 
-    分类：pod 'CMKit/Category', '~> 0.2.0'
+    分类：pod 'CMKit/Category'
 
-    警告框：pod 'CMKit/AlertView', '~> 0.2.0’
+    警告框：pod 'CMKit/AlertView'
 
-    动画效果：pod 'CMKit/AnimationEffect', '~> 0.2.0’
+    动画效果：pod 'CMKit/AnimationEffect'
 
-    HUD提示框：pod 'CMKit/ProgressHUD', '~> 0.2.0’
+    HUD提示框：pod 'CMKit/ProgressHUD'
 
-    新特性：pod 'CMKit/NewFeatures', '~> 0.2.0’  
+    新特性：pod 'CMKit/NewFeatures'  
 
-    公用父类：pod 'CMKit/CommonSuperClass', '~> 0.2.0’  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
+    公用父类：pod 'CMKit/CommonSuperClass'  (目前暂时只整理CMBaseViewController和CMBaseNavigationController，根据使用若有补充之处，请及时提出)
 
-    相机、相册：pod 'CMKit/ImagePicker', '~> 0.2.0’    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
+    相机、相册：pod 'CMKit/ImagePicker'    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
-    城市列表选择：pod 'CMKit/CityList', '~> 0.2.0’
+    城市列表选择：pod 'CMKit/CityList'
 
-    FMDB操作：pod 'CMKit/FMDBOperation', '~> 0.2.0’
+    FMDB操作：pod 'CMKit/FMDBOperation'
     
-    图片浏览器：pod 'CMKit/PictureBrowse', '~> 0.2.0’
+    图片浏览器：pod 'CMKit/PictureBrowse'
 
-    手势、指纹解锁：pod 'CMKit/UnLock', '~> 0.2.0’
+    手势、指纹解锁：pod 'CMKit/UnLock'
 
-    半挂式场景切换：pod 'CMKit/SemiScene', '~> 0.2.0’
+    半挂式场景切换：pod 'CMKit/SemiScene'
 
-    下拉放大：pod 'CMKit/DropdownAmplify', '~> 0.2.0’
+    下拉放大：pod 'CMKit/DropdownAmplify'
 
-    闪烁文字：pod 'CMKit/ShimmerLabel', '~> 0.2.0’
+    闪烁文字：pod 'CMKit/ShimmerLabel'
 
-    进度条：pod 'CMKit/ProgressView', '~> 0.2.0’
+    进度条：pod 'CMKit/ProgressView'
 
 
 
@@ -95,15 +95,15 @@ end
 
 约束布局[具体地址](https://github.com/SnapKit/Masonry)：pod 'Masonry' 
 
-上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh', '~> 3.1.12'     
+上拉、下拉刷新[具体地址](https://github.com/CoderMJLee/MJRefresh)：pod 'MJRefresh'     
 
-无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView','~> 1.64' 
+无限轮播[具体地址](https://github.com/gsdios/SDCycleScrollView)：pod 'SDCycleScrollView' 
 
 垂直瀑布流[具体地址](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout)：pod 'CHTCollectionViewWaterfallLayout'
 
-图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage', '~> 4.0.0-beta2' 
+图片缓存[具体地址](https://github.com/rs/SDWebImage)：pod 'SDWebImage'
 
-网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)：pod 'AFNetworking', '~> 3.0'
+网络请求[具体地址](https://github.com/AFNetworking/AFNetworking)：pod 'AFNetworking'
 
     CMKit网络请求demo中包含网络请求基础工具类CMHttpClientTool和业务封装工具类CMPostRequest，请参考CMKit->Example->CMKit->CMKit-Tool(工具类)->FrameworkManager->NetWork(网络请求)->Sample->Networking Extenslons） 
 
@@ -115,15 +115,13 @@ end
 
 图片裁剪[具体地址](https://github.com/TimOliver/TOCropViewController):pod 'TOCropViewController'
 
-二维码扫描、生成[具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan', '~> 1.1.1'[ZXingObjC具体地址](https://github.com/TheLevelUp/ZXingObjC):pod 'ZXingObjC', '~> 3.1.0'
+二维码扫描、生成[具体地址](https://github.com/MxABC/LBXScan):pod 'LBXScan'
 
 广告载入页[具体地址](https://github.com/CoderZhuXH/XHLaunchAd):pod 'XHLaunchAd'
 
 旋转木马效果[具体地址](https://github.com/nicklockwood/iCarousel):pod 'iCarousel'
 
 数字Label[具体地址](https://github.com/dataxpress/UICountingLabel):pod 'UICountingLabel'
-
-
 
 图表一[具体地址](https://github.com/kevinzhow/PNChart):pod 'PNChart'
 
