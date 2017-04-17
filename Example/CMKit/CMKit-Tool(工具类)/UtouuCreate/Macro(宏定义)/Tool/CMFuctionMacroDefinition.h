@@ -40,6 +40,32 @@
  */
 #define DEF_STRONGOBJ(Obj) autoreleasepool{} __strong typeof(Obj) Obj = weak##Obj
 
+/*----------------------------—分割线------------------------------*/
+#pragma mark - 忽略相关警告⚠️
+/**
+ *  忽略执行选择器方法导致的可能存在的内存泄漏警告⚠️
+ */
+#define DEF_SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+/**
+ *  忽略方法被弃用导致的警告⚠️
+ */
+#define DEF_SuppressDeprecatedWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+
 /*-----------------------------分割线-------------------------------*/
 
 #pragma mark - 当前屏幕尺寸

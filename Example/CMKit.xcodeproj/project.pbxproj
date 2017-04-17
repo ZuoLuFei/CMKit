@@ -5395,8 +5395,7 @@
 				TargetAttributes = {
 					475A3D221DC7536D00CA45BA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BXC3U9JLBF;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					475A3D3B1DC7536D00CA45BA = {
 						CreatedOnToolsVersion = 8.0;
@@ -6346,7 +6345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BXC3U9JLBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CMOther/CMKit.pch";
@@ -6366,7 +6365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: chao huang (WQ9YT96TVC)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = BXC3U9JLBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CMOther/CMKit.pch";

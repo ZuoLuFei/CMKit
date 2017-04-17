@@ -58,7 +58,9 @@
     
     //2.创建UI
     [self initUI];
-
+    
+    
+    
 }
 
 #pragma mark - 初始化数据
@@ -113,6 +115,7 @@
     tableView.tableHeaderView = [CMHeadView headView];
 
     [self.view addSubview:tableView];
+    
     
 }
 

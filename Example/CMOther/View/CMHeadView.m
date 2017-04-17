@@ -15,6 +15,8 @@
 @property (nonatomic, strong) UIView *lineView;
 
 
+
+
 @end
 
 @implementation CMHeadView
