@@ -3,6 +3,15 @@
 
 使用前请先下载、运行并查看Demo。
 
+##【Demo演示】
+![演示1](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-1.gif)
+![演示2](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-2.gif)
+![演示3](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-3.gif)
+![演示4](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-4.gif)
+![演示5](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-5.gif)
+![演示6](https://github.com/ZuoLuFei/DemoFigure/blob/master/CMKit%E6%BC%94%E7%A4%BA%E5%8A%A8%E5%9B%BE/CMKit-6.gif)
+
+
 /**********************************************************************/
 
 ##【导入】
@@ -73,7 +82,8 @@ end
 
     相机、相册：pod 'CMKit/ImagePicker'    打开系统自带相册选择和相机，多选图片请移步下面'图片选择器'框架
 
-    城市列表选择：pod 'CMKit/CityList'
+    城市首字母列表：pod 'CMKit/FirstLetterCityList' 
+    城市三级列表：pod 'CMKit/ThreeLevelCityList' 
 
     FMDB操作：pod 'CMKit/FMDBOperation'
     

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'CMKit'
-  s.version      = '0.2.1'
+  s.version      = '0.2.2'
   s.summary      = 'A project about iOS development Contains lots of tools and Category.'
   s.homepage     = 'https://github.com/ZuoLuFei/CMKit'
   s.license      = 'MIT'
@@ -45,9 +45,14 @@ Pod::Spec.new do |s|
     imagePicker.frameworks  = 'AVFoundation','AssetsLibrary','Photos'
   end
 
-  s.subspec 'CityList' do |cityList|
-    cityList.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/**/*.{h,m}'
-    cityList.resources = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/CMCityList.bundle'
+  s.subspec 'FirstLetterCityList' do |firstLetterCityList|
+    firstLetterCityList.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/FirstLetterCityList(城市首字母列表)/**/*.{h,m}'
+    firstLetterCityList.resources = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/FirstLetterCityList(城市首字母列表)/CMCityList.bundle'
+  end
+
+  s.subspec 'ThreeLevelCityList' do |threeLevelCityList|
+    threeLevelCityList.source_files = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/ThreeLevelCityList(城市三级列表)/**/*.{h,m}'
+    threeLevelCityList.resources = 'CMKit/CMKit-Tool(工具类)/Tool-CityList(城市列表)/ThreeLevelCityList(城市三级列表)/CMThreeLevelCityList.bundle'
   end
 
   s.subspec 'FMDBOperation' do |fmdbOperation|

@@ -49,7 +49,6 @@
                           borderColor:(UIColor * _Nullable)borderColor;
 
 #pragma mark - 创建、处理图片
-
 /**
  *  根据image本身创建指定rect的image
  *
@@ -196,8 +195,6 @@
  *  @return 重绘颜色后的Image
  */
 - (UIImage * _Nonnull)imageWithGradientTintColor:(UIColor * _Nonnull)tintColor;
-
-
 
 #pragma mark - 翻转图片
 /**

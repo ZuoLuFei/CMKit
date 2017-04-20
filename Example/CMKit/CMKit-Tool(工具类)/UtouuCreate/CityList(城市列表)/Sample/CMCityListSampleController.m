@@ -8,6 +8,7 @@
 
 #import "CMCityListSampleController.h"
 #import "CityListViewController.h"
+#import "CMThreeLevelCityPickerView.h"
 
 @interface CMCityListSampleController ()<CityListViewDelegate>
 @property (nonatomic, strong) UIButton *cityBtn;
@@ -42,6 +43,44 @@
 #pragma mark - selector
 - (void)cityBtnClick:(NSString *)cityName
 {
+    [[CMAlertView sharedInstance] showAlertController:self title:@"提示" message:@"选择城市列表类型" cancelTitle:@"取消" actionBlock:^(NSInteger buttonTag) {
+        switch (buttonTag) {
+            case 0: // 默认取消按钮
+                break;
+                
+            case 1: // 城市三级列表
+                [self threeLevelCityList];
+                
+                break;
+                
+            case 2: // 城市首字母列表
+                [self firstLetterCityList];
+                break;
+                
+            default:
+                break;
+        }
+    } otherButtonTitles:@"城市三级列表",@"城市首字母列表",nil];
+}
+
+// 城市三级列表
+- (void)threeLevelCityList {
+    CMThreeLevelCityPickerView *threeLevelCityView = [[CMThreeLevelCityPickerView alloc] init];
+    threeLevelCityView.toolBarTitle = @"哈哈";
+    
+    __weak typeof(self)blockself = self;
+    [threeLevelCityView showCityPickerView:^(NSString *proviceStr, NSString *cityStr, NSString *distr) {
+        [blockself.cityBtn setTitle:[NSString stringWithFormat:@"%@->%@->%@",proviceStr,cityStr,distr] forState:UIControlStateNormal];
+        [blockself.cityBtn sizeToFit];
+        blockself.cityBtn.center = self.view.center;
+        
+    }];
+
+}
+
+// 城市首字母列表
+- (void)firstLetterCityList {
+    
     CityListViewController *cityListView = [[CityListViewController alloc]init];
     cityListView.delegate = self;
     //热门城市列表
@@ -52,12 +91,17 @@
     cityListView.arrayLocatingCity   = [NSMutableArray arrayWithObjects:@"福州", nil];
     
     [self presentViewController:cityListView animated:YES completion:nil];
+
 }
+
+
 
 #pragma mark - CityListViewDelegate
 - (void)didClickedWithCityName:(NSString *)cityName
 {
     [_cityBtn setTitle:cityName forState:UIControlStateNormal];
+    [_cityBtn sizeToFit];
+    _cityBtn.center = self.view.center;
 }
 
 
